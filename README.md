@@ -55,8 +55,8 @@ A CSS Liquid Framework using Flexbox.
 
 ```html
 <div class="liquid-grid">
-  <div class="col -3of12">3of12</div>
-  <div class="col -9of12">9of12</div>
+  <div class="col -col-3">3of12</div>
+  <div class="col -col-9">9of12</div>
 </div>
 ```
 
