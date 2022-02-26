@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+.sidebar-slider-container {
+  position: fixed;
+  width: 280px;
+  height: 100%;
+  background-color: #1e2027;
+  line-height: 2rem;
+}
+.sidebar-slider-container .sidebar-slider-main-buttons {
+  list-style-type: none;
+  margin: 64px 0;
+  padding: 0;
+  color: #fff;
+}
+.sidebar-slider-container .sidebar-slider-main-buttons .sidebar-slider-main-item {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.sidebar-slider-container .sidebar-slider-main-buttons > .sidebar-slider-main-item {
+  padding: 16px 52px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sidebar-slider-container .sidebar-slider-main-buttons > .sidebar-slider-main-item .fa {
+  position: absolute;
+  left: 12px;
+  color: #414655;
+}
+.sidebar-slider-container .sidebar-slider-main-buttons > .sidebar-slider-main-item:hover,
+.sidebar-slider-container .sidebar-slider-main-buttons > .sidebar-slider-main-item:active,
+.sidebar-slider-container .sidebar-slider-main-buttons > .sidebar-slider-main-item:focus {
+  background-color: #292c35;
+  cursor: pointer;
+}
+.sidebar-slider-container .sidebar-slider-main-buttons > .sidebar-slider-main-item:hover .sidebar-slider-hidden,
+.sidebar-slider-container .sidebar-slider-main-buttons > .sidebar-slider-main-item:active .sidebar-slider-hidden,
+.sidebar-slider-container .sidebar-slider-main-buttons > .sidebar-slider-main-item:focus .sidebar-slider-hidden {
+  width: 228px;
+}
+
+.sidebar-slider-container .sidebar-slider-hidden {
+  width: 0;
+  height: 100%;
+  padding: 64px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: #292c35;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.sidebar-slider-container .sidebar-slider-hidden .sidebar-slider-second-item {
+  padding: 16px 24px;
+}
+.sidebar-slider-container .sidebar-slider-hidden .sidebar-slider-second-item:hover,
+.sidebar-slider-container .sidebar-slider-hidden .sidebar-slider-second-item:active,
+.sidebar-slider-container .sidebar-slider-hidden .sidebar-slider-second-item:focus {
+  background-color: #323541;
+}
+

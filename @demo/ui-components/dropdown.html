@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>DROPDOWN UI-COMPONENTS -- Liquid-CSS-Framework Demo</title>
+</head>
+<body>
+    <section class="liquid-app">
+        <section id="top-page" class="liquid-page-container">
+            <nav class="nav -sticky -top">
+                <ul class="nav-items -shad-9 -shad-14-h">
+                    <li class="nav-item"><a href="../index.html">HOME</a></li>
+                    <li class="nav-item "><a href="../base.html">BASE</a></li>
+                    <li class="nav-item "><a href="../grid.html">GRID</a></li>
+                    <li class="nav-item "><a href="../container.html">CONTAINER</a></li>
+                    <li class="nav-item "><a href="../z-index.html">Z-INDEX</a></li>
+                    <li class="nav-item "><a href="../helpers.html">HELPERS</a></li>
+                    <li class="nav-item "><a href="../effects.html">EFFECTS</a></li>
+                    <li class="nav-item "><a href="../animations.html">ANIMATIONS</a></li>
+                    <li class="nav-item "><a href="../heading.html">HEADING</a></li>
+                    <li class="nav-item "><a href="../typo.html">TYPO</a></li>
+                    <li class="nav-item -active-parent"><a href="../ui-components.html">UI-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../layout-components.html">LAYOUT-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../extensed-components.html">EXTENSED-COMPONENTS</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <nav class="nav -sticky -top-4rm">
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a href="#top-page">
+                            Back to the Top
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../ui-components.html#cursor-section">
+                            CURSOR
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="avatar.html">
+                            AVATAR
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="badge.html">
+                            BADGE
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="alert.html">
+                            ALERT
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="button.html">
+                            BUTTON
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="chip.html">
+                            CHIP
+                        </a>
+                    </li>
+                    <li class="nav-item -active">
+                        <a href="dropdown.html">
+                            DROPDOWN
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="link.html">
+                            LINK
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="breadcrumb.html">
+                            BREADCRUMB
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pagination.html">
+                            PAGINATION
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tab.html">
+                            TAB
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html">
+                            MENU
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html">
+                            MENU
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="placeholders.html">
+                            PLACEHOLDERS
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="form.html">
+                            FORM
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="tooltip.html">
+                            TOOLTIP
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="popovers.html">
+                            POPOVERS
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="progress.html">
+                            PROGRESS
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="icon.html">
+                            ICON
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+            <section class="liquid-grid -middle -center">
+                <div class="col -col-12 ">
+                    <h2>DROPDOWN</h2>
+                </div>
+                <div class="col -col-12 -start -center">
+                    <pre>.dropdown .dropdown-content</pre>
+                </div>
+                <hr>
+                <div class="col -col-12"> 
+                    <div class="btn dropdown">
+                        Mouse over me
+                        <div class="dropdown-content">
+                          <ul>
+                            <li class="-light -hover"><a href="#">One</a></li>
+                            <li class="-light -hover"><a href="#">Two</a></li>
+                            <li class="-light -hover"><a href="#">Three</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="col -col-12">
+                    <nav class="slide-dropdown">
+                        <label for="slide-dropdown--touch"><span class="slide-dropdown--title">titre</span></label>               
+                        <input class="slide-dropdown--touch" type="checkbox" id="slide-dropdown--touch"> 
+                        <ul class="slide-dropdown--slide">
+                            <li><a href="#">Lorem Ipsum</a></li> 
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+                
+                <hr>
+                <div class="col -col-12 -bg-tertiary -pt10">
+                    <div class="liquid-dropdown">
+                        <input type="checkbox" id="liquid-dropdown">
+                      
+                        <label class="liquid-dropdown__face" for="liquid-dropdown">
+                          <div class="liquid-dropdown__text"Liquid >Dropdown</div>
+                          <div class="liquid-dropdown__arrow"></div>
+                        </label>
+                      
+                        <ul class="liquid-dropdown__items">
+                          <li>🙂</li>
+                          <li>😺</li>
+                          <li>😽</li>
+                          <li>😎</li>
+                          <li>🤗</li>
+                        </ul>
+                    </div>
+                      
+                    <svg>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                    </filter>
+                    </svg>
+                </div>
+                <div class="col -col-12">
+                    <h4>CODE</h4> 
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        HTML
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="html" class="-width-full">
+                            <code class="code-preview">
+                                <div class="btn dropdown">
+                                    Mouse over me
+                                    <div class="dropdown-content">
+                                      <ul>
+                                        <li class="-light -hover"><a href="#">One</a></li>
+                                        <li class="-light -hover"><a href="#">Two</a></li>
+                                        <li class="-light -hover"><a href="#">Three</a></li>
+                                      </ul>
+                                    </div>
+                                </div>
+    
+                                <div class="col -col-12">
+                                    <nav class="slide-dropdown">
+                                        <label for="slide-dropdown--touch"><span class="slide-dropdown--title">titre</span></label>               
+                                        <input class="slide-dropdown--touch" type="checkbox" id="slide-dropdown--touch"> 
+                                        <ul class="slide-dropdown--slide">
+                                            <li><a href="#">Lorem Ipsum</a></li> 
+                                            <li><a href="#">Lorem Ipsum</a></li>
+                                            <li><a href="#">Lorem Ipsum</a></li>
+                                            <li><a href="#">Lorem Ipsum</a></li>
+                                        </ul>
+                                    </nav> 
+                                </div>
+    
+                                <div class="liquid-dropdown">
+                                    <input type="checkbox" id="liquid-dropdown">
+                                  
+                                    <label class="liquid-dropdown__face" for="liquid-dropdown">
+                                      <div class="liquid-dropdown__text"Liquid >Dropdown</div>
+                                      <div class="liquid-dropdown__arrow"></div>
+                                    </label>
+                                  
+                                    <ul class="liquid-dropdown__items">
+                                      <li>🙂</li>
+                                      <li>😺</li>
+                                      <li>😽</li>
+                                      <li>😎</li>
+                                      <li>🤗</li>
+                                    </ul>
+                                </div>
+                                  
+                                <svg>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                    <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                                    <feBlend in="SourceGraphic" in2="goo" />
+                                </filter>
+                                </svg>
+                            </code>
+                        </pre>
+                      </div>
+                    </div>
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        CSS
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="css" class="-width-full"> 
+                            <code class="code-preview">
+/* CSS CLASSES */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    }
+.dropdown-content .\-link,
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    padding: var(--dropdown-content-link-padding-v) var(--dropdown-content-link-padding-h);
+}
+.dropdown-content {
+    opacity: var(--dropdown-content-opacity-off);
+    position: var(--dropdown-content-position);
+    top: var(--dropdown-content-top);
+    right: var(--dropdown-content-right);
+    left: var(--dropdown-content-left);
+    background-color: var(--dropdown-content-bg);
+    color: var(--dropdown-content-color);
+    border: var(--dropdown-border-off);
+    min-width: var(--dropdown-content-min-width);
+    box-shadow: var(--dropdown-content-box-shadow);
+    padding: var(--dropdown-content-padding-v-off) var(--dropdown-content-padding-h-off);
+    z-index: var(--dropdown-content-index);
+    transition: var(--dropdown-content-transition);
+    transform: var(--dropdown-content-transform-off);
+}
+.dropdown:hover .dropdown-content {
+    display: var(--dropdown-content-flex);
+    opacity: var(--dropdown-content-opacity);
+    padding: var(--dropdown-content-padding-v) var(--dropdown-content-padding-h);
+    border: var(--dropdown-border);
+    transform: var(--dropdown-content-transform);
+}
+.dropdown ul {
+    padding : var(--dropdown-ul-padding-v) var(--dropdown-ul-padding-h);
+}
+.dropdown li {
+    padding : var(--dropdown-li-padding-v) var(--dropdown-li-padding-h); 
+    text-decoration : none; list-style: none;
+}
+    
+.slide-dropdown {
+    width : var(--slide-dropdown-width); 
+    background: var(--slide-dropdown-bg);
+    margin : var(--slide-dropdown-padding-v) var(--slide-dropdown-padding-h); 
+}
+.slide-dropdown .slide-dropdown--title {
+    display: var(--slide-dropdown-display);
+    justify-content: var(--slide-dropdown-justify-content);
+    align-items: var(--slide-dropdown-align-items);
+    padding : var(--slide-dropdown-title-padding-v) var(--slide-dropdown-title-padding-h);
+    background : var(--slide-dropdown-title-bg); 
+    color : var(--slide-dropdown-title-color);
+    font-size : var(--slide-dropdown-title-font-size);
+    font-variant : var(--slide-dropdown-title-font-variant);
+    cursor : var(--slide-dropdown-title-cursor);
+}
+.slide-dropdown--title::after {
+    content: var(--slide-dropdown-title-after-ico);
+    transform: var(--slide-dropdown-title-after-ico-transform);
+    transition: var(--slide-dropdown-title-after-ico-transition);
+}
+.slide-dropdown--title:hover::after {transform: rotate(0);}
+.slide-dropdown--slide {
+    padding: var(--slide-dropdown-slide-padding-v) var(--slide-dropdown-slide-padding-h);
+    clear:var(--slide-dropdown-slide-clear);
+    width: var(--slide-dropdown-slide-width);
+    height: var(--slide-dropdown-slide-height);
+    overflow: var(--slide-dropdown-slide-overflow);
+    text-align: var(--slide-dropdown-slide-text-align);
+    transition: var(--slide-dropdown-slide-transition);
+}
+.slide-dropdown--slide li {
+    padding : var(--slide-dropdown-slide-li-padding-v) var(--slide-dropdown-slide-li-padding-h)1.5rem;
+    text-decoration : none;
+    list-style: none;
+    cursor : var(--slide-dropdown-slide-cursor);
+    }
+.slide-dropdown--slide li .\-link,
+.slide-dropdown--slide li a {text-decoration : none;}
+.slide-dropdown--touch {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}    
+.slide-dropdown--touch:checked + .slide-dropdown--slide {
+    height: var(--slide-dropdown-slide-height-open);
+}
+.slide-dropdown--slide li:hover {
+    transform : var(--slide-dropdown--slide-transform-bg-hov);
+    background-color: var(--slide-dropdown-slide-bg-hov);
+}
+    
+    
+.liquid-dropdown {
+    position: relative;
+    width: 230px;
+    filter: url(#goo);
+}
+.liquid-dropdown__face, .liquid-dropdown__items {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+}
+.liquid-dropdown__face {
+    display: block;
+    position: relative;
+}
+.liquid-dropdown__items {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 100%;
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.93, 0.88, 0.1, 0.8);
+}
+.liquid-dropdown__items::before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    bottom: 100%;
+    right: 20%;
+    height: 40px;
+    width: 20px;
+}
+.liquid-dropdown__arrow {
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg) translateY(-50%);
+    transform-origin: right;
+}
+.liquid-dropdown input {
+    display: none;
+}
+.liquid-dropdown input:checked ~ .liquid-dropdown__items {
+    top: calc(100% + 25px);
+    visibility: visible;
+    opacity: 1;
+}
+.liquid-dropdown svg {
+    display: none;
+}
+                            </code>
+                        </pre>
+                      </div>
+                    </div>        
+                </div>
+                </section>
+            </section>
+            <hr>
+        </section>
+    </section>
+    <script src="../main.js"></script>
+</body>
+</html>

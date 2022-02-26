@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>TYPO -- Liquid-CSS-Framework Demo</title>
+</head>
+<body>
+    <section class="liquid-app">
+        <section id="top-page" class="liquid-page-container">
+            <nav class="nav -sticky  -top ">
+                <ul class="nav-items -shad-2 -shad-19-h">
+                    <li class="nav-item"><a href="index.html">HOME</a></li>
+                    <li class="nav-item "><a href="base.html">BASE</a></li>
+                    <li class="nav-item "><a href="grid.html">GRID</a></li>
+                    <li class="nav-item "><a href="container.html">CONTAINER</a></li>
+                    <li class="nav-item "><a href="z-index.html">Z-INDEX</a></li>
+                    <li class="nav-item "><a href="helpers.html">HELPERS</a></li>
+                    <li class="nav-item "><a href="effects.html">EFFECTS</a></li>
+                    <li class="nav-item "><a href="animations.html">ANIMATIONS</a></li>
+                    <li class="nav-item "><a href="heading.html">HEADING</a></li>
+                    <li class="nav-item -active"><a href="typo.html">TYPO</a></li>
+                    <li class="nav-item "><a href="ui-components.html">UI-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="layout-components.html">LAYOUT-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="extensed-components.html">EXTENSED-COMPONENTS</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <section class="liquid-grid -middle -center">
+                <div class="col -col-12 ">
+                    <h2>TYPO</h2>
+                </div>
+            </section>
+            <hr>
+            <nav class="nav -sticky -top-4rm">
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a href="#top-page">
+                            Back to the Top
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#general">
+                            General
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#small-big-section">
+                            Small and Big
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#trans-styl-weight-section">
+                            Transform, Style, Weight
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#deco-siz-ind-section">
+                            Decoration, Size, Indent
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#lin-word-let-section">
+                            Line, Word, Letter
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+            <section class="liquid-grid -middle -center">
+                <div class="col -col-12 -middle -center">
+                    <h3>TEXT</h3>
+                </div>
+                <section id="general" class="col -col-12 -start -center">
+                    <h4>General</h4>
+                    <pre>abrr kbd mark cite code del em i ins ruby samp sub sup time u var</pre>
+                    <h5>Preview</h5>
+                    <p>This is an Abrreviation Text <abbr title="Cascading Style Sheets">CSS</abbr></p>
+                    <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render the page.</p>
+                    <p>This is an exemple of a <mark>marked text</mark></p>
+                    <p><cite>This is a Citation</cite></p>
+                    <p><code>This is a code</code></p>
+                    <p><del>This is a Deleted text</de</p>l>
+                    <p><em>This is an Emphasis text</em></p>
+                    <p><i>This is an Italic text</i></p>
+                    <p><ins>This is an Inserted text</ins></p>
+                    <p>This is an <u>Underline text</u></p>
+                    <p>
+                        <ruby>
+                            漢 
+                            <rt>kan</rt>
+                            字 
+                            <rt>ji</rt>
+                        </ruby>
+                        This is an Ruby text
+                    </p>
+                    <p><s>This is an Strikethrough text</s></p>
+                    <p><samp>This is an Sample text</samp></p>
+                    <p>This is a <sub>Subscripted</sub> Text</p>
+                    <p>This is a <sup>Supscripted</sup> Text</p>
+                    <p>This is time <time>20:00</time></p>
+                    <p>
+                        <var>x</var> = 
+                        <var>y</var> + 2 
+                        <code class="ml4">var</code>
+                    </p>
+                    <h5>Code</h5>
+                    <pre data-lang="html" class="-width-full">
+                        <code class="code-preview">
+                            <p>This is an Abrreviation Text <abbr title="Cascading Style Sheets">CSS</abbr></p>
+                            <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render the page.</p>
+                            <p>This is an exemple of a <mark>marked text</mark></p>
+                            <p><cite>This is a Citation</cite></p>
+                            <p><code>This is a code</code></p>
+                            <p><del>This is a Deleted text</de</p>l>
+                            <p><em>This is an Emphasis text</em></p>
+                            <p><i>This is an Italic text</i></p>
+                            <p><ins>This is an Inserted text</ins></p>
+                            <p>This is an <u>Underline text</u></p>
+                            <p>
+                                <ruby>
+                                    漢 
+                                    <rt>kan</rt>
+                                    字 
+                                    <rt>ji</rt>
+                                </ruby>
+                                This is an Ruby text
+                            </p>
+                            <p><s>This is an Strikethrough text</s></p>
+                            <p><samp>This is an Sample text</samp></p>
+                            <p>This is a <sub>Subscripted</sub> Text</p>
+                            <p>This is a <sup>Supscripted</sup> Text</p>
+                            <p>This is time <time>20:00</time></p>
+                            <p>
+                                <var>x</var> = 
+                                <var>y</var> + 2 <code class="ml4">var</code>
+                            </p>
+                        </code>
+                    </pre>
+                    <pre data-lang="css" class="-width-full"> 
+                        <code class="code-preview">
+/* css classes */
+abbr[title] {
+    border-bottom: .05rem dotted;
+    cursor: help;
+    text-decoration: none;
+}
+kbd {
+    background: var(--liquid-color-dark);
+    color: var(--liquid-color-dark-contrast);
+    font-size: .7rem; 
+    line-height: 1.25;
+    padding: .1rem .2rem;
+    border-radius: .1rem;
+}
+mark {
+    background: var(--mark-bg);
+    color: var(--mark-color);
+    border-bottom: .1rem solid var(--mark-bg);
+    border-radius: var(--mark-radius);
+    padding: var(--mark-padding);
+}
+
+                        </code>
+                    </pre>
+                </section>
+                <hr>
+                <section id="base" class="col -col-12 -start -center">
+                    <h4>Base</h4>
+                    <pre></pre>
+                    <h5>Preview</h5>
+                    <blockquote>
+                        <p>Many time, the true is where you don't look. </p>
+                        <cite>- Beelly Alpa</cite>
+                    </blockquote>
+                    
+                    <h5>Code</h5>
+                    <pre data-lang="html" class="-width-full">
+                        <code class="code-preview">
+                            
+                        </code>
+                    </pre>
+                    <pre data-lang="css" class="-width-full"> 
+                        <code class="code-preview">
+/* css classes */
+
+
+
+                        </code>
+                    </pre>
+                </section>
+                <hr>           
+                <section id="small-big-section" class="col -col-12 -start -center">
+                    <h4>Small and Big</h4>
+                    <pre>-t-small -t-big</pre>
+                    <h5>Preview</h5>
+                    <p class="-t-small">Small Text</p>
+                    <small>Small Text</small>
+                    <p class="-t-big">Big Text</p>
+                    <big>Small Text</big>
+                    <h5>Code</h5>
+                    <pre data-lang="html" class="-width-full">
+                        <code class="code-preview">
+                            <p class="small-f">Small Text</p>
+                            <small>Small Text</small>
+                            <p class="-t-big">Big Text</p>
+                            <big>Small Text</big>
+                        </code>
+                    </pre>
+                    <pre data-lang="css" class="-width-full"> 
+                        <code class="code-preview">
+/* css classes */
+small, .\-t-small {
+    font-size: var(--small-font-size);
+    line-height: var(--small-font-l-height);
+}
+.\-t-big {
+    font-size: var(--big-font-size);
+    line-height: var(--big-font-l-height)
+}
+                        </code>
+                    </pre>
+                </section>
+                <hr>
+                <section id="trans-styl-weight-section" class="col -col-12 -start -center">
+                    <h4>Font Transform, Font Style and Font Weight</h4>
+                    <pre>-big-f -t-u -t-l -t-c -t-o -t-i -t-n -t-lght -t-lghtr -t-nrm -t-bld -t-bldr -t-800</pre>
+                    <h5>Preview</h5>
+                    <p class="-t-u">transform uppercase</p>
+                    <p class="-t-l">transform lowercase</p>
+                    <p class="-t-c">transform capitalize</p>
+                    <p class="-t-o">style oblique</p>
+                    <p class="-t-i">style italic</p>
+                    <p class="-t-n">style normal</p>
+                    <p class="-t-lght">weight light</p>
+                    <p class="-t-lghtr">weight lighter</p>
+                    <p class="-t-nrm">weight normal</p>
+                    <p class="-t-bld">weight bold</p>
+                    <p class="-t-bldr">weight bolder</p>
+                    <p class="-t-800">weight 800</p>
+                    <h5>Code</h5>
+                    <pre data-lang="html" class="-width-full">
+                        <code class="code-preview">
+                            <p class="-t-u">transform uppercase</p>
+                            <p class="-t-l">transform lowercase</p>
+                            <p class="-t-c">transform capitalize</p>
+                            <p class="-t-o">style oblique</p>
+                            <p class="-t-i">style italic</p>
+                            <p class="-t-n">style normal</p>
+                            <p class="-t-lght">weight light</p>
+                            <p class="-t-lghtr">weight lighter</p>
+                            <p class="-t-nrm">weight normal</p>
+                            <p class="-t-bld">weight bold</p>
+                            <p class="-t-bldr">weight bolder</p>
+                            <p class="-t-800">weight 800</p>
+                        </code>
+                    </pre>
+                    <pre data-lang="css" class="-width-full"> 
+                        <code class="code-preview">
+/* css classes */
+.\-t-u {
+    text-transform: uppercase;
+}
+.\-t-l {
+    text-transform: lowercase;
+}
+.\-t-c {
+    text-transform: capitalize;
+}
+.\-t-o {
+    font-style: oblique;
+}
+.\-t-i {
+    font-style: italic;
+}
+.\-t-n {
+    font-style: normal;
+}
+.\-t-lght {
+    font-weight: 200;
+}
+.\-t-lghtr {
+    font-weight: lighter;
+}
+.\-t-nrm {
+    font-weight: 400;
+}
+.\-t-bld {
+    font-weight: bold;
+}
+.\-t-bldr {
+    font-weight: bolder;
+}
+.\-t-800 {
+    font-weight: 800;
+}
+                        </code>
+                    </pre>
+                </section>
+                <hr>
+                <section id="deco-siz-ind-section" class="col -col-12 -start -center">
+                    <h4>Decoration, Size and Indent</h4>
+                    <pre>-t-dec-n -t-dec-u -t-dec-o, -t-dec-lt -t-1rm -t-2rm -t-3rm -t-4rm -t-5rm -t-indent-05 -t-indent-1 -t-indent-15 -t-indent-2 -t-indent-25 -t-indent-3</pre>
+                    <h5>Preview</h5>
+                    <p class="-t-dec-n">decoration none</p>
+                    <p class="-t-dec-u">decoration underline</p>
+                    <p class="-t-dec-o">decoration overline</p>
+                    <p class="-t-dec-lt">decoration line-through</p>
+                    <p class="-t-1rm">text 1rem</p>
+                    <p class="-t-2rm">text 2rem</p>
+                    <p class="-t-3rm">text 3rem</p>
+                    <p class="-t-4rm">text 4rem</p>
+                    <p class="-t-5rm">text 5rem</p>
+                    <p class="-t-indent-05">indent 0.5rem</p>
+                    <p class="-t-indent-1">indent 1rem</p>
+                    <p class="-t-indent-15">indent 1.5rem</p>
+                    <p class="-t-indent-2">indent 2rem</p>
+                    <p class="-t-indent-25">indent 2.5rem</p>
+                    <p class="-t-indent-3">indent 3rem</p>
+                    <h5>Code</h5>
+                    <pre data-lang="html" class="-width-full">
+                        <code class="code-preview">
+                            <p class="-t-dec-n">decoration none</p>
+                            <p class="-t-dec-u">decoration underline</p>
+                            <p class="-t-dec-o">decoration overline</p>
+                            <p class="-t-dec-lt">decoration line-through</p>
+                            <p class="-t-1rm">text 1rem</p>
+                            <p class="-t-2rm">text 2rem</p>
+                            <p class="-t-3rm">text 3rem</p>
+                            <p class="-t-4rm">text 4rem</p>
+                            <p class="-t-5rm">text 5rem</p>
+                            <p class="-t-indent-05">indent 0.5rem</p>
+                            <p class="-t-indent-1">indent 1rem</p>
+                            <p class="-t-indent-15">indent 1.5rem</p>
+                            <p class="-t-indent-2">indent 2rem</p>
+                            <p class="-t-indent-25">indent 2.5rem</p>
+                            <p class="-t-indent-3">indent 3rem</p>
+                        </code>
+                    </pre>
+                    <pre data-lang="css" class="-width-full"> 
+                        <code class="code-preview">
+/* css classes */
+
+.\-t-dec-n {
+    text-decoration: none;
+}
+.\-t-dec-u {
+    text-decoration: underline;
+}
+.\-t-dec-o {
+    text-decoration: overline;
+}
+.\-t-dec-lt {
+    text-decoration: line-through;
+}
+.\-t-dec-b {
+    text-decoration: blink;
+}
+.\-t-1rm {
+    font-size: 1rem;
+}
+.\-t-2rm {
+    font-size: 2rem;
+}
+.\-t-3rm {
+    font-size: 3rem;
+}
+.\-t-4rm {
+    font-size: 4rem;
+}
+.\-t-5rm {
+    font-size: 5rem;
+}
+.\-t-indent-05 {
+    text-indent: 0.5rem;
+}
+.\-t-indent-1 {
+    text-indent: 1rem;
+}
+.\-t-indent-15 {
+    text-indent: 1.5rem;
+}
+.\-t-indent-2 {
+    text-indent: 2rem;
+}
+.\-t-indent-25 {
+    text-indent: 2.5rem;
+}
+.\-t-indent-3 {
+    text-indent: 3rem;
+}
+                        </code>
+                    </pre>
+                </section>
+                <hr>
+                <div id="lin-word-let-section" class="col -col-12 -middle -center">
+                    <h3>LINE, WORD and LETTER HANDLER</h3>
+                </div>
+                <hr>
+                <section class="col -col-12 -start -center">
+                    <h4>Code</h4>
+                    <pre data-lang="css" class="-width-full"> 
+                        <code class="code-preview">
+/* css classes */
+.\-l-sp-n {
+    letter-spacing: normal;
+}
+.\-l-sp-1p {
+    letter-spacing: 1px;
+}
+.\-l-sp-25rm {
+    letter-spacing: 0.25rem;
+}
+.\-l-sp-50rm {
+    letter-spacing: 0.5rem;
+}
+.\-l-sp-75rm {
+    letter-spacing: 0.75rem;
+}
+.\-l-sp-100rm {
+    letter-spacing: 1rem;
+}
+.\-l-sp-125rm {
+    letter-spacing: 1.25rem;
+}
+.\-l-sp-150rm {
+    letter-spacing: 1.5rem;
+}
+.\-l-sp-175rm {
+    letter-spacing: 1.75rem;
+}
+.\-l-sp-200 {
+    letter-spacing: 2rem;
+}
+.\-line-h-n {
+    line-height: normal;
+}
+.\-line-h-1 {
+    line-height: 1;
+}
+.\-line-h-1-25 {
+    line-height: 1.25;
+}
+.\-line-h-1-5 {
+    line-height: 1.5;
+}
+.\-line-h-1-75 {
+    line-height: 1.75;
+}
+.\-line-h-2 {
+    line-height: 2;
+}
+.\-line-h-2-25 {
+    line-height: 2.25;
+}
+.\-line-h-2-5 {
+    line-height: 2.5;
+}
+.\-line-h-2-75 {
+    line-height: 2.75;
+}
+.\-line-h-3 {
+    line-height: 3;
+}
+.\-line-h-3-25 {
+    line-height: 3.25;
+}
+.\-line-h-3-5 {
+    line-height: 3.5;
+}
+.\-line-h-3-75 {
+    line-height: 3.75;
+}
+.\-line-h-4 {
+    line-height: 4;
+}
+.\-line-h-4-25 {
+    line-height: 1.25;
+}
+.\-line-h-4-5 {
+    line-height: 4.5;
+}
+.\-line-h-4-75 {
+    line-height: 4.75;
+}
+.\-line-h-5 {
+    line-height: 5;
+}
+.\-line-b-a {
+    line-break: auto;
+}
+.\-line-b-l {
+    line-break: loose;
+}
+.\-line-b-n {
+    line-break: normal;
+}
+.\-line-b-s {
+    line-break: strict;
+}
+.\-over-wrap-b-w {
+    overflow-wrap: break-word;
+}
+.\-over-wrap-n {
+    overflow-wrap: normal;
+}
+.\-w-break-all {
+    word-break: break-all;
+}
+.\-w-keep-all {
+    word-break: keep-all;
+}
+.\-w-norm {
+    word-break: normal;
+}
+.\-hyp-m {
+    hyphens: manual;
+}
+.\-hyp-n {
+    hyphens: none;
+}
+.\-hyp-a {
+    hyphens: auto;
+}
+.\-hyp-r {
+    hyphens: revert;
+}
+.\-hyp-r {
+    hyphens: revert;
+}
+.\-wh-sp-nw {
+    white-space: nowrap;
+}
+.\-wh-sp-pre {
+    white-space: pre;
+}
+.\-wh-sp-pre-w {
+    white-space: pre-wrap;
+}
+.\-wh-sp-pre-l {
+    white-space: pre-line;
+}
+.\-wh-sp-br-sp {
+    white-space: break-spaces;
+}
+                        </code>
+                    </pre>
+                </section>
+                <hr>
+            </section> 
+        </section> 
+        <hr>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

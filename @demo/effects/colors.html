@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>COLORS EFFECTS -- Liquid-CSS-Framework Demo</title>
+</head>
+<body>
+    <section class="liquid-app">
+        <section id="top-page" class="liquid-page-container">
+            <nav class="nav -sticky -top">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="../index.html">HOME</a></li>
+                    <li class="nav-item"><a href="../base.html">BASE</a></li>
+                    <li class="nav-item"><a href="../grid.html">GRID</a></li>
+                    <li class="nav-item"><a href="../container.html">CONTAINER</a></li>
+                    <li class="nav-item"><a href="../z-index.html">Z-INDEX</a></li>
+                    <li class="nav-item "><a href="../heading.html">HEADING</a></li>
+                    <li class="nav-item "><a href="../helpers.html">HELPERS</a></li>
+                    <li class="nav-item -active-parent"><a href="../effects.html">EFFECTS</a></li>
+                    <li class="nav-item"><a href="../animations.html">ANIMATIONS</a></li>
+                    <li class="nav-item"><a href="../typo.html">TYPO</a></li>
+                    <li class="nav-item"><a href="../ui-components.html">UI-COMPONENTS</a></li>
+                    <li class="nav-item"><a href="../layout-components.html">LAYOUT-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../extensed-components.html">EXTENSED-COMPONENTS</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <nav class="nav -sticky -top-4rm">
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a href="#top-page">
+                            Back to the Top
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="display.html">
+                            DISPLAY
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="opacity.html">
+                            OPACITY
+                        </a>
+                    </li>
+                    <li class="nav-item -active">
+                        <a href="colors.html">
+                            COLORS
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="border.html">
+                            BORDER
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="path.html">
+                            PATH
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="perspective.html">
+                            PERSPECTIVE
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="path.html">
+                            PATH
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+            <section class="liquid-grid -middle -center">
+                <div class="col -col-12 ">
+                    <h2>COLORS EFFECTS</h2>
+                </div>
+            </section>
+            <hr>
+            <section class="liquid-grid -middle -center -text-center">
+                <div class="col -col-12 -bg-primary -color-primary-content -b-primary">primary</div>
+                <div class="col -col-11 -bg-secondary -color-secondary-content -b-secondary">secondary</div>
+                <div class="col -col-10 -bg-tertiary -color-tertiary-content -b-tertiary"> tertiary</div> 
+                <div class="col -col-9 -bg-success -color-success-content -b-success">success</div>
+                <div class="col -col-8 -bg-warning -color-warning-content -b-warning">warning</div>
+                <div class="col -col-7 -bg-danger -color-danger-content -b-danger">danger</div>
+                <div class="col -col-6 -bg-dark -color-dark-content -b-dark">dark</div>
+                <div class="col -col-6 -bg-light -color-light-content -b-light">light</div>                
+            </section>
+            <section class="liquid-grid -middle -center">
+                <div class="col -col-12 -start -center">
+                    <h2 class="-bg-tertiary -color-tertiary-content">COLORS</h2>
+                    <pre>.bg-{$colorSelected}, .color-{$colorSelected}, .color-{$colorSelected}-content</pre>
+                    <h3 class="-bg-success -color-tertiary-content">Heading</h3>
+                    <h4 class="-color-secondary">Heading</h4>
+                    <p class="-color-tertiary">Paragraphe</p>
+                </div>
+                <div class="col -col-12">
+                    <h4>CODE</h4> 
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        HTML
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="html" class="-width-full">
+                            <code class="code-preview">
+                                <h2 class="-bg-tertiary -color-tertiary-content">COLORS</h2>
+                                <h3 class="-bg-success -color-tertiary-content">Heading</h3>
+                                <h4 class="-color-secondary">Heading</h4>
+                                <p class="-color-tertiary">Paragraphe</p>
+                            </code>
+                        </pre>
+                      </div>
+                    </div>
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        CSS
+                      </label>
+                      <div class="-accordion-body -h-f">
+                        <pre data-lang="css" class="-width-full"> 
+                            <code class="code-preview">
+/* css variables */
+:root {         
+    --liquid-text-color: #161414;
+    --liquid-text-color-rgb: rgb(22, 20, 20);
+    /* ---- COLOR ----n */
+    /** primary **/
+    --liquid-color-primary: #3880ff;
+    --liquid-color-primary-rgb: 56, 128, 255;
+    --liquid-color-primary-contrast: #ffffff;
+    --liquid-color-primary-contrast-rgb: 255, 255, 255;
+    --liquid-color-primary-shade: #3171e0;
+    --liquid-color-primary-tint: #4c8dff;
+
+    /** secondary **/
+    --liquid-color-secondary: #3dc2ff;
+    --liquid-color-secondary-rgb: 61, 194, 255;
+    --liquid-color-secondary-contrast: #ffffff;
+    --liquid-color-secondary-contrast-rgb: 255, 255, 255;
+    --liquid-color-secondary-shade: #36abe0;
+    --liquid-color-secondary-tint: #50c8ff;
+
+    /** tertiary **/
+    --liquid-color-tertiary: #5260ff;
+    --liquid-color-tertiary-rgb: 82, 96, 255;
+    --liquid-color-tertiary-contrast: #ffffff;
+    --liquid-color-tertiary-contrast-rgb: 255, 255, 255;
+    --liquid-color-tertiary-shade: #4854e0;
+    --liquid-color-tertiary-tint: #6370ff;
+
+    /** success **/
+    --liquid-color-success: #2dd36f;
+    --liquid-color-success-rgb: 45, 211, 111;
+    --liquid-color-success-contrast: #ffffff;
+    --liquid-color-success-contrast-rgb: 255, 255, 255;
+    --liquid-color-success-shade: #28ba62;
+    --liquid-color-success-tint: #42d77d;
+
+    /** warning **/
+    --liquid-color-warning: #ffc409;
+    --liquid-color-warning-rgb: 255, 196, 9;
+    --liquid-color-warning-contrast: #000000;
+    --liquid-color-warning-contrast-rgb: 0, 0, 0;
+    --liquid-color-warning-shade: #e0ac08;
+    --liquid-color-warning-tint: #ffca22;
+
+    /** danger **/
+    --liquid-color-danger: #eb445a;
+    --liquid-color-danger-rgb: 235, 68, 90;
+    --liquid-color-danger-contrast: #ffffff;
+    --liquid-color-danger-contrast-rgb: 255, 255, 255;
+    --liquid-color-danger-shade: #cf3c4f;
+    --liquid-color-danger-tint: #ed576b;
+
+    /** dark **/
+    --liquid-color-dark: #222428;
+    --liquid-color-dark-rgb: 34, 36, 40;
+    --liquid-color-dark-contrast: #ffffff;
+    --liquid-color-dark-contrast-rgb: 255, 255, 255;
+    --liquid-color-dark-shade: #1e2023;
+    --liquid-color-dark-tint: #383a3e;
+
+    /** medium **/
+    --liquid-color-medium: #92949c;
+    --liquid-color-medium-rgb: 146, 148, 156;
+    --liquid-color-medium-contrast: #ffffff;
+    --liquid-color-medium-contrast-rgb: 255, 255, 255;
+    --liquid-color-medium-shade: #808289;
+    --liquid-color-medium-tint: #9d9fa6;
+
+    /** light **/
+    --liquid-color-light: #f4f5f8;
+    --liquid-color-light-rgb: 244, 245, 248;
+    --liquid-color-light-contrast: #000000;
+    --liquid-color-light-contrast-rgb: 0, 0, 0;
+    --liquid-color-light-shade: #d7d8da;
+    --liquid-color-light-tint: #f5f6f9;
+
+
+    --liquid-color-step-50: #0d0d0d;
+    --liquid-color-step-100: #1a1a1a;
+    --liquid-color-step-150: #262626;
+    --liquid-color-step-200: #333333;
+    --liquid-color-step-250: #404040;
+    --liquid-color-step-300: #4d4d4d;
+    --liquid-color-step-350: #595959;
+    --liquid-color-step-400: #666666;
+    --liquid-color-step-450: #737373;
+    --liquid-color-step-500: #808080;
+    --liquid-color-step-550: #8c8c8c;
+    --liquid-color-step-600: #999999;
+    --liquid-color-step-650: #a6a6a6;
+    --liquid-color-step-700: #b3b3b3;
+    --liquid-color-step-750: #bfbfbf;
+    --liquid-color-step-800: #cccccc;
+    --liquid-color-step-850: #d9d9d9;
+    --liquid-color-step-900: #e6e6e6;
+    --liquid-color-step-950: #f2f2f2;
+
+    --liquid-item-background: #000000;
+    --liquid-card-background: #1c1c1d;
+
+    @media (prefers-color-scheme: dark) {
+    /*
+        * Dark Colors
+        * -------------------------------------------
+        */
+    
+    body {
+        --liquid-color-primary: #428cff;
+        --liquid-color-primary-rgb: 66,140,255;
+        --liquid-color-primary-contrast: #ffffff;
+        --liquid-color-primary-contrast-rgb: 255,255,255;
+        --liquid-color-primary-shade: #3a7be0;
+        --liquid-color-primary-tint: #5598ff;
+    
+        --liquid-color-secondary: #50c8ff;
+        --liquid-color-secondary-rgb: 80,200,255;
+        --liquid-color-secondary-contrast: #ffffff;
+        --liquid-color-secondary-contrast-rgb: 255,255,255;
+        --liquid-color-secondary-shade: #46b0e0;
+        --liquid-color-secondary-tint: #62ceff;
+    
+        --liquid-color-tertiary: #6a64ff;
+        --liquid-color-tertiary-rgb: 106,100,255;
+        --liquid-color-tertiary-contrast: #ffffff;
+        --liquid-color-tertiary-contrast-rgb: 255,255,255;
+        --liquid-color-tertiary-shade: #5d58e0;
+        --liquid-color-tertiary-tint: #7974ff;
+    
+        --liquid-color-success: #2fdf75;
+        --liquid-color-success-rgb: 47,223,117;
+        --liquid-color-success-contrast: #000000;
+        --liquid-color-success-contrast-rgb: 0,0,0;
+        --liquid-color-success-shade: #29c467;
+        --liquid-color-success-tint: #44e283;
+    
+        --liquid-color-warning: #ffd534;
+        --liquid-color-warning-rgb: 255,213,52;
+        --liquid-color-warning-contrast: #000000;
+        --liquid-color-warning-contrast-rgb: 0,0,0;
+        --liquid-color-warning-shade: #e0bb2e;
+        --liquid-color-warning-tint: #ffd948;
+    
+        --liquid-color-danger: #ff4961;
+        --liquid-color-danger-rgb: 255,73,97;
+        --liquid-color-danger-contrast: #ffffff;
+        --liquid-color-danger-contrast-rgb: 255,255,255;
+        --liquid-color-danger-shade: #e04055;
+        --liquid-color-danger-tint: #ff5b71;
+    
+        --liquid-color-dark: #f4f5f8;
+        --liquid-color-dark-rgb: 244,245,248;
+        --liquid-color-dark-contrast: #000000;
+        --liquid-color-dark-contrast-rgb: 0,0,0;
+        --liquid-color-dark-shade: #d7d8da;
+        --liquid-color-dark-tint: #f5f6f9;
+    
+        --liquid-color-medium: #989aa2;
+        --liquid-color-medium-rgb: 152,154,162;
+        --liquid-color-medium-contrast: #000000;
+        --liquid-color-medium-contrast-rgb: 0,0,0;
+        --liquid-color-medium-shade: #86888f;
+        --liquid-color-medium-tint: #a2a4ab;
+    
+        --liquid-color-light: #222428;
+        --liquid-color-light-rgb: 34,36,40;
+        --liquid-color-light-contrast: #ffffff;
+        --liquid-color-light-contrast-rgb: 255,255,255;
+        --liquid-color-light-shade: #1e2023;
+        --liquid-color-light-tint: #383a3e;
+    
+        --liquid-background-color: #000000;
+        --liquid-background-color-rgb: 0,0,0;
+    
+        --liquid-text-color: #161414;
+        --liquid-text-color-rgb: rgb(22, 20, 20);
+    
+        --liquid-color-step-50: #0d0d0d;
+        --liquid-color-step-100: #1a1a1a;
+        --liquid-color-step-150: #262626;
+        --liquid-color-step-200: #333333;
+        --liquid-color-step-250: #404040;
+        --liquid-color-step-300: #4d4d4d;
+        --liquid-color-step-350: #595959;
+        --liquid-color-step-400: #666666;
+        --liquid-color-step-450: #737373;
+        --liquid-color-step-500: #808080;
+        --liquid-color-step-550: #8c8c8c;
+        --liquid-color-step-600: #999999;
+        --liquid-color-step-650: #a6a6a6;
+        --liquid-color-step-700: #b3b3b3;
+        --liquid-color-step-750: #bfbfbf;
+        --liquid-color-step-800: #cccccc;
+        --liquid-color-step-850: #d9d9d9;
+        --liquid-color-step-900: #e6e6e6;
+        --liquid-color-step-950: #f2f2f2;
+    
+        --liquid-item-background: #000000;
+    
+        --liquid-card-background: #1c1c1d;
+    }
+    
+    
+    .liquid-modal {
+        --liquid-background-color: var(--liquid-color-step-100);
+        --liquid-toolbar-background: var(--liquid-color-step-150);
+        --liquid-toolbar-border-color: var(--liquid-color-step-250);
+    }
+    
+    
+    /*
+        * Material Design Dark Theme
+        * -------------------------------------------
+        */
+    
+    .md body {
+        --liquid-background-color: #121212;
+        --liquid-background-color-rgb: 18,18,18;
+    
+        --liquid-text-color: #ffffff;
+        --liquid-text-color-rgb: 255,255,255;
+    
+        --liquid-border-color: #222222;
+    
+        --liquid-color-step-50: #1e1e1e;
+        --liquid-color-step-100: #2a2a2a;
+        --liquid-color-step-150: #363636;
+        --liquid-color-step-200: #414141;
+        --liquid-color-step-250: #4d4d4d;
+        --liquid-color-step-300: #595959;
+        --liquid-color-step-350: #656565;
+        --liquid-color-step-400: #717171;
+        --liquid-color-step-450: #7d7d7d;
+        --liquid-color-step-500: #898989;
+        --liquid-color-step-550: #949494;
+        --liquid-color-step-600: #a0a0a0;
+        --liquid-color-step-650: #acacac;
+        --liquid-color-step-700: #b8b8b8;
+        --liquid-color-step-750: #c4c4c4;
+        --liquid-color-step-800: #d0d0d0;
+        --liquid-color-step-850: #dbdbdb;
+        --liquid-color-step-900: #e7e7e7;
+        --liquid-color-step-950: #f3f3f3;
+    
+        --liquid-item-background: #1e1e1e;
+    
+        --liquid-toolbar-background: #1f1f1f;
+    
+        --liquid-tab-bar-background: #1f1f1f;
+    
+        --liquid-card-background: #1e1e1e;
+    }
+    }
+
+}
+
+.\-primary, .\-info {
+    color: var(--liquid-color-primary-contrast)!important;
+    background-color: var(--liquid-color-primary)!important;
+}
+.\-secondary {
+    color: var(--liquid-color-secondary-contrast)!important;
+    background-color: var(--liquid-color-secondary)!important;
+}
+.\-tertiary {
+    color: var(--liquid-color-tertiary-contrast)!important;
+    background-color: var(--liquid-color-tertiary)!important;
+}
+.\-dark {
+    color: var(--liquid-color-dark-contrast)!important;
+    background-color: var(--liquid-color-dark)!important;
+}
+.\-light {
+    color: var(--liquid-color-light-contrast)!important;
+    background-color: var(--liquid-color-light)!important;
+}
+.\-success {
+    color: var(--liquid-color-success-contrast)!important;
+    background-color: var(--liquid-color-success)!important;
+}
+.\-warning {
+    color: var(--liquid-color-warning-contrast)!important;
+    background-color: var(--liquid-color-warning)!important;
+}
+.\-danger {
+    color: var(--liquid-color-danger-contrast)!important;
+    background-color: var(--liquid-color-danger)!important;
+}
+.\-color-primary {
+    color: var(--liquid-color-primary)!important;
+}
+.\-bg-primary {
+    background-color: var(--liquid-color-primary)!important;
+}
+.\-color-primary-content {
+    color: var(--liquid-color-primary-contrast)!important;
+}
+
+.\-color-secondary {
+    color: var(--liquid-color-secondary)!important;
+}
+.\-bg-secondary {
+    background-color: var(--liquid-color-secondary)!important;
+}
+.\-color-secondary-content {
+    color: var(--liquid-color-secondary-contrast)!important;
+}
+
+.\-color-tertiary {
+    color: var(--liquid-color-tertiary)!important;
+}
+.\-bg-tertiary {
+    background-color: var(--liquid-color-tertiary)!important;
+}
+.\-color-tertiary-content {
+    color: var(--liquid-color-tertiary-contrast)!important;
+}
+
+.\-color-success {
+    color: var(--liquid-color-success)!important;
+}
+.\-bg-success {
+    background-color: var(--liquid-color-success)!important;
+}
+.\-color-success-content {
+    color: var(--liquid-color-success-contrast)!important;
+}
+
+.\-color-warning {
+    color: var(--liquid-color-warning)!important;
+}
+.\-bg-warning {
+    background-color: var(--liquid-color-warning)!important;
+}
+.\-color-warning-content {
+    color: var(--liquid-color-warning-contrast)!important;
+}
+
+.\-color-danger {
+    color: var(--liquid-color-danger)!important;
+}
+.\-bg-danger {
+    background-color: var(--liquid-color-danger)!important;
+}
+.\-color-danger-content {
+    color: var(--liquid-color-danger-contrast)!important;
+}
+
+.\-color-dark {
+    color: var(--liquid-color-dark)!important;
+}
+.\-bg-dark {
+    background-color: var(--liquid-color-dark)!important;
+}
+.\-color-dark-content {
+    color: var(--liquid-color-dark-contrast)!important;
+}
+
+.\-color-light {
+    color: var(--liquid-color-light)!important;
+}
+.\-bg-light {
+    background-color: var(--liquid-color-light)!important;
+}
+.\-color-light-content {
+    color: var(--liquid-color-light-contrast)!important;
+}
+.\-color-transparent {
+    color:  transparent!important;
+}
+.\-bg-transparent {
+    background-color: transparent!important;
+}
+.\-bg-none {
+    background: none;
+    color: var(--liquid-text-color);
+}
+/*------HOVER------*/
+.\-primary.\-hover:hover, .\-info.\-hover:hover {
+    color: var(--liquid-color-primary-contrast)!important;
+    background-color: var(--liquid-color-primary-shade)!important;
+}
+.\-secondary.\-hover:hover {
+    color: var(--liquid-color-secondary-contrast)!important;
+    background-color: var(--liquid-color-secondary-shade)!important;
+}
+.\-tertiary.\-hover:hover {
+    color: var(--liquid-color-tertiary-contrast)!important;
+    background-color: var(--liquid-color-tertiary-shade)!important;
+}
+.\-dark.\-hover:hover {
+    color: var(--liquid-color-dark-contrast)!important;
+    background-color: var(--liquid-color-dark-shade)!important;
+}
+.\-light.\-hover:hover {
+    color: var(--liquid-color-light-contrast)!important;
+    background-color: var(--liquid-color-light-shade)!important;
+}
+.\-success.\-hover:hover {
+    color: var(--liquid-color-success-contrast)!important;
+    background-color: var(--liquid-color-success-shade)!important;
+}
+.\-warning.\-hover:hover {
+    color: var(--liquid-color-warning-contrast)!important;
+    background-color: var(--liquid-color-warning-shade)!important;
+}
+.\-danger.\-hover:hover {
+    color: var(--liquid-color-danger-contrast)!important;
+    background-color: var(--liquid-color-danger-shade)!important;
+}
+.\-color-primary.\-hover:hover  {
+    color: var(--liquid-color-primary-shade)!important;
+}
+.\-bg-primary.\-hover:hover {
+    background-color: var(--liquid-color-primary-contrast)!important;
+}
+.\-color-primary-content.\-hover:hover {
+    color: var(--liquid-color-primary-shade)!important;
+}
+
+.\-color-secondary.\-hover:hover {
+    color: var(--liquid-color-secondary-shade)!important;
+}
+.\-bg-secondary.\-hover:hover {
+    background-color: var(--liquid-color-secondary-contrast)!important;
+}
+.\-color-secondary-content.\-hover:hover {
+    color: var(--liquid-color-secondary-shade)!important;
+}
+
+.\-color-tertiary.\-hover:hover {
+    color: var(--liquid-color-tertiary-shade)!important;
+}
+.\-bg-primary.\-hover:hover {
+    background-color: var(--liquid-color-tertiary-contrast)!important;
+}
+.\-color-primary-content.\-hover:hover {
+    color: var(--liquid-color-tertiary-shade)!important;
+}
+
+.\-color-success.\-hover:hover {
+    color: var(--liquid-color-success-shade)!important;
+}
+.\-bg-success.\-hover:hover {
+    background-color: var(--liquid-color-success-contrast)!important;
+}
+.\-color-success-content.\-hover:hover {
+    color: var(--liquid-color-success-shade)!important;
+}
+
+.\-color-warning.\-hover:hover {
+    color: var(--liquid-color-warning-shade)!important;
+}
+.\-bg-warning.\-hover:hover {
+    background-color: var(--liquid-color-warning-contrast)!important;
+}
+.\-color-warning-content.\-hover:hover {
+    color: var(--liquid-color-warning-shade)!important;
+}
+
+.\-color-dark.\-hover:hover {
+    color: var(--liquid-color-dark-shade)!important;
+}
+.\-bg-dark.\-hover:hover {
+    background-color: var(--liquid-color-dark-contrast)!important;
+}
+.\-color-dark-content.\-hover:hover {
+    color: var(--liquid-color-dark-shade)!important;
+}
+
+.\-color-light.\-hover:hover {
+    color: var(--liquid-color-light-shade)!important;
+}
+.\-bg-light.\-hover:hover {
+    background-color: var(--liquid-color-light-contrast)!important;
+}
+.\-color-light-content.\-hover:hover {
+    color: var(--liquid-color-light-shade)!important;
+}
+.\-bg-none:hover {
+    background: none;
+}
+                            </code>
+                        </pre>
+                      </div>
+                    </div>        
+                </div>
+            </section>
+        </section> 
+        <hr>
+    </section>
+    <script src="../main.js"></script>
+</body>
+</html>

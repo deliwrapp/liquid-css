@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>PANEL Layout Component -- Liquid-CSS-Framework Demo</title>
+</head>
+<body>
+    <section class="liquid-app">
+      <section class="liquid-page-container">
+        <nav class="nav -sticky -top">
+          <ul class="nav-items">
+              <li class="nav-item"><a href="../index.html">HOME</a></li>
+              <li class="nav-item"><a href="../base.html">BASE</a></li>
+              <li class="nav-item"><a href="../grid.html">GRID</a></li>
+              <li class="nav-item"><a href="../container.html">CONTAINER</a></li>
+              <li class="nav-item"><a href="../z-index.html">Z-INDEX</a></li>
+              <li class="nav-item "><a href="../helpers.html">HELPERS</a></li>
+              <li class="nav-item"><a href="../effects.html">EFFECTS</a></li>
+              <li class="nav-item"><a href="../animations.html">ANIMATIONS</a></li>
+              <li class="nav-item "><a href="../heading.html">HEADING</a></li>
+              <li class="nav-item"><a href="../typo.html">TYPO</a></li>
+              <li class="nav-item"><a href="../ui-components.html">UI-COMPONENTS</a></li>
+              <li class="nav-item -active-parent"><a href="../layout-components.html">LAYOUT-COMPONENTS</a></li>
+              <li class="nav-item "><a href="../extensed-components.html">EXTENSED-COMPONENTS</a></li>
+          </ul>
+        </nav>
+        <main class="liquid-grid -middle -center">
+          <div class="col -col-12 ">
+              <h2>PANEL</h2>
+          </div>
+          <hr>
+          <div class="col -col-12 -start -center">
+            <h3>PREVIEW</h3>
+            <pre>.panel -panel-header -panel-nav -panel-body -panel-footer</pre>
+            <p>Panels are flexible view container with auto-expand content section.</p>
+            <p>Add a container element with the panel class.
+                And add child elements with the 
+                -panel-header, -panel-nav, -panel-body and/or -panel-footer classes. 
+                The -panel-body can be auto expanded and vertically scrollable.
+            </p>
+          </div> 
+          <div class="col -col-3  -md4 -sm6 -xs12">
+            <div class="panel -shad-8 -w-f">
+              <div class="-panel-header -text-center">
+                <figure class="avatar avatar-lg"><img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar"></figure>
+                <div class="-panel-title h5 mt-10">John Beaver</div>
+                <div class="-panel-subtitle">THE BEAVER</div>
+              </div>
+              <nav class="-panel-nav">
+                <ul class="tab -tab-block">
+                  <li class="-tab-item -active"><a href="#tab-profile">Profile</a></li>
+                  <li class="-tab-item"><a href="#tab-files">Files</a></li>
+                  <li class="-tab-item"><a href="#tab-tasks">Tasks</a></li>
+                </ul>
+              </nav>
+              <div class="dynamic-container -panel-body">
+                <section class="-dynamic-section -slide-down" id='tab-profile'>
+                  <div class="tile -tile-compact">
+                    <div class="-tile-content">
+                      <div class="-tile-title -t-bld">E-mail</div>
+                      <div class="-tile-subtitle">john@beaver.com</div>
+                    </div>
+                    <div class="-tile-action">
+                      <button class="btn -tertiary s-circle btn-link btn-action -btn-lg tooltip tooltip-left" data-tooltip="Edit E-mail"><i class="icon icon-edit"></i></button>
+                    </div>
+                  </div>
+                  <div class="tile -tile-compact">
+                    <div class="-tile-content">
+                      <div class="-tile-title -t-bld">Skype</div>
+                      <div class="-tile-subtitle">john.beaver</div>
+                    </div>
+                    <div class="-tile-action">
+                      <button class="btn btn-link btn-action btn-lg"><i class="icon icon-edit"></i></button>
+                    </div>
+                  </div>
+                  <div class="tile -tile-compact">
+                    <div class="-tile-content">
+                      <div class="-tile-title -t-bld">Location</div>
+                      <div class="-tile-subtitle">Somewhere, Rainbow</div>
+                    </div>
+                    <div class="-tile-action">
+                      <button class="btn btn-link btn-action btn-lg"><i class="icon icon-edit"></i></button>
+                    </div>
+                  </div>
+                </section>
+                <section class="-dynamic-section -slide-left" id='tab-files'>
+                  <p>THIS IS A SLIDE-LEFT</p>
+                </section>
+                <section class="-dynamic-section -slide-up" id='tab-tasks'>
+                  <p>THIS IS A SLIDE-UP</p>
+                </section>
+                
+                
+              </div>
+              <div class="-panel-footer">
+                <button class="btn -primary -block">Save</button>
+              </div>
+            </div>
+          </div>
+          <div class="col -col-6">
+            <div class="panel -shad-7">
+              <div class="-panel-header">
+                <div class="-panel-title h6">Comments</div>
+              </div>
+              <div class="-panel-body">
+                <div class="tile">
+                  <div class="-tile-icon">
+                    <figure class="avatar"><img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar"></figure>
+                  </div>
+                  <div class="-tile-content">
+                    <p class="-tile-title t-bld">James Beaver</p>
+                    <p class="-tile-subtitle">Blablabla lorem ipsum bla bla bla and bla and other bla bla bla bla bla bla...</p>
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="-tile-icon">
+                    <figure class="avatar"><img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar"></figure>
+                  </div>
+                  <div class="-tile-content">
+                    <p class="-tile-title -t-bld">John Beaver</p>
+                    <p class="-tile-subtitle">Blablabla lorem ipsum bla bla bla and bla and other bla bla bla bla bla bla...</p>
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="-tile-icon">
+                    <figure class="avatar" data-initial="TS"></figure>
+                  </div>
+                  <div class="-tile-content">
+                    <p class="-tile-title text-bold">Jon Beaver</p>
+                    <p class="-tile-subtitle">Blablabla lorem ipsum bla bla bla and bla and other bla bla bla bla bla bla...</p>
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="-tile-icon">
+                    <figure class="avatar"><img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar"></figure>
+                  </div>
+                  <div class="-tile-content">
+                    <p class="-tile-title text-bold">Jules Beaver</p>
+                    <p class="-tile-subtitle">Blablabla lorem ipsum bla bla bla and bla and other bla bla bla bla bla bla...</p>
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="-tile-icon">
+                    <figure class="avatar"><img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar"></figure>
+                  </div>
+                  <div class="-tile-content">
+                    <p class="-tile-title -t-bld">Jane Beaver</p>
+                    <p class="-tile-subtitle">Blablabla lorem ipsum bla bla bla and bla and other bla bla bla bla bla bla...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="-panel-footer">
+                <div class="-input-group">
+                  <input class="-form-input" type="text" placeholder="Hello">
+                  <button class="btn -primary -input-group-btn">More...</button>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div class="col -col-12">
+            <h4>CODE</h4> 
+            <div class="accordion -w-f">
+              <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
+              <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
+                <i class="icon icon-arrow-right mr-1"></i>
+                HTML
+              </label>
+              <div class="-accordion-body">
+                <pre data-lang="html" class="-width-full">
+                  <code class="code-preview">
+                    <div class="col -col-6">
+                      <div class="panel -shad-8">
+                        <div class="-panel-header -text-center">
+                          <figure class="avatar avatar-lg"><img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar"></figure>
+                          <div class="-panel-title h5 mt-10">John Beaver</div>
+                          <div class="-panel-subtitle">THE BEAVER</div>
+                        </div>
+                        <nav class="-panel-nav">
+                          <ul class="tab -tab-block">
+                            <li class="-tab-item -active"><a href="#panels">Profile</a></li>
+                            <li class="-tab-item"><a href="#panels">Files</a></li>
+                            <li class="-tab-item"><a href="#panels">Tasks</a></li>
+                          </ul>
+                        </nav>
+                        <div class="-panel-body">
+                          <div class="tile -tile-compact">
+                            <div class="-tile-content">
+                              <div class="-tile-title -t-bld">E-mail</div>
+                              <div class="-tile-subtitle">john@beaver.com</div>
+                            </div>
+                            <div class="-tile-action">
+                              <button class="btn -tertiary s-circle btn-link btn-action -btn-lg tooltip tooltip-left" data-tooltip="Edit E-mail"><i class="icon icon-edit"></i></button>
+                            </div>
+                          </div>
+                          <div class="tile -tile-compact">
+                            <div class="-tile-content">
+                              <div class="-tile-title -t-bld">Skype</div>
+                              <div class="-tile-subtitle">john.beaver</div>
+                            </div>
+                            <div class="-tile-action">
+                              <button class="btn btn-link btn-action btn-lg"><i class="icon icon-edit"></i></button>
+                            </div>
+                          </div>
+                          <div class="tile -tile-compact">
+                            <div class="-tile-content">
+                              <div class="-tile-title -t-bld">Location</div>
+                              <div class="-tile-subtitle">Somewhere, Rainbow</div>
+                            </div>
+                            <div class="-tile-action">
+                              <button class="btn btn-link btn-action btn-lg"><i class="icon icon-edit"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="-panel-footer">
+                          <button class="btn -primary -block">Save</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col -col-6">
+                      <div class="panel -shad-7">
+                        <div class="-panel-header">
+                          <div class="-panel-title h6">Comments</div>
+                        </div>
+                        <div class="-panel-body">
+                          <div class="tile">
+                            <div class="-tile-icon">
+                              <figure class="avatar"><img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar"></figure>
+                            </div>
+                            <div class="-tile-content">
+                              <p class="-tile-title t-bld">James Beaver</p>
+                              <p class="-tile-subtitle">Blablabla lorem ipsum bla bla bla and bla and other bla bla bla bla bla bla...</p>
+                            </div>
+                          </div>
+                          <div class="tile">
+                            <div class="-tile-icon">
+                              <figure class="avatar"><img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar"></figure>
+                            </div>
+                            <div class="-tile-content">
+                              <p class="-tile-title -t-bld">John Beaver</p>
+                              <p class="-tile-subtitle">Blablabla lorem ipsum bla bla bla and bla and other bla bla bla bla bla bla...</p>
+                            </div>
+                          </div>
+                          <div class="tile">
+                            <div class="-tile-icon">
+                              <figure class="avatar" data-initial="TS"></figure>
+                            </div>
+                            <div class="-tile-content">
+                              <p class="-tile-title text-bold">Jon Beaver</p>
+                              <p class="-tile-subtitle">Blablabla lorem ipsum bla bla bla and bla and other bla bla bla bla bla bla...</p>
+                            </div>
+                          </div>
+                          <div class="tile">
+                            <div class="-tile-icon">
+                              <figure class="avatar"><img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar"></figure>
+                            </div>
+                            <div class="-tile-content">
+                              <p class="-tile-title text-bold">Jules Beaver</p>
+                              <p class="-tile-subtitle">Blablabla lorem ipsum bla bla bla and bla and other bla bla bla bla bla bla...</p>
+                            </div>
+                          </div>
+                          <div class="tile">
+                            <div class="-tile-icon">
+                              <figure class="avatar"><img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar"></figure>
+                            </div>
+                            <div class="-tile-content">
+                              <p class="-tile-title -t-bld">Jane Beaver</p>
+                              <p class="-tile-subtitle">Blablabla lorem ipsum bla bla bla and bla and other bla bla bla bla bla bla...</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="-panel-footer">
+                          <div class="-input-group">
+                            <input class="-form-input" type="text" placeholder="Hello">
+                            <button class="btn -primary -input-group-btn">More...</button>
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <div class="accordion -w-f">
+              <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
+              <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
+                <i class="icon icon-arrow-right mr-1"></i>
+                CSS
+              </label>
+              <div class="-accordion-body">
+                <pre data-lang="css" class="-width-full"> 
+                  <code class="code-preview">
+/* css classes */
+.panel {
+display: var(--panel-display);
+flex-direction: var(--panel-direction);
+justify-content: var(--panel-align-content);
+align-items: var(--panel-align-items);
+min-width: var(--panel-min-width);
+min-height: var(--panel-min-height);
+max-width: var(--panel-max-width);
+max-height: var(--panel-max-height);
+width: var(--panel-width);
+height: var(--panel-height);
+border-color: var(--panel-border-color);
+border-top: var(--panel-border-t);
+border-bottom: var(--panel-border-b);
+border-left: var(--panel-border-l);
+border-right: var(--panel-border-r);
+border-top-left-radius: var(--panel-border-radius-tl);
+border-top-right-radius: var(--panel-border-radius-tr);
+border-bottom-left-radius: var(--panel-border-radius-bl);
+border-bottom-right-radius: var(--panel-border-radius-br);
+padding-top: var(--panel-padding-t);
+padding-bottom: var(--panel-padding-b);
+padding-left: var(--panel-padding-l);
+padding-right: var(--panel-padding-r);
+margin-top: var(--panel-margin-t);
+margin-bottom: var(--panel-margin-b);
+margin-left: var(--panel-margin-l);
+margin-right: var(--panel-margin-r);
+background: var(--panel-bg);
+color: var(--panel-color);
+}
+
+.panel .\-panel-header {
+flex: 0 0 auto;
+padding: var(--panel-header-padding-v) var(--panel-header-padding-h);
+}
+.panel .\-panel-footer {
+flex: 0 0 auto;
+padding: var(--panel-header-padding-v) var(--panel-header-padding-h);
+}
+.panel .\-panel-nav {
+flex: 0 0 auto;
+}
+.panel .\-panel-body {
+flex: 1 1 auto;
+overflow-y: auto;
+padding: var(--panel-body-padding-v) var(--panel-body-padding-h);
+}
+
+
+                  </code>
+                </pre>
+              </div>
+            </div>        
+          </div>
+        </main> 
+      </section> 
+      <hr>
+    </section>
+    <script src="../main.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>LAYOUT COMPONENT EXAMPLE -- Liquid-CSS-Framework Demo</title>
+</head>
+
+<body>
+    <section class="liquid-app">
+        <section id="top-page" class="liquid-page-container">
+            <section 
+                id="left-panel"
+                class="swipe-menu sidebar-full -close -bg-danger -z4 -fixed -left"
+            >
+                <nav >
+                    <p>sidebar container left</p>
+                    <ul>
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                        <li><a href="#">Item 4</a></li>
+                        <li><a href="#">Item 5</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section 
+                id="right-panel"
+                class="swipe-menu sidebar -close transition-all-05 -bg-danger -z4 -fixed -right"
+            >
+                <nav >
+                    <p>sidebar container left</p>
+                    <ul>
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                        <li><a href="#">Item 4</a></li>
+                        <li><a href="#">Item 5</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="-border-dark liquid-grid liquid-container -wrapper">
+                <header class="-bg-light -w-f bar-container col -col-12 -fixed -left -top -z3">          
+                    <section class="bar">
+                        <section class="-bar-section">
+                            <div 
+                                class="swipe-m-trigger -z5"
+                                data-panel="right-panel"
+                                data-open-panel="-open"
+                                data-close-panel="-close"
+                            >
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                            <a href="#" class="-nav-brand -ml2">Liquid.css</a>
+                            <a href="#." class="btn btn-link">Docs</a>
+                            <a href="#" class="btn btn-link">GitHub</a>
+                        </section>               
+                        <section class="-bar-center">
+                            <div class="input-group input-inline">
+                                <input class="form-input" type="text" placeholder="search">
+                                <button class="btn btn-primary input-group-btn">Search</button>
+                            </div>
+                        </section>
+                        <section class="-bar-section-end">
+                            <div 
+                                class="swipe-m-trigger -z5"
+                                data-panel="left-panel"
+                                data-open-panel="-open"
+                                data-close-panel="-close"
+                            >
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        </section>
+                    </section>
+                </header>
+                <main class="-bg-success -h-vp -overflow-x-hidden main-content col -col-12 -relative -center -z1">
+                    <p>main content </p>
+                    <div 
+                        class="swipe-m-trigger"
+                        data-panel="go-panel"
+                        data-open-panel="-open"
+                        data-close-panel="-close"
+                    >
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <div 
+                        class="swipe-m-trigger"
+                        data-panel="bot-panel"
+                        data-open-panel="-open"
+                        data-close-panel="-close"
+                    >
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+
+                    <section id="go-panel" class="swipe-menu sidebar -close -bg-warning -w-f -h-vp sidebar -absolute  -right -z2">
+                        <p>sidebar container right</p>
+                    </section>
+                </main>
+                <footer id="bot-panel" class="swipe-menu bar-mini -close -bg-primary bar-container col -col-12 -fixed -w-f -bottom -left -z5">
+                    <p>bar container bottom</p>
+                </footer>
+            </section>
+        </section>
+    </section>
+    <script src="../main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+/* SKELETON CSS*/
+@import './basic/main.basic.css';
+@import './medium/main.medium.css';
+@import './large/main.large.css';
+
+/* VARIABLES CSS*/
+@import './attributes.css';
+
+/* VARIABLES CSS*/
+@import './variables.css';
+
+
+* {
+    transition: all 0.25s ease-in-out;
+}

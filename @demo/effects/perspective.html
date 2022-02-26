@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>COLORS EFFECTS -- Liquid-CSS-Framework Demo</title>
+</head>
+<body>
+    <section class="liquid-app">
+        <section id="top-page" class="liquid-page-container">
+            <nav class="nav -sticky -top">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="../index.html">HOME</a></li>
+                    <li class="nav-item"><a href="../base.html">BASE</a></li>
+                    <li class="nav-item"><a href="../grid.html">GRID</a></li>
+                    <li class="nav-item"><a href="../container.html">CONTAINER</a></li>
+                    <li class="nav-item"><a href="../z-index.html">Z-INDEX</a></li>
+                    <li class="nav-item "><a href="../heading.html">HEADING</a></li>
+                    <li class="nav-item "><a href="../helpers.html">HELPERS</a></li>
+                    <li class="nav-item -active-parent"><a href="../effects.html">EFFECTS</a></li>
+                    <li class="nav-item"><a href="../animations.html">ANIMATIONS</a></li>
+                    <li class="nav-item"><a href="../typo.html">TYPO</a></li>
+                    <li class="nav-item"><a href="../ui-components.html">UI-COMPONENTS</a></li>
+                    <li class="nav-item"><a href="../layout-components.html">LAYOUT-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../extensed-components.html">EXTENSED-COMPONENTS</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <nav class="nav -sticky -top-4rm">
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a href="#top-page">
+                            Back to the Top
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="display.html">
+                            DISPLAY
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="opacity.html">
+                            OPACITY
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="colors.html">
+                            COLORS
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="border.html">
+                            BORDER
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shadows.html">
+                            SHADOWS
+                        </a>
+                    </li>
+                    <li class="nav-item -active">
+                        <a href="perspective.html">
+                            PERSPECTIVE
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="path.html">
+                            PATH
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+            <section class="liquid-grid -middle -center">
+                <div class="col -col-12 ">
+                    <h2>PERSPECTIVE EFFECTS</h2>                 
+                    <pre>.perspective</pre>                
+                </div>
+            </section>
+            <hr>
+            <section class="liquid-grid liquid-container -middle -center -text-center">
+                <div class="col -col-12  -b-primary margin -m5">perpective-container</div>
+                <div class="col -col-12 perpective-container -h-vp -b-primary margin -m5">
+                    <input class="perpective-input perpective-left" type="radio" id="perpective-left" name="rotate">
+                    <label class="perpective-label" for="perpective-left">Left</label>
+                    <input class="perpective-input perpective-reset" type="radio" id="perpective-reset" name="rotate" checked>
+                    <label class="perpective-label" for="perpective-reset">Reset</label>
+                    <input class="perpective-input perpective-right" type="radio" id="perpective-right" name="rotate">
+                    <label class="perpective-label" for="perpective-right">Right</label>
+                    <input class="perpective-input perpective-up" type="radio" id="perpective-up" name="rotate">
+                    <label class="perpective-label" for="perpective-up">Up</label>
+                    <input class="perpective-input perpective-down" type="radio" id="perpective-down" name="rotate">
+                    <label class="perpective-label" for="perpective-down">Down</label>
+
+                    <div class="perspective">
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                        <div class="cube"></div>
+                    </div>
+
+                </div>
+                
+            </section>
+            <div class="col -col-12">
+                <h4>CODE</h4>
+                <div class="accordion -w-f">
+                  <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
+                  <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
+                    <i class="icon icon-arrow-right mr-1"></i>
+                    HTML
+                  </label>
+                  <div class="-accordion-body">
+                    <pre data-lang="html" class="-w-f">
+                      <code  class="code-preview">
+                        <p>hello</p>
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+                <div class="accordion -w-f">
+                  <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
+                  <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
+                    <i class="icon icon-arrow-right mr-1"></i>
+                    CSS
+                  </label>
+                  <div class="-accordion-body">
+                    <pre data-lang="css" class="-width-full"> 
+                      <code class="code-preview">
+                        /* css classes */
+
+
+                      </code>
+                  </pre>
+                  </div>
+                </div>        
+            </div>
+        </section> 
+        <hr>
+    </section>
+    <script src="../main.js"></script>
+</body>
+</html>

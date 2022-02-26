@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>DISPLAY EFFECTS -- Liquid-CSS-Framework Demo</title>
+</head>
+<body>
+    <section class="liquid-app">
+        <section id="top-page" class="liquid-page-container">
+            <nav class="nav -sticky -top">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="../index.html">HOME</a></li>
+                    <li class="nav-item"><a href="../base.html">BASE</a></li>
+                    <li class="nav-item"><a href="../grid.html">GRID</a></li>
+                    <li class="nav-item"><a href="../container.html">CONTAINER</a></li>
+                    <li class="nav-item"><a href="../z-index.html">Z-INDEX</a></li>
+                    <li class="nav-item "><a href="../heading.html">HEADING</a></li>
+                    <li class="nav-item "><a href="../helpers.html">HELPERS</a></li>
+                    <li class="nav-item -active-parent"><a href="../effects.html">EFFECTS</a></li>
+                    <li class="nav-item"><a href="../animations.html">ANIMATIONS</a></li>
+                    <li class="nav-item"><a href="../typo.html">TYPO</a></li>
+                    <li class="nav-item"><a href="../ui-components.html">UI-COMPONENTS</a></li>
+                    <li class="nav-item"><a href="../layout-components.html">LAYOUT-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../extensed-components.html">EXTENSED-COMPONENTS</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <nav class="nav -sticky -top-4rm">
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a href="#top-page">
+                            Back to the Top
+                        </a>
+                    </li>
+                    <li class="nav-item -active">
+                        <a href="display.html">
+                            DISPLAY
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="opacity.html">
+                            OPACITY
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="colors.html">
+                            COLORS
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="border.html">
+                            BORDER
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shadows.html">
+                            SHADOWS
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="perspective.html">
+                            PERSPECTIVE
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="path.html">
+                            PATH
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+            <section class="liquid-grid -middle -center -text-center ">
+                <div class="col -col-12 ">
+                    <h2>DISPLAY EFFECTS</h2>
+                </div>
+                <pre>-d-{$displayTypeSelected}, -d-none, -d-flex, -d-block, -d-grid, ...</pre>
+            <hr>
+                <div class="-d-block col -col-12  -b-primary margin -m5">DISPLAY block</div>
+                <div class="-d-inline col -col-12  -b-primary margin -m5">DISPLAY inline</div>
+                <div class="-d-flex col -col-12  -b-primary margin -m5">DISPLAY flex</div>
+                <div class="-d-grid col -col-12  -b-primary margin -m5">DISPLAY grid</div>
+                <div class="-d-flow col -col-12  -b-primary margin -m5">DISPLAY flow</div>
+                <div class="-d-table col -col-12  -b-primary margin -m5">DISPLAY table</div>
+                <div class="-d-list-item col -col-12  -b-primary margin -m5">DISPLAY list-item</div>
+                <div class="col -col-12  -b-primary margin -m5">DISPLAY none -d-none</div>
+                <div class="col -col-12">
+                    <h4>CODE</h4> 
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        HTML
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="html" class="-width-full">
+                            <code class="code-preview">
+                                <section class="liquid-grid liquid-container -middle -center -text-center ">
+                                    <div class="-d-block col -col-12  -b-primary margin -m5">DISPLAY block</div>
+                                    <div class="-d-inline col -col-12  -b-primary margin -m5">DISPLAY inline</div>
+                                    <div class="-d-flex col -col-12  -b-primary margin -m5">DISPLAY flex</div>
+                                    <div class="-d-grid col -col-12  -b-primary margin -m5">DISPLAY grid</div>
+                                    <div class="-d-flow col -col-12  -b-primary margin -m5">DISPLAY flow</div>
+                                    <div class="-d-table col -col-12  -b-primary margin -m5">DISPLAY table</div>
+                                    <div class="-d-list-item col -col-12  -b-primary margin -m5">DISPLAY list-item</div>
+                                    <div class="col -col-12  -b-primary margin -m5">DISPLAY none -d-none</div>
+                                </section>
+                            </code>
+                        </pre>
+                      </div>
+                    </div>
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        CSS
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="css" class="-width-full"> 
+                            <code class="code-preview">
+/* css variables */
+/*------DISPLAY------*/
+/* Valeurs de type display-outside */
+.\-d-block {
+    display: block;
+}
+.\-d-inline {
+    display: inline;
+}
+.\-d-run-in {
+    display: run-in;
+}
+
+/* Valeurs de type display-inside */
+.\-d-flow {
+    display: flow;
+}
+.\-d-flow-root {
+    display: flow-root;
+}
+.\-d-table {
+    display: table;
+}
+.\-d-flex {
+    display: flflexow;
+}
+.\-d-geid {
+    display: grid;
+}
+.\-d-ruby {
+    display: ruby;
+}
+
+/* Combinaison de valeurs */
+/* display-outside et display-inside */
+.\-d-block-flow {
+    display: block flow;
+}
+.\-d-inline-table {
+    display: inline table;
+}
+.\-d-flex-run-in {
+    display: flex run-in;
+}
+
+/* Valeurs de type display-listitem */
+.\-d-list-item {
+    display: list-item;
+}
+.\-d-list-item-block {
+    display: list-item block;
+}
+.\-d-list-item-inline {
+    display: list-item inline;
+}
+.\-d-list-item-flow {
+    display: list-item flow;
+}
+.\-d-list-item-flow-root {
+    display: list-item flow-root;
+}
+.\-d-list-item-block-flow {
+    display: list-item block flow;
+}
+.\-d-list-item-block-flow-root {
+    display: list-item block flow-root;
+}
+.\-d-flow-list-item-block {
+    display: flow list-item block;
+}
+
+/* Valeurs de type display-internal */
+.\-d-table-row-group {
+    display: table-row-group;
+}
+.\-d-table-header-group {
+    display: table-header-group;
+}
+.\-d-table-footer-group {
+    display: table-footer-group;
+}
+.\-d-table-row {
+    display: table-row;
+}
+.\-d-table-cell {
+    display: table-cell;
+}
+.\-d-table-column-group {
+    display: flex;
+}
+.\-d-table-column {
+    display: flex;
+}
+.\-d-table-caption {
+    display: table-caption;
+}
+.\-d-ruby-base {
+    display: ruby-base;
+}
+.\-d-ruby-text {
+    display: ruby-text;
+}
+.\-d-ruby-base-container {
+    display: ruby-base-container;
+}
+.\-d-ruby-text-container {
+    display: ruby-text-container;
+}
+
+/* Valeurs de type display-box */
+.\-d-contents {
+    display: contents;
+}
+.\-d-none {
+    display: none;
+}
+
+/* Valeurs de type display-legacy */
+.\-d-inline-block {
+    display: inline-block;
+}
+.\-d-inline-table {
+    display: inline-table;
+}
+.\-d-inline-grid {
+    display: inline-grid;
+}
+
+/* Valeurs globales */
+.\-d-inherit {
+    display: inherit;
+}
+.\-d-initial {
+    display: initial;
+}
+.\-d-unset {
+    display: unset;
+}
+.\-visible {
+    visibility: visible;
+}
+.\-invisible {
+    visibility: hidden;
+}
+.\-backface-visible	{
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+.\-backface-hidden {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+                            </code>
+                        </pre>
+                      </div>
+                    </div>        
+                </div> 
+                
+                
+            </section>
+            
+        </section> 
+        <hr>
+    </section>
+    <script src="../main.js"></script>
+</body>
+</html>

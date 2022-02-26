@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>TILES Layout Component -- Liquid-CSS-Framework Demo</title>
+</head>
+<body>
+    <section class="liquid-app">
+        <section class="liquid-page-container">
+            <nav class="nav -sticky -top">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="../index.html">HOME</a></li>
+                    <li class="nav-item"><a href="../base.html">BASE</a></li>
+                    <li class="nav-item"><a href="../grid.html">GRID</a></li>
+                    <li class="nav-item"><a href="../container.html">CONTAINER</a></li>
+                    <li class="nav-item"><a href="../z-index.html">Z-INDEX</a></li>
+                    <li class="nav-item "><a href="../helpers.html">HELPERS</a></li>
+                    <li class="nav-item"><a href="../effects.html">EFFECTS</a></li>
+                    <li class="nav-item"><a href="../animations.html">ANIMATIONS</a></li>
+                    <li class="nav-item "><a href="../heading.html">HEADING</a></li>
+                    <li class="nav-item"><a href="../typo.html">TYPO</a></li>
+                    <li class="nav-item"><a href="../ui-components.html">UI-COMPONENTS</a></li>
+                    <li class="nav-item -active-parent"><a href="../layout-components.html">LAYOUT-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../extensed-components.html">EXTENSED-COMPONENTS</a></li>
+                </ul>
+            </nav>
+            <section class="liquid-grid -middle -center">
+                <div class="col -col-12 ">
+                    <h2>TILES</h2>
+                </div>
+                <hr>
+                <div class="col -col-12 -start -center">
+                    <h3>PREVIEW</h3>
+                    <pre>.tile -tile-content -tile-action -tile-icon -tile-title -tile-subtitle</pre>
+                    <p>Tiles are repeatable or embeddable information blocks.</p>
+                    <p>
+                        Add a container with the tile class. And add child elements with the -tile-icon,
+                        -tile-content or/and -tile-action classes.
+                        The -tile-icon and -tile-action are optional.
+                        There are -tile-title and -tile-subtitle classes
+                        for title and subtitle text styles.
+                    </p>
+
+                    <div class="tile -shad-5 -shad-12-h -cursor-pointer">
+                        <div class="-tile-icon">
+                            <div class="-example-tile-icon">
+                                <i class="icon icon-file -centered"></i>
+                            </div>
+                        </div>
+                        <div class="-tile-content">
+                            <p class="-tile-title -t-u -t-bld">Normal Tiles</p>
+                            <p class="-tile-subtitle">
+                                Lorem ipsum ideo lorem ipsum. Fatalis invocat et meam benficat
+                                Lorem ipsum ideo lorem ipsum. Fatalis invocat et meam benficat
+                                Lorem ipsum ideo lorem ipsum. Fatalis invocat et meam benficat
+                            </p>
+                        </div>
+                        <div class="-tile-action">
+                            <button class="btn -success -hover">See more...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col -row -col-12">
+                    <h4 class="-w-f">COMPACT TILES</h4>
+                    <p>
+                        There is compact version of Tiles component,
+                        which is often used as contact and file info blocks.
+                        Add the -tile-compact class to the container tile. The tile-icon, tile-content and tile-action will be vertically centered.
+                    </p>
+                    <hr>
+                    <div class="tile -tile-compact -shad-5 -shad-12-h -cursor-pointer">
+                        <div class="-tile-icon">
+                            <div class="-example-tile-icon">
+                                <i class="icon icon-file -centered"></i>
+                                <div class="-tile-icon">
+                                    <img class="avatar" src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="-tile-content">
+                            <div class="-tile-title">liquid-docs.pdf</div>
+                            <small class="-tile-subtitle text-gray">11MB · Public · 1 Jan, 2022</small>
+                            <small class="-tile-subtitle">
+                                Lorem ipsum ideo lorem ipsum. Fatalis invocat et meam benficat
+                            </small>
+                        </div>
+                        <div class="-tile-action">
+                            <button class="btn -btn-link -light s-circle -shad-17-h">
+                                <i class="icon icon-more-vert"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tile -tile-compact -shad-5 -shad-12-h -cursor-pointer">
+                        <div class="-tile-icon">
+                            <div class="-example-tile-icon">
+                                <i class="icon icon-file -centered"></i>
+                            </div>
+                        </div>
+                        <div class="-tile-content">
+                            <div class="-tile-title">liquid-docs.pdf</div>
+                            <small class="-tile-subtitle text-gray">11MB · Public · 1 Jan, 2022</small>
+                        </div>
+                        <div class="-tile-action">
+                            <button class="btn -btn-link s-circle">
+                                <i class="icon icon-more-vert"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="tile -tile-compact -shad-5 -shad-12-h -cursor-pointer">
+                        <div class="-tile-icon">
+                            <div class="-example-tile-icon">
+                                <i class="icon icon-file -centered"></i>
+                            </div>
+                        </div>
+                        <div class="-tile-content">
+                            <div class="-tile-title">liquid-docs.pdf</div>
+                            <small class="-tile-subtitle text-gray">11MB · Public · 1 Jan, 2022</small>
+                        </div>
+                        <div class="-tile-action">
+                            <button class="btn -btn-link s-circle">
+                                <i class="icon icon-more-vert"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tile -tile-compact -shad-5 -shad-12-h -cursor-pointer">
+                        <div class="-tile-icon">
+                            <div class="-example-tile-icon">
+                                <i class="icon icon-file -centered"></i>
+                            </div>
+                        </div>
+                        <div class="-tile-content">
+                            <div class="-tile-title">liquid-docs.pdf</div>
+                            <small class="-tile-subtitle text-gray">11MB · Public · 1 Jan, 2022</small>
+                        </div>
+                        <div class="-tile-action">
+                            <button class="btn -btn-link s-circle">
+                                <i class="icon icon-more-vert"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="tile -tile-compact -shad-5 -shad-12-h -cursor-pointer">
+                        <div class="-tile-icon">
+                            <div class="-example-tile-icon">
+                                <i class="icon icon-file -centered"></i>
+                            </div>
+                        </div>
+                        <div class="-tile-content">
+                            <div class="-tile-title">liquid-docs.pdf</div>
+                            <small class="-tile-subtitle text-gray">11MB · Public · 1 Jan, 2022</small>
+                        </div>
+                        <div class="-tile-action">
+                            <button class="btn -btn-link s-circle">
+                                <i class="icon icon-more-vert"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tile -tile-compact -shad-5 -shad-12-h -cursor-pointer">
+                        <div class="-tile-icon">
+                            <div class="-example-tile-icon">
+                                <i class="icon icon-file -centered"></i>
+                            </div>
+                        </div>
+                        <div class="-tile-content">
+                            <div class="-tile-title">liquid-docs.pdf</div>
+                            <small class="-tile-subtitle text-gray">11MB · Public · 1 Jan, 2022</small>
+                        </div>
+                        <div class="-tile-action">
+                            <button class="btn -btn-link s-circle">
+                                <i class="icon icon-more-vert"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col -col-12">
+                    <h4>CODE</h4> 
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        HTML
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="html" class="-width-full">
+                            <code class="code-preview">
+                                <div class="tile -shad-5 -shad-12-h -cursor-pointer">
+                                    <div class="-tile-icon">
+                                        <div class="-example-tile-icon">
+                                            <i class="icon icon-file -centered"></i>
+                                        </div>
+                                    </div>
+                                    <div class="-tile-content">
+                                        <p class="-tile-title -t-u -t-bld">Normal Tiles</p>
+                                        <p class="-tile-subtitle">
+                                            Lorem ipsum ideo lorem ipsum. Fatalis invocat et meam benficat
+                                            Lorem ipsum ideo lorem ipsum. Fatalis invocat et meam benficat
+                                            Lorem ipsum ideo lorem ipsum. Fatalis invocat et meam benficat
+                                        </p>
+                                    </div>
+                                    <div class="-tile-action">
+                                        <button class="btn -success -hover">Join</button>
+                                    </div>
+                                </div>
+                                <div class="tile -tile-compact -shad-5 -shad-12-h -cursor-pointer">
+                                    <div class="-tile-icon">
+                                        <div class="-example-tile-icon">
+                                            <i class="icon icon-file -centered"></i>
+                                        </div>
+                                    </div>
+                                    <div class="-tile-content">
+                                        <div class="-tile-title">liquid-docs.pdf</div>
+                                        <small class="-tile-subtitle text-gray">11MB · Public · 1 Jan, 2022</small>
+                                        <small class="-tile-subtitle">
+                                            Lorem ipsum ideo lorem ipsum. Fatalis invocat et meam benficat
+                                        </small>
+                                    </div>
+                                    <div class="-tile-action">
+                                        <button class="btn -btn-link -light s-circle -shad-17-h">
+                                            <i class="icon icon-more-vert"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="tile -tile-compact -shad-5 -shad-12-h -cursor-pointer">
+                                    <div class="-tile-icon">
+                                        <div class="-example-tile-icon">
+                                            <i class="icon icon-file -centered"></i>
+                                        </div>
+                                    </div>
+                                    <div class="-tile-content">
+                                        <div class="-tile-title">liquid-docs.pdf</div>
+                                        <small class="-tile-subtitle text-gray">11MB · Public · 1 Jan, 2022</small>
+                                    </div>
+                                    <div class="-tile-action">
+                                        <button class="btn -btn-link s-circle">
+                                            <i class="icon icon-more-vert"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </code>
+                        </pre>
+                      </div>
+                    </div>
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        CSS
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="css" class="-width-full"> 
+                            <code class="code-preview">
+/* css classes */
+.tile {
+    display: var(--tile-display);
+    min-width: var(--tile-min-width);
+    min-height: var(--tile-min-height);
+    max-width: var(--tile-max-width);
+    max-height: var(--tile-max-height);
+    width: var(--tile-width);
+    height: var(--tile-height);
+    flex-direction: var(--tile-direction);
+    align-content: var(--tile-align-content);
+    align-items: var(--tile-align-items);
+    border-top: var(--tile-border-t);
+    border-bottom: var(--tile-border-b);
+    border-left: var(--tile-border-l);
+    border-right: var(--tile-border-r);
+    border-top-left-radius: var(--tile-border-radius-tl);
+    border-top-right-radius: var(--tile-border-radius-tr);
+    border-bottom-left-radius: var(--tile-border-radius-bl);
+    border-bottom-left-radius: var(--tile-border-radius-bl);
+    padding-top: var(--tile-padding-t);
+    padding-bottom: var(--tile-padding-b);
+    padding-left: var(--tile-padding-l);
+    padding-right: var(--tile-padding-r);
+    margin-top: var(--tile-margin-t);
+    margin-bottom: var(--tile-margin-b);
+    margin-left: var(--tile-margin-l);
+    margin-right: var(--tile-margin-r);
+}
+.tile .\-tile-icon {
+    flex: var(--tile-icon-flex);
+}
+.tile .\-tile-action {
+    flex: var(--tile-action-flex);
+}
+.tile .\-tile-content {
+    flex: var(--tile-content-flex);
+}
+.tile .\-tile-content:not(:first-child) {
+    padding-left: var(--tile-content-child-padding-left);
+}
+.tile .\-tile-content:not(:last-child) {
+    padding-right: var(--tile-content-child-padding-right);
+}
+.tile .\-tile-title,
+.tile .\-tile-subtitle {
+    line-height: var(--tile-line-height);
+}
+.tile.\-tile-compact {
+    display: var(--tile-compact-display);
+    min-width: var(--tile-compact-min-width);
+    min-height: var(--tile-compact-min-height);
+    max-width: var(--tile-compact-max-width);
+    max-height: var(--tile-compact-max-height);
+    width: var(--tile-compact-width);
+    height: var(--tile-compact-height);
+    flex-direction: var(--tile-compact-direction);
+    align-content: var(--tile-compact-align-content);
+    align-items: var(--tile-compact-align-items);
+    border-top: var(--tile-compact-border-t);
+    border-bottom: var(--tile-compact-border-b);
+    border-left: var(--tile-compact-border-l);
+    border-right: var(--tile-compact-border-r);
+    border-top-left-radius: var(--tile-compact-border-radius-tl);
+    border-top-right-radius: var(--tile-compact-border-radius-tr);
+    border-bottom-left-radius: var(--tile-compact-border-radius-bl);
+    border-bottom-left-radius: var(--tile-compact-border-radius-bl);
+    padding-top: var(--tile-compact-padding-t);
+    padding-bottom: var(--tile-compact-padding-b);
+    padding-left: var(--tile-compact-padding-l);
+    padding-right: var(--tile-compact-padding-r);
+    margin-top: var(--tile-compact-margin-t);
+    margin-bottom: var(--tile-compact-margin-b);
+    margin-left: var(--tile-compact-margin-l);
+    margin-right: var(--tile-compact-margin-r);
+}
+.tile.\-tile-compact .\-tile-content {
+    overflow: var(--tile-compact-content-overflow);
+}
+.tile.\-tile-compact .\-tile-title,
+.tile.\-tile-compact .\-tile-subtitle {
+    margin-bottom: var(--tile-compact-title-margin-bottom);
+    overflow: var(--tile-compact-title-overflow);
+    text-overflow: var(--tile-compact-title-text-overflow);
+    white-space: var(--tile-compact-title-white-space);
+}
+.tile:hover {
+    border-top: var(--tile-border-t-hov);
+    border-bottom: var(--tile-border-b-hov);
+    border-left: var(--tile-border-l-hov);
+    border-right: var(--tile-border-r-hov);
+    border-top-left-radius: var(--tile-border-radius-tl-hov);
+    border-top-right-radius: var(--tile-border-radius-tr-hov);
+    border-bottom-left-radius: var(--tile-border-radius-bl-hov);
+    border-bottom-right-radius: var(--tile-border-radius-br-hov);
+    padding-top: var(--tile-padding-t-hov);
+    padding-bottom: var(--tile-padding-b-hov);
+    padding-left: var(--tile-padding-l-hov);
+    padding-right: var(--tile-padding-r-hov);
+    margin-top: var(--tile-margin-t-hov);
+    margin-bottom: var(--tile-margin-b-hov);
+    margin-left: var(--tile-margin-l-hov);
+    margin-right: var(--tile-margin-r-hov);
+}
+
+.tile.\-tile-compact:hover {
+    border-top: var(--tile-compact-border-t-hov);
+    border-bottom: var(--tile-compact-border-b-hov);
+    border-left: var(--tile-compact-border-l-hov);
+    border-right: var(--tile-compact-border-r-hov);
+    border-top-left-radius: var(--tile-compact-border-radius-tl-hov);
+    border-top-right-radius: var(--tile-compact-border-radius-tr-hov);
+    border-bottom-left-radius: var(--tile-compact-border-radius-bl-hov);
+    border-bottom-right-radius: var(--tile-compact-border-radius-br-hov);
+    padding-top: var(--tile-compact-padding-t-hov);
+    padding-bottom: var(--tile-compact-padding-b-hov);
+    padding-left: var(--tile-compact-padding-l-hov);
+    padding-right: var(--tile-compact-padding-r-hov);
+    margin-top: var(--tile-compact-margin-t-hov);
+    margin-bottom: var(--tile-compact-margin-b-hov);
+    margin-left: var(--tile-compact-margin-l-hov);
+    margin-right: var(--tile-compact-margin-r-hov);
+}
+                            </code>
+                        </pre>
+                      </div>
+                    </div>        
+                </div>
+            </section> 
+        </section> 
+        <hr>
+    </section>
+    <script src="../main.js"></script>
+</body>
+</html>

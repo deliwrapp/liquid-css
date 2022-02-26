@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>STEP Layout Component -- Liquid-CSS-Framework Demo</title>
+</head>
+<body>
+    <section class="liquid-app">
+        <section class="liquid-page-container">
+          <nav class="nav -sticky -top">
+            <ul class="nav-items">
+                <li class="nav-item"><a href="../index.html">HOME</a></li>
+                <li class="nav-item"><a href="../base.html">BASE</a></li>
+                <li class="nav-item"><a href="../grid.html">GRID</a></li>
+                <li class="nav-item"><a href="../container.html">CONTAINER</a></li>
+                <li class="nav-item"><a href="../z-index.html">Z-INDEX</a></li>
+                <li class="nav-item "><a href="../helpers.html">HELPERS</a></li>
+                <li class="nav-item"><a href="../effects.html">EFFECTS</a></li>
+                <li class="nav-item"><a href="../animations.html">ANIMATIONS</a></li>
+                <li class="nav-item "><a href="../heading.html">HEADING</a></li>
+                <li class="nav-item"><a href="../typo.html">TYPO</a></li>
+                <li class="nav-item"><a href="../ui-components.html">UI-COMPONENTS</a></li>
+                <li class="nav-item -active-parent"><a href="../layout-components.html">LAYOUT-COMPONENTS</a></li>
+                <li class="nav-item "><a href="../extensed-components.html">EXTENSED-COMPONENTS</a></li>
+            </ul>
+        </nav>
+        <section class="liquid-grid -middle -center">
+          <div class="col -col-12 ">
+              <h2>STEP</h2>
+          </div>
+          <hr>
+          <div class="col -col-12 -start -center">
+              <h3>PREVIEW</h3>
+              <pre>.step -step-item -active tooltip</pre>
+              <p>
+                Add a container element with the step class. And add child elements with the step-item class.
+                The step-item with the active class will be highlighted
+                and indicate the current state of progress.
+              </p>
+          </div>
+          <div class="col -col-12">
+            <ul class="step">
+              <li class="-step-item">
+                <a href="#" class="tooltip" data-tooltip="Step 1">Step 1</a>
+              </li>
+              <li class="-step-item -active">
+                <a href="#" class="tooltip" data-tooltip="Step 2">Step 2</a>
+              </li>
+              <li class="-step-item">
+                <a href="#" class="tooltip" data-tooltip="Step 3">Step 3</a>
+              </li>
+              <li class="-step-item">
+                <a href="#" class="tooltip" data-tooltip="Step 4">Step 4</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col -col-12">
+            <h4>CODE</h4> 
+            <div class="accordion -w-f">
+              <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
+              <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
+                <i class="icon icon-arrow-right mr-1"></i>
+                HTML
+              </label>
+              <div class="-accordion-body">
+                <pre data-lang="html" class="-width-full">
+                  <code class="code-preview">
+                    <div class="col -col-12">
+                      <ul class="step">
+                        <li class="-step-item">
+                          <a href="#" class="tooltip" data-tooltip="Step 1">Step 1</a>
+                        </li>
+                        <li class="-step-item -active">
+                          <a href="#" class="tooltip" data-tooltip="Step 2">Step 2</a>
+                        </li>
+                        <li class="-step-item">
+                          <a href="#" class="tooltip" data-tooltip="Step 3">Step 3</a>
+                        </li>
+                        <li class="-step-item">
+                          <a href="#" class="tooltip" data-tooltip="Step 4">Step 4</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <div class="accordion -w-f">
+              <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
+              <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
+                <i class="icon icon-arrow-right mr-1"></i>
+                CSS
+              </label>
+              <div class="-accordion-body">
+                <pre data-lang="css" class="-width-full"> 
+                  <code class="code-preview">
+/* css classes */
+.step {
+display: var(--step-display);
+position: var(--step-position);
+flex-direction: var(--step-direction);
+justify-content: var(--step-align-content);
+align-items: var(--step-align-items);
+min-width: var(--step-min-width);
+min-height: var(--step-min-height);
+max-width: var(--step-max-width);
+max-height: var(--step-max-height);
+width: var(--step-width);
+height: var(--step-height);
+border-color: var(--step-border-color);
+border-top: var(--step-border-t);
+border-bottom: var(--step-border-b);
+border-left: var(--step-border-l);
+border-right: var(--step-border-r);
+border-top-left-radius: var(--step-border-radius-tl);
+border-top-right-radius: var(--step-border-radius-tr);
+border-bottom-left-radius: var(--step-border-radius-bl);
+border-bottom-right-radius: var(--step-border-radius-br);
+padding: var(--step-padding-v) var(--step-padding-h);
+margin: var(--step-margin-v) var(--step-margin-h);
+background: var(--step-bg);
+color: var(--step-color);
+z-index: var(--step-index);
+flex-wrap: nowrap;
+list-style: none;
+}
+.step .\-step-item {
+flex: 1 1 0;
+position: relative;
+margin-top: 0;
+min-height: 1rem; 
+text-align: var(--step-item-text-align);
+}
+.step .\-step-item:not(:first-child)::before {
+background: var(--step-item-bg);
+content: "";
+height: 0.125rem;
+position: absolute;
+width: 100%;
+top: .5rem;
+left: -50%;
+}
+.step .\-step-item a {
+display: inline-block;
+color: var(--step-item-bg);
+padding: 1.25rem 0.625rem 0;
+text-decoration: none;
+}
+.step .\-step-item a::before {
+display: block;
+position: absolute;
+background: var(--step-item-bg);
+border: var(--step-item-border);
+border-radius: var(--step-item-border-radius);
+content: "";
+height: .6rem;
+width: .6rem;
+left: 50%;
+top: .2rem;
+transform: translateX(-50%);
+z-index: 4;
+}
+.step .\-step-item.\-active a::before {
+background: var(--step-item-inactive-color);
+border: var(--step-item-active-border);
+}
+.step .\-step-item.\-active ~ .\-step-item::before {
+background: var(--step-item-inactive-bg);
+}
+.step .\-step-item.\-active ~ .\-step-item a {
+color: var(--step-item-inactive-color);
+}
+.step .\-step-item.\-active ~ .\-step-item a::before {
+background: var(--step-item-inactive-bg);
+}
+                  </code>
+                </pre>
+              </div>
+            </div>        
+          </div>
+        </section> 
+      </section> 
+      <hr>
+    </section>
+    <script src="../main.js"></script>
+</body>
+</html>

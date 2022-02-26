@@ -1,0 +1,298 @@
+/* DISPLAY */
+[data-css-display] {
+    display: attr(data-css-display);
+}
+[data-css-opacity] {
+    opacity: attr(data-css-opacity);
+}
+/* FLEX */
+[data-css-flex] {
+    flex: attr(data-css-flex);
+}
+[data-css-wrap] {
+    flex-wrap: attr(data-css-flex-wrap);
+}
+[data-css-flex-d] {
+    flex-direction: attr(data-css-flex-d);
+}
+[data-css-just-cnt] {
+    justify-content: attr(data-css-just-cnt);
+}
+[data-css-align-itms] {
+    align-items: attr(data-css-align-itms);
+}
+/* POSITION */
+[data-css-position] {
+    display: attr(data-css-position);
+}
+[data-css-pos-t] {
+    top: attr(data-css-pos-t);
+}
+[data-css-pos-b] {
+    bottom: attr(data-css-pos-b);
+}
+[data-css-pos-l] {
+    left: attr(data-css-pos-l);
+}
+[data-css-pos-r] {
+    right: attr(data-css-pos-r);
+}
+[data-css-z] {
+    z-index: attr(data-css-z);
+}
+/* SIZING */
+[data-css-height] {
+    height: attr(data-css-height px);
+}
+[data-css-width] {
+    width: attr(data-css-width);
+}
+[data-css-max-height] {
+    max-height: attr(data-css-max-height);
+}
+[data-css-max-width] {
+    max-width: attr(data-css-max-width);
+}
+[data-css-min-height] {
+    min-height: attr(data-css-min-height);
+}
+[data-css-min-width] {
+    min-width: attr(data-css-min-width);
+}
+/* BORDER */
+[data-css-border] {
+    border: attr(data-css-border);
+}
+[data-css-border-collapse] {
+    border-collapse: attr(data-css-border-collapse);
+}
+[data-css-border-space] {
+    border-spacing: attr(data-css-border-space);
+}
+[data-css-border-t] {
+    border-top: attr(data-css-border-t);
+}
+[data-css-border-b] {
+    border-bottom: attr(data-css-border-b);
+}
+[data-css-border-l] {
+    border-left: attr(data-css-border-l);
+}
+[data-css-border-r] {
+    border-right: attr(data-css-border-r);
+}
+[data-css-border-w] {
+    border-width: attr(data-css-border-w);
+}
+[data-css-border-t-w] {
+    border-top-width: attr(data-css-border-t-w);
+}
+[data-css-border-b-w] {
+    border-bottom-width: attr(data-css-border-b-w);
+}
+[data-css-border-l-w] {
+    border-left-width: attr(data-css-border-l-w);
+}
+[data-css-border-r-w] {
+    border-right-width: attr(data-css-border-r-w);
+}
+[data-css-border-s] {
+    border-style: attr(data-css-border-s);
+}
+[data-css-border-t-s] {
+    border-top-style: attr(data-css-border-t-s);
+}
+[data-css-border-b-s] {
+    border-bottom-style: attr(data-css-border-b-s);
+}
+[data-css-border-l-s] {
+    border-left-style: attr(data-css-border-l-s);
+}
+[data-css-border-r-s] {
+    border-right-style: attr(data-css-border-r-s);
+}
+/* ALIGN */
+[data-css-float] {
+    float: attr(data-css-float);
+}
+/* MARGIN */
+[data-css-margin] {
+    margin: attr(data-css-margin);
+}
+[data-css-margin-t] {
+    margin-top: attr(data-css-margin-t);
+}
+[data-css-margin-b] {
+    margin-bottom: attr(data-css-margin-b);
+}
+[data-css-margin-l] {
+    margin-left: attr(data-css-margin-l);
+}
+[data-css-margin-r] {
+    margin-right: attr(data-css-margin-r);
+}
+/* PADDING */
+[data-css-padding] {
+    padding: attr(data-css-padding);
+}
+[data-css-padding-t] {
+    padding-top: attr(data-css-padding-t);
+}
+[data-css-padding-b] {
+    padding-bottom: attr(data-css-padding-b);
+}
+[data-css-padding-l] {
+    padding-left: attr(data-css-padding-l);
+}
+[data-css-padding-r] {
+    padding-right: attr(data-css-padding-r);
+}
+/* COLOR */
+[data-css-color] {
+    color: attr(data-css-color-hov);
+}
+[data-css-color-hov] {
+    color: attr(data-css-color-hov);
+}
+[data-css-color-foc] {
+    color: attr(data-css-color-hov);
+}
+[data-css-color-act] {
+    color: attr(data-css-color-hov);
+}
+[data-css-color-vis] {
+    color: attr(data-css-color-hov);
+}
+[data-css-bg-color] {
+    background-color: attr(data-css-bg-color-hov);
+}
+[data-css-color-hov] {
+    background-color: attr(data-css-bg-color-hov);
+}
+[data-css-color-foc] {
+    background-color: attr(data-css-bg-color-hov);
+}
+[data-css-color-act] {
+    background-color: attr(data-css-bg-color-hov);
+}
+[data-css-color-vis] {
+    background-color: attr(data-css-bg-color-hov);
+}
+/* FONT */
+[data-css-font] {
+    font: attr(data-css-font);
+}
+[data-css-font-fam] {
+    font-family: attr(data-css-font-fam);
+}
+[data-css-font-s] {
+    font-size: attr(data-css-font-s);
+}
+[data-css-font-w] {
+    font-weight: attr(data-css-font-w);
+}
+[data-css-font-st] {
+    font-style: attr(data-css-font-st);
+}
+[data-css-font-opt-siz] {
+    font-optical-sizing: attr(data-css-font-opt-siz);
+}
+[data-css-font-stretch] {
+    font-stretch: attr(data-css-stretch); 
+}
+[data-css-line-h] {
+    line-height: attr(data-css-line-h);
+}
+[data-css-text-d] {
+    text-decoration: attr(data-css-text-d);
+}
+[data-css-text-t] {
+    text-transform: attr(data-css-text-t);
+}
+/* ELEMENT */
+[data-css-content] {
+    content: attr(data-css-content);
+}
+[data-css-cursor] {
+    cursor: attr(data-css-cursor);
+}
+[data-css-bg] {
+    background: attr(data-css-bg);
+}
+[data-css-bg-pos] {
+    background-position: attr(data-css-bg-pos);
+}
+[data-css-bg-rep] {
+    background-repeat: attr(data-css-bg-rep);
+}
+[data-css-bg-s] {
+    background-size: attr(data-css-bg-s);
+}
+[data-css-bg-o] {
+    background-origin: attr(data-css-bg-o);
+}
+[data-css-overflow] {
+    overflow: attr(overflow);
+}
+[data-css-overflow-y] {
+    overflow-y: attr(overflow-y);
+}
+[data-css-overflow-x] {
+    overflow-x: attr(overflow-x);
+}
+[data-css-list-s] {
+    list-style: attr(data-css-list-s);
+}
+/* ANIMATION */
+[data-animation-name] {
+    animation-name: attr(data-animation-name);
+    -webkit-animation-name: attr(data-animation-name);
+    -o-animation-name: attr(data-animation-name);
+    -moz-animation-name: attr(data-animation-name);
+}
+[data-animation-fill-mode] {
+    animation-fill-mode: attr(data-animation-fill-mode);
+    -webkit-animation-fill-mode: attr(data-animation-fill-mode);
+    -o-animation-fill-mode: attr(data-animation-fill-mode);
+    -moz-animation-fill-mode: attr(data-animation-fill-mode);
+}
+[data-animation-offset] {
+    animation-delay: attr(data-animation-offset ms);
+    -webkit-animation-delay: attr(data-animation-offset ms);
+    -o-animation-delay: attr(data-animation-offset ms);
+    -moz-animation-delay: attr(data-animation-offset ms);
+}
+[data-animation-iteration-count] {
+    animation-iteration-count: attr(data-animation-iteration-count);
+    -webkit-animation-iteration-count: attr(data-animation-iteration-count);
+    -o-animation-iteration-count: attr(data-animation-iteration-count);
+    -moz-animation-iteration-count: attr(data-animation-iteration-count);
+}
+[data-animation-direction] {
+    animation-direction: attr(data-animation-direction);
+    -webkit-animation-direction: attr(data-animation-direction);
+    -o-animation-direction: attr(data-animation-direction);
+    -moz-animation-direction: attr(data-animation-direction);
+}
+[data-animation-play-state] {
+    animation-play-state: attr(data-animation-play-state);
+    -webkit-animation-play-state: attr(data-animation-play-state);
+    -o-animation-play-state: attr(data-animation-play-state);
+    -moz-animation-play-state: attr(data-animation-play-state);
+}
+[data-animation-duration] {
+    animation-duration: attr(data-animation-duration ms);
+    -webkit-animation-duration: attr(data-animation-duration ms);
+    -o-animation-duration: attr(data-animation-duration ms);
+    -moz-animation-duration: attr(data-animation-duration ms);
+}
+[data-animation-timing-function] {
+    animation-timing-function: attr(data-animation-timing-function);
+    -webkit-animation-timing-function: attr(data-animation-timing-function);
+    -o-animation-timing-function: attr(data-animation-timing-function);
+    -moz-animation-timing-function: attr(data-animation-timing-function);
+}
+/* DISPLAY */
+/* DISPLAY */
+/* DISPLAY */
+

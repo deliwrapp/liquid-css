@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>BADGE UI-COMPONENTS -- Liquid-CSS-Framework Demo</title>
+</head>
+<body>
+    <section class="liquid-app">
+        <section id="top-page" class="liquid-page-container">
+            <nav class="nav -sticky -top">
+                <ul class="nav-items -shad-9 -shad-14-h">
+                    <li class="nav-item"><a href="../index.html">HOME</a></li>
+                    <li class="nav-item "><a href="../base.html">BASE</a></li>
+                    <li class="nav-item "><a href="../grid.html">GRID</a></li>
+                    <li class="nav-item "><a href="../container.html">CONTAINER</a></li>
+                    <li class="nav-item "><a href="../z-index.html">Z-INDEX</a></li>
+                    <li class="nav-item "><a href="../helpers.html">HELPERS</a></li>
+                    <li class="nav-item "><a href="../effects.html">EFFECTS</a></li>
+                    <li class="nav-item "><a href="../animations.html">ANIMATIONS</a></li>
+                    <li class="nav-item "><a href="../heading.html">HEADING</a></li>
+                    <li class="nav-item "><a href="../typo.html">TYPO</a></li>
+                    <li class="nav-item -active-parent"><a href="../ui-components.html">UI-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../layout-components.html">LAYOUT-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../extensed-components.html">EXTENSED-COMPONENTS</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <nav class="nav -sticky -top-4rm">
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a href="#top-page">
+                            Back to the Top
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../ui-components.html#cursor-section">
+                            CURSOR
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="avatar.html">
+                            AVATAR
+                        </a>
+                    </li>
+                    <li class="nav-item -active">
+                        <a href="badge.html">
+                            BADGE
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="alert.html">
+                            ALERT
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="button.html">
+                            BUTTON
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="chip.html">
+                            CHIP
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="dropdown.html">
+                            DROPDOWN
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="link.html">
+                            LINK
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="breadcrumb.html">
+                            BREADCRUMB
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pagination.html">
+                            PAGINATION
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tab.html">
+                            TAB
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html">
+                            MENU
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="placeholders.html">
+                            PLACEHOLDERS
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="form.html">
+                            FORM
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tooltip.html">
+                            TOOLTIP
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="popovers.html">
+                            POPOVERS
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="progress.html">
+                            PROGRESS
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="icon.html">
+                            ICON
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+            <section class="liquid-grid -middle -center">
+                <div class="col -col-12 ">
+                    <h2>BADGE</h2>
+                </div>
+                <div class="col -col-12 -start -center">
+                    <pre>.badge .btn -sm -lg (with btn) .avatar .avatar-xl .avatar-sm -{colorSelected} </pre>
+                    <hr>
+                    <p>Badges are often used as unread number indicators.</p>
+                </div>
+                <div class="col -col-12">
+                    <p>
+                        Add the badge class to non self closing elements. 
+                        And add the data-badge attribute to define the content of a badge. 
+                        The badge will appear in the top-right direction of the element.
+                    </p>
+                    
+                    <p>
+                        If there is no data-badge or the attribute is not specified, the badge will appear as a dot.
+                    </p>
+                    <p>
+                        Badges support button and avatars elements as well.
+                    </p>
+                </div>
+                <div class="col -row -col-12">
+                    <span class="badge">
+                        Notifications
+                    </span>
+                    <span class="badge" data-badge="8">
+                        Notifications
+                    </span>
+                    <button class="btn -primary -sm badge" data-badge="8">
+                        Button
+                    </button>
+                    <button class="btn -secondary badge" data-badge="8">
+                        Button
+                    </button>
+                    <button class="btn -tertiary -lg badge" data-badge="8">
+                        Button
+                    </button>
+                    
+                    <figure class="avatar avatar-xl badge" data-badge="8" data-initial="JB">
+                        <img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="JB">
+                    </figure>
+                    <figure class="avatar avatar-lg badge" data-badge="8" data-initial="JB">
+                        <img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="JB">
+                    </figure>
+                    <figure class="avatar badge" data-badge="8" data-initial="JB">
+                        <img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="JB">
+                    </figure>
+                </div>
+                <div class="col -col-12">
+                    <h4>CODE</h4> 
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        HTML
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="html" class="-w-f">
+                          <code  class="code-preview">
+                            <span class="badge">
+                                Notifications
+                            </span>
+                            <span class="badge" data-badge="8">
+                                Notifications
+                            </span>
+                            <button class="btn -primary -sm badge" data-badge="8">
+                                Button
+                            </button>
+                            <button class="btn -secondary badge" data-badge="8">
+                                Button
+                            </button>
+                            <button class="btn -tertiary -lg badge" data-badge="8">
+                                Button
+                            </button>
+                            
+                            <figure class="avatar avatar-xl badge" data-badge="8" data-initial="JB">
+                                <img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="JB">
+                            </figure>
+                            <figure class="avatar avatar-lg badge" data-badge="8" data-initial="JB">
+                                <img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="JB">
+                            </figure>
+                            <figure class="avatar badge" data-badge="8" data-initial="JB">
+                                <img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="JB">
+                            </figure>
+                          </code>
+                        </pre>
+                      </div>
+                    </div>
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        CSS
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="css" class="-width-full"> 
+                          <code class="code-preview">
+/* css classes */
+.badge {
+    position: relative;
+    white-space: nowrap;
+    margin: .25rem;
+}
+.badge[data-badge]::after,
+.badge:not([data-badge])::after {
+    background: var(--badge-bg-color);
+    background-clip: padding-box;
+    border-radius: var(--badge-radius);
+    box-shadow: 0 0 0 .1rem #fff;
+    color: #fff;
+    content: attr(data-badge);
+    display: inline-block;
+    transform: translate(-.05rem, -.5rem);
+}
+.badge[data-badge]::after {
+    font-size: var(--badge-font-size);
+    height: var(--badge-height);
+    line-height: var(--badge-line-height);
+    min-width: var(--badge-height);
+    padding: var(--badge-pad-v) var(--badge-pad-h);
+    text-align: center;
+    white-space: nowrap;
+}
+.badge:not([data-badge])::after,
+.badge[data-badge=""]::after {
+    height: .375rem;
+    min-width: .375rem;
+    padding: 0;
+    width: .375rem;
+}
+.badge.btn::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+}
+.badge.avatar::after {
+    position: absolute;
+    right: 14.64%;
+    top: 14.64%;
+    transform: translate(50%, -50%);
+    z-index: 1;
+} 
+
+                          </code>
+                      </pre>
+                      </div>
+                    </div>        
+                </div>
+            </section>
+            <hr>
+        </section>
+    </section>
+    <script src="../main.js"></script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>TAB UI-COMPONENTS -- Liquid-CSS-Framework Demo</title>
+</head>
+
+<body>
+    <section class="liquid-app">
+        <section id="top-page" class="liquid-page-container">
+            <nav class="nav -sticky -top">
+                <ul class="nav-items -shad-9 -shad-14-h">
+                    <li class="nav-item"><a href="../index.html">HOME</a></li>
+                    <li class="nav-item "><a href="../base.html">BASE</a></li>
+                    <li class="nav-item "><a href="../grid.html">GRID</a></li>
+                    <li class="nav-item "><a href="../container.html">CONTAINER</a></li>
+                    <li class="nav-item "><a href="../z-index.html">Z-INDEX</a></li>
+                    <li class="nav-item "><a href="../helpers.html">HELPERS</a></li>
+                    <li class="nav-item "><a href="../effects.html">EFFECTS</a></li>
+                    <li class="nav-item "><a href="../animations.html">ANIMATIONS</a></li>
+                    <li class="nav-item "><a href="../heading.html">HEADING</a></li>
+                    <li class="nav-item "><a href="../typo.html">TYPO</a></li>
+                    <li class="nav-item -active-parent"><a href="../ui-components.html">UI-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../layout-components.html">LAYOUT-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../extensed-components.html">EXTENSED-COMPONENTS</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <nav class="nav -sticky -top-4rm">
+              <ul class="nav-items">
+                <li class="nav-item">
+                    <a href="#top-page">
+                        Back to the Top
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../ui-components.html#cursor-section">
+                        CURSOR
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="avatar.html">
+                        AVATAR
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="badge.html">
+                        BADGE
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="alert.html">
+                        ALERT
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="button.html">
+                        BUTTON
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="chip.html">
+                        CHIP
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="dropdown.html">
+                        DROPDOWN
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="link.html">
+                        LINK
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="breadcrumb.html">
+                        BREADCRUMB
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="pagination.html">
+                        PAGINATION
+                    </a>
+                </li>
+                <li class="nav-item -active">
+                    <a href="tab.html">
+                        TAB
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html">
+                        MENU
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="placeholders.html">
+                        PLACEHOLDERS
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="form.html">
+                        FORM
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="tooltip.html">
+                        TOOLTIP
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="popovers.html">
+                        POPOVERS
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="progress.html">
+                        PROGRESS
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="icon.html">
+                        ICON
+                    </a>
+                </li>
+              </ul>
+            </nav>
+            <hr>
+            <section class="liquid-grid -middle -center">
+                <div class="col -col-12 ">
+                    <h2>TAB</h2>
+                </div>
+                <div class="col -col-12 -start -center">
+                    <pre>.tab -tab-item -tab-link -tab-block -tab-action -active </pre>
+                </div>
+                <hr>
+                <div class="col -col-12 -middle -center">
+                  <p>
+                    Add a container element with the tab class. And add child elements with the tab-item class. You can add the tab-block class for a full-width tab.
+                    The tab-item or its child "a" with the active class will be highlighted.
+                </p>
+                
+                  <ul class="tab -tab-block">
+                    <li class="-tab-item -active">
+                      <a href="#">Music</a>
+                    </li>
+                    <li class="-tab-item">
+                      <a href="#" class="-tab-link">Playlists</a>
+                    </li>
+                    <li class="-tab-item">
+                      <a href="#" class="-tab-link">Radio</a>
+                    </li>
+                    <li class="-tab-item">
+                      <a href="#" class="-tab-link">Connect</a>
+                    </li>
+                  </ul>
+                
+                  <p>If you need badges on tabs, you can add badge class to the element within tab-item.</p>
+                  <ul class="tab -tab-block">
+                    <li class="-tab-item -active">
+                      <a href="#" class="-tab-link badge" data-badge="9">
+                        Music
+                      </a>
+                    </li>
+                    <li class="-tab-item">
+                      <a href="#" class="-tab-link">
+                        Sound
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <hr>
+                <div class="col -col-12 -middle -center">
+                  <p>
+                    You could add a search box or buttons inside a tab.
+                    Add the tab-action class to the tab-item.
+                  </p>
+                  <ul class="tab">
+                    <li class="-tab-item -active">
+                      <a href="#" class="-tab-link">
+                        Music
+                      </a>
+                    </li>
+                    <li class="-tab-item">
+                      <a href="#" class="-tab-link">
+                        Sound
+                      </a>
+                    </li>
+                    <li class="-tab-item">
+                      <a href="#" class="-tab-link">
+                        Potatoes
+                      </a>
+                    </li>
+                    <li class="-tab-item -tab-action">
+                      <div class="input-group input-inline">
+                        <input class="form-input input-sm" type="text">
+                        <button class="btn -primary -sm input-group-btn">Search</button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col -col-12">
+                  <hr>
+                  <h3>Tab and Dynamic Section</h3>
+                  <hr>
+                  <pre>.dynamic-container -dynamic-section</pre> 
+                  <p>You can use Tab with .dynamic-container and -dynamic-section</p>
+                  <p>And you can define à loading animation.</p>
+                  <pre>-fade-in -slide-right -slide-left -slide-up -slide-down -pop-in</pre>
+                  <pre>-rotate-from-t-right-left -rotate-from-b-right-left -rotate-from-t-left-right -rotate-from-b-left-right</pre>
+                  <section class="tab-container-full">
+                    <nav>
+                      <ul class="tab -tab-block">
+                        <li class="-tab-item -active">
+                          <a href="#tab-fade-in">Fade In</a>
+                        </li> 
+                        <li class="-tab-item">
+                          <a href="#tab-slide-right" class="-tab-link">Slide-Right</a>
+                        </li>
+                        <li class="-tab-item">
+                          <a href="#tab-slide-left" class="-tab-link">Slide-Left</a>
+                        </li>
+                        <li class="-tab-item">
+                          <a href="#tab-slide-up" class="-tab-link">Slide-Up</a>
+                        </li>
+                        <li class="-tab-item">
+                          <a href="#tab-slide-down" class="-tab-link">Slide-Down</a>
+                        </li>
+                        <li class="-tab-item">
+                          <a href="#tab-pop-in" class="-tab-link">Pop-In</a>
+                        </li>
+                        <li class="-tab-item">
+                          <a href="#tab-rotate-1" class="-tab-link">Rotate-1</a>
+                        </li>
+                        <li class="-tab-item">
+                          <a href="#tab-rotate-2" class="-tab-link">Rotate-2</a>
+                        </li>
+                        <li class="-tab-item">
+                          <a href="#tab-rotate-3" class="-tab-link">Rotate-3</a>
+                        </li>
+                        <li class="-tab-item">
+                          <a href="#tab-rotate-4" class="-tab-link">Rotate-4</a>
+                        </li>
+                      </ul>
+                    </nav>
+                    <section class="dynamic-container"> 
+                        <section class="-dynamic-section -fade-in" id='tab-fade-in'>
+                            <h2>FADE-IN</h2>
+                        </section>
+                        <section class="-dynamic-section -slide-right" id='tab-slide-right'>
+                          
+                            <h2 class="-slide-right">SLIDE-RIGHT</h2>
+                            <p class="-fade-in">hello world</p>
+                            <p>Wouap</p>
+                          
+                            
+                        </section>
+                        <section class="-dynamic-section -slide-left" id='tab-slide-left'>
+                          <h2>SLIDE-LEFT</h2>
+                        </section>
+                        <section class="-dynamic-section -slide-up" id='tab-slide-up'>
+                          <h2>SLIDE-UP</h2>
+                        </section>
+                        <section class="-dynamic-section -slide-down" id='tab-slide-down'>
+                          <h2>SLIDE-DOWN</h2>
+                        </section>
+                        <section class="-dynamic-section -pop-in" id='tab-pop-in'>
+                          <h2>POP</h2>
+                        </section>
+                        <section class="-dynamic-section -rotate-from-t-right-left" id='tab-rotate-1'>
+                          <h2>ROTATE-1</h2>
+                        </section>
+                        <section class="-dynamic-section  -rotate-from-b-right-left" id='tab-rotate-2'>
+                          <h2>ROTATE-2</h2>
+                        </section>
+                        <section class="-dynamic-section -rotate-from-t-left-right" id='tab-rotate-3'>
+                          <h2>ROTATE-3</h2>
+                        </section>
+                        <section class="-dynamic-section -rotate-from-b-left-right" id='tab-rotate-4'>
+                          <h2>ROTATE-4</h2>
+                        </section>
+                    </section>
+                  </section>
+                </div>
+                <div class="col -col-12">
+                  <h4>CODE</h4> 
+                  <div class="accordion -w-f">
+                    <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
+                    <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
+                      <i class="icon icon-arrow-right mr-1"></i>
+                      HTML
+                    </label>
+                    <div class="-accordion-body">
+                      <pre data-lang="html" class="-w-f">
+                        <code  class="code-preview">
+                          
+                        </code>
+                      </pre>
+                    </div>
+                  </div>
+                  <div class="accordion -w-f">
+                    <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
+                    <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
+                      <i class="icon icon-arrow-right mr-1"></i>
+                      CSS
+                    </label>
+                    <div class="-accordion-body">
+                      <pre data-lang="css" class="-width-full"> 
+                        <code class="code-preview">
+                          /* css classes */
+
+
+                        </code>
+                    </pre>
+                    </div>
+                  </div>        
+              </div>
+        </section>
+        <hr>
+      </section>
+    </section>
+    <script src="../main.js"></script>
+</body>
+
+</html>

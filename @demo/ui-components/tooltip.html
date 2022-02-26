@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>TOOLTIP UI-COMPONENTS -- Liquid-CSS-Framework Demo</title>
+</head>
+<body>
+    <section class="liquid-app">
+        <section id="top-page" class="liquid-page-container">
+            <nav class="nav -sticky -top">
+                <ul class="nav-items -shad-9 -shad-14-h">
+                    <li class="nav-item"><a href="../index.html">HOME</a></li>
+                    <li class="nav-item "><a href="../base.html">BASE</a></li>
+                    <li class="nav-item "><a href="../grid.html">GRID</a></li>
+                    <li class="nav-item "><a href="../container.html">CONTAINER</a></li>
+                    <li class="nav-item "><a href="../z-index.html">Z-INDEX</a></li>
+                    <li class="nav-item "><a href="../helpers.html">HELPERS</a></li>
+                    <li class="nav-item "><a href="../effects.html">EFFECTS</a></li>
+                    <li class="nav-item "><a href="../animations.html">ANIMATIONS</a></li>
+                    <li class="nav-item "><a href="../heading.html">HEADING</a></li>
+                    <li class="nav-item "><a href="../typo.html">TYPO</a></li>
+                    <li class="nav-item -active-parent"><a href="../ui-components.html">UI-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../layout-components.html">LAYOUT-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../extensed-components.html">EXTENSED-COMPONENTS</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <nav class="nav -sticky -top-4rm">
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a href="#top-page">
+                            Back to the Top
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../ui-components.html#cursor-section">
+                            CURSOR
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="avatar.html">
+                            AVATAR
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="badge.html">
+                            BADGE
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="alert.html">
+                            ALERT
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="button.html">
+                            BUTTON
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="chip.html">
+                            CHIP
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="dropdown.html">
+                            DROPDOWN
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="link.html">
+                            LINK
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="breadcrumb.html">
+                            BREADCRUMB
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pagination.html">
+                            PAGINATION
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tab.html">
+                            TAB
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html">
+                            MENU
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="placeholders.html">
+                            PLACEHOLDERS
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="form.html">
+                            FORM
+                        </a>
+                    </li>
+                    <li class="nav-item -active">
+                        <a href="tooltip.html">
+                            TOOLTIP
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="popovers.html">
+                            POPOVERS
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="progress.html">
+                            PROGRESS
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="icon.html">
+                            ICON
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+            <section class="liquid-grid -middle -center">
+                <div class="col -col-12 ">
+                    <h2>TOOLTIP</h2>
+                </div>
+                <div class="col -col-12 -start -center">
+                    <pre>.tooltip -tooltip-bottom -tooltip-left -tooltip-right -disabled</pre>
+                    <p>For multiline tooltip use: </p>
+                    <pre>& #x0A;</pre>
+                </div>
+                <hr>
+                <div class="col -row -col-12"> 
+                    <button class="btn tooltip -m2" data-tooltip="Lorem ipsum dolor sit amet">
+                        top tooltip
+                    </button>
+                    <button class="btn tooltip -tooltip-right -m2" data-tooltip="Lorem ipsum dolor sit amet">
+                        right tooltip
+                    </button>
+                    <button class="btn tooltip -tooltip-left -m2" data-tooltip="Lorem ipsum dolor sit amet">
+                        left tooltip
+                    </button>
+                    <button class="btn tooltip -tooltip-bottom -m2" data-tooltip="Lorem ipsum dolor sit amet">
+                        bottom tooltip
+                    </button>
+                    <button class="btn tooltip" data-tooltip="First Line Tooltip Text &#x0A; Second Line Tooltip Text &#x0A; Third Line Tooltip Text">
+                        multiline tooltip
+                    </button>
+                </div>
+                <div class="col -col-12">
+                    <h4>CODE</h4> 
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        HTML
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="html" class="-width-full">
+                            <code class="code-preview">
+                                <button class="btn tooltip -m2" data-tooltip="Lorem ipsum dolor sit amet">
+                                    top tooltip
+                                </button>
+                                <button class="btn tooltip -tooltip-right -m2" data-tooltip="Lorem ipsum dolor sit amet">
+                                    right tooltip
+                                </button>
+                                <button class="btn tooltip -tooltip-left -m2" data-tooltip="Lorem ipsum dolor sit amet">
+                                    left tooltip
+                                </button>
+                                <button class="btn tooltip -tooltip-bottom -m2" data-tooltip="Lorem ipsum dolor sit amet">
+                                    bottom tooltip
+                                </button>
+                                <button class="btn tooltip" data-tooltip="First Line Tooltip Text &#x0A; Second Line Tooltip Text &#x0A; Third Line Tooltip Text">
+                                    multiline tooltip
+                                </button>
+                            </code>
+                        </pre>
+                      </div>
+                    </div>
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        CSS
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="css" class="-width-full"> 
+                            <code class="code-preview">
+/* CSS CLASS */
+.tooltip {
+    position: relative;
+}
+.tooltip::after {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    background: var(--tooltip-bg);
+    color: var(--tooltip-color);
+    border-radius: var(--tooltip-radius);
+    max-width: var(--tooltip-max-width);
+    max-height: var(--tooltip-max-height);
+    padding: var(--tooltip-padding);
+    margin: var(--tooltip-margin);
+    pointer-events: var(--tooltip-pointer-events);
+    z-index: var(--tooltip-index);
+    font-size: var(--tooltip-font-size);
+    transform: var(--tooltip-transform);
+    transition: var(--tooltip-transition);
+    box-shadow: var(--tooltip-box-shadow);
+    content: attr(data-tooltip);
+    bottom: 100%;
+    left: 50%;
+    opacity: 0;
+    overflow: hidden;
+    text-overflow: var(--tooltip-text-overflow);
+    white-space: var(--tooltip-white-space);
+}
+.tooltip:focus::after, .tooltip:hover::after {
+    opacity: 1;
+    transform: translate(-50%, .1rem);
+}
+.tooltip[disabled], .tooltip.\-disabled {
+    pointer-events: auto;
+}
+.tooltip.\-tooltip-right::after {
+    bottom: 50%;
+    left: 100%;
+    transform: translate(-2rem, 50%);
+}
+.tooltip.\-tooltip-right:focus::after, .tooltip.\-tooltip-right:hover::after {
+    transform: translate(0, 50%);
+}
+.tooltip.\-tooltip-bottom::after {
+    bottom: auto;
+    top: 100%;
+    transform: translate(-50%, -3rem);
+}
+.tooltip.\-tooltip-bottom:focus::after, .tooltip.\-tooltip-bottom:hover::after {
+    transform: translate(-50%, 0rem);
+}
+.tooltip.\-tooltip-left::after {
+    bottom: 50%;
+    left: auto;
+    right: 100%;
+    transform: translate(2rem, 50%);
+}
+.tooltip.\-tooltip-left:focus::after, .tooltip.\-tooltip-left:hover::after {
+    transform: translate(0, 50%);
+}
+    
+                            </code>
+                        </pre>
+                      </div>
+                    </div>        
+                </div>
+            </section>
+            <hr>
+        </section>
+    </section>
+    <script src="../main.js"></script>
+</body>
+</html>

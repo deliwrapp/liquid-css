@@ -1,0 +1,170 @@
+/** COMPONENT **/
+/*
+* COMPONENT CSS Variables
+* -------------------------------------------
+*/
+:root .component-container {
+    
+    /** ---- FONT var ---- **/
+    --component-font-familly: var(--font-familly);
+    --component-font-size: var(--font-size);
+    --component-line-height: var(--line-height);
+    --component-font-color: var(--liquid-color-primary);
+    --component-text-color-rgb: var(--liquid-color-primary-rgb);
+    --component-background-color: var(--liquid-color-step-100);
+    --component-background: var(--liquid-color-step-150);
+    --component-toolbar-border-color: var(--liquid-color-step-250);
+
+    /* ---- COLOR ----n */
+    /** primary **/
+    --component-color-primary: #3880ff;
+    --component-color-primary-rgb: 56, 128, 255;
+    --component-color-primary-contrast: #ffffff;
+    --component-color-primary-contrast-rgb: 255, 255, 255;
+    --component-color-primary-shade: #3171e0;
+    --component-color-primary-tint: #4c8dff;
+    /** secondary **/
+    --component-color-secondary: #3880ff;
+    --component-color-secondary-rgb: 56, 128, 255;
+    --component-color-secondary-contrast: #ffffff;
+    --component-color-secondary-contrast-rgb: 255, 255, 255;
+    --component-color-secondary-shade: #3171e0;
+    --component-color-secondary-tint: #4c8dff;
+
+    /* ---- PADDING ---- */
+    --component-padding-t: 0.5rem;
+    --component-padding-b: 0.5rem;
+    --component-padding-r: 0.5rem;
+    --component-padding-l: 0.5rem;
+    /* ---- MARGIN ---- */
+    --component-margin-t: 0.5rem;
+    --component-margin-b: 0.5rem;
+    --component-margin-r: 0.5rem;
+    --component-margin-l: 0.5rem;
+    
+    /* ---- TYPO ---- */
+    --component-small-font-size: 0.75rem;
+    --component-headings-font-family: var(--font-familly);
+    --component-headings-line-height: var(--line-height);
+    --component-headings-h1-color: var(--liquid-color-dark);
+    --component-headings-h1-size: 5rem;
+    --component-headings-h1-weight: 800;
+    --component-headings-h1-margin-b: 5rem;
+    --component-headings-h1-color: var(--liquid-color-dark);
+    
+    --component-headings-h2-font-family: var(--font-familly);
+    --component-headings-h2-line-height: var(--line-height);
+    --component-headings-h2-size: 3.5rem;
+    --component-headings-h2-color: var(--liquid-color-dark);
+    --component-headings-h2-weight: 800;
+    --component-headings-h2-margin-b: 2.5rem;
+    --component-headings-h2-color: var(--liquid-color-dark);
+  
+    --component-headings-h3-font-family: var(--font-familly);
+    --component-headings-h3-line-height: var(--line-height);
+    --component-headings-h3-size: 2rem;
+    --component-headings-h3-color: var(--liquid-color-dark);
+    --component-headings-h3-weight: 800;
+    --component-headings-h3-margin-b: 2rem;
+    --component-headings-h3-color: var(--liquid-color-dark);
+  
+    --component-headings-h4-font-family: var(--font-familly);
+    --component-headings-h4-line-height: var(--line-height);
+    --component-headings-h4-size: 1.5rem;
+    --component-headings-h4-color: var(--liquid-color-dark);
+    --component-headings-h4-weight: 700;
+    --component-headings-h4-margin-b: 1.75rem;
+    --component-headings-h4-color: var(--liquid-color-dark);
+  
+    --component-headings-h5-font-family: var(--font-familly);
+    --component-headings-h5-line-height: var(--line-height);
+    --component-headings-h5-color: var(--liquid-color-dark);
+    --component-headings-h5-size: 1.25rem;
+    --component-headings-h5-weight: 600;
+    --component-headings-h5-margin-b: 1.25rem;
+    --component-headings-h5-color: var(--liquid-color-dark);
+  
+    --component-headings-h6-font-family: var(--font-familly);
+    --component-headings-h6-line-height: var(--line-height);
+    --component-headings-h6-color: var(--liquid-color-dark);
+    --component-headings-h6-size: 1.125rem;
+    --component-headings-h6-weight: 600;
+    --component-headings-h6-margin-b: 1.125rem;
+    --component-headings-h6-color: var(--liquid-color-dark);
+
+    /* ---- HTML ELEMENT ---- */
+    --component-link-color: #304975;
+    --component-link-hover-color: #051f4d;
+    --component-hr-border-color: #001841;
+    --component-border-size: 1px;
+    --component-border-size-hover: 4px;
+    --component-border-type: solid;
+
+    /* BUTTON */
+    --component-button-padding-h: 0.5rem;
+    --component-button-padding-v: 1rem;
+    --component-button-font-weight: 500;
+    --component-button-radius: 0.25rem;
+    --component-btn-sm-font-size: 0.75rem;
+    --component-btn-sm-radius: 0.125rem;
+    --component-btn-sm-padding-v: 0.125rem;
+    --component-btn-sm-padding-h: 0.125rem;
+    --component-btn-lg-font-size: 0.75rem;
+    --component-btn-lg-radius: 0.125rem;
+    --component-btn-lg-padding-v: 0.125rem;
+    --component-btn-lg-padding-h: 0.125rem;
+    --component-btn-border-color:var(--liquid-color-light);
+}
+    
+:root {
+
+  
+    
+  
+  
+    /** ---- GRID var ---- **/
+    --breakpoint-xs-max: 480px;
+    --breakpoint-sm-min: 481px;
+    --breakpoint-md-min: 768px;
+    --breakpoint-l-min: 996px;
+    --breakpoint-xl-min: 1250px;
+    --grid-container-margin: 1rem;
+
+  
+  
+    /* BUTTON */
+    --button-padding-h: 0.5rem;
+    --button-padding-v: 1rem;
+    --button-font-weight: 500;
+    --button-radius: 0.25rem;
+    --btn-sm-font-size: 0.75rem;
+    --btn-sm-radius: 0.125rem;
+    --btn-sm-padding-v: 0.125rem;
+    --btn-sm-padding-h: 0.125rem;
+    --btn-lg-font-size: 0.75rem;
+    --btn-lg-radius: 0.125rem;
+    --btn-lg-padding-v: 0.125rem;
+    --btn-lg-padding-h: 0.125rem;
+    --btn-border-color:var(--liquid-color-light);
+    /*Switch*/
+    --switch-size: 0.75rem;
+    --switch-background: var(--liquid-color-light);
+    --switch-color: var(--liquid-color-primary);
+    --switch-border-color: var(--liquid-color-primary-shade);
+    --switch-radius: 0.5rem;
+    --switch-dot: var(--liquid-color-primary-tint);
+    --switch-active: var(--liquid-color-tertiary);
+    --switch-active-border-color: var(--liquid-color-tertiary-tint);
+    --switch-disabled: var(--liquid-color-medium);
+    --switch-disabled-border-color: var(--liquid-color-medium-tint);
+  
+    /* ---- COLOR ---- */
+    /** primary **/
+    
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    
+  
+  
+  }

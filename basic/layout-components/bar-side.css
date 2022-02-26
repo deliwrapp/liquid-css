@@ -1,0 +1,70 @@
+.sidebar {
+    top: 0;
+    display: var(--sidebar-display);
+    width: var(--sidebar-width);
+    height: var(--sidebar-height);
+    max-width: var(--sidebar-max-width);
+    max-height: var(--sidebar-max-height);
+    transition: var(--sidebar-trans-selector) var(--sidebar-trans-duration) var(--sidebar-trans-type);
+}
+.sidebar-mini {
+    top: 0;
+    display: var(--sidebar-mini-display);
+    width: var(--sidebar-mini-width);
+    height: var(--sidebar-mini-height);
+    max-width: var(--sidebar-mini-max-width);
+    max-height: var(--sidebar-mini-max-height);
+    transition: var(--sidebar-trans-selector) var(--sidebar-trans-duration) var(--sidebar-trans-type);
+}
+.sidebar-full {
+    top: 0;
+    display: var(--sidebar-full-display);
+    width: var(--sidebar-full-width);
+    height: var(--sidebar-full-height);
+    max-width: var(--sidebar-full-max-width);
+    max-height: var(--sidebar-full-max-height);
+    transition: var(--sidebar-trans-selector) var(--sidebar-trans-duration) var(--sidebar-trans-type);
+}
+.sidebar-mini.\-left.\-open,
+.sidebar-full.\-left.\-open,
+.sidebar.\-left.\-open  {
+    left: 0;
+}
+.sidebar-mini.\-right.\-open,
+.sidebar-full.\-right.\-open,
+.sidebar.\-right.\-open  {
+    right: 0;
+}
+.sidebar.\-left.\-close {
+    left: calc(-1 * var(--sidebar-width));
+}
+.sidebar.\-right.\-close  {
+    right: calc(-1 * var(--sidebar-width));
+}
+.sidebar-mini.\-left.\-close {
+    left: calc(-1 * var(--sidebar-mini-width));
+}
+.sidebar-mini.\-right.\-close  {
+    right: calc(-1 * var(--sidebar-mini-width));
+}
+.sidebar-full.\-left.\-close {
+    left: calc(-1 * var(--sidebar-full-width));
+}
+.sidebar-full.\-right.\-close  {
+    right: calc(-1 * var(--sidebar-full-width));
+}
+/*================================*/
+/*=== Swipe Menu ===*/
+/*================================*/
+/* Menu trigger */
+.swipe-m-trigger {display:inline-block; cursor:pointer;}
+.swipe-m-trigger .bar1,
+.swipe-m-trigger .bar2,
+.swipe-m-trigger .bar3 {width:32px; height:5px; background-color:#000000; margin:6px 0; transition:0.4s;}
+.swipe-m-trigger:hover {opacity:.75; transition:.5s;}
+.swipe-m-trigger.clicked .bar1 {-webkit-transform:rotate(-45deg) translate(-9px, 6px); transform:rotate(-45deg) translate(-9px, 6px);}
+.swipe-m-trigger.clicked .bar2 {opacity: 0;}
+.swipe-m-trigger.clicked .bar3 {-webkit-transform:rotate(45deg) translate(-8px, -8px); transform:rotate(45deg) translate(-8px, -8px);}
+
+/* swipe menu (slide) */
+.swipe-menu { margin:auto; }

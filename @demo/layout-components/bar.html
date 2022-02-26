@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>BAR TAB Layout Component -- Liquid-CSS-Framework Demo</title>
+</head>
+<body>
+    <section class="liquid-app">
+        <section class="liquid-page-container">
+            <section class="liquid-grid -middle -center">
+                <nav class="nav -sticky -top g-col -col-10">
+                    <ul class="nav-items">
+                        <li class="nav-item"><a href="../index.html">HOME</a></li>
+                        <li class="nav-item"><a href="../base.html">BASE</a></li>
+                        <li class="nav-item"><a href="../grid.html">GRID</a></li>
+                        <li class="nav-item"><a href="../container.html">CONTAINER</a></li>
+                        <li class="nav-item"><a href="../z-index.html">Z-INDEX</a></li>
+                        <li class="nav-item "><a href="../helpers.html">HELPERS</a></li>
+                        <li class="nav-item"><a href="../effects.html">EFFECTS</a></li>
+                        <li class="nav-item"><a href="../animations.html">ANIMATIONS</a></li>
+                        <li class="nav-item "><a href="../heading.html">HEADING</a></li>
+                        <li class="nav-item"><a href="../typo.html">TYPO</a></li>
+                        <li class="nav-item"><a href="../ui-components.html">UI-COMPONENTS</a></li>
+                        <li class="nav-item -active-parent"><a href="../layout-components.html">LAYOUT-COMPONENTS</a></li>
+                        <li class="nav-item "><a href="../extensed-components.html">EXTENSED-COMPONENTS</a></li>
+                    </ul>
+                </nav>
+                <section class="col -col-12 ">
+                    <h2>BAR Layout Component</h2>
+                </section>
+                <section class="col -col-12 -start -center">
+                    <h3>PREVIEW</h3>
+                    <pre>.bar -bar-section -bar-section-start -bar-center -bar-section-end</pre>
+                    <hr>      
+                    <nav class="bar -bg-light -w-f">
+                        <section class="-bar-section-start">
+                            <div 
+                                class="swipe-m-trigger -z5"
+                                data-panel="right-panel"
+                                data-open-panel="-open"
+                                data-close-panel="-close"
+                            >
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                            <a href="#" class="btn btn-link">Liquid.css</a>
+                            <a href="#." class="btn btn-link">Docs</a>
+                        </section>
+                        <section class="-bar-section">
+                            <a href="#" class="btn btn-link">Link</a>
+                            <a href="#." class="btn btn-link">Link 2</a>
+                            <a href="#" class="btn btn-link">Link 3</a>
+                        </section>               
+                        <section class="-bar-center">
+                            <div class="input-group input-inline">
+                                <input class="form-input" type="text" placeholder="search">
+                                <button class="btn btn-primary input-group-btn">Search</button>
+                            </div>
+                        </section>
+                        <section class="-bar-section-end">
+                            <div 
+                                class="swipe-m-trigger -z5"
+                                data-panel="left-panel"
+                                data-open-panel="-open"
+                                data-close-panel="-close"
+                            >
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        </section>
+                    </nav>
+                    <hr>
+                    <nav class="bar -bg-light -w-f">
+                        <section class="-bar-section-start">
+                            <div class="-nav-brand">
+                                <figure class="avatar avatar-xl">  
+                                    <img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="...">                          
+                                </figure>
+                                </div>
+                            <a href="#" class="btn btn-link">Liquid.css</a>
+                        </section>             
+                        <section class="-bar-center">
+                            <a href="#" class="btn btn-link">Link</a>
+                            <div class="btn btn-link">
+                                <div class="slide-dropdown -nav -inline-nav">
+                                    <label for="slide-dropdown--touch"><span class="slide-dropdown--title">Link 2</span></label>               
+                                    <input class="slide-dropdown--touch" type="checkbox" id="slide-dropdown--touch"> 
+                                    <ul class="slide-dropdown--slide">
+                                        <li><a href="#">Lorem Ipsum</a></li> 
+                                        <li><a href="#">Lorem Ipsum</a></li>
+                                        <li><a href="#">Lorem Ipsum</a></li>
+                                        <li><a href="#">Lorem Ipsum</a></li>
+                                    </ul>
+                                </div> 
+                            </div>
+                            <div class="btn btn-link">
+                                <div class="slide-dropdown -nav -inline-nav">
+                                    <label for="slide-dropdown--touch-2"><span class="slide-dropdown--title">Link 3</span></label>               
+                                    <input class="slide-dropdown--touch" type="checkbox" id="slide-dropdown--touch-2"> 
+                                    <ul class="slide-dropdown--slide">
+                                        <li><a href="#">Lorem Ipsum</a></li> 
+                                        <li><a href="#">Lorem Ipsum</a></li>
+                                    </ul>
+                                </div> 
+                            </div>
+                            
+                        </section>
+                        <section class="-bar-section-end">
+                            <div class="dropdown -click-only -m2">
+                                <label for="dropdown--touch">
+                                    <span>
+                                        <figure class="avatar avatar-lg -secondary -cursor-pointer" data-initial="JB"></figure>
+                                    </span>
+                                </label>               
+                                <input class="dropdown--touch" type="checkbox" id="dropdown--touch"> 
+                                <div class="dropdown-content -pos-left">
+                                  <ul>
+                                    <li class="-light -hover"><a href="#">One</a></li>
+                                    <li class="-light -hover"><a href="#">Two</a></li>
+                                    <li class="-light -hover"><a href="#">Three</a></li>
+                                  </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </nav>
+                </section>
+                <section class="col -col-12">
+
+                </section>
+                <section class="col -col-12">
+                    <h3>CODE</h3> 
+                    <section class="accordion -w-f">
+                        <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
+                        <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        HTML
+                        </label>
+                        <div class="-accordion-body">
+                        <pre data-lang="html" class="-w-f">
+                            <code  class="code-preview">
+                                <nav class="bar -bg-light -w-f">
+                                    <section class="-bar-section-start">
+                                        <div 
+                                            class="swipe-m-trigger -z5"
+                                            data-panel="right-panel"
+                                            data-open-panel="-open"
+                                            data-close-panel="-close"
+                                        >
+                                            <div class="bar1"></div>
+                                            <div class="bar2"></div>
+                                            <div class="bar3"></div>
+                                        </div>
+                                        <a href="#" class="btn btn-link">Liquid.css</a>
+                                        <a href="#." class="btn btn-link">Docs</a>
+                                    </section>
+                                    <section class="-bar-section">
+                                        <a href="#" class="btn btn-link">Link</a>
+                                        <a href="#." class="btn btn-link">Link 2</a>
+                                        <a href="#" class="btn btn-link">Link 3</a>
+                                    </section>               
+                                    <section class="-bar-center">
+                                        <div class="input-group input-inline">
+                                            <input class="form-input" type="text" placeholder="search">
+                                            <button class="btn btn-primary input-group-btn">Search</button>
+                                        </div>
+                                    </section>
+                                    <section class="-bar-section-end">
+                                        <div 
+                                            class="swipe-m-trigger -z5"
+                                            data-panel="left-panel"
+                                            data-open-panel="-open"
+                                            data-close-panel="-close"
+                                        >
+                                            <div class="bar1"></div>
+                                            <div class="bar2"></div>
+                                            <div class="bar3"></div>
+                                        </div>
+                                    </section>
+                                </nav>
+                                <hr>
+                                <nav class="bar -bg-light -w-f">
+                                    <section class="-bar-section-start">
+                                        <div class="-nav-brand">
+                                            <figure class="avatar avatar-xl">  
+                                                <img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="...">                          
+                                            </figure>
+                                            </div>
+                                        <a href="#" class="btn btn-link">Liquid.css</a>
+                                    </section>             
+                                    <section class="-bar-center">
+                                        <a href="#" class="btn btn-link">Link</a>
+                                        <div class="btn btn-link">
+                                            <div class="slide-dropdown -nav -inline-nav">
+                                                <label for="slide-dropdown--touch"><span class="slide-dropdown--title">Link 2</span></label>               
+                                                <input class="slide-dropdown--touch" type="checkbox" id="slide-dropdown--touch"> 
+                                                <ul class="slide-dropdown--slide">
+                                                    <li><a href="#">Lorem Ipsum</a></li> 
+                                                    <li><a href="#">Lorem Ipsum</a></li>
+                                                    <li><a href="#">Lorem Ipsum</a></li>
+                                                    <li><a href="#">Lorem Ipsum</a></li>
+                                                </ul>
+                                            </div> 
+                                        </div>
+                                        <div class="btn btn-link">
+                                            <div class="slide-dropdown -nav -inline-nav">
+                                                <label for="slide-dropdown--touch-2"><span class="slide-dropdown--title">Link 3</span></label>               
+                                                <input class="slide-dropdown--touch" type="checkbox" id="slide-dropdown--touch-2"> 
+                                                <ul class="slide-dropdown--slide">
+                                                    <li><a href="#">Lorem Ipsum</a></li> 
+                                                    <li><a href="#">Lorem Ipsum</a></li>
+                                                </ul>
+                                            </div> 
+                                        </div>
+                                    </section>
+                                    <section class="-bar-section-end">
+                                        <div class="dropdown -click-only -m2">
+                                            <label for="dropdown--touch">
+                                                <span>
+                                                    <figure class="avatar avatar-lg -secondary -cursor-pointer" data-initial="JB"></figure>
+                                                </span>
+                                            </label>               
+                                            <input class="dropdown--touch" type="checkbox" id="dropdown--touch"> 
+                                            <div class="dropdown-content -pos-left">
+                                              <ul>
+                                                <li class="-light -hover"><a href="#">One</a></li>
+                                                <li class="-light -hover"><a href="#">Two</a></li>
+                                                <li class="-light -hover"><a href="#">Three</a></li>
+                                              </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </nav>
+                            </code>
+                        </pre>
+                        </div>
+                    </section>
+                    <section class="accordion -w-f">
+                        <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
+                        <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        CSS
+                        </label>
+                        <div class="-accordion-body">
+                        <pre data-lang="css" class="-width-full"> 
+                            <code class="code-preview">
+/* css classes */
+.bar {
+    position: var(--bar-position);
+    display: var(--bar-display);
+    flex-direction: var(--bar-direction);
+    justify-content: var(--bar-align-content);
+    align-items: var(--bar-align-items);
+    flex-wrap: var(--bar-wrap);;
+    z-index: var(--bar-index);
+    width: var(--bar-width);
+    min-height: var(--bar-min-height);
+    padding: var(--bar-padding-v) var(--bar-padding-h);
+}
+.bar .\-bar-section,
+.bar .\-bar-section-start,
+.bar .\-bar-section-end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 0 0;
+}
+.bar .\-bar-section-start {
+    justify-content: flex-start;
+}
+.bar .\-bar-section-end {
+    justify-content: flex-end;
+}
+.bar .\-bar-section-end {
+    justify-content: flex-end;
+}
+.bar .\-bar-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+                            </code>
+                        </pre>
+                        </div>
+                    </section>        
+                </section>
+            </section> 
+        </section> 
+        <hr>
+    </section>
+    <script src="../main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>HELPERS -- Liquid-CSS-Framework Demo</title>
+</head>
+<body>
+    <section class="liquid-app">
+        <section id="top-page" class="liquid-page-container">
+            <nav class="nav -sticky -top -shad-12 -shad-11-h">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="index.html">HOME</a></li>
+                    <li class="nav-item "><a href="base.html">BASE</a></li>
+                    <li class="nav-item "><a href="grid.html">GRID</a></li>
+                    <li class="nav-item "><a href="container.html">CONTAINER</a></li>
+                    <li class="nav-item "><a href="z-index.html">Z-INDEX</a></li>
+                    <li class="nav-item -active"><a href="helpers.html">HELPERS</a></li>
+                    <li class="nav-item "><a href="effects.html">EFFECTS</a></li>
+                    <li class="nav-item "><a href="animations.html">ANIMATIONS</a></li>
+                    <li class="nav-item "><a href="heading.html">HEADING</a></li>
+                    <li class="nav-item "><a href="typo.html">TYPO</a></li>
+                    <li class="nav-item "><a href="ui-components.html">UI-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="layout-components.html">LAYOUT-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="extensed-components.html">EXTENSED-COMPONENTS</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <section class="liquid-grid -middle -center">
+                <div class="col -col-12 ">
+                    <h2>HELPERS</h2>
+                </div>
+            </section>
+            <hr>
+            <nav class="nav -sticky -top-4rm">
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a href="#top-page">
+                            Back to the Top
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#align-helper">
+                           ALIGN
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#margin-helper">
+                           MARGIN
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#padding-helper">
+                            PADDING
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#sizing-helper">
+                            SIZING
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#position-helper">
+                            POSITION
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#flex-helper">
+                            FLEX
+                        </a>
+                    </li>
+            </nav>
+            <hr>
+            <section class="liquid-grid -middle -center ">
+                <div id="align-helper" class="col -col-12 -start -center">
+                    <h3>ALIGN</h3>
+                    <pre>.align</pre>
+                    <div class="liquid-grid liquid-container -b-tertiary align -items-center -justify-center">
+                        <div class="col -col-12">
+                            <h4>align -items-center -justify-center</h4>
+                        </div>
+                        <div class="col -col-4 -bg-primary -b-light">
+                            <p class="align -self-baseline -color-light">Text inside: align -self-baseline</p>  
+                        </div>
+                        <div class="col -col-3 -bg-primary -b-light padding -pt4 -pb4">
+                            <p class="align -self-center -color-light">Text inside: align -self-center</p>  
+                        </div>
+                        <div class="col -col-4 -bg-primary -b-light">
+                            <p class="align -self-stretch -color-light">Text inside: align -self-stretch</p>  
+                        </div>
+                    </div>
+                    <div class="liquid-grid liquid-container margin mt5 -b-tertiary align -items-start -justify-space-around">
+                        <div class="col -col-12">
+                            <h4>align -items-start -justify-space-around </h4>
+                        </div>
+                        <div class="col -col-4 -bg-primary -b-light">
+                            <p class="align -self-start -color-light">Text inside: align -self-start</p>  
+                        </div>
+                        <div class="col -col-3 -bg-primary -b-light  padding -pt4 -pb4">
+                            <p class="align -self-center -color-light">Text inside: align -self-center</p>  
+                        </div>
+                        <div class="col -col-4 -bg-primary -b-light">
+                            <p class="align -self-end -color-light">Text inside: align -self-end</p>  
+                        </div>
+                    </div>
+                    <div class="liquid-grid liquid-container margin mt5 -b-tertiary -items-end -justify-start">
+                        <div class="col -col-12">
+                            <h4>align -items-end -justify-start</h4>
+                        </div>
+                        <div class="col -col-4 -bg-primary -b-light">
+                            <p class="align -self-center -color-light">Text inside: align -self-center</p>  
+                        </div>
+                        <div class="col -col-3 -bg-primary -b-light">
+                            <p class="align -self-center -color-light">Text inside: align -self-center</p>  
+                        </div>
+                        <div class="col -col-4 -bg-primary -b-light">
+                            <p class="align -self-center -color-light">Text inside: align -self-center</p>   
+                        </div>
+                    </div>                    
+                    <div class="col -col-12">
+                        <pre data-lang="html" class="-width-full">
+                            <code class="code-preview">
+                                <div class="liquid-grid liquid-container -b-tertiary align -items-center -justify-center">
+                                    <div class="col -col-12">
+                                        <h4>align -items-center -justify-center</h4>
+                                    </div>
+                                    <div class="col -col-4 -bg-primary -b-light">
+                                        <p class="align -self-baseline -color-light">Text inside: align -self-baseline</p>  
+                                    </div>
+                                    <div class="col -col-3 -bg-primary -b-light padding -pt4 -pb4">
+                                        <p class="align -self-center -color-light">Text inside: align -self-center</p>  
+                                    </div>
+                                    <div class="col -col-4 -bg-primary -b-light">
+                                        <p class="align -self-stretch -color-light">Text inside: align -self-stretch</p>  
+                                    </div>
+                                </div>
+                                <div class="liquid-grid liquid-container margin mt5 -b-tertiary align -items-start -justify-space-around">
+                                    <div class="col -col-12">
+                                        <h4>align -items-start -justify-space-around </h4>
+                                    </div>
+                                    <div class="col -col-4 -bg-primary -b-light">
+                                        <p class="align -self-start -color-light">Text inside: align -self-start</p>  
+                                    </div>
+                                    <div class="col -col-3 -bg-primary -b-light  padding -pt4 -pb4">
+                                        <p class="align -self-center -color-light">Text inside: align -self-center</p>  
+                                    </div>
+                                    <div class="col -col-4 -bg-primary -b-light">
+                                        <p class="align -self-end -color-light">Text inside: align -self-end</p>  
+                                    </div>
+                                </div>
+                                <div class="liquid-grid liquid-container margin mt5 -b-tertiary -items-end -justify-start">
+                                    <div class="col -col-12">
+                                        <h4>align -items-end -justify-start</h4>
+                                    </div>
+                                    <div class="col -col-4 -bg-primary -b-light">
+                                        <p class="align -self-center -color-light">Text inside: align -self-center</p>  
+                                    </div>
+                                    <div class="col -col-3 -bg-primary -b-light">
+                                        <p class="align -self-center -color-light">Text inside: align -self-center</p>  
+                                    </div>
+                                    <div class="col -col-4 -bg-primary -b-light">
+                                        <p class="align -self-center -color-light">Text inside: align -self-center</p>   
+                                    </div>
+                                </div>
+                            </code>
+                        </pre>
+                        <hr>
+                        <pre data-lang="css" class="-width-full"> 
+                            <code class="code-preview">
+/* css classes */
+.align.\-content-space-around  { align-content: space-around; }
+.align.\-content-space-between  { align-content: space-between;}
+.align.\-content-center  { align-content: center; }
+.align.\-content-start  { align-content: flex-start; }
+.align.\-content-end  { align-content: flex-start; }
+.align.\-content-stretch  { align-content: stretch; }
+.align.\-content-unset  { align-content: unset; }
+.align.\-content-inherit  { align-content: inherit; }
+
+.align.\-self-baseline  { align-self: baseline; }
+.align.\-self-center  { align-self: center; }
+.align.\-self-start  { align-self: flex-start; }
+.align.\-self-end  { align-self: flex-end; }
+.align.\-self-stretch  { align-self: stretch; }
+.align.\-self-unset  { align-self: unset; }
+.align.\-self-inherit  { align-self: inherit; }
+
+.align.\-items-baseline  { align-items: baseline; }
+.align.\-items-center  { align-items: center; }
+.align.\--items-start  { align-items: flex-start; }
+.align.\-items-end  { align-items: flex-start; }
+.align.\-items-stretch  { align-items: stretch; }
+.align.\-items-unset  { align-items: unset; }
+.align.\-items-inherit  { align-items: inherit; }
+
+.\-justify-center  { justify-content: center; }
+.\-justify-left  { justify-content: left; }
+.\-justify-right  { justify-content: right; }
+.\-justify-space-around  { justify-content: space-around; }
+.\-justify-space-between  { justify-content: space-between; }
+.\-justify-start  { justify-content: start; }
+.\-justify-end  { justify-content: start; }
+.\-justify-stretch  { justify-content: stretch; }
+.\-justify-unset  { justify-content: unset; }
+.\-justify-inherit  { justify-content: inherit; }
+.\-justify-safe  { justify-content: safe; }
+.\-justify-space-around  { justify-content: unsafe; }
+
+.\-justify-self-center  { justify-self: center; }
+.\-justify-self-left  { justify-self: left; }
+.\-justify-self-right  { justify-self: right; }
+.\-justify-self-space-around  { justify-self: space-around; }
+.\-justify-self-space-between  { justify-self: space-between; }
+.\-justify-self-start  { justify-self: flex-start; }
+.\-justify-self-end  { justify-self: flex-start; }
+.\-justify-self-stretch  { justify-self: stretch; }
+.\-justify-self-unset  { justify-self: unset; }
+.\-justify-self-inherit  { justify-self: inherit; }
+
+.\-justify-items-center  { justify-items: center; }
+.\-justify-items-left  { justify-items: left; }
+.\-justify-items-right  { justify-items: right; }
+.\-justify-items-space-around  { justify-items: space-around; }
+.\-justify-items-space-between  { justify-items: space-between; }
+.\-justify-items-start  { justify-items: flex-start; }
+.\-justify-items-end  { justify-items: flex-start; }
+.\-justify-items-stretch  { justify-items: stretch; }
+.\-justify-items-unset  { justify-items: unset; }
+.\-justify-items-inherit  { justify-items: inherit; }
+
+.\-text-center  {text-align: center;}
+.\-text-left    {text-align: left;}
+.\-text-right   {text-align: right;}
+.\-text-end    {text-align: end;}
+.\-text-start   {text-align: start;}
+.\-text-justify   {text-align: justify;}
+.\-text-align-last-r   {text-align-last: right;}
+.\-text-align-last-l   {text-align-last: left;}
+.\-text-align-last-c   {text-align-last: center;}
+
+.\-v-baseline  {vertical-align: baseline;}
+.\-v-top       {vertical-align: top;}
+.\-v-middle    {vertical-align: middle;}
+.\-v-bottom    {vertical-align: bottom;}
+.\-v-baseline  {vertical-align: baseline;}
+.\-v-baseline  {vertical-align: baseline;}
+.\-v-t-top     {vertical-align: text-top;}
+.\-v-t-bottom  {vertical-align: text-bottom;}
+                            </code>
+                        </pre> 
+                    </div>
+                    <hr>
+                </div>
+                <div id="margin-helper" class="col -col-12 -start -center">
+                    <h3>MARGIN</h3>
+                    <pre>-m1 .liquid-margin</pre>
+                    <div class="col -col-12 -bg-primary">
+                        <p class="-bg-secondary -m10">Margin Element -m10</p>
+                    </div>
+                    <div class="col -col-12 -bg-tertiary">
+                        <p class="-bg-secondary liquid-margin -m1">Liquid Margin Element -m10 10%</p>
+                    </div>
+                    <div class="col -col-12">
+                        <pre data-lang="html" class="-width-full">
+                            <code class="code-preview">
+                                <div class="col -col-12 -bg-primary">
+                                    <p class="-bg-secondary -m10">Margin Element -m10</p>
+                                </div>
+                                <div class="col -col-12 -bg-tertiary">
+                                    <p class="-bg-secondary liquid-margin -m1">Liquid Margin Element -m1 10%</p>
+                                </div>
+                            </code>
+                        </pre>
+                        <hr>
+                        <pre data-lang="css" class="-width-full"> 
+                            <code class="code-preview">
+/* css classes */
+.\-m-auto { margin: auto; }
+.\-m1  { margin: 0.25rem; }
+.\-m2  { margin: 0.50rem; }
+.\-m3  { margin: 0.75rem; }
+.\-m4  { margin: 1rem; }
+.\-m5  { margin: 1.25rem; }
+.\-m6  { margin: 1.5rem; }
+.\-m7  { margin: 1.75; }
+.\-m8  { margin: 2rem; }
+.\-m9  { margin: 2.25rem; }
+.\-m10 { margin: 2.5rem; }
+
+.\-mt1  { margin-top: 0.25rem; }
+.\-mt2  { margin-top: 0.50rem; }
+.\-mt3  { margin-top: 0.75rem; }
+.\-mt4  { margin-top: 1rem; }
+.\-mt5  { margin-top: 1.25rem; }
+.\-mt6  { margin-top: 1.5rem; }
+.\-mt7  { margin-top: 1.75; }
+.\-mt8  { margin-top: 2rem; }
+.\-mt9  { margin-top: 2.25rem; }
+.\-mt10 { margin-top: 2.5rem; }
+
+.\-mb1  { margin-bottom: 0.25rem; }
+.\-mb2  { margin-bottom: 0.50rem; }
+.\-mb3  { margin-bottom: 0.75rem; }
+.\-mb4  { margin-bottom: 1rem; }
+.\-mb5  { margin-bottom: 1.25rem; }
+.\-mb6  { margin-bottom: 1.5rem; }
+.\-mb7  { margin-bottom: 1.75; }
+.\-mb8  { margin-bottom: 2rem; }
+.\-mb9  { margin-bottom: 2.25rem; }
+.\-mb10 { margin-bottom: 2.5rem; }
+
+.\-ml1  { margin-left: 0.25rem; }
+.\-ml2  { margin-left: 0.50rem; }
+.\-ml3  { margin-left: 0.75rem; }
+.\-ml4  { margin-left: 1rem; }
+.\-ml5  { margin-left: 1.25rem; }
+.\-ml6  { margin-left: 1.5rem; }
+.\-ml7  { margin-left: 1.75; }
+.\-ml8  { margin-left: 2rem; }
+.\-ml9  { margin-left: 2.25rem; }
+.\-ml10 { margin-left: 2.5rem; }
+
+.\-mr1  { margin-right: 0.25rem; }
+.\-mr2  { margin-right: 0.50rem; }
+.\-mr3  { margin-right: 0.75rem; }
+.\-mr4  { margin-right: 1rem; }
+.\-mr5  { margin-right: 1.25rem; }
+.\-mr6  { margin-right: 1.5rem; }
+.\-mr7  { margin-right: 1.75; }
+.\-m8  { margin-right: 2rem; }
+.\-mr9  { margin-right: 2.25rem; }
+.\-mr10 { margin-right: 2.5rem; }
+
+.liquid-margin.\-m1  { margin: 10%; }
+.liquid-margin.\-m2  { margin: 20%; }
+.liquid-margin.\-m3  { margin: 30%; }
+.liquid-margin.\-m4  { margin: 40%; }
+.liquid-margin.\-m5  { margin: 50%; }
+.liquid-margin.\-m6  { margin: 60%; }
+.liquid-margin.\-m7  { margin: 70%; }
+.liquid-margin.\-m8  { margin: 80%; }
+.liquid-margin.\-m9  { margin: 90%; }
+.liquid-margin.\-m10 { margin: 100%; }
+
+.liquid-margin.\-mt1  { margin-top: 10%; }
+.liquid-margin.\-mt2  { margin-top: 20%; }
+.liquid-margin.\-mt3  { margin-top: 30%; }
+.liquid-margin.\-mt4  { margin-top: 40%; }
+.liquid-margin.\-mt5  { margin-top: 50%; }
+.liquid-margin.\-mt6  { margin-top: 60%; }
+.liquid-margin.\-mt7  { margin-top: 70%; }
+.liquid-margin.\-mt8  { margin-top: 80%; }
+.liquid-margin.\-mt9  { margin-top: 90%; }
+.liquid-margin.\-mt10 { margin-top: 100%; }
+
+.liquid-margin.\-mb1  { margin-bottom: 10%; }
+.liquid-margin.\-mb2  { margin-bottom: 20%; }
+.liquid-margin.\-mb3  { margin-bottom: 30%; }
+.liquid-margin.\-mb4  { margin-bottom: 40%; }
+.liquid-margin.\-mb5  { margin-bottom: 50%; }
+.liquid-margin.\-mb6  { margin-bottom: 60%; }
+.liquid-margin.\-mb7  { margin-bottom: 70%; }
+.liquid-margin.\-mb8  { margin-bottom: 80%; }
+.liquid-margin.\-mb9  { margin-bottom: 90%; }
+.liquid-margin.\-mb10 { margin-bottom: 100%; }
+
+.liquid-margin.\-ml1  { margin-left: 10%; }
+.liquid-margin.\-ml2  { margin-left: 20%; }
+.liquid-margin.\-ml3  { margin-left: 30%; }
+.liquid-margin.\-ml4  { margin-left: 40%; }
+.liquid-margin.\-ml5  { margin-left: 50%; }
+.liquid-margin.\-ml6  { margin-left: 60%; }
+.liquid-margin.\-ml7  { margin-left: 70%; }
+.liquid-margin.\-ml8  { margin-left: 80%; }
+.liquid-margin.\-ml9  { margin-left: 90%; }
+.liquid-margin.\-ml10 { margin-left: 100%; }
+
+.liquid-margin.\-mr1  { margin-right: 10%; }
+.liquid-margin.\-mr2  { margin-right: 20%; }
+.liquid-margin.\-mr3  { margin-right: 30%; }
+.liquid-margin.\-mr4  { margin-right: 40%; }
+.liquid-margin.\-mr5  { margin-right: 50%; }
+.liquid-margin.\-mr6  { margin-right: 60%; }
+.liquid-margin.\-mr7  { margin-right: 70%; }
+.liquid-margin.\-mr8  { margin-right: 80%; }
+.liquid-margin.\-mr9  { margin-right: 90%; }
+.liquid-margin.\-mr10 { margin-right: 100%; }
+                            </code>
+                        </pre> 
+                    </div>
+                    <hr>
+                </div>
+                <div id="padding-helper" class="col -col-12 -start -center">
+                    <h3>PADDING</h3>
+                    <pre>-p1 -p2 .liquid-padding</pre>
+                    <div class="col -col-12 -bg-primary">
+                        <p class="-bg-secondary -p10">Padding Element -p10</p>  
+                    </div>
+                    <div class="col -col-12 -bg-tertiary">
+                        <p class="-bg-secondary liquid-padding -p1">LIQUID Padding Element -p1 10%</p>  
+                    </div>
+                    <pre data-lang="html" class="-width-full">
+                        <code class="code-preview">
+                            <div class="col -col-12 -bg-primary">
+                                <p class="-bg-secondary -p10">Padding Element -p10</p>  
+                            </div>
+                            <div class="col -col-12 -bg-tertiary">
+                                <p class="-bg-secondary liquid-padding -p10">LIQUID Padding Element -p10 10%</p>  
+                            </div>
+                        </code>
+                    </pre>
+                    <pre data-lang="css" class="-width-full"> 
+                        <code class="code-preview">
+/* css classes */
+.\-box-border {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.\-box-content	{
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.\-p-auto { padding: auto; }
+.\-p1  { padding: 0.25rem; }
+.\-p2  { padding: 0.50rem; }
+.\-p3  { padding: 0.75rem; }
+.\-p4  { padding: 1rem; }
+.\-p5  { padding: 1.25rem; }
+.\-p6  { padding: 1.5rem; }
+.\-p7  { padding: 1.75; }
+.\-p8  { padding: 2rem; }
+.\-p9  { padding: 2.25rem; }
+.\-p10 { padding: 2.5rem; }
+
+.\-pt1  { padding-top: 0.25rem; }
+.\-pt2  { padding-top: 0.50rem; }
+.\-pt3  { padding-top: 0.75rem; }
+.\-pt4  { padding-top: 1rem; }
+.\-pt5  { padding-top: 1.25rem; }
+.\-pt6  { padding-top: 1.5rem; }
+.\-pt7  { padding-top: 1.75; }
+.\-pt8  { padding-top: 2rem; }
+.\-pt9  { padding-top: 2.25rem; }
+.\-pt10 { padding-top: 2.5rem; }
+
+.\-pb1  { padding-bottom: 0.25rem; }
+.\-pb2  { padding-bottom: 0.50rem; }
+.\-pb3  { padding-bottom: 0.75rem; }
+.\-pb4  { padding-bottom: 1rem; }
+.\-pb5  { padding-bottom: 1.25rem; }
+.\-pb6  { padding-bottom: 1.5rem; }
+.\-pb7  { padding-bottom: 1.75; }
+.\-pb8  { padding-bottom: 2rem; }
+.\-pb9  { padding-bottom: 2.25rem; }
+.\-pb10 { padding-bottom: 2.5rem; }
+
+.\-pl1  { padding-left: 0.25rem; }
+.\-pl2  { padding-left: 0.50rem; }
+.\-pl3  { padding-left: 0.75rem; }
+.\-pl4  { padding-left: 1rem; }
+.\-pl5  { padding-left: 1.25rem; }
+.\-pl6  { padding-left: 1.5rem; }
+.\-pl7  { padding-left: 1.75; }
+.\-pl8  { padding-left: 2rem; }
+.\-pl9  { padding-left: 2.25rem; }
+.\-pl10 { padding-left: 2.5rem; }
+
+.\-pr1  { padding-right: 0.25rem; }
+.\-pr2  { padding-right: 0.50rem; }
+.\-pr3  { padding-right: 0.75rem; }
+.\-pr4  { padding-right: 1rem; }
+.\-pr5  { padding-right: 1.25rem; }
+.\-pr6  { padding-right: 1.5rem; }
+.\-pr7  { padding-right: 1.75; }
+.\-p8  { padding-right: 2rem; }
+.\-pr9  { padding-right: 2.25rem; }
+.\-pr10 { padding-right: 2.5rem; }
+
+.liquid-padding.\-p1  { padding: 10%; }
+.liquid-padding.\-p2  { padding: 20%; }
+.liquid-padding.\-p3  { padding: 30%; }
+.liquid-padding.\-p4  { padding: 40%; }
+.liquid-padding.\-p5  { padding: 50%; }
+.liquid-padding.\-p6  { padding: 60%; }
+.liquid-padding.\-p7  { padding: 70%; }
+.liquid-padding.\-p8  { padding: 80%; }
+.liquid-padding.\-p9  { padding: 90%; }
+.liquid-padding.\-p10 { padding: 100%; }
+
+.liquid-padding.\-pt1  { padding-top: 10%; }
+.liquid-padding.\-pt2  { padding-top: 20%; }
+.liquid-padding.\-pt3  { padding-top: 30%; }
+.liquid-padding.\-pt4  { padding-top: 40%; }
+.liquid-padding.\-pt5  { padding-top: 50%; }
+.liquid-padding.\-pt6  { padding-top: 60%; }
+.liquid-padding.\-pt7  { padding-top: 70%; }
+.liquid-padding.\-pt8  { padding-top: 80%; }
+.liquid-padding.\-pt9  { padding-top: 90%; }
+.liquid-padding.\-pt10 { padding-top: 100%; }
+
+.liquid-padding.\-pb1  { padding-bottom: 10%; }
+.liquid-padding.\-pb2  { padding-bottom: 20%; }
+.liquid-padding.\-pb3  { padding-bottom: 30%; }
+.liquid-padding.\-pb4  { padding-bottom: 40%; }
+.liquid-padding.\-pb5  { padding-bottom: 50%; }
+.liquid-padding.\-pb6  { padding-bottom: 60%; }
+.liquid-padding.\-pb7  { padding-bottom: 70%; }
+.liquid-padding.\-pb8  { padding-bottom: 80%; }
+.liquid-padding.\-pb9  { padding-bottom: 90%; }
+.liquid-padding.\-pb10 { padding-bottom: 100%; }
+
+.liquid-padding.\-pl1  { padding-left: 10%; }
+.liquid-padding.\-pl2  { padding-left: 20%; }
+.liquid-padding.\-pl3  { padding-left: 30%; }
+.liquid-padding.\-pl4  { padding-left: 40%; }
+.liquid-padding.\-pl5  { padding-left: 50%; }
+.liquid-padding.\-pl6  { padding-left: 60%; }
+.liquid-padding.\-pl7  { padding-left: 70%; }
+.liquid-padding.\-pl8  { padding-left: 80%; }
+.liquid-padding.\-pl9  { padding-left: 90%; }
+.liquid-padding.\-pl10 { padding-left: 100%; }
+
+.liquid-padding.\-pr1  { padding-right: 10%; }
+.liquid-padding.\-pr2  { padding-right: 20%; }
+.liquid-padding.\-pr3  { padding-right: 30%; }
+.liquid-padding.\-pr4  { padding-right: 40%; }
+.liquid-padding.\-pr5  { padding-right: 50%; }
+.liquid-padding.\-pr6  { padding-right: 60%; }
+.liquid-padding.\-pr7  { padding-right: 70%; }
+.liquid-padding.\-pr8  { padding-right: 80%; }
+.liquid-padding.\-pr9  { padding-right: 90%; }
+.liquid-padding.\-pr10 { padding-right: 100%; }
+                        </code>
+                    </pre>
+                    <hr>
+                </div>
+                <div id="sizing-helper" class="col -col-12 -start -center">
+                    <h3>SIZING</h3>
+                    <pre>-area-{$areaSelector}, -w-{$widthSelector}, -h-{$heightSelector}, -max-{$maxSelector}, -min-{$minSelector}</pre>
+                    <div class="-w-f -bg-primary -h-rm"></div>
+                    <pre data-lang="html" class="-w-f">
+                        <code class="code-preview">
+                            <div class="-w-f -bg-primary -h-rm"></div>
+                        </code>
+                    </pre>
+                    <pre data-lang="css" class="-w-f"> 
+                        <code class="code-preview">
+/* css classes */
+.\-area-min {min-height: 0; min-width: 0}
+.\-area-max {max-height: 100%; max-width: 100%}
+
+.\-w-0 { width: 0 }
+.\-w-f { width: 100% }
+.\-w-em { width: 1em }
+.\-w-rm { width: 1rem }
+.\-w-vp { width: 100vw }
+.\-w- { width: auto }
+
+.\-h-0 { height: 0 }
+.\-h-f { height: 100% }
+.\-h-em { height: 1em }
+.\-h-rm { height: 1rem }
+.\-h-vp { height: 100vh }
+.\-h-a { height: auto }
+
+.\-max-n { max-width: none; max-height: none }
+.\-max-0 { max-width: 0; max-height: 0 }
+.\-min-0 { min-width: 0; min-height: 0 }
+.\-min-a { min-width: auto; min-height: auto }
+.\-max-vp { max-width: 100vw; max-height: 100vh }
+.\-min-vp { min-width: 100vw; min-height: 100vh }
+
+.\-w-free { max-width: none }
+.\-w-fit { max-width: 100% }
+.\-w-clip { max-width: 0 }
+.\-w-force { min-width: 100% }
+
+.\-h-free { max-height: none }
+.\-h-fit { max-height: 100% }
+.\-h-clip { max-height: 0 }
+.\-h-force { min-height: 100% }
+                        </code>
+                    </pre>
+                    <hr>
+                </div>
+                <div id="position-helper" class="col -col-12 -start -center">
+                    <h3>POSITION</h3>
+                    <pre>-sticky -relative -absolute -fixed -static</pre>
+                    <div class="col -col-12 -end -right -text-right">
+                        <div class="-bottom col -col-12 -end -bg-tertiary -color-tertiary-content -b-light"> 
+                            <pre> -relative</pre>
+                        </div>
+                        <div class="col -col-12 -end -bg-tertiary -color-tertiary-content -b-light"> 
+                            <pre> -absolute</pre>
+                        </div>
+                        <div class="-fixed -bottom padding -p4 col -col-12 -end -bg-tertiary -color-tertiary-content -b-light"> 
+                            <pre> -fixed -bottom </pre>
+                        </div>
+                        <div class="-static -bottom col -col-12 -end -bg-tertiary -color-tertiary-content -b-light"> 
+                            <pre> -static -bottom</pre>
+                        </div>
+                        <div class="-sticky -bottom-5rem -top-20 col -col-12 -end -bg-tertiary -color-tertiary-content -b-light"> 
+                            <pre>-sticky -bottom-5rem -top-20</pre>
+                        </div>
+                        <div class="col -col-12 -end -bg-tertiary -color-tertiary-content -b-light"> 
+                            <pre>-pos-unset</pre>
+                        </div>
+                    </div>
+                    <pre data-lang="html" class="-width-full">
+                        <code class="code-preview">
+                            <div class="-relative col -col-12 -end -bg-tertiary -color-tertiary-content -b-light"> 
+                                <pre> -relative</pre>
+                            </div>
+                            <div class="-absolute col -col-12 -end -bg-tertiary -color-tertiary-content -b-light"> 
+                                <pre> -absolute</pre>
+                            </div>
+                            <div class="-fixed -bottom col -col-12 -end -bg-tertiary -color-tertiary-content -b-light"> 
+                                <pre> -fixed -bottom</pre>
+                            </div>
+                            <div class="-static -bottom col -col-12 -end -bg-tertiary -color-tertiary-content -b-light"> 
+                                <pre> -static -bottom</pre>
+                            </div>
+                            <div class="-sticky -bottom-5rem -top-20 col -col-12 -end -bg-tertiary -color-tertiary-content -b-light"> 
+                                <pre> -sticky -bottom-5rem -top-20</pre>
+                            </div>
+                            <div class="--pos-unset col -col-12 -end -bg-tertiary -color-tertiary-content -b-light"> 
+                                <pre> -pos-unset</pre>
+                            </div>
+                        </code>
+                    </pre>
+                    <pre data-lang="css" class="-width-full"> 
+                        <code class="code-preview">
+/* css classes */
+.\-relative  { position: relative;}
+.\-absolute  { position: absolute;}
+.\-fixed     { position: fixed;}
+.\-static    { position: static;}
+.\-sticky    { position: sticky;}
+.\-pos-unset { position: unset;}
+.\-obj-l-t { object-position: left top;}
+.\-obj-l-c { object-position: left center;}
+.\-obj-l-b { object-position: left bottom;}
+.\-obj-c-t { object-position: center top;}
+.\-obj-c   { object-position: center center;}
+.\-obj-c-b { object-position: center bottom;}
+.\-obj-r-t { object-position: right top;}
+.\-obj-r-c { object-position: right center;}
+.\-obj-r-b { object-position: right bottom;}
+
+.\-top{top: 0;}
+.\-bottom{bottom: 0;}
+.\-right{right: 0;}
+.\-left{left: 0;}
+
+.\-top-1rm {top: 1rem;}
+.\-bottom-1rm {bottom: 1rem;}
+.\-right-1rm {right: 1rem;}
+.\-left-1rm {left: 1rem;}
+
+.\-top-2rm {top: 2rem;}
+.\-bottom-2rm {bottom: 2rem;}
+.\-right-2rm {right: 2rem;}
+.\-left-2rm {left: 2rem;}
+
+.\-top-3rm {top: 3rem;}
+.\-bottom-3rm {bottom: 3rem;}
+.\-right-3rm {right: 3rem;}
+.\-left-3rm {left: 3rem;}
+
+.\-top-4rm {top: 4rem;}
+.\-bottom-4rm {bottom: 4rem;}
+.\-right-4rm {right: 4rem;}
+.\-left-4rm {left: 4rem;}
+
+.\-top-5rm {top: 5rem;}
+.\-bottom-5rm {bottom: 5rem;}
+.\-right-5rm {right: 5rem;}
+.\-left-5rm {left: 5rem;}
+
+.\-top-1 {top: 1%;}
+.\-bottom-1 {bottom: 1%;}
+.\-right-1 {right: 1%;}
+.\-left-1 {left: 1%;}
+
+.\-top-2 {top: 2%;}
+.\-bottom-2 {bottom: 2%;}
+.\-right-2 {right: 2%;}
+.\-left-2 {left: 2%;}
+
+.\-top-3 {top: 3%;}
+.\-bottom-3 {bottom: 3%;}
+.\-right-3 {right: 3%;}
+.\-left-3 {left: 3%;}
+
+.\-top-4 {top: 4%;}
+.\-bottom-4 {bottom: 4%;}
+.\-right-4 {right: 4%;}
+.\-left-4 {left: 4%;}
+
+.\-top-5 {top: 5%;}
+.\-bottom-5 {bottom: 5%;}
+.\-right-5 {right: 5%;}
+.\-left-5 {left: 5%;}
+
+.\-top-10 {top: 10%;}
+.\-bottom-10 {bottom: 10%;}
+.\-right-10 {right: 10%;}
+.\-left-10 {left: 10%;}
+
+.\-top-15 {top: 15%;}
+.\-bottom-15 {bottom: 15%;}
+.\-right-15 {right: 15%;}
+.\-left-15 {left: 15%;}
+
+.\-top-20 {top: 20%;}
+.\-bottom-20 {bottom: 20%;}
+.\-right-20 {right: 20%;}
+.\-left-20 {left: 20%;}
+
+.\-top-25 {top: 25%;}
+.\-bottom-25 {bottom: 25%;}
+.\-right-25 {right: 25%;}
+.\-left-25 {left: 25%;}
+
+.\-top-30 {top: 30%;}
+.\-bottom-30 {bottom: 30%;}
+.\-right-30 {right: 30%;}
+.\-left-30 {left: 30%;}
+
+.\-top-33 {top: 33%;}
+.\-bottom-33 {bottom: 33%;}
+.\-right-33 {right: 33%;}
+.\-left-33 {left: 33%;}
+
+.\-top-35 {top: 35%;}
+.\-bottom-35 {bottom: 35%;}
+.\-right-35 {right: 35%;}
+.\-left-35 {left: 35%;}
+
+.\-top-40 {top: 40%;}
+.\-bottom-40 {bottom: 40%;}
+.\-right-40 {right: 40%;}
+.\-left-40 {left: 40%;}
+
+.\-top-45 {top: 45%;}
+.\-bottom-45 {bottom: 45%;}
+.\-right-45 {right: 45%;}
+.\-left-45 {left: 45%;}
+
+.\-top-50 {top: 50%;}
+.\-bottom-50 {bottom: 50%;}
+.\-right-50 {right: 50%;}
+.\-left-50 {left: 50%;}
+
+.\-float-c {
+    float: center;
+}
+.\-float-r {
+    float: right;
+}
+.\-float-l {
+    float: left;
+}
+.\-float-s {
+    float: inline-start;
+}
+.\-float-e {
+    float: inline-end;
+}
+
+.\-ord-1 {order: 1}
+.\-ord-2 {order: 2}
+.\-ord-3 {order: 3}
+.\-ord-4 {order: 4}
+.\-ord-5 {order: 5}
+.\-ord-6 {order: 6}
+.\-ord-7 {order: 7}
+.\-ord-8 {order: 8}
+.\-ord-9 {order: 9}
+.\-ord-10 {order: 10}
+.\-ord-11 {order: 11}
+.\-ord-12 {order: 12}
+
+.\-ord-neg-1 {order: -1}
+.\-ord-neg-2 {order: -2}
+.\-ord-neg-3 {order: -3}
+.\-ord-neg-4 {order: -4}
+.\-ord-neg-5 {order: -5}
+.\-ord-neg-6 {order: -6}
+.\-ord-neg-7 {order: -7}
+.\-ord-neg-8 {order: -8}
+.\-ord-neg-9 {order: -9}
+.\-ord-neg-10 {order: -10}
+.\-ord-neg-11 {order: -11}
+.\-ord-neg-12 {order: -12}
+                        </code>
+                    </pre>
+                    <hr>
+                </div>
+                <div id="flex-helper" class="col -col-12 -start -center">
+                    <h3>FLEX</h3>
+                    <pre>-flex -wrap</pre>
+                    <section class="-flex -wrap -width-full">
+                        <div class="-fc-100 -bg-primary -color-primary-content -b-primary">fc-100</div>
+                        <div class="-fc-83 -bg-secondary -color-secondary-content -b-secondary">fc-83</div>
+                        <div class="-fc-75 -bg-success -color-success-content -b-success">fc-75</div>
+                        <div class="-fc-67 -bg-warning -color-warning-content -b-warning">fc-67</div>
+                        <div class="-fc-60 -bg-danger -color-danger-content -b-danger">fc-60</div>
+                        <div class="-fc-50 -bg-dark -color-dark-content -b-dark">fc-50</div>
+                        <div class="-fc-40 -bg-light -color-light-content -b-light">fc-40</div>                
+                        <div class="-fc-33 -bg-light -color-light-content -b-light">fc-33</div>                
+                        <div class="-fc-25 -bg-light -color-light-content -b-light">fc-25</div>                
+                        <div class="-fc-20 -bg-light -color-light-content -b-light">fc-20</div>                
+                        <div class="-fc-17 -bg-light -color-light-content -b-light">fc-17</div>                
+                        <div class="-fc-12 -bg-light -color-light-content -b-light">fc-12</div>                
+                        <div class="-fc-10 -bg-light -color-light-content -b-light">fc-10</div>                
+                    </section>
+                    <section class="liquid-grid -middle -center">
+                        <div class="col -col-12 -start -center">
+                            <h4 class="">FLEX CONTAINER PERCENTAGE HANDLER</h4>
+                            <pre>-flex -wrap -width-full (inside a .liquid-grid container) -fc-100, -fc-83, -fc-75, -fc-60, -fc-50, -fc-40, -fc-33, -fc-25, -fc-20, -fc-17, -fc-12, -fc-10</pre>
+                            <pre>add "-width-full" inside a ".liquid-grid" container</pre>
+                            <pre data-lang="html" class="-width-full">
+                                <code class="code-preview">
+                                    <section class="liquid-container">
+                                        <section class="-flex -wrap -width-full">
+                                            <div class="-fc-100 -bg-primary -color-primary-content -b-primary">fc-100</div>
+                                            <div class="-fc-83 -bg-secondary -color-secondary-content -b-secondary">fc-83</div>
+                                            <div class="-fc-75 -bg-success -color-success-content -b-success">fc-75</div>
+                                            <div class="-fc-67 -bg-warning -color-warning-content -b-warning">fc-67</div>
+                                            <div class="-fc-60 -bg-danger -color-danger-content -b-danger">fc-60</div>
+                                            <div class="-fc-50 -bg-dark -color-dark-content -b-dark">fc-50</div>
+                                            <div class="-fc-40 -bg-light -color-light-content -b-light">fc-40</div>                
+                                            <div class="-fc-33 -bg-light -color-light-content -b-light">fc-33</div>                
+                                            <div class="-fc-25 -bg-light -color-light-content -b-light">fc-25</div>                
+                                            <div class="-fc-20 -bg-light -color-light-content -b-light">fc-20</div>                
+                                            <div class="-fc-17 -bg-light -color-light-content -b-light">fc-17</div>                
+                                            <div class="-fc-12 -bg-light -color-light-content -b-light">fc-12</div>                
+                                            <div class="-fc-10 -bg-light -color-light-content -b-light">fc-10</div>                
+                                        </section>
+                                    </section>
+                                </code>
+                            </pre>
+                            <section class="-flex -wrap -width-full">
+                                <div class="-fc-100 -bg-primary -color-primary-content -b-primary">fc-100</div>
+                                <div class="-fc-83 -bg-secondary -color-secondary-content -b-secondary">fc-83</div>
+                                <div class="-fc-75 -bg-success -color-success-content -b-success">fc-75</div>
+                                <div class="-fc-67 -bg-warning -color-warning-content -b-warning">fc-67</div>
+                                <div class="-fc-60 -bg-danger -color-danger-content -b-danger">fc-60</div>
+                                <div class="-fc-50 -bg-dark -color-dark-content -b-dark">fc-50</div>
+                                <div class="-fc-40 -bg-light -color-light-content -b-light">fc-40</div>                
+                                <div class="-fc-33 -bg-light -color-light-content -b-light">fc-33</div>                
+                                <div class="-fc-25 -bg-light -color-light-content -b-light">fc-25</div>                
+                                <div class="-fc-20 -bg-light -color-light-content -b-light">fc-20</div>                
+                                <div class="-fc-17 -bg-light -color-light-content -b-light">fc-17</div>                
+                                <div class="-fc-12 -bg-light -color-light-content -b-light">fc-12</div>                
+                                <div class="-fc-10 -bg-light -color-light-content -b-light">fc-10</div>                
+                            </section>
+                            <pre data-lang="html" class="-width-full">
+                                <code class="code-preview">
+                                    <section class="-flex -wrap">
+                                        <div class="-fc-100 -bg-primary -color-primary-content -b-primary">-fc-100</div>
+                                        <div class="-fc-83 -bg-secondary -color-secondary-content -b-secondary">-fc-83</div>
+                                        <div class="-fc-75 -bg-success -color-success-content -b-success">-fc-75</div>
+                                        <div class="-fc-67 -bg-warning -color-warning-content -b-warning">-fc-67</div>
+                                        <div class="-fc-60 -bg-danger -color-danger-content -b-danger">-fc-60</div>
+                                        <div class="-fc-50 -bg-dark -color-dark-content -b-dark">-fc-50</div>
+                                        <div class="-fc-40 -bg-light -color-light-content -b-light">-fc-40</div>                
+                                        <div class="-fc-33 -bg-light -color-light-content -b-light">-fc-33</div>                
+                                        <div class="-fc-25 -bg-light -color-light-content -b-light">-fc-25</div>                
+                                        <div class="-fc-20 -bg-light -color-light-content -b-light">-fc-20</div>                
+                                        <div class="-fc-17 -bg-light -color-light-content -b-light">-fc-17</div>                
+                                        <div class="-fc-12 -bg-light -color-light-content -b-light">-fc-12</div>                
+                                        <div class="-fc-10 -bg-light -color-light-content -b-light">-fc-10</div>                
+                                    </section>
+                                </code>
+                            </pre>
+                            <h4 class="">FLEX CSS CLASSES UTILITIES HANDLER</h4>
+                            <pre data-lang="css" class="-width-full"> 
+                                <code class="code-preview">
+/* css variables */
+.\-flex { display: flex;}
+.\-flex-inline {display: inline-flex}
+.\-flex-fade {flex: 0 1 auto}
+.\-flex-fame {flex: 1 0 auto}
+.\-flex-auto {flex: 1 1 auto}
+.\-flex-none {flex: 0 0 auto}
+.\-flex-row {flex-direction: row;}
+.\-flex-row-reverse{flex-direction: row-reverse;}
+.\-flex-column {flex-direction: column;}
+.\-flex-row-reverse{flex-direction: column-reverse;}
+
+.\-wrap{flex-wrap: wrap;}
+.\-nowrap{flex-wrap: nowrap;}
+.\-wrap-reverse{flex-wrap: wrap-reverse;}
+
+.\-flow-wrap {flex-flow: wrap;}
+.\-flow-nowrap {flex-flow: nowrap;}
+.\-flow-wrap-reverse {flex-flow: wrap-reverse;}
+.\-flow-row {flex-flow: row;}
+.\-flow-row-reverse {flex-flow: row-reverse;}
+.\-flow-column {flex-flow: column;}
+.\-flow-column-reverse {flex-flow: column-reverse;}
+
+.\-grow-0 {flex-grow: 0}
+.\-grow-1 {flex-grow: 1}
+.\-grow-2 {flex-grow: 2}
+.\-grow-3 {flex-grow: 3}
+.\-grow-4 {flex-grow: 4}
+.\-grow-5 {flex-grow: 5}
+.\-grow-6 {flex-grow: 6}
+.\-grow-7 {flex-grow: 7}
+.\-grow-8 {flex-grow: 8}
+.\-grow-9 {flex-grow: 9}
+.\-grow-10 {flex-grow: 10}
+.\-grow-11 {flex-grow: 11}
+.\-grow-12 {flex-grow: 12}
+
+.\-shrink-0 {flex-shrink: 0}
+.\-shrink-1 {flex-shrink: 1}
+.\-shrink-2 {flex-shrink: 2}
+.\-shrink-3 {flex-shrink: 3}
+.\-shrink-4 {flex-shrink: 4}
+.\-shrink-5 {flex-shrink: 5}
+.\-shrink-6 {flex-shrink: 6}
+.\-shrink-7 {flex-shrink: 7}
+.\-shrink-8 {flex-shrink: 8}
+.\-shrink-9 {flex-shrink: 9}
+.\-shrink-10 {flex-shrink: 10}
+.\-shrink-11 {flex-shrink: 11}
+.\-shrink-12 {flex-shrink: 12}
+
+.\-basis-0 {flex-basis: 0%}
+.\-basis-1 {flex-basis: 8.333333333%}
+.\-basis-2 {flex-basis: 16.6666666666%}
+.\-basis-3 {flex-basis: 25%}
+.\-basis-4 {flex-basis: 33.3333333333%}
+.\-basis-5 {flex-basis: 41.6666666666%}
+.\-basis-6 {flex-basis: 50%}
+.\-basis-7 {flex-basis: 58.333333333%}
+.\-basis-8 {flex-basis: 66.6666666666%}
+.\-basis-9 {flex-basis: 75%}
+.\-basis-10 {flex-basis: 83.3333333333%}
+.\-basis-11 {flex-basis: 91.6666666666%}
+.\-basis-12 {flex-basis: 100%}
+.\-basis-100vw {flex-basis: 100vw}
+.\-basis-100vh {flex-basis: 100vh}
+.\-basis-100vmax {flex-basis: 100vmax}
+.\-basis-100vmin {flex-basis: 100vmin}
+.\-basis-golden {flex-basis: 61.803398875%}
+.\-basis-auto {flex-basis: auto}
+.\-basis-content {flex-basis: content}
+
+.\-flex-container{display: flex; flex-flow: row wrap;  width: 80%; margin: 0 auto}
+.\-fc-10,.\-fc-12,.\-fc-17,.\-fc-20,.\-fc-25,.\-fc-33,.\-fc-40,.\-fc-50,.\-fc-60,.\-fc-67,.\-fc-75,.\-fc-80,.\-fc-83,.\-fc-100,.\-f-fluid {width:100%; margin:0}
+
+.\-fc-fluid{flex:2}
+.\-fc-clear{width: 100%}
+.\-fc-nomargin{display: flex; flex-flow: row wrap; padding:0 !important; margin:0 !important}
+
+
+@media (min-width: 576px) {
+  .\-fc-10,.\-fc-12,.\-fc-17,.\-fc-20,.\-fc-25,.\-fc-33,.\-fc-40,.\-fc-50,.\-fc-60,.\-fc-67,.\-fc-75,.\-fc-80,.\-fc-83,.\-fc-100,.\-f-fluid{margin:0 0 0 var(--m)}
+  .\-fc-10{width:calc(10% - var(--flex-container-margin))}
+  .\-fc-12{width:calc(12.5% - var(--flex-container-margin))}
+  .\-fc-17{width:calc(16.6667% - var(--flex-container-margin))}
+  .\-fc-20{width:calc(20% - var(--flex-container-margin))}
+  .\-fc-25{width:calc(25% - var(--flex-container-margin))}
+  .\-fc-33{width:calc(33.3334% - var(--flex-container-margin))}
+  .\-fc-40{width:calc(40% - var(--flex-container-margin))}
+  .\-fc-50{width:calc(50% - var(--flex-container-margin))}
+  .\-fc-60{width:calc(60% - var(--flex-container-margin))}
+  .\-fc-67{width:calc(66.6667% - var(--flex-container-margin))}
+  .\-fc-75{width:calc(75% - var(--flex-container-margin))}
+  .\-fc-80{width:calc(80% - var(--flex-container-margin))}
+  .\-fc-83{width:calc(83.3334% - var(--flex-container-margin))}
+  .\-fc-100{width:calc(100% - var(--flex-container-margin))}
+}
+
+@media (orientation: portrait) {
+  .\-flex-inline\@portrait {display: inline-flex}
+  .\-flex\@portrait {display: flex}
+  .\-flex-row\@portrait {flex-direction: row}
+  .\-flex-row-reverse\@portrait {flex-direction: row-reverse}
+  .\-flex-column\@portrait {flex-direction: column}
+  .\-flex-column-reverse\@portrait {flex-direction: column-reverse}
+  .\-nowrap\@portrait {flex-wrap: nowrap}
+  .\-wrap\@portrait {flex-wrap: wrap}
+  .\-wrap-reverse\@portrait {flex-wrap: wrap-reverse}
+}
+  
+@media (orientation: landscape) {
+  .\-flex-inline\@landscape {display: inline-flex}
+  .\-flex\@landscape {display: flex}
+  .\-flex-row\@landscape {flex-direction: row}
+  .\-flex-row-reverse\@landscape {flex-direction: row-reverse}
+  .\-flex-column\@landscape {flex-direction: column}
+  .\-flex-column-reverse\@landscape {flex-direction: column-reverse}
+  .\-nowrap\@landscape {flex-wrap: nowrap}
+  .\-wrap\@landscape {flex-wrap: wrap}
+  .\-wrap-reverse\@landscape {flex-wrap: wrap-reverse}
+}
+                                </code>
+                            </pre>
+                            <hr>
+                        </div>
+                    </section>                   
+                    <hr>
+                </div>
+            </section> 
+        </section> 
+        <hr>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

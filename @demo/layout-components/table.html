@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>TABLE Layout Component -- Liquid-CSS-Framework Demo</title>
+</head>
+<body>
+    <section class="liquid-app">
+        <section class="liquid-page-container">
+            <nav class="nav -sticky -top">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="../index.html">HOME</a></li>
+                    <li class="nav-item"><a href="../base.html">BASE</a></li>
+                    <li class="nav-item"><a href="../grid.html">GRID</a></li>
+                    <li class="nav-item"><a href="../container.html">CONTAINER</a></li>
+                    <li class="nav-item"><a href="../z-index.html">Z-INDEX</a></li>
+                    <li class="nav-item "><a href="../helpers.html">HELPERS</a></li>
+                    <li class="nav-item"><a href="../effects.html">EFFECTS</a></li>
+                    <li class="nav-item"><a href="../animations.html">ANIMATIONS</a></li>
+                    <li class="nav-item "><a href="../heading.html">HEADING</a></li>
+                    <li class="nav-item"><a href="../typo.html">TYPO</a></li>
+                    <li class="nav-item"><a href="../ui-components.html">UI-COMPONENTS</a></li>
+                    <li class="nav-item -active-parent"><a href="../layout-components.html">LAYOUT-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../extensed-components.html">EXTENSED-COMPONENTS</a></li>
+                </ul>
+            </nav>
+            <section class="liquid-grid -middle -center">
+                <div class="col -col-12">
+                    <h2>TABLE</h2>
+                </div>
+                <div class="col -col-12">
+                    <h2>Normal</h2>
+                    <table class="table">
+                        <thead>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Info</th>
+                            <th>Plus</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-th="Name">hello</td>
+                                <td data-th="Description">bla bal bla</td>
+                                <td data-th="Name">bla bal bla</td>
+                                <td data-th="Description">bla bal bla</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-th="Name">hello</td>
+                                <td data-th="Description">bla bal bla</td>
+                                <td data-th="Name">bla bal bla</td>
+                                <td data-th="Description">bla bal bla</td>
+                            </tr>
+                            
+                            <tr>
+                                <td data-th="Name">hello</td>
+                                <td data-th="Description">bla bal bla</td>
+                                <td data-th="Name">bla bal bla</td>
+                                <td data-th="Description">bla bal bla</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <hr>
+            <section class="liquid-grid -middle -center">
+                <div class="col -col-12 -start -center">
+                    <h3>TABLE</h3>
+                        <pre>.table</pre>
+                </div>
+                <div class="col -col-12">
+                    <h2>Tables</h2>
+                    <p>Tables include default styles for tables and data sets.</p>
+                    <p>
+                        Add the table class to any table element. 
+                        The class will add padding, border and emphasized table header.
+                    </p>
+                    <h3>Default tables</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>info</th>
+                                <th>date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="active">
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                            </tr>
+                            <tr>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                            </tr>
+                            <tr>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <h3>Striped tables</h3>
+                    <p>
+                        Use the table-striped class to
+                        table to add zebra striped style. For hoverable table rows,
+                        you can add the -hover class to enable hover style.
+                    </p>
+                    <p>Use the active class to make <tr> element highlighted.</p> 
+                    <table class="table -striped -hover">
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>info</th>
+                                <th>date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                            </tr>
+                            <tr>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                            </tr>
+                            <tr>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                </div>
+                <div class="col -col-6">
+                    <h3>Scrollable tables</h3>
+                    <p>Add the table-scroll class to table to have a horizontally scrollable table.</p>
+                    <table class="table -scroll">
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>info</th>
+                                <th>date</th>
+                                <th>name</th>
+                                <th>info</th>
+                                <th>date</th>
+                                <th>name</th>
+                                <th>info</th>
+                                <th>date</th>
+                                <th>name</th>
+                                <th>info</th>
+                                <th>date</th>
+                                <th>name</th>
+                                <th>info</th>
+                                <th>date</th>
+                                <th>name</th>
+                                <th>info</th>
+                                <th>date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="active">
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                            </tr>
+                            <tr>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                            </tr>
+                            <tr>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                                <td>Dude</td>
+                                <td>Bla Bla bLa</td>
+                                <td>10/11/2022</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col -col-12">
+                    <h3>Responsive and Inline Table</h3>
+                    <table class="table -scroll  -striped -hover -responsive -inline">
+                        <caption>Statement Summary</caption>
+                        <thead>
+                          <tr>
+                            <th scope="col">Account</th>
+                            <th scope="col">Due Date</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Period</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td data-label="Account">Visa - 3412</td>
+                            <td data-label="Due Date">04/01/2016</td>
+                            <td data-label="Amount">$1,190</td>
+                            <td data-label="Period">03/01/2016 - 03/31/2016</td>
+                          </tr>
+                          <tr>
+                            <td scope="row" data-label="Account">Visa - 6076</td>
+                            <td data-label="Due Date">03/01/2016</td>
+                            <td data-label="Amount">$2,443</td>
+                            <td data-label="Period">02/01/2016 - 02/29/2016</td>
+                          </tr>
+                          <tr>
+                            <td scope="row" data-label="Account">Corporate AMEX</td>
+                            <td data-label="Due Date">03/01/2016</td>
+                            <td data-label="Amount">$1,181</td>
+                            <td data-label="Period">02/01/2016 - 02/29/2016</td>
+                          </tr>
+                          <tr>
+                            <td scope="row" data-label="Acount">Visa - 3412</td>
+                            <td data-label="Due Date">02/01/2016</td>
+                            <td data-label="Amount">$842</td>
+                            <td data-label="Period">01/01/2016 - 01/31/2016</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col -col-12">
+                    <h4>CODE</h4> 
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        HTML
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="html" class="-width-full">
+                            <code class="code-preview">
+                                
+                            </code>
+                        </pre>
+                      </div>
+                    </div>
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        CSS
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="css" class="-width-full"> 
+                          <code class="code-preview">
+                            <pre data-lang="css" class="-width-full"> 
+                                <code class="code-preview">
+/* css classes */
+
+                                </code>
+                            </pre>
+                          </code>
+                      </pre>
+                      </div>
+                    </div>        
+                </div>
+            </section> 
+        </section> 
+        <hr>
+    </section>
+    <script src="../main.js"></script>
+</body>
+</html>

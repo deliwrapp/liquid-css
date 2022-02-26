@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>COLORS EFFECTS -- Liquid-CSS-Framework Demo</title>
+</head>
+<body>
+    <section class="liquid-app">
+        <section id="top-page" class="liquid-page-container">
+            <nav class="nav -sticky -top">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="../index.html">HOME</a></li>
+                    <li class="nav-item"><a href="../base.html">BASE</a></li>
+                    <li class="nav-item"><a href="../grid.html">GRID</a></li>
+                    <li class="nav-item"><a href="../container.html">CONTAINER</a></li>
+                    <li class="nav-item"><a href="../z-index.html">Z-INDEX</a></li>
+                    <li class="nav-item "><a href="../heading.html">HEADING</a></li>
+                    <li class="nav-item "><a href="../helpers.html">HELPERS</a></li>
+                    <li class="nav-item -active-parent"><a href="../effects.html">EFFECTS</a></li>
+                    <li class="nav-item"><a href="../animations.html">ANIMATIONS</a></li>
+                    <li class="nav-item"><a href="../typo.html">TYPO</a></li>
+                    <li class="nav-item"><a href="../ui-components.html">UI-COMPONENTS</a></li>
+                    <li class="nav-item"><a href="../layout-components.html">LAYOUT-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../extensed-components.html">EXTENSED-COMPONENTS</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <nav class="nav -sticky -top-4rm">
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a href="#top-page">
+                            Back to the Top
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="display.html">
+                            DISPLAY
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="opacity.html">
+                            OPACITY
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="colors.html">
+                            COLORS
+                        </a>
+                    </li>
+                    <li class="nav-item -active">
+                        <a href="border.html">
+                            BORDER
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shadows.html">
+                            SHADOWS
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="perspective.html">
+                            PERSPECTIVE
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="path.html">
+                            PATH
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+            <section class="liquid-grid -middle -center -text-center">
+                <div class="col -col-12 ">
+                    <h2>BORDER EFFECTS</h2>
+                </div>
+                <div class="col -col-12 -start -center">
+                    <pre>divider divider-vert -b-{$colorSelected}, -b-{$typeSelected}, -b-{$sizeSelected}, -b-{$colorSelected}-hover, -b-{$typeSelected}-hover, -b-{$sizeSelected}-hover,</pre>
+                </div>
+                <hr>
+                <div class="col -col-12">
+                    <h3>DIVIDER</h3>
+                    <!-- divider element -->
+                    <div class="divider"></div>
+                    <!-- divider element with text -->
+                    <p>Element horizontal 1</p>
+                    <div class="divider -text-center" data-content="OR"></div>
+                    <p>Element horizontal 2</p>
+                </div>
+                <!-- vertical divider element with text -->
+                <div class="col -col-5">
+                    <!-- column content -->
+                    <p>Column 1</p>
+                </div>
+                <div class="divider-vert" data-content="OR"></div>
+                <div class="col -col-5">
+                    <p>Column 2</p>
+                </div>
+                <div class="col -col-12">
+                    <h3>BORDER</h3>
+                </div>
+                <div class="col -col-12  margin -m5 -b-primary -b-danger-hover -b-dotted-hover -b-size-1rem-hover">
+                    -b-primary -b-danger-hover -b-dotted-hover -b-size-1rem-hover
+                </div>
+                <div class="col -col-11 margin -m5 -b-secondary -b-size-2 -b-success-hover -b-double-hover -b-size-3rem-hover">
+                    -b-secondary -b-size-2 -b-success-hover-b-double-hover-b-size-3rem-hover
+                </div><div class="col -col-10 margin -m5 -b-tertiary -b-size-3"> tertiary border-size 3px</div> 
+                <div class="col -col-9 margin -m5 -b-success -b-size-4">success border-size 4px</div>
+                <div class="col -col-8 margin -m5 -b-warning -b-size-5">warning border-size 5px</div>
+                <div class="col -col-7 -margin -m5 -b-danger -b-size-6">danger border-size 6px</div>
+                <div class="col -col-6 margin -m5 -b-dark -b-size-7">dark border-size 7px</div>
+                <div class="col -col-6 margin -m5 -b-light -b-size-8">light border-size 8px</div>
+                <div class="col -col-6 margin -m5 -b-dark -b-dotted -b-size-9">dotted border-size 9px</div>
+                <div class="col -col-6 margin -m5 -b-dark -b-dashed -b-size-10">dashed border-size 10px</div>
+                <div class="col -col-6 margin -m5 -b-dark -b-solid -b-size-1rem">solid border-size 1rem</div>
+                <div class="col -col-6 margin -m5 -b-dark -b-double -b-size-2rem">double border-size 2rem</div>
+                <div class="col -col-6 margin -m5 -b-dark -b-groove -b-size-3rem">groove border-size 3rem</div>
+                <div class="col -col-6 margin -m5 -b-dark -b-ridge -b-size-4rem">ridge border-size 4rem</div>
+                <div class="col -col-6 margin -m5 -b-dark -b-inset">inset</div>
+                <div class="col -col-6 margin -m5 -b-dark -b-outset  -b-size-5rem">outset border-size 5rem</div>
+                <div class="col -col-6 margin -m5 -b-dark -b-none">none</div>
+                <div class="col -col-6 margin -m5 -b-dark -b-hidden">hidden</div>
+                <div class="col -col-6 margin -m5 -b-dark -b-mix -b-size-1rem">mix border-size 1rem</div>
+                <div class="col -col-12">
+                    <h4>CODE</h4> 
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        HTML
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="html" class="-width-full">
+                            <code class="code-preview">
+                                <section class="liquid-grid -middle -center -text-center">
+                                    <div class="col -col-12  -b-primary margin -m5">primary</div>
+                                    <div class="col -col-11 margin -m5 -b-secondary -b-size-2 -b-success-hover -b-double-hover -b-size-3rem-hover">
+                                        secondary border-size 2px -b-success-hover-b-double-hover-b-size-3rem-hover
+                                    </div>
+                                    <div class="col -col-10 margin -m5 -b-tertiary -b-size-3"> tertiary border-size 3px</div> 
+                                    <div class="col -col-9 margin -m5 -b-success -b-size-4">success border-size 4px</div>
+                                    <div class="col -col-8 margin -m5 -b-warning -b-size-5">warning border-size 5px</div>
+                                    <div class="col -col-7 -margin -m5 -b-danger -b-size-6">danger border-size 6px</div>
+                                    <div class="col -col-6 margin -m5 -b-dark -b-size-7">dark border-size 7px</div>
+                                    <div class="col -col-6 margin -m5 -b-light -b-size-8">light border-size 8px</div>
+                                    <div class="col -col-6 margin -m5 -b-dark -b-dotted -b-size-9">dotted border-size 9px</div>
+                                    <div class="col -col-6 margin -m5 -b-dark -b-dashed -b-size-10">dashed border-size 10px</div>
+                                    <div class="col -col-6 margin -m5 -b-dark -b-solid -b-size-1rem">solid border-size 1rem</div>
+                                    <div class="col -col-6 margin -m5 -b-dark -b-double -b-size-2rem">double border-size 2rem</div>
+                                    <div class="col -col-6 margin -m5 -b-dark -b-groove -b-size-3rem">groove border-size 3rem</div>
+                                    <div class="col -col-6 margin -m5 -b-dark -b-ridge -b-size-4rem">ridge border-size 4rem</div>
+                                    <div class="col -col-6 margin -m5 -b-dark -b-inset">inset</div>
+                                    <div class="col -col-6 margin -m5 -b-dark -b-outset  -b-size-5rem">outset border-size 5rem</div>
+                                    <div class="col -col-6 margin -m5 -b-dark -b-none">none</div>
+                                    <div class="col -col-6 margin -m5 -b-dark -b-hidden">hidden</div>
+                                    <div class="col -col-6 margin -m5 -b-dark -b-mix -b-size-1rem">mix border-size 1rem</div>
+                                </section>
+                            </code>
+                        </pre>
+                      </div>
+                    </div>
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        CSS
+                      </label>
+                      <div class="-accordion-body">                                       
+                        <pre data-lang="css" class="-width-full"> 
+                            <code class="code-preview">
+/* css variables */
+/*------COLOR------*/
+.\-b-primary {
+    border: var(--liquid-color-primary-shade) var(--border-primary-type) var(--border-primary-size);
+}
+.\-b-secondary {
+    border: var(--liquid-color-secondary-shade) var(--border-secondary-type) var(--border-secondary-size);
+}
+.\-b-tertiary {
+    border: var(--liquid-color-tertiary-shade) var(--border-tertiary-type) var(--border-tertiary-size);
+}
+.\-b-success {
+    border: var(--liquid-color-success-shade) var(--border-success-type) var(--border-success-size);
+}
+.\-b-warning {
+    border: var(--liquid-color-warning-shade) var(--border-warning-type) var(--border-warning-size);
+}
+.\-b-danger {
+    border: var(--liquid-color-danger-shade) var(--border-danger-type) var(--border-danger-size);
+}
+.\-b-dark {
+    border: var(--liquid-color-dark-shade) var(--border-dark-type) var(--border-dark-size);
+}
+.\-b-light {
+    border: var(--liquid-color-light-shade) var(--border-light-type) var(--border-light-size);
+}
+/*------TYPE------*/
+.\-b-dotted {border-style: dotted;}
+.\-b-dashed {border-style: dashed;}
+.\-b-solid {border-style: solid;}
+.\-b-double {border-style: double;}
+.\-b-groove {border-style: groove;}
+.\-b-ridge {border-style: ridge;}
+.\-b-inset {border-style: inset;}
+.\-b-outset {border-style: outset;}
+.\-b-none {border-style: none;}
+.\-b-hidden {border-style: hidden;}
+.\-b-mix {border-style: dotted dashed solid double;}
+/*------SIZE------*/
+.\-b-size-1 {border-width: 1px;}
+.\-b-size-2 {border-width: 2px;}
+.\-b-size-3 {border-width: 3px;}
+.\-b-size-4 {border-width: 4px;}
+.\-b-size-5 {border-width: 5px;}
+.\-b-size-6 {border-width: 6px;}
+.\-b-size-7 {border-width: 7px;}
+.\-b-size-8 {border-width: 9px;}
+.\-b-size-9 {border-width: 9px;}
+.\-b-size-10 {border-width: 10px;}
+.\-b-size-1rem {border-width: 1rem;}
+.\-b-size-2rem {border-width: 2rem;}
+.\-b-size-3rem {border-width: 3rem;}
+.\-b-size-4rem {border-width: 4rem;}
+.\-b-size-5rem {border-width: 5rem;}
+/*------ROUNDED------*/
+.\-b-rounded-0   {border-radius: 0;}
+.\-b-rounded-sm  {border-radius: 5;}
+.\-b-rounded     {border-radius: 10;}
+.\-b-rounded-md  {border-radius: 15;}
+.\-b-rounded-lg  {border-radius: 20;}
+.\-b-rounded-100 {border-radius: 100%;}
+
+/*------HOVER-COLOR------*/
+.\-b-primary-hover:hover {
+    border: var(--liquid-color-primary) var(--border-primary-type) var(--border-primary-size-hover);
+}
+.\-b-secondary-hover:hover {
+    border: var(--liquid-color-secondary) var(--border-secondary-type) var(--border-secondary-size-hover);
+}
+.\-b-primary-hover:hover {
+    border: var(--liquid-color-tertiary) var(--border-tertiary-type) var(--border-tertiary-size-hover);
+}
+.\-b-success-hover:hover {
+    border: var(--liquid-color-success) var(--border-success-type) var(--border-success-size-hover);
+}
+.\-b-warning-hover:hover {
+    border: var(--liquid-color-warning) var(--border-warning-type) var(--border-warning-size-hover);
+}
+.\-b-danger-hover:hover {
+    border: var(--liquid-color-danger) var(--border-danger-type) var(--border-danger-size-hover);
+}
+.\-b-dark-hover:hover {
+    border: var(--liquid-color-dark) var(--border-dark-type) var(--border-dark-size-hover);
+}
+.\-b-light-hover:hover {
+    border: var(--liquid-color-light) var(--border-light-type) var(--border-light-size-hover);
+}
+/*------TYPE-HOVER------*/
+.\-b-dotted-hover:hover {border-style: dotted;}
+.\-b-dashed-hover:hover {border-style: dashed;}
+.\-b-solid-hover:hover {border-style: solid;}
+.\-b-double-hover:hover {border-style: double;}
+.\-b-groove-hover:hover {border-style: groove;}
+.\-b-ridge-hover:hover {border-style: ridge;}
+.\-b-inset-hover:hover {border-style: inset;}
+.\-b-outset-hover:hover {border-style: outset;}
+.\-b-none-hover:hover {border-style: none;}
+.\-b-hidden-hover:hover {border-style: hidden;}
+.\-b-mix-hover:hover {border-style: dotted dashed solid double;}
+/*------SIZE-HOVER------*/
+.\-b-size-1-hover:hover {border-width: 1px;}
+.\-b-size-2-hover:hover {border-width: 2px;}
+.\-b-size-3-hover:hover {border-width: 3px;}
+.\-b-size-4-hover:hover {border-width: 4px;}
+.\-b-size-5-hover:hover {border-width: 5px;}
+.\-b-size-6-hover:hover {border-width: 6px;}
+.\-b-size-7-hover:hover {border-width: 7px;}
+.\-b-size-8-hover:hover {border-width: 9px;}
+.\-b-size-9-hover:hover {border-width: 9px;}
+.\-b-size-10-hover:hover {border-width: 10px;}
+.\-b-size-1rem-hover:hover {border-width: 1rem;}
+.\-b-size-2rem-hover:hover {border-width: 2rem;}
+.\-b-size-3rem-hover:hover {border-width: 3rem;}
+.\-b-size-4rem-hover:hover {border-width: 4rem;}
+.\-b-size-5rem-hover:hover {border-width: 5rem;}
+/*------ROUNDED-HOVER------*/
+.\-b-rounded-0-h:hover   {border-radius: 0;}
+.\-b-rounded-sm-h:hover  {border-radius: 5;}
+.\-b-rounded-h:hover    {border-radius: 10;}
+.\-b-rounded-md-h:hover  {border-radius: 15;}
+.\-b-rounded-lg-h:hover  {border-radius: 20;}
+.\-b-rounded-100-h:hover {border-radius: 100%;}
+                            </code>
+                        </pre>
+                      </div>
+                    </div>        
+                </div>
+            </section> 
+        </section> 
+        <hr>
+    </section>
+    <script src="../main.js"></script>
+</body>
+</html>

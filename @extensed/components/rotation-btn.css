@@ -1,0 +1,31 @@
+.rotation-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100%;
+    background-color: #ededed;
+}
+.rotation-btn-menu-button {
+    transition: fill 500ms;
+}
+.rotation-btn-outer-circle {
+    transform-origin: 60px 60px;
+    transition: transform 2s cubic-bezier(0.62, 0.005, 0, 1.005);
+}
+.rotation-btn-button {
+    max-width: 12rem;
+    background: none;
+    border: 0 none;
+    font-size: 0;
+    cursor: pointer;
+}
+.rotation-btn-button svg {
+    width: 100%;
+    height: auto;
+}
+.rotation-btn-button:hover .rotation-btn-menu-button {
+    fill: red;
+}
+.rotation-btn-button:hover .rotation-btn-outer-circle {
+    transform: rotate(360deg);
+}

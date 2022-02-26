@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>PAGINATION UI-COMPONENTS -- Liquid-CSS-Framework Demo</title>
+</head>
+
+<body>
+    <section class="liquid-app">
+        <section id="top-page" class="liquid-page-container">
+            <nav class="nav -sticky -top">
+                <ul class="nav-items -shad-9 -shad-14-h">
+                    <li class="nav-item"><a href="../index.html">HOME</a></li>
+                    <li class="nav-item "><a href="../base.html">BASE</a></li>
+                    <li class="nav-item "><a href="../grid.html">GRID</a></li>
+                    <li class="nav-item "><a href="../container.html">CONTAINER</a></li>
+                    <li class="nav-item "><a href="../z-index.html">Z-INDEX</a></li>
+                    <li class="nav-item "><a href="../helpers.html">HELPERS</a></li>
+                    <li class="nav-item "><a href="../effects.html">EFFECTS</a></li>
+                    <li class="nav-item "><a href="../animations.html">ANIMATIONS</a></li>
+                    <li class="nav-item "><a href="../heading.html">HEADING</a></li>
+                    <li class="nav-item "><a href="../typo.html">TYPO</a></li>
+                    <li class="nav-item -active-parent"><a href="../ui-components.html">UI-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../layout-components.html">LAYOUT-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../extensed-components.html">EXTENSED-COMPONENTS</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <nav class="nav -sticky -top-4rm">
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a href="#top-page">
+                            Back to the Top
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../ui-components.html#cursor-section">
+                            CURSOR
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="avatar.html">
+                            AVATAR
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="badge.html">
+                            BADGE
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="alert.html">
+                            ALERT
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="button.html">
+                            BUTTON
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="chip.html">
+                            CHIP
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="dropdown.html">
+                            DROPDOWN
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="link.html">
+                            LINK
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="breadcrumb.html">
+                            BREADCRUMB
+                        </a>
+                    </li>
+                    <li class="nav-item -active">
+                        <a href="pagination.html">
+                            PAGINATION
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tab.html">
+                            TAB
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html">
+                            MENU
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="placeholders.html">
+                            PLACEHOLDERS
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="form.html">
+                            FORM
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="tooltip.html">
+                            TOOLTIP
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="popovers.html">
+                            POPOVERS
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="progress.html">
+                            PROGRESS
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="icon.html">
+                            ICON
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+            <section class="liquid-grid -middle -center">
+                <div class="col -col-12 ">
+                    <h2>PAGINATION</h2>
+                </div>
+                <div class="col -col-12 -start -center">
+                    <pre>.pagination -page-item -page-link -page-prev -page-next -pagination-dots -link-box -page-item-subtitle -page-item-title -active -disabled</pre>
+                    <p>
+                        Add a container element with the <pre>pagination</pre> class.
+                        And add child elements with the <pre>-page-item</pre> class.
+                        The <pre>-page-item</pre> with the <pre>-active</pre> class will be highlighted.
+                        You can add the disabled class to the page-item to have unclickable page links.</p>
+                </div>
+                <hr>
+                <div class="col -col-12 -middle -center">
+                    <ul class="pagination">
+                        <li class="-page-item -disabled ">
+                          <a class="-page-link -page-prev" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="-page-item -active">
+                          <a class="-page-link" href="#">1</a>
+                        </li>
+                        <li class="-page-item">
+                          <a  class="-page-link" href="#">2</a>
+                        </li>
+                        <li class="-page-item">
+                          <a class="-page-link" href="#">3</a>
+                        </li>
+                        <li class="-page-item">
+                          <span class="-pagination-dots">...</span>
+                        </li>
+                        <li class="-page-item">
+                          <a class="-page-link" href="#">12</a>
+                        </li>
+                        <li class="-page-item">
+                          <a class="-page-link -page-next" href="#">Next</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="col -col-12 -middle -center">
+                    <p>You could use previous and next pagination to navigate.</p>
+                    <ul class="pagination -full">
+                        <li class="-page-item -page-prev">
+                            <a class="-page-link" href="#">
+                                <div class="-link-box -page-item-subtitle">Previous</div>
+                                <div class="-link-box -page-item-title h5">Getting started</div>
+                            </a>
+                        </li>
+                        <li class="-page-item -page-next">
+                            <a class="-page-link" href="#">
+                                <div class="-link-box -page-item-title h5">Layout</div>
+                                <div class="-link-box -page-item-subtitle">Next</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col -col-12">
+                    <h4>CODE</h4> 
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        HTML
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="html" class="-width-full">
+                            <code class="code-preview">
+                                <ul class="pagination">
+                                    <li class="-page-item -disabled ">
+                                      <a class="-page-link -page-prev" href="#" tabindex="-1">Previous</a>
+                                    </li>
+                                    <li class="-page-item -active">
+                                      <a class="-page-link" href="#">1</a>
+                                    </li>
+                                    <li class="-page-item">
+                                      <a  class="-page-link" href="#">2</a>
+                                    </li>
+                                    <li class="-page-item">
+                                      <a class="-page-link" href="#">3</a>
+                                    </li>
+                                    <li class="-page-item">
+                                      <span class="-pagination-dots">...</span>
+                                    </li>
+                                    <li class="-page-item">
+                                      <a class="-page-link" href="#">12</a>
+                                    </li>
+                                    <li class="-page-item">
+                                      <a class="-page-link -page-next" href="#">Next</a>
+                                    </li>
+                                </ul>
+                                <ul class="pagination -full">
+                                    <li class="-page-item -page-prev">
+                                        <a class="-page-link" href="#">
+                                            <div class="-link-box -page-item-subtitle">Previous</div>
+                                            <div class="-link-box -page-item-title h5">Getting started</div>
+                                        </a>
+                                    </li>
+                                    <li class="-page-item -page-next">
+                                        <a class="-page-link" href="#">
+                                            <div class="-link-box -page-item-title h5">Layout</div>
+                                            <div class="-link-box -page-item-subtitle">Next</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </code>
+                        </pre>
+                      </div>
+                    </div>
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        CSS
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="css" class="-width-full"> 
+                          <code class="code-preview">
+/* CSS CLASSES */
+.pagination {
+    display: flex;
+    list-style: none;
+    margin: var(--pagination-margin-v) var(--pagination-margin-h);
+    padding: var(--pagination-padding-v) var(--pagination-padding-h);
+}
+.pagination .\-link-box {
+    float: left;
+    border-top: var(--link-box-border-t);
+    border-bottom: var(--link-box-border-b);
+    border-left: var(--link-box-border-l);
+    border-right: var(--link-box-border-r);
+    color: var(--link-box-color);
+    margin: var(--link-box-margin-v) var(--link-box-margin-h);
+    padding: var(--link-box-padding-v) var(--link-box-padding-h);
+}
+.pagination .\-page-item {
+    margin: var(--page-item-margin-v) var(--page-item-margin-h);
+    padding: var(--page-item-padding-v) var(--page-item-padding-h);
+}
+.pagination .\-page-item .\-pagination-dots {
+    display: inline-block;
+    margin: var(--pagination-dots-margin-v) var(--pagination-dots-margin-h);
+    padding: var(--pagination-dots-padding-v) var(--pagination-dots-padding-h);
+}
+.pagination .\-page-item .\-page-link  {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--page-link-w);
+    height: var(--page-link-h);
+    border-radius: var(--page-link-radius);
+    margin: var(--page-link-margin-v) var(--page-link-margin-h);
+    padding: var(--page-link-padding-v) var(--page-link-padding-h);
+    text-decoration: var(--page-link-text-decoration);
+    font-size: var(--page-link-font-size);
+}
+.pagination .\-page-item .\-page-link:hover {
+    color: var(--page-link-color-hov);
+    font-size: var(--page-link-font-size-hov);
+}
+.pagination .\-page-item .\-page-link:focus {
+    color: var(--page-link-color-foc);
+    font-size: var(--page-link-font-size-hov);
+}
+.pagination .\-page-item.\-active .\-page-link {
+    background: var(--page-link-active-bg);
+    color: var(--page-link-active-color);
+    border: var(--page-link-active-border);
+    border-radius: var(--page-link-active-radius);
+    font-size: var(--page-link-active-font-size);
+}
+.pagination .\-page-item.\-disabled .\-page-link {
+    cursor: var(--page-item-disabled-cursor);
+    opacity: var(--page-item-disabled-opacity);
+    pointer-events: none;
+}
+.pagination .\-page-link.\-page-prev,
+.pagination .\-page-link.\-page-next {
+    width: 100%;
+}
+.pagination .\-page-item.\-page-prev,
+.pagination .\-page-item.\-page-next {
+    display: flex;
+    cursor: pointer;
+    width: var(--pagination-prev-next-block-width);
+    font-size: var(--pagination-prev-next-block-font-size);
+    border-width: var(--pagination-prev-next-block-border-width);
+    border-style: var(--pagination-prev-next-block-border-style);
+    border-style: var(--pagination-prev-next-block-border-style);
+    border-color: var(--pagination-prev-next-block-border-color);
+    color: var(--pagination-prev-next-block-color);
+    margin: var(--pagination-prev-next-block-margin-v) var(--pagination-prev-next-block-margin-h);
+    padding: var(--pagination-prev-next-block-padding-v) var(--pagination-prev-next-block-padding-h);
+}
+.pagination .\-page-item.\-page-next {
+    text-align: right;
+}
+.pagination.\-full .\-page-link {
+    width: 100%;
+}
+.pagination .\-page-item .\-page-item-title {
+    font-size: var(--page-item-title-font-size);
+    color: var(--page-item-title-color);
+    margin: var(--page-item-title-margin-v) var(--page-item-title-margin-h);
+    padding: var(--page-item-title-padding-v) var(--page-item-title-padding-h);
+}
+.pagination .\-page-item .\-page-item-subtitle {
+    font-size: var(--page-item-subtitle-font-size);
+    color: var(--page-item-subtitle-color);
+    margin: var(--page-item-subtitle-margin-v) var(--page-item-subtitle-margin-h);
+    padding: var(--page-item-subtitle-padding-v) var(--page-item-subtitle-padding-h);
+    opacity: var(--page-item-subtitle-opacity);
+}
+.pagination .\-page-item .\-page-item-title:active,
+.pagination .\-page-item .\-page-item-title:hover {
+    font-size: var(--page-item-title-font-size-hov);
+    color: var(--page-item-title-color-hov);
+    margin: var(--page-item-title-margin-v-hov) var(--page-item-title-margin-h-hov);
+    padding: var(--page-item-title-padding-v-hov) var(--page-item-title-padding-h-hov);
+}
+.pagination .\-page-item .\-page-item-subtitle:active,
+.pagination .\-page-item .\-page-item-subtitle:hover {
+    font-size: var(--page-item-subtitle-font-size-hov);
+    color: var(--page-item-subtitle-color-hov);
+    margin: var(--page-item-subtitle-margin-v-hov) var(--page-item-subtitle-margin-h-hov);
+    padding: var(--page-item-subtitle-padding-v-hov) var(--page-item-subtitle-padding-h-hov);
+    opacity: var(--page-item-subtitle-opacity-hov);
+}
+                          </code>
+                      </pre>
+                      </div>
+                    </div>        
+                </div>
+            </section>
+        </section>
+        <hr>
+    </section>
+    </section>
+    <script src="../main.js"></script>
+</body>
+
+</html>

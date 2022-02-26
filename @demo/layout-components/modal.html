@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>MODAL Layout Component -- Liquid-CSS-Framework Demo</title>
+</head>
+<body>
+    <section class="liquid-app">
+        <section class="liquid-page-container">
+            <nav class="nav -sticky -top">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="../index.html">HOME</a></li>
+                    <li class="nav-item"><a href="../base.html">BASE</a></li>
+                    <li class="nav-item"><a href="../grid.html">GRID</a></li>
+                    <li class="nav-item"><a href="../container.html">CONTAINER</a></li>
+                    <li class="nav-item"><a href="../z-index.html">Z-INDEX</a></li>
+                    <li class="nav-item "><a href="../helpers.html">HELPERS</a></li>
+                    <li class="nav-item"><a href="../effects.html">EFFECTS</a></li>
+                    <li class="nav-item"><a href="../animations.html">ANIMATIONS</a></li>
+                    <li class="nav-item "><a href="../heading.html">HEADING</a></li>
+                    <li class="nav-item"><a href="../typo.html">TYPO</a></li>
+                    <li class="nav-item"><a href="../ui-components.html">UI-COMPONENTS</a></li>
+                    <li class="nav-item -active-parent"><a href="../layout-components.html">LAYOUT-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../extensed-components.html">EXTENSED-COMPONENTS</a></li>
+                </ul>
+            </nav>
+            <section class="liquid-grid -middle -center">
+                <div class="col -col-12 ">
+                    <h2>MODAL</h2>
+                </div>
+                <hr>
+                <div class="col -col-12 -start -center">
+                    <h3>PREVIEW</h3>
+                    <pre>.modal -modal-container -modal-header -modal-body -modal-footer -modal-overlay -active -modal-sm -modal-lg -modal-fullwidth -modal-fullheight tooltip</pre>
+                    <p>
+                      Add a container element with the modal class. And add a real container modal-container and overlay modal-overlay inside it.
+                      You can add child elements with the modal-header,
+                      -modal-body and -modal-footer - any or all of them.
+                  </p>
+                  <pre>-anim-2 -anim-3 -anim-4 -anim-5</pre>
+                    <p>
+                      If you want a diferent animation loading, add -anim-2 -anim-3 -anim-4 -anim-5 to class .modal. 
+                      Animation can be configurated with theme variables (see theme variables).
+                    </p>
+                </div>
+                <div class="col -col-12">
+                  <a class="btn -primary -modal-open" data-modal-id="modal-1" href="#">Open Modal</a>
+                  <div class="modal" id="modal-1">
+                    <a href="#close" class="-modal-overlay -modal-close" aria-label="Close"></a>
+                    <div class="-modal-container -shad-8">
+                      <div class="-modal-header">
+                        <div class="-modal-title h5">Basic Modal title</div>
+                        <a href="#close" class="btn btn-clear -modal-close" aria-label="Close"></a>
+                      </div>
+                      <div class="-modal-body">
+                        <div class="-content">
+                          <!-- content here -->
+                          <p>Modal Content</p>
+                        </div>
+                      </div>
+                      <div class="-modal-footer">
+                        <p>Modal Footer</p>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <p>Use the -modal-sm class for a smaller modal dialog.</p>
+
+                  <a class="btn -primary -modal-open -modal-close" data-modal-id="modal-2" href="#">Open Modal</a>
+                  <div class="modal -modal-sm -anim-2" id="modal-2">
+                    <a href="#close" class="-modal-overlay -modal-close" aria-label="Close"></a>
+                    <div class="-modal-container -shad-8">
+                      <div class="-modal-header">
+                        <div class="-modal-title h5">Basic Modal title</div>
+                        <a href="#close" class="btn btn-clear -modal-close" aria-label="Close"></a>
+                      </div>
+                      <div class="-modal-body">
+                        <div class="-content">
+                          <!-- content here -->
+                          <p>Modal Content</p>
+                        </div>
+                      </div>
+                      <div class="-modal-footer">
+                        <p>Modal Footer</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p>Use the -modal-lg class for a large size modal.</p>
+                  <a class="btn -primary -modal-open" data-modal-id="modal-3" href="#">Open Modal</a>
+                  <div class="modal -modal-lg -anim-3" id="modal-3">
+                    <a href="#close" class="-modal-overlay -modal-close" aria-label="Close"></a>
+                    <div class="-modal-container -shad-8">
+                      <div class="-modal-header">
+                        <div class="-modal-title h5">Basic Modal title</div>
+                        <a href="#close" class="btn btn-clear -modal-close" aria-label="Close"></a>
+                      </div>
+                      <div class="-modal-body">
+                        <div class="-content">
+                          <!-- content here -->
+                          <p>Modal Content</p>
+                        </div>
+                      </div>
+                      <div class="-modal-footer">
+                        <p>Modal Footer</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p>Use the -modal-fullheight class for a full height size modal.</p>
+                  <a class="btn -primary -modal-open" data-modal-id="modal-4" href="#">Open Modal</a>
+                  <div class="modal -modal-fullheight -anim-4" id="modal-4">
+                    <a href="#close" class="-modal-overlay -modal-close" aria-label="Close"></a>
+                    <div class="-modal-container -shad-8">
+                      <div class="-modal-header">
+                        <div class="-modal-title h5">Basic Modal title</div>
+                        <a href="#close" class="btn btn-clear -modal-close" aria-label="Close"></a>
+                      </div>
+                      <div class="-modal-body">
+                        <div class="-content">
+                          <!-- content here -->
+                          <p>Modal Content</p>
+                        </div>
+                      </div>
+                      <div class="-modal-footer">
+                        <p>Modal Footer</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p>Use the -modal-fullwidth class for a fullwidth size modal.</p>
+                  <a class="btn -primary -modal-open" data-modal-id="modal-5" href="#">Open Modal</a>
+                  <div class="modal -modal-fullwidth -anim-5" id="modal-5">
+                    <a href="#close" class="-modal-overlay -modal-close" aria-label="Close"></a>
+                    <div class="-modal-container -shad-8">
+                      <div class="-modal-header">
+                        <div class="-modal-title h5">Basic Modal title</div>
+                        <a href="#close" class="btn btn-clear -modal-close" aria-label="Close"></a>
+                      </div>
+                      <div class="-modal-body">
+                        <div class="-content">
+                          <!-- content here -->
+                          <p>Modal Content</p>
+                        </div>
+                      </div>
+                      <div class="-modal-footer">
+                        <p>Modal Footer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col -col-12">
+                    <h4>CODE</h4> 
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-1">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        HTML
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="html" class="-w-f">
+                          <code class="code-preview">
+                            <a class="btn -primary -modal-open" data-modal-id="modal-5" href="#">Open Modal</a>
+                            <div class="modal -modal-fullwidth -anim-5" id="modal-5">
+                              <a href="#close" class="-modal-overlay -modal-close" aria-label="Close"></a>
+                              <div class="-modal-container -shad-8">
+                                <div class="-modal-header">
+                                  <div class="-modal-title h5">Basic Modal title</div>
+                                  <a href="#close" class="btn btn-clear -modal-close" aria-label="Close"></a>
+                                </div>
+                                <div class="-modal-body">
+                                  <div class="-content">
+                                    <!-- content here -->
+                                    <p>Modal Content</p>
+                                  </div>
+                                </div>
+                                <div class="-modal-footer">
+                                  <p>Modal Footer</p>
+                                </div>
+                              </div>
+                            </div>
+                          </code>
+                        </pre>
+                      </div>
+                    </div>
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-2">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        CSS
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="css" class="-width-full"> 
+                          <code class="code-preview">
+  /* css classes */
+  .modal {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    flex-direction: var(--modal-direction);
+    justify-content: var(--modal-align-content);
+    align-items: var(--modal-align-items);
+    top: var(--modal-top);
+    bottom: var(--modal-bottom);
+    right: var(--modal-right);
+    left: var(--modal-left);
+    overflow-x: var(--modal-overflow-x);
+    overflow-y: var(--modal-overflow-y);
+  }
+  
+  .modal:target,
+  .modal.\-active {
+    display: var(--modal-display-active);
+    opacity: 1;
+    z-index: var(--modal-active-index);
+  }
+  
+  .modal:target .\-modal-overlay,
+  .modal.\-active .\-modal-overlay {
+    display: block;
+    position: absolute;
+    background: var(--modal-overlay-bg);
+    cursor: default;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .modal:target .\-modal-container,
+  .modal.\-active .\-modal-container {
+    animation: var(--modal-active-animation);
+    z-index: var(--modal-active-index);
+  }
+  .modal.\-anim-2:target .\-modal-container,
+  .modal.\-active.\-anim-2 .\-modal-container {
+    animation: var(--modal-active-animation-2);
+  }
+  .modal.\-anim-3:target .\-modal-container,
+  .modal.\-active.\-anim-3 .\-modal-container {
+    animation: var(--modal-active-animation-3);
+  }
+  .modal.\-anim-4:target .\-modal-container,
+  .modal.\-active.\-anim-4 .\-modal-container {
+    animation: var(--modal-active-animation-4);
+  }
+  .modal.\-anim-5:target .\-modal-container,
+  .modal.\-active.\-anim-5 .\-modal-container {
+    animation: var(--modal-active-animation-5);
+  }
+  
+  .\-modal-container {
+    display: var(--modal-container-display);
+    flex-direction: var(--modal-container-direction);
+    width: 100%;
+    background: var(--modal-container-bg);
+    color: var(--modal-container-color);
+    min-width: var(--modal-container-min-width);
+    min-height: var(--modal-container-min-height);
+    max-width: var(--modal-container-max-width);
+    max-height: var(--modal-container-max-height);
+    border-color: var(--modal-container-border-color);
+    border-top: var(--modal-container-border-t);
+    border-bottom: var(--modal-container-border-b);
+    border-left: var(--modal-container-border-l);
+    border-right: var(--modal-container-border-r);
+    border-top-left-radius: var(--modal-container-border-radius-tl);
+    border-top-right-radius: var(--modal-container-border-radius-tr);
+    border-bottom-left-radius: var(--modal-container-border-radius-bl);
+    border-bottom-right-radius: var(--modal-container-border-radius-br);
+    padding: var(--panel-padding-v) var(--modal-container-padding-h);
+    margin: var(--panel-margin-v) var(--modal-container-margin-h);
+  }
+  
+  .modal.\-modal-sm .\-modal-container {
+    min-width: var(--modal-container-min-width-sm);
+    min-height: var(--modal-container-min-height-sm);
+    max-width: var(--modal-container-max-width-sm);
+    max-height: var(--modal-container-max-height-sm);
+    padding: var(--modal-container-padding-v-sm) var(--modal-container-padding-h-sm);
+    margin: var(--modal-container-margin-v-sm) var(--modal-container-margin-h-sm);
+  }
+  
+  .modal.\-modal-lg .\-modal-container {
+    min-width: var(--modal-container-min-width-lg);
+    min-height: var(--modal-container-min-height-lg);
+    max-width: var(--modal-container-max-width-lg);
+    max-height: var(--modal-container-max-height-lg);
+    padding: var(--modal-container-padding-v-lg) var(--modal-container-padding-h-lg);
+    margin: var(--modal-container-margin-v-lg) var(--modal-container-margin-h-lg);
+  }
+  
+  .modal.\-modal-fullheight .\-modal-container {
+    height: var(--modal-container-max-height-full);
+    max-height: var(--modal-container-max-height-full);
+    padding-top: var(--modal-container-padding-v-full);
+    padding-bottom: var(--modal-container-padding-v-full);
+    margin-top: var(--modal-container-margin-v-full);
+    margin-bottom: var(--modal-container-margin-v-full);
+  }
+  .modal.\-modal-fullwidth .\-modal-container {
+    width: var(--modal-container-max-width-full);
+    max-width: var(--modal-container-max-width-full);
+    padding-left: var(--modal-container-padding-h-full);
+    padding-right: var(--modal-container-padding-h-full);
+    margin-left: var(--modal-container-margin-h-full);
+    margin-right: var(--modal-container-margin-h-full);
+  }
+  
+  .\-modal-container .\-modal-header {
+    display: var(--modal-header-display);
+    flex-direction: var(--modal-header-direction);
+    justify-content: var(--modal-header-align-content);
+    align-items: var(--modal-header-align-items);
+    background: var(--modal-header-bg);
+    color: var(--modal-header-color);
+    padding: var(--modal-header-padding-v) var(--modal-header-padding-h);
+    margin: var(--modal-header-margin-v) var(--modal-header-margin-h);
+    width: 100%;
+  }
+  .\-modal-container .\-modal-body {
+    display: var(--modal-header-display);
+    flex: 1;
+    position: relative;
+    flex-direction: var(--modal-body-direction);
+    justify-content: var(--modal-body-align-content);
+    align-items: var(--modal-body-align-items);
+    background: var(--modal-header-bg);
+    color: var(--modal-header-color);
+    padding: var(--modal-header-padding-v) var(--modal-header-padding-h);
+    margin: var(--modal-header-margin-v) var(--modal-header-margin-h);
+    width: 100%;
+    overflow-y: var(--modal-body-overflow-y);
+    overflow-x: var(--modal-body-overflow-x);
+  }
+  .\-modal-container .\-modal-footer {
+    display: var(--modal-footer-display);
+    position: relative;
+    flex-direction: var(--modal-footer-direction);
+    justify-content: var(--modal-footer-align-content);
+    align-items: var(--modal-footer-align-items);
+    background: var(--modal-footer-bg);
+    color: var(--modal-footer-color);
+    padding: var(--modal-footer-padding-v) var(--modal-footer-padding-h);
+    margin: var(--modal-footer-margin-v) var(--modal-footer-margin-h);
+    width: 100%;
+  }
+                          </code>
+                      </pre>
+                      </div>
+                    </div>        
+                </div>
+            </section> 
+        </section>
+    </section>
+    <script src="../main.js"></script>
+</body>
+</html>

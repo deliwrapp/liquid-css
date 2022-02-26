@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>FORM -- Liquid-CSS-Framework Demo</title>
+</head>
+
+<body>
+    <section class="liquid-app">
+        <section class="liquid-page-container">
+            <nav class="nav -sticky -top">
+                <ul class="nav-items shadow-8 hover-shadow-18">
+                    <li class="nav-item"><a href="../index.html">HOME</a></li>
+                    <li class="nav-item "><a href="../base.html">BASE</a></li>
+                    <li class="nav-item "><a href="../grid.html">GRID</a></li>
+                    <li class="nav-item "><a href="../container.html">CONTAINER</a></li>
+                    <li class="nav-item "><a href="../z-index.html">Z-INDEX</a></li>
+                    <li class="nav-item "><a href="../helpers.html">HELPERS</a></li>
+                    <li class="nav-item "><a href="../effects.html">EFFECTS</a></li>
+                    <li class="nav-item "><a href="../animations.html">ANIMATIONS</a></li>
+                    <li class="nav-item "><a href="../heading.html">HEADING</a></li>
+                    <li class="nav-item "><a href="../typo.html">TYPO</a></li>
+                    <li class="nav-item "><a href="../ui-components.html">UI-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../layout-components.html">LAYOUT-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../extensed-components.html">EXTENSED-COMPONENTS</a></li>
+                </ul>
+            </nav>
+            <hr>
+
+            <nav class="nav -sticky -top-4rm">
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a href="#top-page">
+                            Back to the Top
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../ui-components.html#cursor-section">
+                            CURSOR
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="avatar.html">
+                            AVATAR
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="badge.html">
+                            BADGE
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="alert.html">
+                            ALERT
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="button.html">
+                            BUTTON
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="chip.html">
+                            CHIP
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="dropdown.html">
+                            DROPDOWN
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="link.html">
+                            LINK
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="breadcrumb.html">
+                            BREADCRUMB
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pagination.html">
+                            PAGINATION
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tab.html">
+                            TAB
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html">
+                            MENU
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="placeholders.html">
+                            PLACEHOLDERS
+                        </a>
+                    </li>
+                    <li class="nav-item -active">
+                        <a href="form.html">
+                            FORM
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="tooltip.html">
+                            TOOLTIP
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="popovers.html">
+                            POPOVERS
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="progress.html">
+                            PROGRESS
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="icon.html">
+                            ICON
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+            <section class="liquid-grid -center -middle">
+                <div class="col -col-12 ">
+                    <h2>FORM</h2>
+                    <pre>.form-container</pre>
+                </div>
+                <hr>
+                <div class="col -col-12" id="formElements">
+                    <section>
+                        <h3 id="Inputs">
+                            Inputs
+                            <a class="anchor" href="#inputs" aria-hidden="true">#</a>
+                        </h3>
+                        <div class="liquid-grid">
+                            <div class="col -col-4 -md4 -sm6 -xs12">
+                                <div class="form-element">
+                                    <input class="form-field" type="text" placeholder="Normal">
+                                </div>
+                            </div>
+                            <div class="col -col-4 -md4 -sm6 -xs12">
+                                <div class="form-element">
+                                    <input class="form-field error" type="text" placeholder="Error">
+                                </div>
+                            </div>
+                            <div class="col -col-4 -md4 -sm6 -xs12">
+                                <div class="form-element">
+                                    <input class="form-field filled error" type="text" value="Error processed">
+                                </div>
+                            </div>
+                            <div class="col -col-4 -md4 -sm6 -xs12">
+                                <div class="form-element">
+                                    <input class="form-field success" type="text" placeholder="Success">
+                                </div>
+                            </div>
+                            <div class="col -col-4 -md4 -sm6 -xs12">
+                                <div class="form-element">
+                                    <input class="form-field" type="text" placeholder="Disabled" disabled>
+                                </div>
+                            </div>
+                            <div class="col -col-4 -md4 -sm6 -xs12">
+                                <div class="form-element input-group">
+                                    <span class="input-group-addon addon-sm">slack.com/</span>
+                                    <input class="form-field input-sm" type="text" placeholder="site name">
+                                    <button class="btn btn-primary input-group-btn -sm">Submit</button>
+                                </div>
+                            </div>
+                            <div class="col -col-4 -md4 -sm6 -xs12">
+                                <div class="form-element input-group">
+                                    <span class="input-group-addon">http://</span>
+                                    <input class="form-field" type="text" placeholder="Prefix">
+                                </div>
+                            </div>
+                            <div class="col -col-4 -md4 -sm6 -xs12">
+                                <div class="form-element input-group">
+                                    <input class="form-field" type="text" placeholder="Suffix">
+                                    <span class="input-group-addon">€</span>
+                                </div>
+                            </div>
+                            <div class="col -col-4 -md4 -sm6 -xs12">
+                                <div class="form-element input-group">
+                                    <input class="form-field" type="text" placeholder="username">
+                                    <select class="form-select">
+                                        <option>Slack</option>
+                                        <option>Skype</option>
+                                        <option>Hipchat</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col -col-4 -md4 -sm6 -xs12">
+                                <div class="form-element input-group">
+                                    <select class="form-select">
+                                        <option>Slack</option>
+                                        <option>Skype</option>
+                                        <option>Hipchat</option>
+                                    </select>
+                                    <input class="form-field" type="text" placeholder="username">
+                                </div>
+                            </div>
+                            <div class="col -col-4 -md4 -sm6  -xs12">
+                                <div class="form-element">
+                                    <div class="password has-icon-right">
+                                        <input class="form-field" type="password" value="Hello">
+                                        <i class="form-icon icon icon-eye-solid"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col -col-4 -md4 -sm6 -xs12">
+                                <div class="form-element">
+                                    <div class="form-file-field">
+                                        <span class="file-btn">Choose file</span>
+                                        <span class="file-msg">or drop files here</span>
+                                        <input type="file" name="logoFile" multiple>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col -col-4 -md6 -sm12 -xs12">
+                                <div class="form-element has-icon-right">
+                                    <input class="form-field input-sm" type="text" placeholder="Name">
+                                    <i class="form-icon -loading"></i>
+                                </div>
+                            </div>
+                            <div class="col -col-4 -md6 -sm12 -xs12">
+                                <div class="form-element input-group">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <i class="form-icon"></i>
+                                    </label>
+                                    <input class="form-field" type="text" placeholder="name">
+                                </div>
+                            </div>
+                            <div class="col -col-4 -md6 -sm12 -xs12">
+                                <div class="form-element input-group">
+                                  <label class="checkbox">
+                                    <input type="checkbox">
+                                    <i class="form-icon"></i>
+                                  </label>
+                                  <input class="form-field" type="text" placeholder="name">
+                                </div>
+                              </div>
+                        </div>
+                    </section>
+                    <hr>
+                    <section class="liquid-grid -middle -center -w-f">
+                        <div class="col -col-12 -start">
+                            <h3 id="selects">
+                                Selects
+                                <a class="anchor" href="#selects" aria-hidden="true">#</a>
+                            </h3>
+                        </div>
+                        <div class="col -col-3 -md4 -sm6 -xs12">
+                            <div class="form-element">
+                                <select class="form-select">
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col -col-3 -md4 -sm6 -xs12">
+                            <div class="form-element">
+                                <select class="form-select disabled">
+                                    <option>Option 1</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+                    <section>
+                        <h3 id="checkboxes">
+                            Checkboxes
+                            <a class="anchor" href="#checkboxes" aria-hidden="true">#</a>
+                        </h3>
+                        <div class="liquid-grid">
+                            <div class="col -col-3 -md6 -sm12 -xs12">
+                                <div class="form-element">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <i class="form-icon -shad-12"></i>
+                                        <span class="form-field-msg">Remember me</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col -col-12">
+                                <p>
+                                    You can change checkbox to indeterminate state by setting the indeterminate property
+                                    of input checkboxes to true.
+                                </p>
+                            </div>
+                            <div class="col -col-3 -md6 -sm12 -xs12">
+                                <div class="form-element">
+                                    <label class="checkbox">
+                                        <input id="inderterminate-checkbox" type="checkbox">
+                                        <i class="form-icon -shad-12"></i>
+                                        <span class="form-field-msg">Indeterminate</span>
+                                    </label>
+                                </div>
+                                <script>
+                                    document.getElementById("inderterminate-checkbox").indeterminate = true;
+                                </script>
+                            </div>
+                            <div class="col -col-12">
+                                <p>
+                                    You can disabled the checkbox.
+                                </p>
+                            </div>
+                            <div class="col -col-3 -md6 -sm12 -xs12">
+                                <div class="form-element">
+                                    <label class="checkbox">
+                                        <input type="checkbox" disabled>
+                                        <i class="form-icon -shad-12"></i>
+                                        <span class="form-field-msg">Disabled</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col -col-3 -md6 -sm12 -xs12">
+                                <div class="form-element">
+                                    <label class="checkbox">
+                                        <input type="checkbox" disabled checked>
+                                        <i class="form-icon -shad-12"></i>
+                                        <span class="form-field-msg">Disabled Checked</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+                    <section class="-w-f">
+                        <h3 id="radios">
+                            Radios
+                            <a class="anchor" href="#radios" aria-hidden="true">#</a>
+                        </h3>
+                        <div class="liquid-grid">
+                            <div class="col -col-3 -md6 -sm12 -xs12">
+                                <div class="form-element">
+                                    <label class="radio">
+                                        <input type="radio" name="gender" checked="">
+                                        <i class="form-icon -shad-12"></i>
+                                        <span class="form-field-msg">Radio</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col -col-3 -md6 -sm12 -xs12">
+                                <div class="form-element">
+                                    <label class="radio">
+                                        <input type="radio" name="gender" disabled>
+                                        <i class="form-icon -shad-12"></i>
+                                        <span class="form-field-msg">Disabled</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col -col-3 -md6 -sm12 -xs12">
+                                <div class="form-element">
+                                    <label class="radio">
+                                        <input type="radio" name="gender" disabled checked>
+                                        <i class="form-icon -shad-12"></i>
+                                        <span class="form-field-msg">Disabled Checked</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+                    <section class="-w-f">
+                        <h3 id="switches">
+                            Switches
+                            <a class="anchor" href="#switches" aria-hidden="true">#</a>
+                        </h3>
+                        <div class="liquid-grid">
+                            <div class="col -col-5 -md6 -sm12 -xs12">
+                                <div class="form-element">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <i class="form-icon -shad-12"></i>
+                                        <span class="form-field-msg">Send me emails with news and tips</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col -col-12">
+                                <p>
+                                    You can disabled the switch.
+                                </p>
+                            </div>
+                            <div class="col -col-3 -md6 -sm12 -xs12">
+                                <div class="form-element">
+                                    <label class="switch">
+                                        <input type="checkbox" disabled checked>
+                                        <i class="form-icon"></i>
+                                        <span class="form-field-msg">Disabled</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+                    <section class="-w-f">
+                        <h3 id="textarea">
+                            Textarea
+                            <a class="anchor" href="#textarea" aria-hidden="true">#</a>
+                        </h3>
+                        <textarea class="form-field"></textarea>
+                    </section>
+                </div>
+                <hr>
+                <div class="col -col-12">
+                    <h3 id="forms-icons">Form icons<a class="anchor" href="#forms-icons" aria-hidden="true">#</a></h3>
+                    <p>
+                        Add a wrapper with the <code>has-icon-left</code>/<code>has-icon-right</code> class to
+                        &lt;input&gt; element.
+                        And add the icon with <code>form-icon</code> class next to the &lt;input&gt;.
+                    </p>
+                    <div class="-flex -wrap">
+                        <div class="col -col-4 -md6 -sm12 -xs12">
+                            <div class="has-icon-left">
+                                <input class="form-field input-sm" type="text" placeholder="Name"><i
+                                    class="form-icon icon icon-arrow-right"></i>
+                            </div>
+                        </div>
+                        <div class="col -col-4 -md6 -sm12 -xs12">
+                            <div class="has-icon-left tooltip" data-tooltip="Lorem ipsum dolor sit amet">
+                                <input class="form-field" type="text" placeholder="Name"><i
+                                    class="form-icon icon icon-arrow-right"></i>
+                            </div>
+                        </div>
+                        <div class="col -col-4 -md6 -sm12 -xs12">
+                            <div class="has-icon-left">
+                                <input class="form-field input-lg" type="text" placeholder="Name"><i
+                                    class="form-icon icon icon-arrow-right"></i>
+                            </div>
+                        </div>
+                        <div class="col -col-4 -md6 -sm12 -xs12">
+                            <div class="has-icon-right">
+                                <input class="form-field input-sm" type="text" placeholder="Name"><i
+                                    class="form-icon icon icon-check"></i>
+                            </div>
+                        </div>
+                        <div class="col -col-4 -md6 -sm12 -xs12">
+                            <div class="has-icon-right">
+                                <input class="form-field" type="text" placeholder="Name"><i
+                                    class="form-icon icon icon-check"></i>
+                            </div>
+                        </div>
+                        <div class="col -col-4 -md6 -sm12 -xs12">
+                            <div class="has-icon-right">
+                                <input class="form-field input-lg" type="text" placeholder="Name"><i
+                                    class="form-icon icon icon-check"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="col -col-8 -md12 -sm12 -xs12" id="formDemo">
+
+                    <h3>FORM EXAMPLE</h3>
+                    <form class="panel -shad-8 -w-f">
+                        <div class="form-element">
+                            <label for="name1">Name</label>
+                            <input type="text" class="form-field" id="name1">
+                        </div>
+                        <div class="form-element -d-flex -justify-space-around">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <i class="form-icon -shad-12"></i>
+                                <span class="form-field-msg">Remember me</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <i class="form-icon -shad-12"></i>
+                                <span class="form-field-msg">Option</span>
+                            </label>
+                        </div>
+                        <div class="form-element">
+                            <label class="-sm3">Radios</label>
+                            <div class="-sm9 -d-flex -justify-space-around">
+                                <label class="radio">
+                                    <input type="radio" name="radio1" value="1" checked>
+                                    <i class="form-icon -shad-12"></i>
+                                    <span class="form-field-msg">Radio 1</span>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="radio1" value="2">
+                                    <i class="form-icon -shad-12"></i>
+                                    <span class="form-field-msg">Radio 2</span>
+                                </label>
+                            </div>
+                        </div>
+                        <fieldset class="-w-f">
+                            <legend>Select</legend>
+                            <div class="form-element">
+                                <select class="form-select is-error">
+                                    <option>Choose an option</option>
+                                    <option>Slack</option>
+                                    <option>Skype</option>
+                                    <option>Hipchat</option>
+                                </select>
+                                <p class="form-input-hint">The option is invalid.</p>
+                            </div>
+                            <div class="form-element has-success">
+                                <select class="form-select -shad-12">
+                                    <option>Choose an option</option>
+                                    <option>Slack</option>
+                                    <option>Skype</option>
+                                    <option>Hipchat</option>
+                                </select>
+                                <p class="form-input-hint">The option is available.</p>
+                            </div>
+                        </fieldset>
+                        <div class="form-element">
+                            <label for="nameh" class="sm-3">Select</label>
+                            <div class="-sm9">
+                                <select class="form-select">
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-element">
+                            <select class="form-select" multiple>
+                                <option>Choose an option</option>
+                                <option>Slack</option>
+                                <option>Skype</option>
+                                <option>Hipchat</option>
+                            </select>
+                        </div>
+                    </form>
+            </section>
+            </div>
+        </section>
+        <hr>
+        <section class="liquid-grid -middle -center">
+            <div class="col -col-12">
+                <h4>CODE</h4>
+                <div class="accordion -w-f">
+                    <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
+                    <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        HTML
+                    </label>
+                    <div class="-accordion-body">
+                        <pre data-lang="html" class="-w-f">
+                          <code  class="code-preview">
+                            
+                          </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="accordion -w-f">
+                    <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
+                    <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        CSS
+                    </label>
+                    <div class="-accordion-body">
+                        <pre data-lang="css" class="-width-full">
+                          <code class="code-preview">
+                            /* css classes */
+  
+
+                          </code>
+                      </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <hr>
+    </section>
+    <script src="../main.js"></script>
+</body>
+
+</html>

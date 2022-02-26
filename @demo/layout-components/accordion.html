@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>ACCORDION Layout Component -- Liquid-CSS-Framework Demo</title>
+</head>
+<body>
+    <section class="liquid-app">
+        <section class="liquid-page-container">
+            <nav class="nav -sticky -top">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="../index.html">HOME</a></li>
+                    <li class="nav-item"><a href="../base.html">BASE</a></li>
+                    <li class="nav-item"><a href="../grid.html">GRID</a></li>
+                    <li class="nav-item"><a href="../container.html">CONTAINER</a></li>
+                    <li class="nav-item"><a href="../z-index.html">Z-INDEX</a></li>
+                    <li class="nav-item "><a href="../helpers.html">HELPERS</a></li>
+                    <li class="nav-item"><a href="../effects.html">EFFECTS</a></li>
+                    <li class="nav-item"><a href="../animations.html">ANIMATIONS</a></li>
+                    <li class="nav-item "><a href="../heading.html">HEADING</a></li>
+                    <li class="nav-item"><a href="../typo.html">TYPO</a></li>
+                    <li class="nav-item"><a href="../ui-components.html">UI-COMPONENTS</a></li>
+                    <li class="nav-item -active-parent"><a href="../layout-components.html">LAYOUT-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="../extensed-components.html">EXTENSED-COMPONENTS</a></li>
+                </ul>
+            </nav>
+            <section class="liquid-grid -middle -center">
+                <div class="col -col-12 ">
+                    <h2>ACCORDION</h2>
+                </div>
+                <hr>
+                <div class="col -col-12 -start -center">
+                  <h3>PREVIEW</h3>
+                  <pre>.accordion -accordion-container -accordion-header -accordion-body</pre>
+                  <p>
+                    Alternatively, you can use details and summary instead of input radio or checkbox trick. Add the open attribute to details to expand it.
+                  </p>
+                  <pre data-lang="html" class="-w-f">
+                    <code  class="code-preview">
+                      <!-- details and summary Accordions example -->
+                      <details class="accordion" open>
+                        <summary class="accordion-header">
+                          <i class="icon icon-arrow-right mr-1"></i>
+                          Title
+                        </summary>
+                        <div class="accordion-body">
+                          <!-- Accordions content -->
+                          <ul>
+                            <li>Link</li>
+                            <li>Link 2</li>
+                          </ul>
+                        </div>
+                      </details>
+                    </code>
+                  </pre>
+                </div>
+                <div class="col -col-12">
+                  <div class="accordion">
+                    <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+                    <label class="-accordion-header" for="accordion-1">
+                      <i class="icon icon-arrow-right mr-1"></i>
+                      Click Me 1
+                    </label>
+                    <div class="-accordion-body">
+                      <p>Accordions content 1</p>
+                    </div>
+                  </div>
+                  <div class="accordion">
+                    <input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+                    <label class="-accordion-header" for="accordion-2">
+                      <i class="icon icon-arrow-right mr-1"></i>
+                      Click Me 2
+                    </label>
+                    <div class="-accordion-body">
+                      <p>Accordions content 2</p>
+                    </div>
+                  </div>
+                  
+                  <!-- mutually exclusive Accordions example (with same input names) -->
+                  <div class="accordion">
+                    <input type="radio" id="accordion-3" name="accordion-radio" hidden>
+                    <label class="-accordion-header" for="accordion-3">
+                      Click Me 3 (link to 4)
+                    </label>
+                    <div class="-accordion-body">
+                      <p>Accordions content 4</p>
+                    </div>
+                  </div>
+                  <div class="accordion">
+                    <input type="radio" id="accordion-4" name="accordion-radio" hidden>
+                    <label class="-accordion-header" for="accordion-4">
+                      Click Me 4 (link to 3)
+                    </label>
+                    <div class="-accordion-body">
+                      <p>Accordions content 4</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col -col-12">
+                    <h4>CODE</h4> 
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        HTML
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="html" class="-w-f">
+                          <code  class="code-preview">
+                            <div class="accordion">
+                              <input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+                              <label class="-accordion-header" for="accordion-1">
+                                <i class="icon icon-arrow-right mr-1"></i>
+                                Title
+                              </label>
+                              <div class="-accordion-body">
+                                <p>Accordions content</p>
+                              </div>
+                            </div>
+                            <div class="accordion">
+                              <input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+                              <label class="-accordion-header" for="accordion-2">
+                                <i class="icon icon-arrow-right mr-1"></i>
+                                Title
+                              </label>
+                              <div class="-accordion-body">
+                                <p>Accordions content</p>
+                              </div>
+                            </div>
+                            
+                            <!-- mutually exclusive Accordions example (with same input names) -->
+                            <div class="accordion">
+                              <input type="radio" id="accordion-3" name="accordion-radio" hidden>
+                              <label class="-accordion-header" for="accordion-3">
+                                Title 1
+                              </label>
+                              <div class="-accordion-body">
+                                <p>Accordions content</p>
+                              </div>
+                            </div>
+                            <div class="accordion">
+                              <input type="radio" id="accordion-4" name="accordion-radio" hidden>
+                              <label class="-accordion-header" for="accordion-4">
+                                Title 2
+                              </label>
+                              <div class="-accordion-body">
+                                <p>Accordions content</p>
+                              </div>
+                            </div>
+                          </code>
+                        </pre>
+                      </div>
+                    </div>
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        CSS
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="css" class="-width-full"> 
+                          <code class="code-preview">
+/* css classes */
+/* Accordions */
+.accordion input:checked ~ .\-accordion-header > .icon:first-child, .accordion[open] .\-accordion-header > .icon:first-child {
+    transform: rotate(90deg);
+}
+.accordion input:checked ~ .\-accordion-body, .accordion[open] .\-accordion-body {
+    max-height: var(--accordion-max-height);
+    opacity: 1;
+    transform: var(--accordion-transform-open);
+}
+.accordion .\-accordion-header {
+    display: block;
+    padding: var(--accordion-padding-v) var(--accordion-padding-h);
+}
+.accordion .\-accordion-header .icon {
+    transition: transform 0.25s;
+}
+.accordion .\-accordion-body {
+    margin-bottom: var(--accordion-margin-b);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: var(--accordion-transition);
+    transform: var(--accordion-transform-close);
+}
+/* Remove default details marker in Webkit */
+summary.\-accordion-header::-webkit-details-marker {
+    display: none;
+}
+  
+
+                          </code>
+                      </pre>
+                      </div>
+                    </div>        
+                </div>
+            </section> 
+        </section>
+    </section>
+    <script src="../main.js"></script>
+</body>
+</html>

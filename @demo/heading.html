@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>HEADING -- Liquid-CSS-Framework Demo</title>
+</head>
+<body>
+    <section class="liquid-app">
+        <section class="liquid-page-container">
+            <nav class="nav -sticky -top">
+                <ul class="nav-items -shad-8 -shad-17-h">
+                    <li class="nav-item"><a href="index.html">HOME</a></li>
+                    <li class="nav-item "><a href="base.html">BASE</a></li>
+                    <li class="nav-item "><a href="grid.html">GRID</a></li>
+                    <li class="nav-item "><a href="container.html">CONTAINER</a></li>
+                    <li class="nav-item "><a href="z-index.html">Z-INDEX</a></li>
+                    <li class="nav-item "><a href="helpers.html">HELPERS</a></li>
+                    <li class="nav-item "><a href="effects.html">EFFECTS</a></li>
+                    <li class="nav-item "><a href="animations.html">ANIMATIONS</a></li>
+                    <li class="nav-item "><a href="heading.html">HEADING</a></li>
+                    <li class="nav-item "><a href="typo.html">TYPO</a></li>
+                    <li class="nav-item "><a href="ui-components.html">UI-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="layout-components.html">LAYOUT-COMPONENTS</a></li>
+                    <li class="nav-item "><a href="extensed-components.html">EXTENSED-COMPONENTS</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <section class="liquid-grid -middle -center">
+                <div class="col -col-12 ">
+                    <h2>HEADING</h2>
+                </div>
+            </section>
+            <hr>
+            <section class="liquid-grid -middle -center">
+                <section class="col -col-12 -start -center">
+                    <h3>HEADING</h3>
+                    <pre>h1, h2, h3, h4, h5, h6</pre>             
+                    <section class="col -col-12 -start -center">
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                    </section>
+                    <pre data-lang="html" class="-width-full">
+                        <code class="code-preview">
+                            <h1>Heading 1</h1>
+                            <h2>Heading 2</h2>
+                            <h3>Heading 3</h3>
+                            <h4>Heading 4</h4>
+                            <h5>Heading 5</h5>
+                            <h6>Heading 6</h6>
+                        </code>
+                    </pre>
+                    <pre data-lang="css" class="-width-full"> 
+                        <code class="code-preview">
+/* css classes */
+h1, .h1 {
+    font-family: var(--headings-h1-font-family);
+    line-height: var(--headings-h1-line-weight);
+    color: var(--headings-h1-color);
+    font-weight: var(--headings-h1-weight);
+    font-size: var(--headings-h1-size);
+    margin: var(--headings-h1-margin-t) 0 var(--headings-h1-margin-b) 0;
+    
+    /* @include responsive-size(floor($headingsH1Size * .8), $headingsH1Size); */
+}
+
+h2, .h2 {
+    font-family: var(--headings-h2-font-family);
+    line-height: var(--headings-h2-line-weight);
+    color: var(--headings-h2-color);
+    font-weight: var(--headings-h2-weight);
+    font-size: var(--headings-h2-size);
+    margin: var(--headings-h2-margin-t) 0 var(--headings-h2-margin-b) 0;
+    /* 
+    @include responsive-size(floor($headingsH2Size * .8), $headingsH2Size); */
+}
+
+h3, .h3 {
+    font-family: var(--headings-h3-font-family);
+    line-height: var(--headings-h3-line-weight);
+    color: var(--headings-h3-color);
+    font-weight: var(--headings-h3-weight);
+    font-size: var(--headings-h3-size);
+    margin: var(--headings-h3-margin-t) 0 var(--headings-h3-margin-b) 0;
+    /* 
+    @include responsive-size(floor($headingsH3Size * .8), $headingsH3Size); */
+}
+
+h4, .h4 {
+    font-family: var(--headings-h4-font-family);
+    line-height: var(--headings-h4-line-weight);
+    color: var(--headings-h4-color);
+    font-weight: var(--headings-h4-weight);
+    font-size: var(--headings-h4-size);
+    margin: var(--headings-h4-margin-t) 0 var(--headings-h4-margin-b) 0;
+    /* 
+    @include responsive-size(floor($headingsH4Size * .8), $headingsH4Size); */
+}
+
+h5, .h5 {
+    font-family: var(--headings-h5-font-family);
+    line-height: var(--headings-h5-line-weight);
+    color: var(--headings-h5-color);
+    font-weight: var(--headings-h5-weight);
+    font-size: var(--headings-h5-size);
+    margin: var(--headings-h5-margin-t) 0 var(--headings-h5-margin-b) 0;
+    /* 
+    @include responsive-size(floor($headingsH4Size * .8), $headingsH4Size); */
+}
+
+h6, .h6 {
+    font-family: var(--headings-h6-font-family);
+    line-height: var(--headings-h6-line-weight);
+    color: var(--headings-h6-color);
+    font-weight: var(--headings-h6-weight);
+    font-size: var(--headings-h6-size);
+    margin: var(--headings-h6-margin-t) 0 var(--headings-h6-margin-b) 0;
+    /* 
+    @include responsive-size(floor($headingsH4Size * .8), $headingsH4Size); */
+}
+                        </code>
+                    </pre>
+                    <hr>
+                </section>
+            </section> 
+        </section> 
+        <hr>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+/* VARIABLES CSS*/
+@import './variables-extensed.css';
+
+/* LAYOUT COMPONENTS CSS experience*/
+@import './components/sidebar-slider.css';
+@import './components/futura-menu.css';
+@import './components/rotated-menu.css';
+@import './components/rotation-btn.css';
