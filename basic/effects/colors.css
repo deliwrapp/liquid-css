@@ -100,6 +100,17 @@
     color: var(--liquid-color-dark-contrast)!important;
 }
 
+.\-white {
+    color: var(--liquid-color-white-contrast)!important;
+    background-color: var(--liquid-color-white)!important;
+}
+.\-color-white {
+    color: var(--liquid-color-white)!important;
+}
+.\-bg-white {
+    background-color: var(--liquid-color-white)!important;
+}
+
 .\-color-light {
     color: var(--liquid-color-light)!important;
 }
@@ -223,4 +234,105 @@
 }
 .\-bg-none:hover {
     background: none;
+}
+
+.\-bg-gradient-1,
+.\-bg-gradient-1-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-1))!important;
+    background-image: linear-gradient(var(--liquid-gradient-1))!important;
+}
+.\-bg-gradient-2,
+.\-bg-gradient-2-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-2))!important;
+    background-image: linear-gradient(var(--liquid-gradient-2))!important;
+}
+.\-bg-gradient-3,
+.\-bg-gradient-3-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-3))!important;
+    background-image: linear-gradient(var(--liquid-gradient-3))!important;
+}
+.\-bg-gradient-4,
+.\-bg-gradient-4-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-4))!important;
+    background-image: linear-gradient(var(--liquid-gradient-4))!important;
+}
+.\-bg-gradient-5,
+.\-bg-gradient-5-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-5))!important;
+    background-image: linear-gradient(var(--liquid-gradient-5))!important;
+}
+.\-bg-gradient-6,
+.\-bg-gradient-6-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-6))!important;
+    background-image: linear-gradient(var(--liquid-gradient-6))!important;
+}
+.\-bg-gradient-7,
+.\-bg-gradient-7-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-7))!important;
+    background-image: linear-gradient(var(--liquid-gradient-7))!important;
+}
+.\-bg-gradient-8,
+.\-bg-gradient-8-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-8))!important;
+    background-image: linear-gradient(var(--liquid-gradient-8))!important;
+}
+.\-bg-gradient-9,
+.\-bg-gradient-9-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-9))!important;
+    background-image: linear-gradient(var(--liquid-gradient-9))!important;
+}
+.\-bg-gradient-10,
+.\-bg-gradient-10-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-10))!important;
+    background-image: linear-gradient(var(--liquid-gradient-10))!important;
+}
+.\-bg-gradient-11,
+.\-bg-gradient-11-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-11))!important;
+    background-image: linear-gradient(var(--liquid-gradient-11))!important;
+}
+.\-bg-gradient-12,
+.\-bg-gradient-12-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-12))!important;
+    background-image: linear-gradient(var(--liquid-gradient-12))!important;
+}
+.\-bg-gradient-13,
+.\-bg-gradient-13-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-13))!important;
+    background-image: linear-gradient(var(--liquid-gradient-13))!important;
+}
+.\-bg-gradient-14,
+.\-bg-gradient-14-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-14))!important;
+    background-image: linear-gradient(var(--liquid-gradient-14))!important;
+}
+.\-bg-gradient-15,
+.\-bg-gradient-15-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-15))!important;
+    background-image: linear-gradient(var(--liquid-gradient-15))!important;
+}
+.\-bg-gradient-16,
+.\-bg-gradient-16-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-16))!important;
+    background-image: linear-gradient(var(--liquid-gradient-16))!important;
+}
+.\-bg-gradient-17,
+.\-bg-gradient-17-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-17))!important;
+    background-image: linear-gradient(var(--liquid-gradient-17))!important;
+}
+.\-bg-gradient-18,
+.\-bg-gradient-18-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-18))!important;
+    background-image: linear-gradient(var(--liquid-gradient-18))!important;
+}
+.\-bg-gradient-19,
+.\-bg-gradient-19-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-19))!important;
+    background-image: linear-gradient(var(--liquid-gradient-19))!important;
+}
+.\-bg-gradient-20,
+.\-bg-gradient-20-hov:hover {
+    background-image: -webkit-linear-gradient(var(--liquid-gradient-20))!important;
+    background-image: linear-gradient(var(--liquid-gradient-20))!important;
 }

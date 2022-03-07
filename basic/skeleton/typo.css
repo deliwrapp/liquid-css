@@ -60,52 +60,52 @@ mark {
     font-style: normal;
 }
 .\-t-lght {
-    font-weight: 200;
+    font-weight: 200!important;
 }
 .\-t-lghtr {
-    font-weight: lighter;
+    font-weight: lighter!important;
 }
 .\-t-nrm {
-    font-weight: 400;
+    font-weight: 400!important;
 }
 .\-t-bld {
-    font-weight: bold;
+    font-weight: bold!important;
 }
 .\-t-bldr {
-    font-weight: bolder;
-}
-.\-t-dec-n {
-    text-decoration: none;
-}
-.\-t-dec-u {
-    text-decoration: underline;
-}
-.\-t-dec-o {
-    text-decoration: overline;
-}
-.\-t-dec-lt {
-    text-decoration: line-through;
-}
-.\-t-dec-b {
-    text-decoration: blink;
+    font-weight: bolder!important;
 }
 .\-t-800 {
-    font-weight: 800;
+    font-weight: 800!important;
+}
+.\-t-dec-n {
+    text-decoration: none!important;
+}
+.\-t-dec-u {
+    text-decoration: underline!important;
+}
+.\-t-dec-o {
+    text-decoration: overline!important;
+}
+.\-t-dec-lt {
+    text-decoration: line-through!important;
+}
+.\-t-dec-b {
+    text-decoration: blink!important;
 }
 .\-t-1rm {
-    font-size: 1rem;
+    font-size: 1rem!important;
 }
 .\-t-2rm {
-    font-size: 2rem;
+    font-size: 2rem!important;
 }
 .\-t-3rm {
-    font-size: 3rem;
+    font-size: 3rem!important;
 }
 .\-t-4rm {
-    font-size: 4rem;
+    font-size: 4rem!important;
 }
 .\-t-5rm {
-    font-size: 5rem;
+    font-size: 5rem!important;
 }
 .\-t-indent-05 {
     text-indent: 0.5rem;

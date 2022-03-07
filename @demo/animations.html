@@ -1,67 +1,756 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../main.css">
-    <title>ANIMATIONS -- Liquid-CSS-Framework Demo</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../main.css">
+  <title>Liquid-CSS-Framework - ANIMATIONS</title>
 </head>
+
 <body>
-    <section class="liquid-app">
-        <section class="liquid-page-container">
-            <nav class="nav -sticky -top -shad-17 -shad-14-h">
-                <ul class="nav-items shadow-7 hover-shadow-16">
-                    <li class="nav-item"><a href="index.html">HOME</a></li>
-                    <li class="nav-item "><a href="base.html">BASE</a></li>
-                    <li class="nav-item "><a href="grid.html">GRID</a></li>
-                    <li class="nav-item "><a href="container.html">CONTAINER</a></li>
-                    <li class="nav-item "><a href="z-index.html">Z-INDEX</a></li>
-                    <li class="nav-item "><a href="helpers.html">HELPERS</a></li>
-                    <li class="nav-item "><a href="effects.html">EFFECTS</a></li>
-                    <li class="nav-item -active"><a href="animations.html">ANIMATIONS</a></li>
-                    <li class="nav-item "><a href="heading.html">HEADING</a></li>
-                    <li class="nav-item "><a href="typo.html">TYPO</a></li>
-                    <li class="nav-item "><a href="ui-components.html">UI-COMPONENTS</a></li>
-                    <li class="nav-item "><a href="layout-components.html">LAYOUT-COMPONENTS</a></li>
-                    <li class="nav-item "><a href="extensed-components.html">EXTENSED-COMPONENTS</a></li>
-                </ul>
-            </nav>
-            <hr>
-            <section class="liquid-grid -middle -center">
-                <div class="col -col-12 ">
-                    <h2>ANIMATIONS</h2>
+  <section class="liquid-app">
+    <section id="top-page" class="liquid-page-container">
+
+      <section id="left-panel"
+        class="-overflow-y-auto swipe-menu sidebar-full -close -bg-white -shad-12 -z5 -fixed -left">
+        <section class="liquid-grid -start -top  -mb5 -w-f">
+          <div class="col -col-4 -md6 -sm12 -xs12 -p0">
+            <div id="menu-list" class="panel -shad-7 -h-f -max-h-vp98">
+              <div class="-panel-header">
+                <div class="tile -tile-compact">
+                  <div class="-tile-icon">
+                    <img class="avatar" src="./assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar">
+                  </div>
+                  <div class="-tile-content">Liquid CSS</div>
+                  <p class="-tile-subtitle hide-sm hide-xs">The CSS Framework by Deliwrapp</p>
                 </div>
-            </section>
-            <hr>
-            <section class="liquid-grid -middle -center">
-                <div class="col -col-12 -start -center">
-                    <h3>ANimate </h3>
-                    <pre>.animate</pre>
-                    
-                    <div class="col -row -col-12 -middle -center"></div>
-                        
+              </div>
+              <div class="-panel-body">
+                <ul class="menu -menu-nav -w-fit">
+                  <li class="divider"></li>
+                  <li class="-menu-item">
+                    <a class="-t-bld -t-u" href="index.html">HOME</a>
+                    <div class="-menu-badge">
+                      <label class="chip -primary">1</label>
                     </div>
-                    <pre data-lang="html" class="-width-full">
-                        <code class="code-preview">
-                            <h1>Heading 1</h1>
-                        </code>
-                    </pre>
-                    <pre data-lang="css" class="-width-full"> 
-                        <code class="code-preview">
-                        /* css classes */
-                        .form {
-                            display: flex;
-                            
-                        }
-                        </code>
-                    </pre>
-                    <hr>
+                  </li>
+                  <li class="-menu-item">
+                    <a class="-t-bld -t-u" href="base.html">base</a>
+                  </li>
+                  <li class="-menu-item">
+                    <a class="-t-bld -t-u -active" href="grid.html">grid</a>
+                  </li>
+                  <li class="-menu-item">
+                    <a class="-t-bld -t-u" href="container.html">container</a>
+                  </li>
+                  <li class="-menu-item">
+                    <a class="-t-bld -t-u" href="z-index.html">z-index</a>
+                  </li>
+                  <li class="-menu-item">
+                    <a class="-t-bld -t-u" href="helpers.html">helpers</a>
+                  </li>
+                  <li class="-menu-item">
+                    <a class="-t-bld -t-u" href="heading.html">heading</a>
+                  </li>
+                  <li class="-menu-item">
+                    <a class="-t-bld -t-u" href="typo.html">typo</a>
+                  </li>
+                  <li class="-menu-item">
+                    <a class="-t-bld -t-u" href="#effects-submenu">effects</a>
+                  </li>
+                  <li class="-menu-item">
+                    <a class="-t-bld -t-u" href="#animations-submenu">animations</a>
+                  </li>
+                  <li class="-menu-item">
+                    <a class="-t-bld -t-u" href="#ui-components-submenu">ui-components</a>
+                  </li>
+                  <li class="-menu-item">
+                    <a class="-t-bld -t-u" href="#layout-components-submenu">layout-components</a>
+                  </li>
+                  <li class="-menu-item">
+                    <a class="-t-bld -t-u" href="#extensed-components-submenu">extensed-components</a>
+                  </li>
+                  <li class="-menu-item">
+                    <a class="-t-bld -t-u" href="#pages-submenu">pages</a>
+                  </li>
+                  <li class="divider"></li>
+                </ul>
+              </div>
+              <div class="-panel-footer">
+                <div class="input-group">
+                  <input class="form-field" type="text" placeholder="search">
+                  <button class="btn btn-primary input-group-btn -m0 -p4">Search</button>
                 </div>
-            </section> 
-        </section> 
-        <hr>
+              </div>
+            </div>
+          </div>
+          <div id="subpages-list" class="dynamic-container col -col-8 -md6 -sm12 -xs12 -p0">
+            <style>
+              :root {
+                --dynamic-section-display-default: none;
+              }
+            </style>
+            <div id="effects-submenu" class="-dynamic-section -pop-in  panel -shad-7 -h-f -max-h-vp98">
+              <div class="-panel-body liquid-grid">
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://i.pinimg.com/originals/f2/4b/d2/f24bd267c09c9d90f525a67e687afd19.png"
+                        alt="Dashboard Page">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Dashboard Page</div>
+                      <div class="-subtitle text-gray">A Dashboard Page Example</div>
+                    </div>
+                    <div class="-card-body">A Dashboard Page Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./pages/500.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="-panel-footer">
+                <div class="input-group">
+                  <input class="form-field" type="text" placeholder="search">
+                  <button class="btn btn-primary input-group-btn -m0 -p4">Search</button>
+                </div>
+              </div>
+            </div>
+            <div id="animations-submenu" class="-dynamic-section -slide-up  panel -shad-7 -h-f -max-h-vp98">
+              <div class="-panel-body liquid-grid">
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://i.pinimg.com/originals/f2/4b/d2/f24bd267c09c9d90f525a67e687afd19.png"
+                        alt="Dashboard Page">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Dashboard Page</div>
+                      <div class="-subtitle text-gray">A Dashboard Page Example</div>
+                    </div>
+                    <div class="-card-body">A Dashboard Page Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./pages/500.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="-panel-footer">
+                <div class="input-group">
+                  <input class="form-field" type="text" placeholder="search">
+                  <button class="btn btn-primary input-group-btn -m0 -p4">Search</button>
+                </div>
+              </div>
+            </div>
+            <div id="ui-components-submenu" class="-dynamic-section -slide-down  panel -shad-7 -h-f -max-h-vp98">
+              <div class="-panel-body liquid-grid">
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://i.pinimg.com/originals/f2/4b/d2/f24bd267c09c9d90f525a67e687afd19.png"
+                        alt="Dashboard Page">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Dashboard Page</div>
+                      <div class="-subtitle text-gray">A Dashboard Page Example</div>
+                    </div>
+                    <div class="-card-body">A Dashboard Page Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./pages/500.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="-panel-footer">
+                <div class="input-group">
+                  <input class="form-field" type="text" placeholder="search">
+                  <button class="btn btn-primary input-group-btn -m0 -p4">Search</button>
+                </div>
+              </div>
+            </div>
+            <div id="layout-components-submenu" class="-dynamic-section -slide-left panel -shad-7 -h-f -max-h-vp98">
+              <div class="-panel-body liquid-grid">
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://png.pngtree.com/png-vector/20190804/ourlarge/pngtree-computer-internet-world-big-think-abstract-flat-color-icon-te-png-image_1650111.jpg"
+                        alt="Layout Example">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Layout Example</div>
+                      <div class="-subtitle text-gray">A Layout Page Example</div>
+                    </div>
+                    <div class="-card-body">A Layout Page Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./layout-components/layout.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <a href="#" class="-card-image">
+                      <img class="img-responsive" src="https://blog.seiichirou.jp/img/appbar_widget.png"
+                        alt="bar component page">
+                    </a>
+                    <div class="-card-header">
+                      <div class="h5">Bar Component</div>
+                      <div class="-subtitle text-gray">A Bar Component Example</div>
+                    </div>
+                    <div class="-card-body">Bar Component Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./layout-components/bar.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://androidexample365.com/content/images/2019/10/SmoothBottomBar.gif"
+                        alt="nav component page">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Nav Component</div>
+                      <div class="-subtitle text-gray">A Nav Component Example</div>
+                    </div>
+                    <div class="-card-body">A Nav Component Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./layout-components/nav.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive" src="https://vuejsexamples.com/content/images/2018/10/accordioa.gif"
+                        alt="Accordion component page">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Accordion Component</div>
+                      <div class="-subtitle text-gray">A Accordion Component Example</div>
+                    </div>
+                    <div class="-card-body">A Accordion Component Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./layout-components/accordion.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://ionicframework.com/docs/icons/feature-component-actionsheet-icon.png"
+                        alt="tiles component page">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Tiles Component</div>
+                      <div class="-subtitle text-gray">A Tiles Component Example</div>
+                    </div>
+                    <div class="-card-body">A Tiles Component Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./layout-components/tiles.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://i.pinimg.com/originals/51/23/00/512300fb7eb599de6568225151c0078a.png"
+                        alt="table component page">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Table Component</div>
+                      <div class="-subtitle text-gray">A Table Component Example</div>
+                    </div>
+                    <div class="-card-body">A Table Component Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./layout-components/table.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://cdn.dribbble.com/users/883236/screenshots/6495123/day_834_card_animation_ui-.gif"
+                        alt="panel component page">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Panel Component</div>
+                      <div class="-subtitle text-gray">A Panel Component Example</div>
+                    </div>
+                    <div class="-card-body">A Panel Component Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./layout-components/panel.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://i.pinimg.com/originals/96/47/7b/96477b0ebeff4c091c18d220b97afe9f.gif"
+                        alt="card component page">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Card Component</div>
+                      <div class="-subtitle text-gray">A Card Component Example</div>
+                    </div>
+                    <div class="-card-body">A Card Component Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./layout-components/card.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://www.sketchappsources.com/resources/source-image/subscribe-popup-premgurusamy.jpg"
+                        alt="modal component page">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Modal Component</div>
+                      <div class="-subtitle text-gray">A Modal Component Example</div>
+                    </div>
+                    <div class="-card-body">A Modal Component Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./layout-components/modal.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive" src="https://i.stack.imgur.com/LtQaw.png" alt="step component page">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Step Component</div>
+                      <div class="-subtitle text-gray">A Step Component Example</div>
+                    </div>
+                    <div class="-card-body">A Step Component Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./layout-components/step.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="-panel-footer">
+                <div class="input-group">
+                  <input class="form-field" type="text" placeholder="search">
+                  <button class="btn btn-primary input-group-btn -m0 -p4">Search</button>
+                </div>
+              </div>
+            </div>
+            <div id="extensed-components-submenu" class="-dynamic-section -slide-up  panel -shad-7 -h-f -max-h-vp98">
+              <div class="-panel-body liquid-grid">
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://i.pinimg.com/originals/f2/4b/d2/f24bd267c09c9d90f525a67e687afd19.png"
+                        alt="Dashboard Page">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Dashboard Page</div>
+                      <div class="-subtitle text-gray">A Dashboard Page Example</div>
+                    </div>
+                    <div class="-card-body">A Dashboard Page Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./pages/500.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="-panel-footer">
+                <div class="input-group">
+                  <input class="form-field" type="text" placeholder="search">
+                  <button class="btn btn-primary input-group-btn -m0 -p4">Search</button>
+                </div>
+              </div>
+            </div>
+            <div id="pages-submenu" class="-dynamic-section -fade-in panel -shad-7 -h-f -max-h-vp98">
+              <div class="-panel-body liquid-grid">
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://i.pinimg.com/originals/f2/4b/d2/f24bd267c09c9d90f525a67e687afd19.png"
+                        alt="Dashboard Page">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Dashboard Page</div>
+                      <div class="-subtitle text-gray">A Dashboard Page Example</div>
+                    </div>
+                    <div class="-card-body">A Dashboard Page Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./pages/500.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <a href="#" class="-card-image">
+                      <img class="img-responsive"
+                        src="https://cdn.dribbble.com/users/2042268/screenshots/4174447/media/404dea47327282254fee558ef54bcd8f.png?compress=1&resize=400x300"
+                        alt="login page">
+                    </a>
+                    <div class="-card-header">
+                      <div class="h5">Login Page</div>
+                      <div class="-subtitle text-gray">A login Page Example</div>
+                    </div>
+                    <div class="-card-body">Login Page Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./pages/login.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://static.vecteezy.com/system/resources/previews/005/006/040/non_2x/sign-up-digital-registration-form-on-laptop-screen-register-now-concept-illustration-flat-design-eps10-modern-graphic-element-for-landing-page-empty-state-ui-infographic-icon-vector.jpg"
+                        alt="register page">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Register Page</div>
+                      <div class="-subtitle text-gray">A Register Page Example</div>
+                    </div>
+                    <div class="-card-body">A Register Page Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./pages/register.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive" src="https://www.msnoob.com/wp-content/uploads/2018/12/error-404.jpg"
+                        alt="404 page">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">404 Page</div>
+                      <div class="-subtitle text-gray">A 404 Page Example</div>
+                    </div>
+                    <div class="-card-body">A 404 Page Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./pages/404.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://media.istockphoto.com/vectors/website-error-500-internal-server-error-vector-id648691974?k=20&m=648691974&s=612x612&w=0&h=kXX-US_T6GVM597RVfu2hEXajSA-0u9Mexl5QWH16lI="
+                        alt="500 page">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">500 Page</div>
+                      <div class="-subtitle text-gray">A 500 Page ERROR Example</div>
+                    </div>
+                    <div class="-card-body">A 500 Page Erro Example</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./pages/500.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://cdn.radiofrance.fr/s3/cruiser-production/2022/01/1faa2244-d3c9-4a8b-b22c-6217fdeaef6b/1136_boba.jpg"
+                        alt="Boba">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Boba Fett</div>
+                      <div class="-subtitle text-gray">Lorem Ipsum</div>
+                    </div>
+                    <div class="-card-body">Lorem ipsum in gloria meat et pluribus decat, non avilis deum est.</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <button class="btn -primary">Buy</button>
+                        <button class="btn -secondary">Buy</button>
+                        <button class="btn -success">Buy</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="-panel-footer">
+                <div class="input-group">
+                  <input class="form-field" type="text" placeholder="search">
+                  <button class="btn btn-primary input-group-btn -m0 -p4">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="right-panel"
+        class="-overflow-y-auto swipe-menu sidebar-full -close -bg-white -shad-12 -z4 -fixed -right">
+        <section class="liquid-grid -start -top -mb5 -w-f">
+          <div id="code-list" class="col -col-12 -md -sm12 -xs12 -p0">
+            <div class="panel -shad-7 -h-f -max-h-vp98">
+              <div class="-panel-header">
+                <h4>CODE</h4>
+              </div>
+              <div class="-panel-footer">
+                <div class="form-element input-group">
+                  <input class="form-field" type="text" placeholder="search">
+                  <button class="btn btn-primary input-group-btn -m0 -p4">Search</button>
+                </div>
+              </div>
+              <div class="-panel-body -mb5">
+                <div class="tile -w-f">
+                  <div class="-tile-icon">
+                    <div class="btn btn-action -sm -success -shad-10 -shad-12-h">
+                      <i class="icon icon-resize-horiz"></i>
+                    </div>
+                  </div>
+                  <div class="-tile-content -w-f">
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        HTML
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="html" class="-w-f">
+                          <code  class="code-preview">
+                            
+                          </code>
+                        </pre>
+                      </div>
+                    </div>
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        CSS
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="css" class="-width-full">
+                          <code class="code-preview">
+                            /* css classes */
+  
+
+                          </code>
+                        </pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tile">
+                  <div class="-tile-icon">
+                    <div class="btn btn-action -sm -success -shad-10 -shad-12-h">
+                      <i class="icon icon-resize-horiz"></i>
+                    </div>
+                  </div>
+                  <div class="-tile-content -w-f">
+                    <p class="-tile-title t-bld">James Beaver</p>
+                    <p class="-tile-subtitle">Blablabla lorem ipsum bla bla bla and bla and other bla bla bla bla bla
+                      bla...</p>
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-html-2" name="accordion-html-2" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html-2">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        HTML
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="html" class="-w-f">
+                          <code  class="code-preview">
+                            
+                          </code>
+                        </pre>
+                      </div>
+                    </div>
+                    <div class="accordion -w-f">
+                      <input type="checkbox" id="accordion-css-2" name="accordion-css-2" hidden>
+                      <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css-2">
+                        <i class="icon icon-arrow-right mr-1"></i>
+                        CSS
+                      </label>
+                      <div class="-accordion-body">
+                        <pre data-lang="css" class="-width-full">
+                          <code class="code-preview">
+                            /* css classes */
+  
+
+                          </code>
+                        </pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="-border-dark -wrapper">
+
+        <header class="-bg-light -w-f bar-container col -col-12 -fixed -top -left -z3 -shad-12">
+          <section class="bar">
+            <section class="-bar-section">
+              <a href="./index.html" class="-nav-brand -ml2">Liquid.css</a>
+              <a data-panel="left-panel" data-open-panel="-open" data-close-panel="-close" href="#."
+                class="swipe-m-trigger btn btn-link">
+                Docs
+              </a>
+              <a href="https://github.com/deliwrapp/liquid-css/" target="_blank" class="btn btn-link">GitHub</a>
+            </section>
+            <section class="-bar-center">
+              <div class="input-group -max-w-vp98">
+                <input class="form-field" type="text" placeholder="search">
+                <div class="form-select -w-f">
+                  <span>Pages</span>
+                  <div>
+                    <span class=" " data-value="Hipchat">Grid</span>
+                    <span class=" " data-value="Hipchat">Container</span>
+                    <span class=" active" data-value="Slack">Skeleton</span>
+                    <span class=" " data-value="Hipchat">Helpers</span>
+                    <span class=" " data-value="Hipchat">Effects</span>
+                    <span class=" " data-value="Hipchat">heading</span>
+                    <span class=" " data-value="Hipchat">Typo</span>
+                    <span class=" " data-value="Skype">UI-Component</span>
+                    <span class=" " data-value="Hipchat">Layout-Component</span>
+                    <span class=" " data-value="Hipchat">Animations</span>
+                    <span class=" " data-value="Hipchat">Extensed-Component</span>
+                    <span class=" " data-value="Hipchat">Pages</span>
+                  </div>
+                </div>
+                <button class="btn btn-primary input-group-btn -m0 -p4">Search</button>
+              </div>
+            </section>
+            <section class="-bar-section-end">
+
+            </section>
+          </section>
+        </header>
+
+        <main class="liquid-grid liquid-container -relative -middle -center -pt10 -mt10 -z1 -overflow-x-hidden main-content">
+            <div class="col -col-12 ">
+                <h2>ANIMATIONS</h2>
+            </div>
+            <hr>
+            <div class="col -col-12 -start -center">
+                <h3>ANimate </h3>
+                <pre>.animate</pre>
+                <pre data-lang="html" class="-width-full">
+                    <code class="code-preview">
+                        <h3>Animation</h3>
+                    </code>
+                </pre>
+                <pre data-lang="css" class="-width-full"> 
+                    <code class="code-preview">
+                    /* css classes */
+                    .form {
+                        display: flex;
+                        
+                    }
+                    </code>
+                </pre>
+                <hr>
+            </div>
+        </main>
+
+        <section class="-fixed -bottom-30 -right -m1 -z4">
+          <div
+            class="swipe-m-trigger btn btn-action -xl s-circle -success -shad-10 -shad-12-h -flex -justify-center -items-center"
+            data-panel="right-panel" data-open-panel="-open" data-close-panel="-close">
+            <i class="icon icon-resize-horiz"></i>
+          </div>
+        </section>
+        <section class="-fixed -bottom-15 -right -z5">
+          <div
+            class="swipe-m-trigger btn btn-action -xl s-square -primary -shad-10 -shad-12-h -flex -justify-center -items-center"
+            data-panel="left-panel" data-open-panel="-open" data-close-panel="-close">
+            <div>
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+        </section>
+
+      </section>
+
     </section>
-    <script src="main.js"></script>
+  </section>
+  <script src="./main.js"></script>
 </body>
+
 </html>

@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../main.css">
-  <title>Liquid-CSS-Framework Demo</title>
+  <link rel="stylesheet" href="../../main.css">
+  <title>Liquid-CSS-Framework Typo</title>
 </head>
 
 <body>
@@ -14,14 +14,15 @@
     <section id="top-page" class="liquid-page-container">
 
       <section id="left-panel"
-        class="-overflow-y-auto swipe-menu sidebar-full -close -bg-white -shad-12 -z5 -fixed -left">
+        class="-overflow-y-auto swipe-menu sidebar-full -close -bg-white -shad-12 -z5 -fixed -left"
+      >
         <section class="liquid-grid -start -top  -mb5 -w-f">
           <div class="col -col-4 -md6 -sm12 -xs12 -p0">
             <div id="menu-list" class="panel -shad-7 -h-f -max-h-vp98">
               <div class="-panel-header">
                 <div class="tile -tile-compact">
                   <div class="-tile-icon">
-                    <img class="avatar" src="./assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar">
+                    <img class="avatar" src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar">
                   </div>
                   <div class="-tile-content">Liquid CSS</div>
                   <p class="-tile-subtitle hide-sm hide-xs">The CSS Framework by Deliwrapp</p>
@@ -31,34 +32,19 @@
                 <ul class="menu -menu-nav -w-fit">
                   <li class="divider"></li>
                   <li class="-menu-item">
-                    <a class="-t-bld -t-u" href="index.html">HOME</a>
+                    <a class="-t-bld -t-u" href="../index.html">HOME</a>
                     <div class="-menu-badge">
                       <label class="chip -primary">1</label>
                     </div>
                   </li>
                   <li class="-menu-item">
-                    <a class="-t-bld -t-u" href="base.html">base</a>
+                    <a class="-t-bld -t-u -active" href="#skeleton-submenu">skeleton</a>
                   </li>
                   <li class="-menu-item">
-                    <a class="-t-bld -t-u" href="grid.html">grid</a>
+                    <a class="-t-bld -t-u" href="../helpers.html">helpers</a>
                   </li>
                   <li class="-menu-item">
-                    <a class="-t-bld -t-u" href="container.html">container</a>
-                  </li>
-                  <li class="-menu-item">
-                    <a class="-t-bld -t-u" href="z-index.html">z-index</a>
-                  </li>
-                  <li class="-menu-item">
-                    <a class="-t-bld -t-u" href="helpers.html">helpers</a>
-                  </li>
-                  <li class="-menu-item">
-                    <a class="-t-bld -t-u" href="heading.html">heading</a>
-                  </li>
-                  <li class="-menu-item">
-                    <a class="-t-bld -t-u" href="typo.html">typo</a>
-                  </li>
-                  <li class="-menu-item">
-                    <a class="-t-bld -t-u -active" href="effects.html">effects</a>
+                    <a class="-t-bld -t-u" href="#effects-submenu">effects</a>
                   </li>
                   <li class="-menu-item">
                     <a class="-t-bld -t-u" href="#animations-submenu">animations</a>
@@ -92,6 +78,158 @@
                 --dynamic-section-display-default: none;
               }
             </style>
+            
+            <div id="skeleton-submenu" class="-dynamic-section -slide-up  panel -shad-7 -h-f -max-h-vp98">
+              <div class="-panel-body liquid-grid">
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://www.seobility.net/en/wiki/images/2/26/Favicon.png"
+                        alt="base skeleton">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Base</div>
+                      <div class="-subtitle text-gray">Base skeleton utilities</div>
+                    </div>
+                    <div class="-card-body">Base skeleton utilities</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./base.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://thesitedoctor.co.uk/tim/content/binary/windows-live-writer/where-i-think-most-css-frameworks-are-st_a078/2012-10-18%20css%20grid%20-%20ours_2.png"
+                        alt="grid skeleton">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Grid</div>
+                      <div class="-subtitle text-gray">Grid skeleton utilities</div>
+                    </div>
+                    <div class="-card-body">Grid skeleton utilities</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./grid.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://icon-library.com/images/docker-container-icon/docker-container-icon-17.jpg"
+                        alt="container skeleton">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Container</div>
+                      <div class="-subtitle text-gray">Container skeleton utilities</div>
+                    </div>
+                    <div class="-card-body">Container skeleton utilities</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./container.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://cdn.dribbble.com/users/2898/screenshots/1324337/h1-studios-logo.gif"
+                        alt="heading skeleton">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Heading</div>
+                      <div class="-subtitle text-gray">Heading skeleton utilities</div>
+                    </div>
+                    <div class="-card-body">Media skeleton utilities</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./heading.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://typographicdesign.de/wp-content/uploads/2018/07/logo_Typo-Graphic-Design_2017-Animation_300px.gif"
+                        alt="typo skeleton">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Typo</div>
+                      <div class="-subtitle text-gray">Typo skeleton utilities</div>
+                    </div>
+                    <div class="-card-body">Typo skeleton utilities</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./typo.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://i7x7p5b7.stackpathcdn.com/codrops/wp-content/uploads/2014/10/new-stacking-order.png"
+                        alt="z-index skeleton">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Z-index</div>
+                      <div class="-subtitle text-gray">Z-index skeleton utilities</div>
+                    </div>
+                    <div class="-card-body">Z-index skeleton utilities</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./z-index.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://cdn.icon-icons.com/icons2/1312/PNG/512/01-3_86375.png"
+                        alt="media skeleton">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Medias</div>
+                      <div class="-subtitle text-gray">Media skeleton utilities</div>
+                    </div>
+                    <div class="-card-body">Media skeleton utilities</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./media.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="-panel-footer">
+                <div class="input-group">
+                  <input class="form-field" type="text" placeholder="search">
+                  <button class="btn btn-primary input-group-btn -m0 -p4">Search</button>
+                </div>
+              </div>
+            </div>
             <div id="effects-submenu" class="-dynamic-section -pop-in  panel -shad-7 -h-f -max-h-vp98">
               <div class="-panel-body liquid-grid">
 
@@ -109,7 +247,7 @@
                     <div class="-card-body">A Dashboard Page Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./pages/500.html" class="btn -block -success">Découvrir</a>
+                        <a href="../pages/500.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -140,7 +278,7 @@
                     <div class="-card-body">A Dashboard Page Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./pages/500.html" class="btn -block -success">Découvrir</a>
+                        <a href="../pages/500.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -171,7 +309,7 @@
                     <div class="-card-body">A Dashboard Page Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./pages/500.html" class="btn -block -success">Découvrir</a>
+                        <a href="../pages/500.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -202,7 +340,7 @@
                     <div class="-card-body">A Layout Page Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/layout.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/layout.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -221,7 +359,7 @@
                     <div class="-card-body">Bar Component Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/bar.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/bar.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -241,7 +379,7 @@
                     <div class="-card-body">A Nav Component Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/nav.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/nav.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -260,7 +398,7 @@
                     <div class="-card-body">A Accordion Component Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/accordion.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/accordion.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -280,7 +418,7 @@
                     <div class="-card-body">A Tiles Component Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/tiles.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/tiles.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -300,7 +438,7 @@
                     <div class="-card-body">A Table Component Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/table.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/table.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -320,7 +458,7 @@
                     <div class="-card-body">A Panel Component Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/panel.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/panel.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -340,7 +478,7 @@
                     <div class="-card-body">A Card Component Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/card.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/card.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -360,7 +498,7 @@
                     <div class="-card-body">A Modal Component Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/modal.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/modal.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -378,7 +516,7 @@
                     <div class="-card-body">A Step Component Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/step.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/step.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -409,7 +547,7 @@
                     <div class="-card-body">A Dashboard Page Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./pages/500.html" class="btn -block -success">Découvrir</a>
+                        <a href="../pages/500.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -440,7 +578,7 @@
                     <div class="-card-body">A Dashboard Page Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./pages/500.html" class="btn -block -success">Découvrir</a>
+                        <a href="../pages/dashboard.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -460,7 +598,7 @@
                     <div class="-card-body">Login Page Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./pages/login.html" class="btn -block -success">Découvrir</a>
+                        <a href="../pages/login.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -480,7 +618,7 @@
                     <div class="-card-body">A Register Page Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./pages/register.html" class="btn -block -success">Découvrir</a>
+                        <a href="../pages/register.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -499,7 +637,7 @@
                     <div class="-card-body">A 404 Page Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./pages/404.html" class="btn -block -success">Découvrir</a>
+                        <a href="../pages/404.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -519,7 +657,7 @@
                     <div class="-card-body">A 500 Page Erro Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./pages/500.html" class="btn -block -success">Découvrir</a>
+                        <a href="../pages/500.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -558,14 +696,13 @@
           </div>
         </section>
       </section>
-      <section id="right-panel"
-        class="-overflow-y-auto swipe-menu sidebar-full -close -bg-white -shad-12 -z4 -fixed -right">
+      <section id="right-panel" class="-overflow-y-auto swipe-menu sidebar-full -close -bg-white -shad-12 -z4 -fixed -right">
         <section class="liquid-grid -start -top -mb5 -w-f">
           <div id="code-list" class="col -col-12 -md -sm12 -xs12 -p0">
             <div class="panel -shad-7 -h-f -max-h-vp98">
               <div class="-panel-header">
-                <h4>CODE</h4>
-              </div>
+                <h4>CODE</h4> 
+              </div> 
               <div class="-panel-footer">
                 <div class="form-element input-group">
                   <input class="form-field" type="text" placeholder="search">
@@ -601,7 +738,7 @@
                         CSS
                       </label>
                       <div class="-accordion-body">
-                        <pre data-lang="css" class="-width-full">
+                        <pre data-lang="css" class="-width-full"> 
                           <code class="code-preview">
                             /* css classes */
   
@@ -620,8 +757,7 @@
                   </div>
                   <div class="-tile-content -w-f">
                     <p class="-tile-title t-bld">James Beaver</p>
-                    <p class="-tile-subtitle">Blablabla lorem ipsum bla bla bla and bla and other bla bla bla bla bla
-                      bla...</p>
+                    <p class="-tile-subtitle">Blablabla lorem ipsum bla bla bla and bla and other bla bla bla bla bla bla...</p>
                     <div class="accordion -w-f">
                       <input type="checkbox" id="accordion-html-2" name="accordion-html-2" hidden>
                       <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html-2">
@@ -643,7 +779,7 @@
                         CSS
                       </label>
                       <div class="-accordion-body">
-                        <pre data-lang="css" class="-width-full">
+                        <pre data-lang="css" class="-width-full"> 
                           <code class="code-preview">
                             /* css classes */
   
@@ -653,7 +789,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div>             
               </div>
             </div>
           </div>
@@ -665,9 +801,14 @@
         <header class="-bg-light -w-f bar-container col -col-12 -fixed -top -left -z3 -shad-12">
           <section class="bar">
             <section class="-bar-section">
-              <a href="./index.html" class="-nav-brand -ml2">Liquid.css</a>
-              <a data-panel="left-panel" data-open-panel="-open" data-close-panel="-close" href="#."
-                class="swipe-m-trigger btn btn-link">
+              <a href="./index.html" class="-nav-brand -ml2">Liquid.css</a>           
+              <a
+                data-panel="left-panel"
+                data-open-panel="-open"
+                data-close-panel="-close"
+                href="#." 
+                class="swipe-m-trigger btn btn-link"
+              >
                 Docs
               </a>
               <a href="https://github.com/deliwrapp/liquid-css/" target="_blank" class="btn btn-link">GitHub</a>
@@ -700,54 +841,529 @@
             </section>
           </section>
         </header>
-
-        <main class="liquid-grid liquid-container -relative -middle -center -pt10 -mt10 -z1 -overflow-x-hidden main-content">
+        <hr>
+        <section class="liquid-grid -middle -center -mt10 -pt10">
             <div class="col -col-12 ">
-                <h2>EFFECTS</h2>
+                <h2>TYPO</h2>
+            </div>
+        </section>
+        <hr>
+        <nav class="nav -sticky -top-5rm -shad-12 -z3">
+            <ul class="nav-items">
+                <li class="nav-item">
+                    <a href="#top-page">
+                        Back to the Top
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#general">
+                        General
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#small-big-section">
+                        Small and Big
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#trans-styl-weight-section">
+                        Transform, Style, Weight
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#deco-siz-ind-section">
+                        Decoration, Size, Indent
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#lin-word-let-section">
+                        Line, Word, Letter
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="liquid-grid liquid-container -relative -center -pt10 -mt10 -z1 -overflow-x-hidden main-content">
+            <div class="col -col-12 -middle -center">
+                <h3>TEXT</h3>
+            </div>
+            <section id="general" class="col -col-12 -start -center">
+                <h4>General</h4>
+                <pre>abrr kbd mark cite code del em i ins ruby samp sub sup time u var</pre>
+                <h5>Preview</h5>
+                <p>This is an Abrreviation Text <abbr title="Cascading Style Sheets">CSS</abbr></p>
+                <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render the page.</p>
+                <p>This is an exemple of a <mark>marked text</mark></p>
+                <p><cite>This is a Citation</cite></p>
+                <p><code>This is a code</code></p>
+                <p><del>This is a Deleted text</de</p>l>
+                <p><em>This is an Emphasis text</em></p>
+                <p><i>This is an Italic text</i></p>
+                <p><ins>This is an Inserted text</ins></p>
+                <p>This is an <u>Underline text</u></p>
+                <p>
+                    <ruby>
+                        漢 
+                        <rt>kan</rt>
+                        字 
+                        <rt>ji</rt>
+                    </ruby>
+                    This is an Ruby text
+                </p>
+                <p><s>This is an Strikethrough text</s></p>
+                <p><samp>This is an Sample text</samp></p>
+                <p>This is a <sub>Subscripted</sub> Text</p>
+                <p>This is a <sup>Supscripted</sup> Text</p>
+                <p>This is time <time>20:00</time></p>
+                <p>
+                    <var>x</var> = 
+                    <var>y</var> + 2 
+                    <code class="ml4">var</code>
+                </p>
+                <h5>Code</h5>
+                <pre data-lang="html" class="-width-full">
+                    <code class="code-preview">
+                        <p>This is an Abrreviation Text <abbr title="Cascading Style Sheets">CSS</abbr></p>
+                        <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render the page.</p>
+                        <p>This is an exemple of a <mark>marked text</mark></p>
+                        <p><cite>This is a Citation</cite></p>
+                        <p><code>This is a code</code></p>
+                        <p><del>This is a Deleted text</de</p>l>
+                        <p><em>This is an Emphasis text</em></p>
+                        <p><i>This is an Italic text</i></p>
+                        <p><ins>This is an Inserted text</ins></p>
+                        <p>This is an <u>Underline text</u></p>
+                        <p>
+                            <ruby>
+                                漢 
+                                <rt>kan</rt>
+                                字 
+                                <rt>ji</rt>
+                            </ruby>
+                            This is an Ruby text
+                        </p>
+                        <p><s>This is an Strikethrough text</s></p>
+                        <p><samp>This is an Sample text</samp></p>
+                        <p>This is a <sub>Subscripted</sub> Text</p>
+                        <p>This is a <sup>Supscripted</sup> Text</p>
+                        <p>This is time <time>20:00</time></p>
+                        <p>
+                            <var>x</var> = 
+                            <var>y</var> + 2 <code class="ml4">var</code>
+                        </p>
+                    </code>
+                </pre>
+                <pre data-lang="css" class="-width-full"> 
+                    <code class="code-preview">
+/* css classes */
+abbr[title] {
+    border-bottom: .05rem dotted;
+    cursor: help;
+    text-decoration: none;
+}
+kbd {
+    background: var(--liquid-color-dark);
+    color: var(--liquid-color-dark-contrast);
+    font-size: .7rem; 
+    line-height: 1.25;
+    padding: .1rem .2rem;
+    border-radius: .1rem;
+}
+mark {
+    background: var(--mark-bg);
+    color: var(--mark-color);
+    border-bottom: .1rem solid var(--mark-bg);
+    border-radius: var(--mark-radius);
+    padding: var(--mark-padding);
+}
+
+                    </code>
+                </pre>
+            </section>
+            <hr>
+            <section id="base" class="col -col-12 -start -center">
+                <h4>Base</h4>
+                <pre></pre>
+                <h5>Preview</h5>
+                <blockquote>
+                    <p>Many time, the true is where you don't look. </p>
+                    <cite>- Beelly Alpa</cite>
+                </blockquote>
+                
+                <h5>Code</h5>
+                <pre data-lang="html" class="-width-full">
+                    <code class="code-preview">
+                        
+                    </code>
+                </pre>
+                <pre data-lang="css" class="-width-full"> 
+                    <code class="code-preview">
+/* css classes */
+
+
+
+                    </code>
+                </pre>
+            </section>
+            <hr>           
+            <section id="small-big-section" class="col -col-12 -start -center">
+                <h4>Small and Big</h4>
+                <pre>-t-small -t-big</pre>
+                <h5>Preview</h5>
+                <p class="-t-small">Small Text</p>
+                <small>Small Text</small>
+                <p class="-t-big">Big Text</p>
+                <big>Small Text</big>
+                <h5>Code</h5>
+                <pre data-lang="html" class="-width-full">
+                    <code class="code-preview">
+                        <p class="small-f">Small Text</p>
+                        <small>Small Text</small>
+                        <p class="-t-big">Big Text</p>
+                        <big>Small Text</big>
+                    </code>
+                </pre>
+                <pre data-lang="css" class="-width-full"> 
+                    <code class="code-preview">
+/* css classes */
+small, .\-t-small {
+    font-size: var(--small-font-size);
+    line-height: var(--small-font-l-height);
+}
+.\-t-big {
+    font-size: var(--big-font-size);
+    line-height: var(--big-font-l-height)
+}
+                    </code>
+                </pre>
+            </section>
+            <hr>
+            <section id="trans-styl-weight-section" class="col -col-12 -start -center">
+                <h4>Font Transform, Font Style and Font Weight</h4>
+                <pre>-big-f -t-u -t-l -t-c -t-o -t-i -t-n -t-lght -t-lghtr -t-nrm -t-bld -t-bldr -t-800</pre>
+                <h5>Preview</h5>
+                <p class="-t-u">transform uppercase</p>
+                <p class="-t-l">transform lowercase</p>
+                <p class="-t-c">transform capitalize</p>
+                <p class="-t-o">style oblique</p>
+                <p class="-t-i">style italic</p>
+                <p class="-t-n">style normal</p>
+                <p class="-t-lght">weight light</p>
+                <p class="-t-lghtr">weight lighter</p>
+                <p class="-t-nrm">weight normal</p>
+                <p class="-t-bld">weight bold</p>
+                <p class="-t-bldr">weight bolder</p>
+                <p class="-t-800">weight 800</p>
+                <h5>Code</h5>
+                <pre data-lang="html" class="-width-full">
+                    <code class="code-preview">
+                        <p class="-t-u">transform uppercase</p>
+                        <p class="-t-l">transform lowercase</p>
+                        <p class="-t-c">transform capitalize</p>
+                        <p class="-t-o">style oblique</p>
+                        <p class="-t-i">style italic</p>
+                        <p class="-t-n">style normal</p>
+                        <p class="-t-lght">weight light</p>
+                        <p class="-t-lghtr">weight lighter</p>
+                        <p class="-t-nrm">weight normal</p>
+                        <p class="-t-bld">weight bold</p>
+                        <p class="-t-bldr">weight bolder</p>
+                        <p class="-t-800">weight 800</p>
+                    </code>
+                </pre>
+                <pre data-lang="css" class="-width-full"> 
+                    <code class="code-preview">
+/* css classes */
+.\-t-u {
+    text-transform: uppercase;
+}
+.\-t-l {
+    text-transform: lowercase;
+}
+.\-t-c {
+    text-transform: capitalize;
+}
+.\-t-o {
+    font-style: oblique;
+}
+.\-t-i {
+    font-style: italic;
+}
+.\-t-n {
+    font-style: normal;
+}
+.\-t-lght {
+    font-weight: 200;
+}
+.\-t-lghtr {
+    font-weight: lighter;
+}
+.\-t-nrm {
+    font-weight: 400;
+}
+.\-t-bld {
+    font-weight: bold;
+}
+.\-t-bldr {
+    font-weight: bolder;
+}
+.\-t-800 {
+    font-weight: 800;
+}
+                    </code>
+                </pre>
+            </section>
+            <hr>
+            <section id="deco-siz-ind-section" class="col -col-12 -start -center">
+                <h4>Decoration, Size and Indent</h4>
+                <pre>-t-dec-n -t-dec-u -t-dec-o, -t-dec-lt -t-1rm -t-2rm -t-3rm -t-4rm -t-5rm -t-indent-05 -t-indent-1 -t-indent-15 -t-indent-2 -t-indent-25 -t-indent-3</pre>
+                <h5>Preview</h5>
+                <p class="-t-dec-n">decoration none</p>
+                <p class="-t-dec-u">decoration underline</p>
+                <p class="-t-dec-o">decoration overline</p>
+                <p class="-t-dec-lt">decoration line-through</p>
+                <p class="-t-1rm">text 1rem</p>
+                <p class="-t-2rm">text 2rem</p>
+                <p class="-t-3rm">text 3rem</p>
+                <p class="-t-4rm">text 4rem</p>
+                <p class="-t-5rm">text 5rem</p>
+                <p class="-t-indent-05">indent 0.5rem</p>
+                <p class="-t-indent-1">indent 1rem</p>
+                <p class="-t-indent-15">indent 1.5rem</p>
+                <p class="-t-indent-2">indent 2rem</p>
+                <p class="-t-indent-25">indent 2.5rem</p>
+                <p class="-t-indent-3">indent 3rem</p>
+                <h5>Code</h5>
+                <pre data-lang="html" class="-width-full">
+                    <code class="code-preview">
+                        <p class="-t-dec-n">decoration none</p>
+                        <p class="-t-dec-u">decoration underline</p>
+                        <p class="-t-dec-o">decoration overline</p>
+                        <p class="-t-dec-lt">decoration line-through</p>
+                        <p class="-t-1rm">text 1rem</p>
+                        <p class="-t-2rm">text 2rem</p>
+                        <p class="-t-3rm">text 3rem</p>
+                        <p class="-t-4rm">text 4rem</p>
+                        <p class="-t-5rm">text 5rem</p>
+                        <p class="-t-indent-05">indent 0.5rem</p>
+                        <p class="-t-indent-1">indent 1rem</p>
+                        <p class="-t-indent-15">indent 1.5rem</p>
+                        <p class="-t-indent-2">indent 2rem</p>
+                        <p class="-t-indent-25">indent 2.5rem</p>
+                        <p class="-t-indent-3">indent 3rem</p>
+                    </code>
+                </pre>
+                <pre data-lang="css" class="-width-full"> 
+                    <code class="code-preview">
+/* css classes */
+.\-t-dec-n {
+    text-decoration: none;
+}
+.\-t-dec-u {
+    text-decoration: underline;
+}
+.\-t-dec-o {
+    text-decoration: overline;
+}
+.\-t-dec-lt {
+    text-decoration: line-through;
+}
+.\-t-dec-b {
+    text-decoration: blink;
+}
+.\-t-1rm {
+    font-size: 1rem;
+}
+.\-t-2rm {
+    font-size: 2rem;
+}
+.\-t-3rm {
+    font-size: 3rem;
+}
+.\-t-4rm {
+    font-size: 4rem;
+}
+.\-t-5rm {
+    font-size: 5rem;
+}
+.\-t-indent-05 {
+    text-indent: 0.5rem;
+}
+.\-t-indent-1 {
+    text-indent: 1rem;
+}
+.\-t-indent-15 {
+    text-indent: 1.5rem;
+}
+.\-t-indent-2 {
+    text-indent: 2rem;
+}
+.\-t-indent-25 {
+    text-indent: 2.5rem;
+}
+.\-t-indent-3 {
+    text-indent: 3rem;
+}
+                    </code>
+                </pre>
+            </section>
+            <hr>
+            <div id="lin-word-let-section" class="col -col-12 -middle -center">
+                <h3>LINE, WORD and LETTER HANDLER</h3>
             </div>
             <hr>
-            <nav class="nav -sticky -top-3rem">
-                <ul class="nav-items">
-                    <li <li class="nav-item">
-                        <a href="effects/display.html">
-                            DISPLAY
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="effects/opacity.html">
-                            OPACITY
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="effects/colors.html">
-                            COLORS
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="effects/border.html">
-                            BORDER
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="effects/shadows.html">
-                            SHADOWS
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="effects/perspective.html">
-                            PERSPECTIVE
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="effects/path.html">
-                            PATH
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <section class="col -col-12 -start -center">
+                <h4>Code</h4>
+                <pre data-lang="css" class="-width-full"> 
+                    <code class="code-preview">
+/* css classes */
+.\-l-sp-n {
+    letter-spacing: normal;
+}
+.\-l-sp-1p {
+    letter-spacing: 1px;
+}
+.\-l-sp-25rm {
+    letter-spacing: 0.25rem;
+}
+.\-l-sp-50rm {
+    letter-spacing: 0.5rem;
+}
+.\-l-sp-75rm {
+    letter-spacing: 0.75rem;
+}
+.\-l-sp-100rm {
+    letter-spacing: 1rem;
+}
+.\-l-sp-125rm {
+    letter-spacing: 1.25rem;
+}
+.\-l-sp-150rm {
+    letter-spacing: 1.5rem;
+}
+.\-l-sp-175rm {
+    letter-spacing: 1.75rem;
+}
+.\-l-sp-200 {
+    letter-spacing: 2rem;
+}
+.\-line-h-n {
+    line-height: normal;
+}
+.\-line-h-1 {
+    line-height: 1;
+}
+.\-line-h-1-25 {
+    line-height: 1.25;
+}
+.\-line-h-1-5 {
+    line-height: 1.5;
+}
+.\-line-h-1-75 {
+    line-height: 1.75;
+}
+.\-line-h-2 {
+    line-height: 2;
+}
+.\-line-h-2-25 {
+    line-height: 2.25;
+}
+.\-line-h-2-5 {
+    line-height: 2.5;
+}
+.\-line-h-2-75 {
+    line-height: 2.75;
+}
+.\-line-h-3 {
+    line-height: 3;
+}
+.\-line-h-3-25 {
+    line-height: 3.25;
+}
+.\-line-h-3-5 {
+    line-height: 3.5;
+}
+.\-line-h-3-75 {
+    line-height: 3.75;
+}
+.\-line-h-4 {
+    line-height: 4;
+}
+.\-line-h-4-25 {
+    line-height: 1.25;
+}
+.\-line-h-4-5 {
+    line-height: 4.5;
+}
+.\-line-h-4-75 {
+    line-height: 4.75;
+}
+.\-line-h-5 {
+    line-height: 5;
+}
+.\-line-b-a {
+    line-break: auto;
+}
+.\-line-b-l {
+    line-break: loose;
+}
+.\-line-b-n {
+    line-break: normal;
+}
+.\-line-b-s {
+    line-break: strict;
+}
+.\-over-wrap-b-w {
+    overflow-wrap: break-word;
+}
+.\-over-wrap-n {
+    overflow-wrap: normal;
+}
+.\-w-break-all {
+    word-break: break-all;
+}
+.\-w-keep-all {
+    word-break: keep-all;
+}
+.\-w-norm {
+    word-break: normal;
+}
+.\-hyp-m {
+    hyphens: manual;
+}
+.\-hyp-n {
+    hyphens: none;
+}
+.\-hyp-a {
+    hyphens: auto;
+}
+.\-hyp-r {
+    hyphens: revert;
+}
+.\-hyp-r {
+    hyphens: revert;
+}
+.\-wh-sp-nw {
+    white-space: nowrap;
+}
+.\-wh-sp-pre {
+    white-space: pre;
+}
+.\-wh-sp-pre-w {
+    white-space: pre-wrap;
+}
+.\-wh-sp-pre-l {
+    white-space: pre-line;
+}
+.\-wh-sp-br-sp {
+    white-space: break-spaces;
+}
+                    </code>
+                </pre>
+            </section>
             <hr>
         </main>
-
+        
         <section class="-fixed -bottom-30 -right -m1 -z4">
           <div
             class="swipe-m-trigger btn btn-action -xl s-circle -success -shad-10 -shad-12-h -flex -justify-center -items-center"
@@ -771,7 +1387,7 @@
 
     </section>
   </section>
-  <script src="./main.js"></script>
+  <script src="../main.js"></script>
 </body>
 
 </html>

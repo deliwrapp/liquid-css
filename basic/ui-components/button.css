@@ -192,9 +192,11 @@ button, .btn {
     font-weight: var(--button-font-weight);
     background: var(--liquid-color-primary);
     border-radius: var(--button-radius);
+    text-decoration: var(--button-text-decoration);
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     cursor: pointer;
+    
 }
 .btn:link,
 .btn:active,
@@ -466,6 +468,13 @@ button, .btn {
     transform: none;
 }
 
+.btn-group.btn-group-block {
+    display: flex;
+}
+
+.btn-group.btn-group-block .btn {
+    flex: 1 0 0;
+}
 /*----Liquid-Water-Btn ----*/
 .liquid-water-btn {
     position: relative;

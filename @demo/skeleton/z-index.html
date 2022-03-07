@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../main.css">
-  <title>Liquid-CSS-Framework Demo</title>
+  <link rel="stylesheet" href="../../main.css">
+  <title>Liquid-CSS-Framework - Z-INDEX SKELETON</title>
 </head>
 
 <body>
@@ -14,14 +14,15 @@
     <section id="top-page" class="liquid-page-container">
 
       <section id="left-panel"
-        class="-overflow-y-auto swipe-menu sidebar-full -close -bg-white -shad-12 -z5 -fixed -left">
+        class="-overflow-y-auto swipe-menu sidebar-full -close -bg-white -shad-12 -z5 -fixed -left"
+      >
         <section class="liquid-grid -start -top  -mb5 -w-f">
           <div class="col -col-4 -md6 -sm12 -xs12 -p0">
             <div id="menu-list" class="panel -shad-7 -h-f -max-h-vp98">
               <div class="-panel-header">
                 <div class="tile -tile-compact">
                   <div class="-tile-icon">
-                    <img class="avatar" src="./assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar">
+                    <img class="avatar" src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar">
                   </div>
                   <div class="-tile-content">Liquid CSS</div>
                   <p class="-tile-subtitle hide-sm hide-xs">The CSS Framework by Deliwrapp</p>
@@ -31,34 +32,19 @@
                 <ul class="menu -menu-nav -w-fit">
                   <li class="divider"></li>
                   <li class="-menu-item">
-                    <a class="-t-bld -t-u" href="index.html">HOME</a>
+                    <a class="-t-bld -t-u" href="../index.html">HOME</a>
                     <div class="-menu-badge">
                       <label class="chip -primary">1</label>
                     </div>
                   </li>
                   <li class="-menu-item">
-                    <a class="-t-bld -t-u" href="base.html">base</a>
+                    <a class="-t-bld -t-u -active" href="#skeleton-submenu">skeleton</a>
                   </li>
                   <li class="-menu-item">
-                    <a class="-t-bld -t-u" href="grid.html">grid</a>
+                    <a class="-t-bld -t-u" href="../helpers.html">helpers</a>
                   </li>
                   <li class="-menu-item">
-                    <a class="-t-bld -t-u" href="container.html">container</a>
-                  </li>
-                  <li class="-menu-item">
-                    <a class="-t-bld -t-u" href="z-index.html">z-index</a>
-                  </li>
-                  <li class="-menu-item">
-                    <a class="-t-bld -t-u" href="helpers.html">helpers</a>
-                  </li>
-                  <li class="-menu-item">
-                    <a class="-t-bld -t-u" href="heading.html">heading</a>
-                  </li>
-                  <li class="-menu-item">
-                    <a class="-t-bld -t-u" href="typo.html">typo</a>
-                  </li>
-                  <li class="-menu-item">
-                    <a class="-t-bld -t-u -active" href="effects.html">effects</a>
+                    <a class="-t-bld -t-u" href="#effects-submenu">effects</a>
                   </li>
                   <li class="-menu-item">
                     <a class="-t-bld -t-u" href="#animations-submenu">animations</a>
@@ -92,6 +78,158 @@
                 --dynamic-section-display-default: none;
               }
             </style>
+            
+            <div id="skeleton-submenu" class="-dynamic-section -slide-up  panel -shad-7 -h-f -max-h-vp98">
+              <div class="-panel-body liquid-grid">
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://www.seobility.net/en/wiki/images/2/26/Favicon.png"
+                        alt="base skeleton">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Base</div>
+                      <div class="-subtitle text-gray">Base skeleton utilities</div>
+                    </div>
+                    <div class="-card-body">Base skeleton utilities</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./base.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://thesitedoctor.co.uk/tim/content/binary/windows-live-writer/where-i-think-most-css-frameworks-are-st_a078/2012-10-18%20css%20grid%20-%20ours_2.png"
+                        alt="grid skeleton">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Grid</div>
+                      <div class="-subtitle text-gray">Grid skeleton utilities</div>
+                    </div>
+                    <div class="-card-body">Grid skeleton utilities</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./grid.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://icon-library.com/images/docker-container-icon/docker-container-icon-17.jpg"
+                        alt="container skeleton">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Container</div>
+                      <div class="-subtitle text-gray">Container skeleton utilities</div>
+                    </div>
+                    <div class="-card-body">Container skeleton utilities</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./container.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://cdn.dribbble.com/users/2898/screenshots/1324337/h1-studios-logo.gif"
+                        alt="heading skeleton">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Heading</div>
+                      <div class="-subtitle text-gray">Heading skeleton utilities</div>
+                    </div>
+                    <div class="-card-body">Media skeleton utilities</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./heading.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://typographicdesign.de/wp-content/uploads/2018/07/logo_Typo-Graphic-Design_2017-Animation_300px.gif"
+                        alt="typo skeleton">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Typo</div>
+                      <div class="-subtitle text-gray">Typo skeleton utilities</div>
+                    </div>
+                    <div class="-card-body">Typo skeleton utilities</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./typo.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://i7x7p5b7.stackpathcdn.com/codrops/wp-content/uploads/2014/10/new-stacking-order.png"
+                        alt="z-index skeleton">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Z-index</div>
+                      <div class="-subtitle text-gray">Z-index skeleton utilities</div>
+                    </div>
+                    <div class="-card-body">Z-index skeleton utilities</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./z-index.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col -col-6 -md6 -sm12 -xs12">
+                  <div class="card -shad-4 -shad-12-h -cursor-pointer">
+                    <div class="-card-image">
+                      <img class="img-responsive"
+                        src="https://cdn.icon-icons.com/icons2/1312/PNG/512/01-3_86375.png"
+                        alt="media skeleton">
+                    </div>
+                    <div class="-card-header">
+                      <div class="h5">Medias</div>
+                      <div class="-subtitle text-gray">Media skeleton utilities</div>
+                    </div>
+                    <div class="-card-body">Media skeleton utilities</div>
+                    <div class="-card-footer">
+                      <div class="btn-group btn-group-block">
+                        <a href="./media.html" class="btn -block -success">Découvrir</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="-panel-footer">
+                <div class="input-group">
+                  <input class="form-field" type="text" placeholder="search">
+                  <button class="btn btn-primary input-group-btn -m0 -p4">Search</button>
+                </div>
+              </div>
+            </div>
             <div id="effects-submenu" class="-dynamic-section -pop-in  panel -shad-7 -h-f -max-h-vp98">
               <div class="-panel-body liquid-grid">
 
@@ -109,7 +247,7 @@
                     <div class="-card-body">A Dashboard Page Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./pages/500.html" class="btn -block -success">Découvrir</a>
+                        <a href="../pages/500.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -140,7 +278,7 @@
                     <div class="-card-body">A Dashboard Page Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./pages/500.html" class="btn -block -success">Découvrir</a>
+                        <a href="../pages/500.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -171,7 +309,7 @@
                     <div class="-card-body">A Dashboard Page Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./pages/500.html" class="btn -block -success">Découvrir</a>
+                        <a href="../pages/500.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -202,7 +340,7 @@
                     <div class="-card-body">A Layout Page Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/layout.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/layout.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -221,7 +359,7 @@
                     <div class="-card-body">Bar Component Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/bar.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/bar.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -241,7 +379,7 @@
                     <div class="-card-body">A Nav Component Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/nav.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/nav.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -260,7 +398,7 @@
                     <div class="-card-body">A Accordion Component Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/accordion.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/accordion.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -280,7 +418,7 @@
                     <div class="-card-body">A Tiles Component Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/tiles.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/tiles.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -300,7 +438,7 @@
                     <div class="-card-body">A Table Component Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/table.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/table.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -320,7 +458,7 @@
                     <div class="-card-body">A Panel Component Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/panel.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/panel.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -340,7 +478,7 @@
                     <div class="-card-body">A Card Component Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/card.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/card.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -360,7 +498,7 @@
                     <div class="-card-body">A Modal Component Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/modal.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/modal.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -378,7 +516,7 @@
                     <div class="-card-body">A Step Component Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./layout-components/step.html" class="btn -block -success">Découvrir</a>
+                        <a href="../layout-components/step.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -409,7 +547,7 @@
                     <div class="-card-body">A Dashboard Page Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./pages/500.html" class="btn -block -success">Découvrir</a>
+                        <a href="../pages/500.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -440,7 +578,7 @@
                     <div class="-card-body">A Dashboard Page Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./pages/500.html" class="btn -block -success">Découvrir</a>
+                        <a href="../pages/dashboard.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -460,7 +598,7 @@
                     <div class="-card-body">Login Page Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./pages/login.html" class="btn -block -success">Découvrir</a>
+                        <a href="../pages/login.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -480,7 +618,7 @@
                     <div class="-card-body">A Register Page Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./pages/register.html" class="btn -block -success">Découvrir</a>
+                        <a href="../pages/register.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -499,7 +637,7 @@
                     <div class="-card-body">A 404 Page Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./pages/404.html" class="btn -block -success">Découvrir</a>
+                        <a href="../pages/404.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -519,7 +657,7 @@
                     <div class="-card-body">A 500 Page Erro Example</div>
                     <div class="-card-footer">
                       <div class="btn-group btn-group-block">
-                        <a href="./pages/500.html" class="btn -block -success">Découvrir</a>
+                        <a href="../pages/500.html" class="btn -block -success">Découvrir</a>
                       </div>
                     </div>
                   </div>
@@ -703,48 +841,112 @@
 
         <main class="liquid-grid liquid-container -relative -middle -center -pt10 -mt10 -z1 -overflow-x-hidden main-content">
             <div class="col -col-12 ">
-                <h2>EFFECTS</h2>
+                <h2>Z-INDEX</h2>
             </div>
             <hr>
-            <nav class="nav -sticky -top-3rem">
-                <ul class="nav-items">
-                    <li <li class="nav-item">
-                        <a href="effects/display.html">
-                            DISPLAY
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="effects/opacity.html">
-                            OPACITY
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="effects/colors.html">
-                            COLORS
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="effects/border.html">
-                            BORDER
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="effects/shadows.html">
-                            SHADOWS
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="effects/perspective.html">
-                            PERSPECTIVE
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="effects/path.html">
-                            PATH
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="col -col-12 -start -center">
+                <h3>Z Depth</h3>
+                <pre>-z1 -z-1</pre>
+            </div>
+            <div class="z-1 col -col-12  -b-primary -m5">
+                Z index -1
+            </div>
+            <div class="z0 col -col-12  -b-primary -m5">
+                Z index 0
+            </div>
+            <div class="z1 col -col-12  -b-primary -m5">
+                Z index 1
+            </div>
+            <div class="z5 col -col-12  -b-primary -m5">
+                Z index 5
+            </div>
+            <div class="z100 col -col-12  -b-primary -m5">
+                Z index 100
+            </div>
+            <div class="z1000 col -col-12  -b-primary -m5">
+                Z index 1000
+            </div>
+            <div class="z10000 col -col-12  -b-primary -m5">
+                Z index 10000
+            </div>
+            <div class="col -col-12">
+                <pre data-lang="html" class="-width-full">
+                    <code class="code-preview">
+                        <div class="z-1 col -col-12  -b-primary -m5">
+                            Z index -1
+                        </div>
+                        <div class="z0 col -col-12  -b-primary -m5">
+                            Z index 0
+                        </div>
+                        <div class="z1 col -col-12  -b-primary -m5">
+                            Z index 1
+                        </div>
+                        <div class="z5 col -col-12  -b-primary -m5">
+                            Z index 5
+                        </div>
+                        <div class="z100 col -col-12  -b-primary -m5">
+                            Z index 100
+                        </div>
+                        <div class="z1000 col -col-12  -b-primary -m5">
+                            Z index 1000
+                        </div>
+                        <div class="z10000 col -col-12  -b-primary -m5">
+                            Z index 10000
+                        </div>
+                    </code>
+                </pre>
+                <pre data-lang="css" class="-width-full"> 
+                    <code class="code-preview">
+/* css classes */
+
+.\-z-auto {z-index: auto;}
+
+.\-z-500 {z-index: -500;}
+.\-z-400 {z-index: -400;}
+.\-z-300 {z-index: -300;}
+.\-z-200 {z-index: -200;}
+.\-z-100 {z-index: -100;}
+.\-z-5 {z-index: -5;}
+.\-z-4 {z-index: -4;}
+.\-z-3 {z-index: -3;}
+.\-z-2 {z-index: -2;}
+.\-z-1 {z-index: -1;}
+.\-z0 {z-index: 0;}
+.\-z1 {z-index: 1;}
+.\-z2 {z-index: 2;}
+.\-z3 {z-index: 3;}
+.\-z4 {z-index: 4;}
+.\-z5 {z-index: 5;}
+
+.\-z100 {z-index: 100;}
+.\-z200 {z-index: 200;}
+.\-z300 {z-index: 300;}
+.\-z400 {z-index: 400;}
+.\-z500 {z-index: 500;}
+.\-z600 {z-index: 600;}
+.\-z700 {z-index: 700;}
+.\-z800 {z-index: 800;}
+.\-z900 {z-index: 900;}
+.\-z1000 {z-index: 1000;}
+
+.\-z2000 {z-index: 2000;}
+.\-z3000 {z-index: 3000;}
+.\-z4000 {z-index: 4000;}
+.\-z5000 {z-index: 5000;}
+.\-z6000 {z-index: 6000;}
+.\-z7000 {z-index: 7000;}
+.\-z8000 {z-index: 8000;}
+.\-z9000 {z-index: 9000;}
+.\-z10000 {z-index: 10000;}
+
+/* Valeurs globales */
+.\-z-inherit{z-index: inherit;}
+.\-z-init {z-index: initial;}
+.\-z-rev{z-index: revert;}
+.\-z-unset {z-index: unset;}
+                    </code>
+                </pre>
+            </div>
             <hr>
         </main>
 
