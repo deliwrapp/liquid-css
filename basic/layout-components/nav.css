@@ -1,5 +1,4 @@
 .nav {
-    z-index: 4;
     position: var(--nav-position);
     top: var(--nav-pos-t);
     bottom: var(--nav-pos-b);

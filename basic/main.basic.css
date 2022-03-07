@@ -7,6 +7,7 @@
 @import './skeleton/heading.css';
 @import './skeleton/typo.css';
 @import './skeleton/z-index.css';
+@import './skeleton/media.css';
 
 /* UI COMPONENTS CSS*/
 @import './ui-components/avatar.css';

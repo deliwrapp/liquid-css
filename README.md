@@ -4020,4 +4020,14 @@ Table
 #### PAGE 500
 
 ## Changelog
-- 1.0.0.alpha: Currently
+- 1.0.0.alpha
+- 1.0.0.alpha-2: Currently
+    -- Change in border component 
+    -- Add Gradient Color in color.css
+    -- Remove pre selector .align in align.css
+    -- Add m0 and p0 , w0 and h0 utilities for margin, padding and sizing
+    -- Add media.css to handdle image and video medias
+    -- Fix headding size for large screen
+    -- Add Card Component
+    -- Add Fun Loader Extensed Component 
+    -- New Demo Page Version 2

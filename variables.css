@@ -27,8 +27,8 @@
     --breakpoint-xl-min: 1250px;
     --grid-container-margin: 1rem;
     /* ---- CONTAINER ---- */
-    --liquid-page-padding-t: 0.5rem;
-    --liquid-page-padding-b: 0.5rem;
+    --liquid-page-padding-t: 0;
+    --liquid-page-padding-b: 0;
     --liquid-page-padding-r: 0.5rem;
     --liquid-page-padding-l: 0.5rem;
     --liquid-container-width: 100%;
@@ -133,23 +133,23 @@
     --headings-h1-font-family: var(--font-familly);
     --headings-h1-line-height: var(--line-height);
     --headings-h1-color: var(--liquid-color-dark);
-    --headings-h1-size: 5rem;
-    --headings-h1-weight: 800;
-    --headings-h1-margin-b: 5rem;
-    --headings-h1-margin-t: 1.5rem;
+    --headings-h1-size: 3rem;
+    --headings-h1-weight: 700;
+    --headings-h1-margin-b: 2rem;
+    --headings-h1-margin-t: 1rem;
     --headings-h1-color: var(--liquid-color-dark);
     /* H2 */
     --headings-h2-font-family: var(--font-familly);
     --headings-h2-line-height: var(--line-height);
-    --headings-h2-size: 3.5rem;
+    --headings-h2-size: 2.5rem;
     --headings-h2-color: var(--liquid-color-dark);
     --headings-h2-weight: 800;
     --headings-h2-margin-b: 1rem;
     --headings-h2-margin-t: 1rem;
     --headings-h2-color: var(--liquid-color-dark);
     /* H3 */
-    --headings--h3font-family: var(--font-familly);
-    --headings--h3line-height: var(--line-height);
+    --headings--h3-font-family: var(--font-familly);
+    --headings--h3-line-height: var(--line-height);
     --headings-h3-size: 2rem;
     --headings-h3-color: var(--liquid-color-dark);
     --headings-h3-weight: 800;
@@ -186,6 +186,27 @@
 
     /* ------------------- EFFECTS -------------------- */
     /* ---- COLOR ---- */
+    /* gradient */
+    --liquid-gradient-1: 120deg, var(--liquid-color-primary) 0%, var(--liquid-color-secondary) 100%;
+    --liquid-gradient-2: -145deg, var(--liquid-color-primary), var(--liquid-color-secondary);
+    --liquid-gradient-3: -145deg, var(--liquid-color-light), var(--liquid-color-secondary);
+    --liquid-gradient-4: -145deg, var(--liquid-color-light), var(--liquid-color-tertiary);
+    --liquid-gradient-5: -145deg, var(--liquid-color-secondary), var(--liquid-color-dark);
+    --liquid-gradient-6: -145deg, var(--liquid-color-tertiary), var(--liquid-color-dark);
+    --liquid-gradient-7: 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64%;
+    --liquid-gradient-8: to right, #ff512f, #f09819;
+    --liquid-gradient-9: to right, #fffbd5, #b20a2c;
+    --liquid-gradient-10: to right, #fc5c7d, #6a82fb;
+    --liquid-gradient-11: To right, #c6ffdd, #fbd786, #f7797d;
+    --liquid-gradient-12: to right, #00b4db, #0083b0;
+    --liquid-gradient-13: to right, #434343 0%, black 100%;
+    --liquid-gradient-14: -20deg, #00cdac 0%, #8ddad5 100%;
+    --liquid-gradient-15: to right, #0f0c29, #302b63, #24243e;
+    --liquid-gradient-16: to right, #00b09b, #96c93d;
+    --liquid-gradient-17: to right, rgb(242, 112, 156), rgb(255, 148, 114);
+    --liquid-gradient-18: 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1%;
+    --liquid-gradient-19: to right, #141e30, #243b55;
+    --liquid-gradient-20: to right, #ff9966, #ff5e62;
     /* primary */
     --liquid-color-primary: #3880ff;
     --liquid-color-primary-rgb: 56, 128, 255;
@@ -249,6 +270,13 @@
     --liquid-color-light-contrast-rgb: 0, 0, 0;
     --liquid-color-light-shade: #d7d8da;
     --liquid-color-light-tint: #f5f6f9;
+    /** white color **/
+    --liquid-color-white: #ffffff;
+    --liquid-color-white-rgb: 255, 255, 255;
+    --liquid-color-white-contrast: #280000;
+    --liquid-color-white-contrast-rgb: 40, 0, 0;
+    --liquid-color-white-shade: #bbbbbb;
+    --liquid-color-white-tint: #e4e4e4;
     /** step color **/
     --liquid-color-step-50: #0d0d0d;
     --liquid-color-step-100: #1a1a1a;
@@ -620,6 +648,7 @@
     --button-action-w: 1.8rem;
     --btn-block-min-h: 3.5rem;
     --btn-action-padding: 0;
+    --button-text-decoration: none;
 
     /* ---- MENU ---- */
     --menu-align-content: center;
@@ -1333,9 +1362,9 @@
 
     --nav-item-background-hover: unset;
     --nav-item-color-hover: var(--liquid-color-tertiary);
-    --nav-item-font-size-hover: 1rem;
-    --nav-item-weight-hover: 800;
-    --nav-item-transform-hover: lowercase;
+    --nav-item-font-size-hover: .85rem;
+    --nav-item-weight-hover: 500;
+    --nav-item-transform-hover: uppercase;
     --nav-item-decoration-hover: none;
     --nav-item-margin-t-hover: .25rem;
     --nav-item-margin-b-hover: .25rem;
@@ -1348,8 +1377,8 @@
 
     --nav-item-background-active: unset;
     --nav-item-color-active: var(--liquid-color-tertiary-teint);
-    --nav-item-font-size-active: 1.25rem;
-    --nav-item-weight-active: 600;
+    --nav-item-font-size-active: 1.15rem;
+    --nav-item-weight-active: 400;
     --nav-item-transform-active: uppercase;
     --nav-item-decoration-active: none;
     --nav-item-margin-t-active: .25rem;
@@ -1534,8 +1563,8 @@
     --panel-border-radius-br: 0.25rem;
     --panel-padding-t: 2rem;
     --panel-padding-b: 1rem;
-    --panel-padding-l: 1rem;
-    --panel-padding-r: 2rem;
+    --panel-padding-l: 1.5rem;
+    --panel-padding-r: 1.5rem;
     --panel-margin-t: .25rem;
     --panel-margin-b: .25rem;
     --panel-margin-l: .25rem;
@@ -1741,6 +1770,7 @@
     --card-pad-r: .2rem;
     --card-bg-color: var(--liquid-color-secondary-contrast);
     --card-radius: .2rem;
+    --card-border: .05rem solid var(--liquid-color-light);
     --card-image-left-radius: .2rem;
     --card-image-right-radius: .2rem;
 
@@ -1820,6 +1850,13 @@
         --liquid-color-light-contrast-rgb: 255, 255, 255;
         --liquid-color-light-shade: #1e2023;
         --liquid-color-light-tint: #383a3e;
+
+        --liquid-color-white: #280000;
+        --liquid-color-white-rgb: 40, 0, 0;
+        --liquid-color-white-contrast: #ffffff;
+        --liquid-color-white-contrast-rgb: 40, 0, 0;
+        --liquid-color-white-shade: #252525;
+        --liquid-color-white-tint: #1d1d1d;
 
         --liquid-background-color: #000000;
         --liquid-background-color-rgb: 0, 0, 0;

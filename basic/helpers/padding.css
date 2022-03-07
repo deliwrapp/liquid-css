@@ -7,6 +7,7 @@
     box-sizing: content-box;
 }
 .\-p-auto { padding: auto; }
+.\-p0  { padding: 0; }
 .\-p1  { padding: 0.25rem; }
 .\-p2  { padding: 0.50rem; }
 .\-p3  { padding: 0.75rem; }
@@ -19,6 +20,7 @@
 .\-p10 { padding: 2.5rem; }
 .\-p10 { padding: 2.5rem; }
 
+.\-pt0  { padding-top: 0; }
 .\-pt1  { padding-top: 0.25rem; }
 .\-pt2  { padding-top: 0.50rem; }
 .\-pt3  { padding-top: 0.75rem; }
@@ -30,6 +32,7 @@
 .\-pt9  { padding-top: 2.25rem; }
 .\-pt10 { padding-top: 2.5rem; }
 
+.\-pb0  { padding-bottom: 0; }
 .\-pb1  { padding-bottom: 0.25rem; }
 .\-pb2  { padding-bottom: 0.50rem; }
 .\-pb3  { padding-bottom: 0.75rem; }
@@ -41,6 +44,7 @@
 .\-pb9  { padding-bottom: 2.25rem; }
 .\-pb10 { padding-bottom: 2.5rem; }
 
+.\-pl0  { padding-left: 0; }
 .\-pl1  { padding-left: 0.25rem; }
 .\-pl2  { padding-left: 0.50rem; }
 .\-pl3  { padding-left: 0.75rem; }
@@ -52,6 +56,7 @@
 .\-pl9  { padding-left: 2.25rem; }
 .\-pl10 { padding-left: 2.5rem; }
 
+.\-pr0  { padding-right: 0; }
 .\-pr1  { padding-right: 0.25rem; }
 .\-pr2  { padding-right: 0.50rem; }
 .\-pr3  { padding-right: 0.75rem; }
