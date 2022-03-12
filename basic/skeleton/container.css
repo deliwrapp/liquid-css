@@ -62,3 +62,12 @@
 .\-container-xs {
     max-width: var(--container-xs-max-width);
 }
+
+.\-wrapper {
+    position: relative;
+    display: flex;
+}
+.\-wrapper .sidebar,
+.\-wrapper .main-content {
+    flex: 1 1 0;
+}

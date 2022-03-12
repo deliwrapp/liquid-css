@@ -825,14 +825,408 @@
                     </div>
                 </section>
             </section>
+            <nav class="bar -bg-light -fixed -top -left -shad-12">
+                <section class="-bar-section-start">
+                    <a href="#" class="btn btn-link">Liquid.css</a>
+                </section>
+                <section class="-bar-center">
+                    <a href="#" class="btn btn-link">Link</a>
+                    <div class="btn btn-link">
+                        <div class="slide-dropdown -nav -inline-nav">
+                            <label for="slide-dropdown--touch"><span class="slide-dropdown--title">Link 2</span></label>
+                            <input class="slide-dropdown--touch" type="checkbox" id="slide-dropdown--touch">
+                            <ul class="slide-dropdown--slide -shad-12">
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-            <section class="-wrapper">
+                </section>
+                <section class="-bar-section-end">
+                    <div class="dropdown  -mr5">
+                        <label for="dropdown--touch">
+                            <span>
+                                <figure class="avatar avatar-lg -secondary -cursor-pointer" data-initial="JB"></figure>
+                            </span>
+                        </label>
+                        <input class="dropdown--touch" type="checkbox" id="dropdown--touch">
+                        <div class="dropdown-content -pos-left">
+                            <ul>
+                                <li class="-light -hover"><a href="#">One</a></li>
+                                <li class="-light -hover"><a href="#">Two</a></li>
+                                <li class="-light -hover"><a href="#">Three</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </nav>
+            <section class="-wrapper -top-4rm">
+                <section id="menu-left-panel" class="-fixed -left -top-4rm swipe-menu sidebar sidebar-mini -bg-light -z2 -shad-12 -m0">
+                    <nav class="-w-f">
+                        <section class="slide-dropdown -open -transparent">
+                            <label for="side-menu-1">
+                                <span class="slide-dropdown--title -transparent -shad-12">
+                                    <span class="swipe-m-trigger -z5" data-panel="menu-left-panel"
+                                        data-open-panel="-open" data-close-panel="sidebar-mini">
+                                        <div class="bar1"></div>
+                                        <div class="bar2"></div>
+                                        <div class="bar3"></div>
+                                    </span>
+                                    <span class="-sidebar-mini-hidden">
+                                        dashboard
+                                    </span>
+                                </span>
+                            </label>
+                            <input class="slide-dropdown--touch" type="checkbox" id="side-menu-1">
+                            <ul class="slide-dropdown--slide">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Global Stat</a></li>
+                                <li><a href="#">Settings</a></li>
+                            </ul>
+                        </section>
+                        <section class="slide-dropdown -w-f">
+                            <label for="side-menu-2">
+                                <span data-css-ico="+" class="slide-dropdown--title -shad-14">
+                                    <i class="icon icon-mail"></i>
+                                    <span class="-sidebar-mini-hidden">
+                                        messages
+                                    </span>
+                                </span>
+                            </label>
+                            <input class="slide-dropdown--touch" type="checkbox" id="side-menu-2">
+                            <ul class="slide-dropdown--slide">
+                                <li class="-shad-10-h"><a href="#">New Message</a></li>
+                                <li><a href="#">Messages</a></li>
+                                <li><a href="#">Contacts</a></li>
+                                <li><a href="#">Messages Settings</a></li>
+                            </ul>
+                        </section>
+                        <section class="slide-dropdown -w-f">
+                            <label for="side-menu-3">
+                                <span data-css-ico="+" class="slide-dropdown--title">
+                                    <i class="icon icon-people"></i>
+                                    <span class="-sidebar-mini-hidden">
+                                        users
+                                    </span>
+                                </span>
+                            </label>
+                            <input class="slide-dropdown--touch" type="checkbox" id="side-menu-3">
+                            <ul class="slide-dropdown--slide">
+                                <li><a href="#">Add User</a></li>
+                                <li><a href="#">User List</a></li>
+                            </ul>
+                        </section>
+                        <section class="slide-dropdown -w-f">
+                            <label for="side-menu-4">
+                                <span data-css-ico="+" class="slide-dropdown--title">
+                                    <i class="icon icon-bookmark"></i>
+                                    <span class="-sidebar-mini-hidden">
+                                        posts
+                                    </span>
+                                </span>
+                            </label>
+                            <input class="slide-dropdown--touch" type="checkbox" id="side-menu-4">
+                            <ul class="slide-dropdown--slide">
+                                <li><a href="#">Add Post</a></li>
+                                <li><a href="#">Posts List</a></li>
+                                <li><a href="#">Posts Statistics</a></li>
+                                <li><a href="#">Posts Settings</a></li>
+                            </ul>
+                        </section>
+                        <section class="slide-dropdown -w-f -mb10 -pb10">
+                            <label for="side-menu-5">
+                                <span data-css-ico="+" class="slide-dropdown--title">
+                                    <i class="icon icon-message"></i>
+                                    <span class="-sidebar-mini-hidden">
+                                        comments
+                                    </span>
+                                </span>
+                            </label>
+                            <input class="slide-dropdown--touch" type="checkbox" id="side-menu-5">
+                            <ul class="slide-dropdown--slide">
+                                <li><a href="#">Comments Moderation</a></li>
+                                <li><a href="#">Comments List</a></li>
+                                <li><a href="#">Comments Statistics</a></li>
+                                <li class="-mb10"><a href="#">Comments Settings</a></li>
+                            </ul>
+                        </section>
+                    </nav>
+                </section>
+                <main class="-relative -pl10 -ml10 -h-a liquid-container liquid-grid -center -middle -z1 -overflow-x-hidden main-content">
 
-                <main
-                    class="liquid-grid liquid-container -relative -center -middle -z1 -h-vp -overflow-x-hidden main-content">
-                    <p>main content </p>
-                    <section class="col -col-4 -md8 -sm12 -xs12">
+                    <section class="col -col-6 -md6 -sm12 -xs12">
+                        <style>
+                            #admin-panel {
+                                --panel-height: 50vh;
+                            }
+                        </style>
+                        <div id="admin-panel" class="-sticky panel -shad-8 -w-f -b-rounded-md -w-f">
+                            <div class="-panel-header -text-center">
+                                <nav class="-panel-nav">
+                                    <ul class="tab -tab-block">
+                                        <li class="-tab-item -active"><a href="#tab-profile">Profile</a></li>
+                                        <li class="-tab-item"><a href="#tab-files">Files</a></li>
+                                        <li class="-tab-item"><a href="#tab-tasks">Tasks</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="scrollbar dynamic-container -panel-body -w-f -h-vp">
+                                <section class="-dynamic-section -slide-down -w-f" id="tab-profile">
+                                    <div class="-text-center">
+                                        <figure class="avatar avatar-lg"><img
+                                                src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar"></figure>
+                                        <div class="-panel-title h5 mt-10">John Beaver</div>
+                                        <div class="-panel-subtitle">THE BEAVER</div>
+                                    </div>
+                                    <div class="tile -tile-compact -w-f">
+                                        <div class="-tile-content">
+                                            <div class="-tile-title -t-bld">E-mail</div>
+                                            <div class="-tile-subtitle">john@beaver.com</div>
+                                        </div>
+                                        <div class="-tile-action">
+                                            <button
+                                                class="btn -tertiary s-circle btn-link btn-action -btn-lg tooltip tooltip-left"
+                                                data-tooltip="Edit E-mail"><i class="icon icon-edit"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tile -tile-compact">
+                                        <div class="-tile-content">
+                                            <div class="-tile-title -t-bld">Skype</div>
+                                            <div class="-tile-subtitle">john.beaver</div>
+                                        </div>
+                                        <div class="-tile-action">
+                                            <button class="btn btn-link btn-action btn-lg"><i
+                                                    class="icon icon-edit"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="tile -tile-compact">
+                                        <div class="-tile-content">
+                                            <div class="-tile-title -t-bld">Location</div>
+                                            <div class="-tile-subtitle">Somewhere, Rainbow</div>
+                                        </div>
+                                        <div class="-tile-action">
+                                            <button class="btn btn-link btn-action btn-lg"><i
+                                                    class="icon icon-edit"></i></button>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="-dynamic-section -slide-left" id="tab-files">
+                                    <h4 class="-w-f -t-u">global stats</h4>
+                                    <hr>
+                                    <div class="tile -tile-compact -shad-5 -shad-12-h -cursor-pointer">
+                                        <div class="-tile-icon">
+                                            <div class="-example-tile-icon">
+                                                <i class="icon icon-file -centered"></i>
+                                                <div class="-tile-icon">
+                                                    <img class="avatar avatar-xl"
+                                                        src="../assets/img/avatar/beaver/beaver-avatar-128.png"
+                                                        alt="Avatar">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="-tile-content">
+                                            <div class="-tile-title">liquid-docs.pdf</div>
+                                            <small class="-tile-subtitle text-gray">11MB · Public · 1 Jan, 2022</small>
+                                            <small class="-tile-subtitle">
+                                                Lorem ipsum ideo lorem ipsum. Fatalis invocat et meam benficat
+                                            </small>
+                                        </div>
+                                        <div class="-tile-action dropdown">
+                                            <label for="dropdown--touch">
+                                                <button class="btn -btn-link -light s-circle -shad-17-h">
+                                                    <i class="icon icon-more-vert"></i>
+                                                </button>
+                                            </label>
+                                            <input class="dropdown--touch" type="checkbox" id="dropdown--touch">
+                                            <div class="dropdown-content -pos-left">
+                                                <ul>
+                                                    <li class="-light -hover"><a href="#">One</a></li>
+                                                    <li class="-light -hover"><a href="#">Two</a></li>
+                                                    <li class="-light -hover"><a href="#">Three</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile -tile-compact -shad-5 -shad-12-h -cursor-pointer">
+                                        <div class="-tile-icon">
+                                            <div class="-example-tile-icon">
+                                                <i class="icon icon-file -centered"></i>
+                                            </div>
+                                        </div>
+                                        <div class="-tile-content">
+                                            <div class="-tile-title">liquid-docs.pdf</div>
+                                            <small class="-tile-subtitle text-gray">11MB · Public · 1 Jan, 2022</small>
+                                        </div>
+                                        <div class="-tile-action dropdown">
+                                            <label for="dropdown--touch">
+                                                <button class="btn -btn-link -light s-circle -shad-17-h">
+                                                    <i class="icon icon-more-vert"></i>
+                                                </button>
+                                            </label>
+                                            <input class="dropdown--touch" type="checkbox" id="dropdown--touch">
+                                            <div class="dropdown-content -pos-left">
+                                                <ul>
+                                                    <li class="-light -hover"><a href="#">One</a></li>
+                                                    <li class="-light -hover"><a href="#">Two</a></li>
+                                                    <li class="-light -hover"><a href="#">Three</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile -tile-compact -shad-5 -shad-12-h -cursor-pointer">
+                                        <div class="-tile-icon">
+                                            <div class="-example-tile-icon">
+                                                <i class="icon icon-file -centered"></i>
+                                            </div>
+                                        </div>
+                                        <div class="-tile-content">
+                                            <div class="-tile-title">liquid-docs.pdf</div>
+                                            <small class="-tile-subtitle text-gray">11MB · Public · 1 Jan, 2022</small>
+                                        </div>
+                                        <div class="-tile-action dropdown">
+                                            <label for="dropdown--touch">
+                                                <button class="btn -btn-link -light s-circle -shad-17-h">
+                                                    <i class="icon icon-more-vert"></i>
+                                                </button>
+                                            </label>
+                                            <input class="dropdown--touch" type="checkbox" id="dropdown--touch">
+                                            <div class="dropdown-content -pos-left">
+                                                <ul>
+                                                    <li class="-light -hover"><a href="#">One</a></li>
+                                                    <li class="-light -hover"><a href="#">Two</a></li>
+                                                    <li class="-light -hover"><a href="#">Three</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="-dynamic-section -slide-up" id="tab-tasks">
+                                    <p>THIS IS A SLIDE-UP</p>
+                                </section>
 
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="col -col-6 -md6 -sm12 -xs12">
+                        <style>
+                            #list-panel {
+                                --panel-height: 50vh;
+                            }
+                        </style>
+                        <div id="list-panel" class="-sticky panel -shad-8 -w-f -b-rounded-md">
+                            <div class="-panel-header -text-center">
+                                <p>Wouaf</p>
+                            </div>
+                            <div class="-panel-body -w-f">
+
+                            </div>
+                            <div class="-panel-footer">
+                                
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col -col-4 -md6 -sm12 -xs12">
+                        <div class="panel -shad-8 -w-f -b-rounded-md">
+                            <div class="-panel-header -text-center">
+                                <p>Wouaf</p>
+                            </div>
+                            <div class="-panel-body -w-f">
+
+                            </div>
+                            <div class="-panel-footer">
+                                
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col -col-4 -md6 -sm12 -xs12">
+                        <div class="panel -shad-8 -w-f -b-rounded-md">
+                            <div class="-panel-header -text-center">
+                                <p>Wouaf</p>
+                            </div>
+                            <div class="-panel-body -w-f">
+
+                            </div>
+                            <div class="-panel-footer">
+                                
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col -col-4 -md6 -sm12 -xs12">
+                        <div class="panel -shad-8 -w-f -b-rounded-md">
+                            <div class="-panel-header -text-center">
+                                <p>Wouaf</p>
+                            </div>
+                            <div class="-panel-body -w-f">
+
+                            </div>
+                            <div class="-panel-footer">
+                                
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col -col-4 -md6 -sm12 -xs12" id="tab-profile">
+                        <div class="-text-center">
+                            <div class="h5 mt-10">NEW USER LIST</div>
+                        </div>
+                        <div class="tile -tile-compact -w-f -shad-12">
+                            <div class="-tile-icon -mb2">
+                                <i class="icon icon-file -centered"></i>
+                                <div class="-tile-icon">
+                                    <img class="avatar avatar-lg  -shad-11" src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar">
+                                </div>
+                            </div>
+                            <div class="-tile-content">
+                                <div class="-tile-title -t-bld">E-mail</div>
+                                <div class="-tile-subtitle">john@beaver.com</div>
+                            </div>
+                            <div class="-tile-action">
+                                <button
+                                    class="btn -tertiary s-circle btn-link btn-action -btn-lg tooltip tooltip-left"
+                                    data-tooltip="Edit E-mail"><i class="icon icon-edit"></i></button>
+                            </div>
+                        </div>
+                        <div class="tile -tile-compact -w-f -shad-12">
+                            <div class="-tile-icon -mb2">
+                                <i class="icon icon-file -centered"></i>
+                                <div class="-tile-icon">
+                                    <img class="avatar avatar-lg  -shad-11" src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar">
+                                </div>
+                            </div>
+                            <div class="-tile-content">
+                                <div class="-tile-title -t-bld">E-mail</div>
+                                <div class="-tile-subtitle">john@beaver.com</div>
+                            </div>
+                            <div class="-tile-action">
+                                <button
+                                    class="btn -tertiary s-circle btn-link btn-action -btn-lg tooltip tooltip-left"
+                                    data-tooltip="Edit E-mail"><i class="icon icon-edit"></i></button>
+                            </div>
+                        </div>
+                        <div class="tile -tile-compact -w-f -shad-12">
+                            <div class="-tile-icon -mb2">
+                                <i class="icon icon-file -centered"></i>
+                                <div class="-tile-icon">
+                                    <img class="avatar avatar-lg  -shad-11" src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar">
+                                </div>
+                            </div>
+                            <div class="-tile-content">
+                                <div class="-tile-title -t-bld">E-mail</div>
+                                <div class="-tile-subtitle">john@beaver.com</div>
+                            </div>
+                            <div class="-tile-action">
+                                <button
+                                    class="btn -tertiary s-circle btn-link btn-action -btn-lg tooltip tooltip-left"
+                                    data-tooltip="Edit E-mail"><i class="icon icon-edit"></i></button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col -col-8 -md6 -sm12 -xs12 -shad-12" >
+                        <p>hello</p>
                     </section>
                 </main>
 
