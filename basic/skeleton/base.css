@@ -310,6 +310,26 @@ template {
 .\-overflow-y-scroll {
     overflow-y: scroll;
 }
+/* width */
+.scrollbar::-webkit-scrollbar {
+    display: var(--scrollbar-display); 
+    width: var(--scrollbar-width);
+    background-clip: content-box;
+}
+/* Track */
+.scrollbar::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+}
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: var(--scrollbar-thumb-radius);
+    background-clip: content-box;
+}
+/* Handle on hover */
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hov);
+}
 /*------DIRECTION------*/
 .\-rtl {direction: rtl;}
 .\-ltr {direction: ltr;}

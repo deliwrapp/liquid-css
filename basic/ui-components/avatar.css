@@ -33,6 +33,11 @@
     height: var(--avatar-size-xl);
     width: var(--avatar-size-xl);
 }
+.avatar.avatar-xxl {
+    font-size: var(--avatar-size-xxl) / 2;
+    height: var(--avatar-size-xxl);
+    width: var(--avatar-size-xxl);
+}
 .avatar img {
     position: relative;
     border-radius: var(--avatar-radius);

@@ -797,40 +797,25 @@
 
         <main class="liquid-grid liquid-container -relative -center -middle -h-vp -overflow-x-hidden main-content">
           <section class="col -col-4 -md8 -sm12 -xs12">
-            <div class="panel -bg-gradient-20 -b-rounded-md -shad-8 -w-f">
+            <div class="panel -bg-gradient-18 -b-rounded-md -shad-8 -w-f">
               <div class="-panel-header -text-center">
-                <figure class="avatar avatar-xl -shad-12">
-                  <img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar">
-                </figure>
                 <div class="-panel-title h5 mt-10 -t-u">liquid framework</div>
                 <div class="-panel-subtitle -t-u">login page</div>
               </div>
-              <div class="-panel-body">
-                <form action="">
-                  <label for="username" class="-t-c -t-bld -color-dark">username</label>
-                  <div class="form-element has-icon-right">
-                    <input id="username" class="form-field -shad-12-h" type="text" placeholder="username">
-                    <i class="form-icon icon icon-people"></i>
-                  </div>
-                  <label for="password" class="-t-c -t-bld -color-dark">password</label>
-                  <div class="form-element">
-                    <div class="password has-icon-right ">
-                        <input id="password" class="form-field -shad-12-h" type="password" value="password">
-                        <i class="form-icon icon icon-eye-solid"></i>
-                    </div>
-                </div>
-                <div class="form-element">
-                  <label class="switch">
-                      <input type="checkbox">
-                      <i class="form-icon -shad-12"></i>
-                      <span class="form-field-msg -t-c -t-bld -color-dark">Remember me</span>
-                  </label>
+              
+              <hr>
+              <div class="-panel-body -text-center ">
+                <figure class="avatar avatar-xxl -shad-12">
+                  <img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar">
+                </figure>
               </div>
-                </form>
-              </div>
+              <hr>
               <div class="-panel-footer -text-center ">
-                <button class="-t-u -t-bld btn -white -hover -block -shad-13 -shad-19-h -btn-bordered -b-rounded-xl -m0">
-                  Login
+                <button class="-t-u -t-bld btn -transparent -hover -block -shad-13 -shad-19-h -btn-bordered -b-rounded-xl">
+                  Sign Up
+                </button>
+                <button class="-t-u -t-bld btn -white -hover -block -shad-13 -shad-19-h -btn-bordered -b-rounded-xl">
+                  Log In
                 </button>
                 <section class=" -m2 -mt5 -p1">
                   <a href="#" class="-t-bld">
@@ -842,7 +827,7 @@
           </section>
           
           <section class="col -col-4 -md8 -sm12 -xs12">
-            <div class="panel -bg-gradient-20 -b-rounded-md -shad-8 -w-f">
+            <div class="panel -bg-white -b-rounded-md -shad-8 -w-f">
               <div class="-panel-header -text-center">
                 <figure class="avatar avatar-xl -shad-12">
                   <img src="../assets/img/avatar/beaver/beaver-avatar-128.png" alt="Avatar">
@@ -850,8 +835,8 @@
                 <div class="-panel-title h5 mt-10 -t-u">liquid framework</div>
                 <div class="-panel-subtitle -t-u">login page</div>
               </div>
-              <div class="-panel-body">
-                <form action="">
+              <form class="-w-f">
+                <div class="-panel-body">
                   <label for="username" class="-t-c -t-bld -color-dark">username</label>
                   <div class="form-element has-icon-right">
                     <input id="username" class="form-field -shad-12-h" type="text" placeholder="username">
@@ -863,26 +848,26 @@
                         <input id="password" class="form-field -shad-12-h" type="password" value="password">
                         <i class="form-icon icon icon-eye-solid"></i>
                     </div>
+                  </div>
+                  <div class="form-element">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <i class="form-icon -shad-12"></i>
+                        <span class="form-field-msg -t-c -t-bld -color-dark">Remember me</span>
+                    </label>
+                  </div>
                 </div>
-                <div class="form-element">
-                  <label class="switch">
-                      <input type="checkbox">
-                      <i class="form-icon -shad-12"></i>
-                      <span class="form-field-msg -t-c -t-bld -color-dark">Remember me</span>
-                  </label>
-              </div>
-                </form>
-              </div>
-              <div class="-panel-footer -text-center ">
-                <button class="-t-u -t-bld btn -white -hover -block -shad-13 -shad-19-h -btn-bordered -b-rounded-xl -m0">
-                  Login
-                </button>
-                <section class=" -m2 -mt5 -p1">
-                  <a href="#" class="-t-bld">
-                    Forgot password...
-                  </a>
-                </section>
-              </div>
+                <div class="-panel-footer -text-center ">
+                  <button class="-t-u -t-bld btn -primary -hover -block -shad-13 -shad-19-h -btn-bordered -b-rounded-xl">
+                    Log In
+                  </button>
+                  <section class=" -m2 -mt5 -p1">
+                    <a href="#" class="-t-bld">
+                      Forgot password...
+                    </a>
+                  </section>
+                </div>
+              </form>
             </div>
           </section>
         </main>

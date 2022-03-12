@@ -4031,3 +4031,23 @@ Table
     -- Add Card Component
     -- Add Fun Loader Extensed Component 
     -- New Demo Page Version 2
+- 1.0.0.alpha-3: Currently
+    -- modified:   @extensed/extensed.css
+    -- modified:   basic/effects/border.css
+    -- modified:   basic/effects/colors.css
+    -- modified:   basic/layout-components/bar-side.css
+    -- modified:   basic/main.basic.css
+    -- modified:   basic/skeleton/base.css
+    -- modified:   basic/skeleton/container.css
+    -- modified:   basic/skeleton/heading.css
+    -- modified:   basic/skeleton/typo.css
+    -- modified:   basic/ui-components/avatar.css
+    -- modified:   basic/ui-components/dropdown.css
+    -- modified:   variables.css
+    -- add:   @demo/extensed-components/fun-loader.html
+    -- add:   @demo/skeleton/
+    -- add:   @extensed/components/fun-loader.css
+    -- add:   basic/skeleton/media.css
+    -- add:   variables-base-theme.css.dist
+    -- add:   variables-color-theme.css.dist
+    -- add:   variables.css.dist
