@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../../main.css">
     <title>NAV Layout Component -- Liquid-CSS-Framework Demo</title>
 </head>
+
 <body>
     <section class="liquid-app">
         <section class="liquid-page-container">
@@ -36,18 +38,145 @@
             <section class="liquid-grid -middle -center">
                 <div class="col -col-12 -start -center">
                     <h3>SIMPLE NAVIGATION SYSTEM</h3>
-                        <pre>.nav .nav-items .nav-item .nav-column -active -active-parent</pre>
+                    <pre>.nav .nav-items .nav-item .nav-column -active -active-parent</pre>
+                    
+                </div>
+                <div class="col -col-12 -start -center">
+                    <h3>TAB BAR COMPONENTS SYSTEM</h3>
+                    <pre>.tab-bar -tab -icon  -radius -border</pre>
+                    <!--   With Icons -->
+                    <div class="tab-bar">
+                        <a class="-tab" href="#" data-text="Home">
+                            <span class="-icon"><img
+                                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQ4IDQ4IiBoZWlnaHQ9IjQ4cHgiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDhweCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgaWQ9IkV4cGFuZGVkIj48Zz48Zz48cGF0aCBkPSJNNDIsNDhIMjhWMzVoLTh2MTNINlYyN2MwLTAuNTUyLDAuNDQ3LTEsMS0xczEsMC40NDgsMSwxdjE5aDEwVjMzaDEydjEzaDEwVjI4YzAtMC41NTIsMC40NDctMSwxLTFzMSwwLjQ0OCwxLDFWNDh6Ii8+PC9nPjxnPjxwYXRoIGQ9Ik00NywyN2MtMC4yNDksMC0wLjQ5Ny0wLjA5Mi0wLjY5MS0wLjI3N0wyNCw1LjM4NEwxLjY5MSwyNi43MjNjLTAuMzk5LDAuMzgxLTEuMDMyLDAuMzY4LTEuNDE0LTAuMDMxICAgICBjLTAuMzgyLTAuMzk5LTAuMzY3LTEuMDMyLDAuMDMxLTEuNDE0TDI0LDIuNjE2bDIzLjY5MSwyMi42NjFjMC4zOTgsMC4zODIsMC40MTMsMS4wMTUsMC4wMzEsMS40MTQgICAgIEM0Ny41MjYsMjYuODk2LDQ3LjI2NCwyNyw0NywyN3oiLz48L2c+PGc+PHBhdGggZD0iTTM5LDE1Yy0wLjU1MywwLTEtMC40NDgtMS0xVjhoLTZjLTAuNTUzLDAtMS0wLjQ0OC0xLTFzMC40NDctMSwxLTFoOHY4QzQwLDE0LjU1MiwzOS41NTMsMTUsMzksMTV6Ii8+PC9nPjwvZz48L2c+PC9zdmc+"
+                                    alt=""></span>
+                        </a>
+                        <a class="-tab" href="#" data-text="Like">
+                            <span class="-icon"><img
+                                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQ4IDQ4IiBoZWlnaHQ9IjQ4cHgiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDhweCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgaWQ9IkV4cGFuZGVkIj48Zz48cGF0aCBkPSJNMjQsNDcuMDAxYy0wLjE3MywwLTAuMzQ2LTAuMDQ1LTAuNTAxLTAuMTM1Yy0wLjIzOS0wLjEzOC01LjkxMy0zLjQ0Ny0xMS42NzgtOC43NzhDMy45NzcsMzAuODM1LDAsMjMuNjY4LDAsMTYuNzg3ICAgIGMwLTkuMjc1LDYuMjc5LTEzLjUsMTIuMTEzLTEzLjVjNC40OTksMCw5LjUzLDIuNTcyLDExLjg4Nyw4LjIyOWMyLjM1Ny01LjY1Nyw3LjM4OS04LjIyOSwxMS44ODctOC4yMjkgICAgQzQxLjcyMSwzLjI4Nyw0OCw3LjUxMiw0OCwxNi43ODdjMCw2Ljg4MS0zLjk3NywxNC4wNDgtMTEuODIxLDIxLjMwMWMtNS43NjUsNS4zMzEtMTEuNDM5LDguNjQxLTExLjY3OCw4Ljc3OCAgICBDMjQuMzQ2LDQ2Ljk1NiwyNC4xNzMsNDcuMDAxLDI0LDQ3LjAwMXogTTEyLjExMyw1LjI4N0M3LjI0Miw1LjI4NywyLDguODg2LDIsMTYuNzg3QzIsMzAuNjUsMjAuNjc0LDQyLjc4MywyNCw0NC44MzMgICAgYzMuMzIzLTIuMDUxLDIyLTE0LjE5MywyMi0yOC4wNDZjMC03LjkwMS01LjI0Mi0xMS41LTEwLjExMy0xMS41Yy00LjQ3MywwLTkuNTgsMy4wNjItMTAuOTA1LDkuOTAzQzI0Ljg5MSwxNS42NiwyNC40NzksMTYsMjQsMTYgICAgcy0wLjg5MS0wLjM0LTAuOTgyLTAuODFDMjEuNjkzLDguMzUsMTYuNTg2LDUuMjg3LDEyLjExMyw1LjI4N3oiLz48L2c+PC9nPjwvc3ZnPg=="
+                                    alt=""></span>
+                        </a>
+                        <a class="-tab" href="#" data-text="Extra">
+                            <span class="-icon"><img
+                                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQ4IDQ4IiBoZWlnaHQ9IjQ4cHgiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDhweCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgaWQ9IkV4cGFuZGVkIj48Zz48Zz48cGF0aCBkPSJNOC40NDMsNDAuNTU4Yy0wLjI1NiwwLTAuNTEzLTAuMDk4LTAuNzA4LTAuMjk0Yy0xLjE2Ny0xLjE3LTEuMTY3LTMuMDczLDAtNC4yNDNjMS4xNzMtMS4xNjgsMy4wNzctMS4xNjcsNC4yNDQsMC4wMDEgICAgIGMwLjM5LDAuMzksMS4wMjUsMC4zODksMS40MTUtMC4wMDFjMC4zODktMC4zODksMC4zODktMS4wMjQtMC4wMDEtMS40MTRjLTAuNTY3LTAuNTY2LTAuODc5LTEuMzItMC44NzktMi4xMjIgICAgIGMwLTAuODAyLDAuMzEyLTEuNTU1LDAuODgtMi4xMjFjMS4xMy0xLjEzMSwzLjEwOC0xLjEzMiw0LjI0MSwwLjAwMWMwLjM3NywwLjM3NywxLjAzNiwwLjM3OSwxLjQxNCwwICAgICBjMC4zOS0wLjM5LDAuMzktMS4wMjQsMC0xLjQxNGMtMS4xNjgtMS4xNy0xLjE2OC0zLjA3MywwLTQuMjQzYzEuMTMyLTEuMTMzLDMuMTA5LTEuMTM0LDQuMjQzLTAuMDAxICAgICBDMjMuNDgzLDI0Ljg5NiwyMy43MzQsMjUsMjQsMjVjMCwwLDAsMCwwLDBjMC4yNjcsMCwwLjUxOC0wLjEwNCwwLjcwNy0wLjI5M2MwLjE4OS0wLjE4OSwwLjI5My0wLjQzOSwwLjI5My0wLjcwNyAgICAgYzAtMC4yNjctMC4xMDQtMC41MTgtMC4yOTMtMC43MDdjLTAuNTY3LTAuNTY2LTAuODgtMS4zMi0wLjg4LTIuMTIzYzAtMC44MDEsMC4zMTMtMS41NTQsMC44OC0yLjExOSAgICAgYzAuNTY2LTAuNTY2LDEuMzItMC44NzksMi4xMjEtMC44NzljMC4wMDEsMCwwLjAwMSwwLDAuMDAyLDBjMC44MDEsMC4wMDEsMS41NTQsMC4zMTMsMi4xMiwwLjg4MSAgICAgYzAuMzksMC4zODgsMS4wMjUsMC4zODgsMS40MTUtMC4wMDJzMC4zOS0xLjAyNCwwLTEuNDE1Yy0wLjU2Ni0wLjU2NS0wLjg3OC0xLjMxOS0wLjg3OC0yLjEyMWMwLTAuODAxLDAuMzEyLTEuNTU1LDAuODc5LTIuMTIxICAgICBjMS4xMzItMS4xMzMsMy4xMDgtMS4xMzQsNC4yNDItMC4wMDFjMC4zOTEsMC4zOTIsMS4wMjUsMC4zODksMS40MTUsMC4wMDFjMC4xODktMC4xODksMC4yOTMtMC40NCwwLjI5My0wLjcwNyAgICAgYzAtMC4yNjctMC4xMDQtMC41MTctMC4yOTMtMC43MDVjLTEuMTY5LTEuMTcyLTEuMTY5LTMuMDc1LTAuMDAxLTQuMjQ1YzEuMTczLTEuMTY4LDMuMDc2LTEuMTY4LDQuMjQ0LDAuMDAxICAgICBjMC4zOSwwLjM5MiwwLjM5LDEuMDI0LTAuMDAxLDEuNDE1Yy0wLjM5MSwwLjM5LTEuMDI0LDAuMzg5LTEuNDE0LTAuMDAxYy0wLjM5LTAuMzkxLTEuMDI0LTAuMzkxLTEuNDE2LDAgICAgIGMtMC4zODgsMC4zODktMC4zODgsMS4wMjQsMC4wMDIsMS40MTZjMC41NjUsMC41NjQsMC44NzgsMS4zMTYsMC44NzksMi4xMThjMCwwLjgwMS0wLjMxMiwxLjU1NS0wLjg3OSwyLjEyMiAgICAgYy0xLjEzMywxLjEzMy0zLjEwOSwxLjEzMy00LjI0MiwwYy0wLjM3Ny0wLjM3Ni0xLjAzNi0wLjM4LTEuNDE0LDBjLTAuMTg5LDAuMTg5LTAuMjkzLDAuNDQtMC4yOTMsMC43MDcgICAgIGMwLDAuMjY4LDAuMTA0LDAuNTE4LDAuMjkyLDAuNzA2YzEuMTcsMS4xNzIsMS4xNywzLjA3NSwwLDQuMjQ0Yy0xLjE2OSwxLjE3LTMuMDczLDEuMTctNC4yNDMsMC4wMDIgICAgIGMtMC4xOS0wLjE5LTAuNDQtMC4yOTUtMC43MDctMC4yOTVjMCwwLDAsMC0wLjAwMSwwYy0wLjI2NywwLTAuNTE4LDAuMTA0LTAuNzA4LDAuMjk0Yy0wLjE4OSwwLjE4OC0wLjI5MywwLjQzOC0wLjI5MywwLjcwNSAgICAgYzAsMC4yNjgsMC4xMDQsMC41MTksMC4yOTMsMC43MDdjMC41NjcsMC41NjcsMC44NzksMS4zMjEsMC44NzksMi4xMjJjMCwwLjgwMi0wLjMxMiwxLjU1Ni0wLjg3OSwyLjEyMiAgICAgQzI1LjU1NSwyNi42ODgsMjQuODAyLDI3LDI0LjAwMSwyN2MwLDAsMCwwLTAuMDAxLDBjLTAuODAxLDAtMS41NTQtMC4zMTItMi4xMjEtMC44NzljLTAuMzc3LTAuMzc3LTEuMDM3LTAuMzc5LTEuNDE0LDAgICAgIGMtMC4zOSwwLjM5LTAuMzksMS4wMjUsMCwxLjQxNWMwLjU2NiwwLjU2NiwwLjg3OCwxLjMyLDAuODc4LDIuMTIxcy0wLjMxMiwxLjU1NS0wLjg3OSwyLjEyMWMtMS4xMzIsMS4xMzMtMy4xMDksMS4xMzMtNC4yNDIsMCAgICAgYy0wLjM3Ny0wLjM3Ny0xLjAzNi0wLjM3OS0xLjQxNCwwYy0wLjE5LDAuMTg5LTAuMjk0LDAuNDM5LTAuMjk0LDAuNzA2YzAsMC4yNjgsMC4xMDQsMC41MTksMC4yOTMsMC43MDcgICAgIGMxLjE2OSwxLjE3MSwxLjE2OSwzLjA3NCwwLjAwMSw0LjI0NGMtMS4xNzEsMS4xNjctMy4wNzQsMS4xNjgtNC4yNDMsMC4wMDFjLTAuMzkxLTAuMzkzLTEuMDI1LTAuMzkyLTEuNDE3LTAuMDAxICAgICBjLTAuMzg4LDAuMzg5LTAuMzg4LDEuMDI0LDAuMDAyLDEuNDE2YzAuMzksMC4zOTEsMC4zODksMS4wMjQtMC4wMDIsMS40MTRDOC45NTUsNDAuNDYsOC42OTksNDAuNTU4LDguNDQzLDQwLjU1OHoiLz48L2c+PGc+PHBhdGggZD0iTTkuODU4LDQ1LjE0M2MtMS44NywwLTMuNjI4LTAuNzI4LTQuOTUtMi4wNWMtMi43MjktMi43MjktMi43MjktNy4xNywwLTkuODk5TDMzLjE5Miw0LjkwOSAgICAgYzEuMzIyLTEuMzIyLDMuMDgtMi4wNSw0Ljk1LTIuMDVzMy42MjgsMC43MjgsNC45NSwyLjA1YzIuNzI5LDIuNzI5LDIuNzI5LDcuMTcsMCw5Ljg5OUwxNC44MDgsNDMuMDkzICAgICBDMTMuNDg2LDQ0LjQxNSwxMS43MjgsNDUuMTQzLDkuODU4LDQ1LjE0M3ogTTM4LjE0Miw0Ljg1OWMtMS4zMzYsMC0yLjU5MSwwLjUyLTMuNTM2LDEuNDY0TDYuMzIyLDM0LjYwNyAgICAgYy0xLjk0OSwxLjk0OS0xLjk0OSw1LjEyMiwwLDcuMDcxYzAuOTQ0LDAuOTQ0LDIuMiwxLjQ2NCwzLjUzNiwxLjQ2NHMyLjU5MS0wLjUyLDMuNTM2LTEuNDY0bDI4LjI4NC0yOC4yODQgICAgIGMxLjk0OS0xLjk0OSwxLjk0OS01LjEyMiwwLTcuMDcxQzQwLjczMyw1LjM3OSwzOS40NzgsNC44NTksMzguMTQyLDQuODU5eiIvPjwvZz48Zz48cGF0aCBkPSJNMTcuNzM2LDQ3Ljg1MmMtMC4wMTgsMC0wLjAzNiwwLTAuMDU0LDBjLTIuNTI4LTAuMDE3LTQuOTQxLTEuMTMtNi45NzctMy4yMTlsMS40MzMtMS4zOTYgICAgIGMxLjY1NCwxLjY5OCwzLjU3NSwyLjYwMiw1LjU1NywyLjYxNWMxLjgwNiwwLjAyNSwzLjU3Ni0wLjczNiw0Ljg5MS0yLjA1MmwyMS4yMTMtMjEuMjEzYzIuMjQtMi4yNCwzLjQzMy02LjMzNS0wLjU3OS0xMC41ICAgICBsMS40NC0xLjM4N2M0LjY5NSw0Ljg3NCwzLjY2MSwxMC4xOTIsMC41NTIsMTMuMzAxTDI0LDQ1LjIxNEMyMi4zMjIsNDYuODkyLDIwLjA0Miw0Ny44NTIsMTcuNzM2LDQ3Ljg1MnoiLz48L2c+PGc+PHBhdGggZD0iTTQuMDYxLDM3LjYwMWMtMC4yNiwwLTAuNTE5LTAuMTAxLTAuNzE1LTAuMzAxYy00LjcwOC00LjgxMy0zLjU4OS0xMC4yNjktMC41NTktMTMuMjk5TDI0LjAwMSwyLjc4NyAgICAgYzMuNzA4LTMuNzA3LDguNjg1LTMuNTE5LDEzLjMxMiwwLjUwNWMwLjQxNywwLjM2MiwwLjQ2MSwwLjk5NCwwLjA5OSwxLjQxMXMtMC45OTQsMC40NTktMS40MTEsMC4wOTkgICAgIGMtMy44MDItMy4zMDctNy42NjEtMy41MjUtMTAuNTg2LTAuNjAxTDQuMjAxLDI1LjQxNWMtMi40MzYsMi40MzctMy4yMDMsNi42MjMsMC41NzQsMTAuNDg2ICAgICBjMC4zODYsMC4zOTUsMC4zNzksMS4wMjgtMC4wMTYsMS40MTRDNC41NjUsMzcuNTA2LDQuMzEzLDM3LjYwMSw0LjA2MSwzNy42MDF6Ii8+PC9nPjwvZz48L2c+PC9zdmc+"
+                                    alt=""></span>
+                        </a>
+                        <a class="-tab" href="#" data-text='Extra'>
+                            <span class="-icon"><img
+                                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQ4IDQ4IiBoZWlnaHQ9IjQ4cHgiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDhweCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgaWQ9IkV4cGFuZGVkIj48Zz48Zz48cGF0aCBkPSJNMjQuMDQyLDMwYy03LjE0NSwwLTEyLjk1OC02LjcyOS0xMi45NTgtMTVTMTYuODk2LDAsMjQuMDQyLDBDMzEuMTg3LDAsMzcsNi43MjksMzcsMTVTMzEuMTg3LDMwLDI0LjA0MiwzMHogTTI0LjA0MiwyICAgICBjLTYuMDQyLDAtMTAuOTU4LDUuODMyLTEwLjk1OCwxM3M0LjkxNiwxMywxMC45NTgsMTNTMzUsMjIuMTY4LDM1LDE1UzMwLjA4NCwyLDI0LjA0MiwyeiIvPjwvZz48Zz48cGF0aCBkPSJNNDcuOTgyLDQ4SDAuMDE5di02Ljc3MWMwLTIuOTUxLDEuODY3LTUuNjAxLDQuNjQ1LTYuNTkyTDE3LDMxLjIzOHYtNC4xNTVoMnY1LjY3OWwtMTMuNzM1LDMuNzggICAgIGMtMS45MTMsMC42ODctMy4yNDcsMi41NzktMy4yNDcsNC42ODdWNDZoNDMuOTY0di00Ljc3MWMwLTIuMTA3LTEuMzMzLTQtMy4zMTktNC43MDlMMjksMzIuNzYydi01LjYzN2gydjQuMTEzbDEyLjI2NSwzLjM3NiAgICAgYzIuODUsMS4wMTUsNC43MTcsMy42NjMsNC43MTcsNi42MTRWNDh6Ii8+PC9nPjxnPjxwYXRoIGQ9Ik0zMi43OTksMTMuMjE4Yy0wLjA2OCwwLTAuMTM2LTAuMDAxLTAuMjA1LTAuMDA0Yy0yLjI1MS0wLjA4Mi00Ljg3NS0xLjUwNi02LjU0Mi0zLjQzMSAgICAgYy0xLjE2NiwxLjQ4Ni0yLjgzMSwyLjQ0Mi00Ljg5MiwyLjc5MmMtMy42MDUsMC42MTktNy43MjgtMC43NjUtOC45ODItMS45ODJsMS4zOTMtMS40MzZjMC42MDQsMC41ODcsNC4wMzUsMS45OTQsNy4yNTQsMS40NDYgICAgIGMxLjk5OC0wLjMzOSwzLjQzOC0xLjM2Niw0LjI4LTMuMDUxbDAuODM2LTEuNjcxbDAuOTI3LDEuNjIyYzEuMTA3LDEuOTM4LDMuNzYzLDMuNjM3LDUuOCwzLjcxMiAgICAgYzAuOTA2LDAuMDI0LDEuNTUtMC4yNDcsMS45NjEtMC44NTdsMS42NTksMS4xMTdDMzUuNTI4LDEyLjYwNCwzNC4yOTUsMTMuMjE4LDMyLjc5OSwxMy4yMTh6Ii8+PC9nPjwvZz48L2c+PC9zdmc+"
+                                    alt=""></span>
+                        </a>
+                    </div>
+
+                    <!--   With Alphabets -->
+                    <div class="tab-bar">
+                        <a class="-tab" href="#" data-text="Home">
+                            <span class="-icon">A</span>
+                        </a>
+                        <a class="-tab" href="#" data-text="Like">
+                            <span class="-icon">B</span>
+                        </a>
+                        <a class="-tab" href="#" data-text="Extra">
+                            <span class="-icon">C</span>
+                        </a>
+                        <a class="-tab" href="#" data-text='Extra'>
+                            <span class="-icon">D</span>
+                        </a>
+                    </div>
+                    <div class="tab-bar -radius">
+                        <a class="-tab" href="#" data-text="Home">
+                            <span class="-icon">A</span>
+                        </a>
+                        <a class="-tab" href="#" data-text="Like">
+                            <span class="-icon">B</span>
+                        </a>
+                        <a class="-tab -selected" href="#" data-text="Extra">
+                            <span class="-icon">C</span>
+                        </a>
+                        <a class="-tab" href="#" data-text='Extra'>
+                            <span class="-icon">D</span>
+                        </a>
+                    </div>
+                    <div class="tab-bar -radius -border">
+                        <a class="-tab" href="#" data-text="Home">
+                            <span class="-icon">A</span>
+                        </a>
+                        <a class="-tab" href="#" data-text="Like">
+                            <span class="-icon">B</span>
+                        </a>
+                        <a class="-tab" href="#" data-text="Extra">
+                            <span class="-icon">C</span>
+                        </a>
+                        <a class="-tab" href="#" data-text='Extra'>
+                            <span class="-icon">D</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col -col-12 -start -center">
+                    <h3>Dynamic Tab</h3>
+                    <pre>.tabbar .tabbar-container .tabbar-label .tabbar-label-text .tabbar-selector</pre>
+                    <nav class="tabbar">
+                        <div class="tabbar-container">
+                            <input id="menu-1" type="radio" name="menu" checked>
+                            <label class="tabbar-label" for="menu-1">
+                                <svg>
+                                    <use xlink:href="#messageIcon">
+                                </svg>
+                                <span class="tabbar-label-text">Messages</span>
+                            </label>
+                            <input id="menu-2" type="radio" name="menu">
+                            <label class="tabbar-label" for="menu-2">
+                                <svg>
+                                    <use xlink:href="#imageIcon">
+                                </svg>
+                                <span class="tabbar-label-text">Images</span>
+                            </label>
+                            <input id="menu-3" type="radio" name="menu">
+                            <label class="tabbar-label" for="menu-3">
+                                <svg>
+                                    <use xlink:href="#settingsIcon">
+                                </svg>
+                                <span class="tabbar-label-text">Settings</span>
+                            </label>
+                            <input id="menu-4" type="radio" name="menu">
+                            <label class="tabbar-label" for="menu-4">
+                                <svg>
+                                    <use xlink:href="#messageIcon"></use>
+                                </svg>
+                                <span class="tabbar-label-text">Messages</span>
+                            </label>
+                            <span class="tabbar-selector"></span>
+                        </div>
+                    </nav>
+                    <br>
+                    <hr>
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="messageIcon" fill="currentColor">
+                            <path d="M19.07 4.93a10 10 0 0 0-16.28 11 1.06 1.06 0 0 1 .09.64L2 20.8a1 1 0 0 0 .27.91A1 1 0 0 0 3 22h.2l4.28-.86a1.26 1.26 0 0 1 .64.09 10 10 0 0 0 11-16.28zM8 13a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm4 0a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm4 0a1 1 0 1 1 1-1 1 1 0 0 1-1 1z" />
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="imageIcon" fill="currentColor">
+                            <path d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zM8 7a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 8 7zm11 10.83A1.09 1.09 0 0 1 18 19H6l7.57-6.82a.69.69 0 0 1 .93 0l4.5 4.48z" />
+                        </symbol>
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="settingsIcon" fill="currentColor">
+                            <circle cx="12" cy="12" r="1.5" />
+                            <path d="M21.89 10.32L21.1 7.8a2.26 2.26 0 0 0-2.88-1.51l-.34.11a1.74 1.74 0 0 1-1.59-.26l-.11-.08a1.76 1.76 0 0 1-.69-1.43v-.28a2.37 2.37 0 0 0-.68-1.68 2.26 2.26 0 0 0-1.6-.67h-2.55a2.32 2.32 0 0 0-2.29 2.33v.24a1.94 1.94 0 0 1-.73 1.51l-.13.1a1.93 1.93 0 0 1-1.78.29 2.14 2.14 0 0 0-1.68.12 2.18 2.18 0 0 0-1.12 1.33l-.82 2.6a2.34 2.34 0 0 0 1.48 2.94h.16a1.83 1.83 0 0 1 1.12 1.22l.06.16a2.06 2.06 0 0 1-.23 1.86 2.37 2.37 0 0 0 .49 3.3l2.07 1.57a2.25 2.25 0 0 0 1.35.43A2 2 0 0 0 9 22a2.25 2.25 0 0 0 1.47-1l.23-.33a1.8 1.8 0 0 1 1.43-.77 1.75 1.75 0 0 1 1.5.78l.12.17a2.24 2.24 0 0 0 3.22.53L19 19.86a2.38 2.38 0 0 0 .5-3.23l-.26-.38A2 2 0 0 1 19 14.6a1.89 1.89 0 0 1 1.21-1.28l.2-.07a2.36 2.36 0 0 0 1.48-2.93zM12 15.5a3.5 3.5 0 1 1 3.5-3.5 3.5 3.5 0 0 1-3.5 3.5z" />
+                        </symbol>
+                    </svg>
+                    
+                    <!-- dribbble -->
+                    <a class="dribbble" href="https://dribbble.com/shots/6612066-Tab-Bar-active-animation" target="_blank"><img src="https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg" alt=""></a>
                 </div>
                 <div class="col -col-12">
-                    <h4>CODE</h4> 
+                    <h4>CODE</h4>
                     <div class="accordion -w-f">
-                      <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
-                      <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
-                        <i class="icon icon-arrow-right mr-1"></i>
-                        HTML
-                      </label>
-                      <div class="-accordion-body">
-                        <pre data-lang="html" class="-width-full">
+                        <input type="checkbox" id="accordion-html" name="accordion-html" hidden>
+                        <label class="-accordion-header -cursor-pointer -w-f -bg-primary -primary" for="accordion-html">
+                            <i class="icon icon-arrow-right mr-1"></i>
+                            HTML
+                        </label>
+                        <div class="-accordion-body">
+                            <pre data-lang="html" class="-width-full">
                             <code class="code-preview">
                                 <nav class="nav">
                                     <ul class="nav-items">
@@ -67,16 +196,16 @@
                                 </nav>
                             </code>
                         </pre>
-                      </div>
+                        </div>
                     </div>
                     <div class="accordion -w-f">
-                      <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
-                      <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
-                        <i class="icon icon-arrow-right mr-1"></i>
-                        CSS
-                      </label>
-                      <div class="-accordion-body">
-                        <pre data-lang="css" class="-width-full"> 
+                        <input type="checkbox" id="accordion-css" name="accordion-css" hidden>
+                        <label class="-accordion-header -cursor-pointer -w-f -bg-success -success" for="accordion-css">
+                            <i class="icon icon-arrow-right mr-1"></i>
+                            CSS
+                        </label>
+                        <div class="-accordion-body">
+                            <pre data-lang="css" class="-width-full">
                           <code class="code-preview">
                             <pre data-lang="css" class="-width-full"> 
                                 <code class="code-preview">
@@ -242,15 +371,16 @@
 }
                                 </code>
                             </pre>
-                          </code>
-                      </pre>
-                      </div>
-                    </div>        
+                            </code>
+                            </pre>
+                        </div>
+                    </div>
                 </div>
-            </section> 
-        </section> 
+            </section>
+        </section>
         <hr>
     </section>
     <script src="../main.js"></script>
 </body>
+
 </html>

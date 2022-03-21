@@ -38,6 +38,12 @@
         --headings-h6-weight: 600;
         --headings-h6-margin-b: .25rem;
         --headings-h6-margin-t: .5rem;
+
+        /* NAV */
+        --nav-height-close: 100%;
+        --nav-height-open: 100%;
+        --nav-items-direction: row;
+        --nav-items-opacity-close: 1;
     }
 }   
 
@@ -81,5 +87,11 @@
         --headings-h6-weight: 600;
         --headings-h6-margin-b: .25rem;
         --headings-h6-margin-t: .5rem;
+
+        /* NAV */
+        --nav-height-close: 100%;
+        --nav-height-open: 100%;
+        --nav-items-direction: row;
+        --nav-items-opacity-close: 1;
    }    
 }
